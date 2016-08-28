@@ -11,4 +11,4 @@ dronedeploy.Class.method(exampleParameter).subscribe(
 ); 
 ```
 
-*Note: This api pattern is inspired by rxjs, but rxjs is not loaded into plugins.*
+*Note: This pattern is inspired by rxjs, but rxjs is not loaded into plugins.*
