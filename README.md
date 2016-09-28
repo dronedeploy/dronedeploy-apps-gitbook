@@ -7,5 +7,5 @@ Once a user installs a plugin it will be ran on DroneDeploy.com, DroneDeploy on 
 ## Hello World in Two Minutes
 
 1. Login into DroneDeploy
-2. [Install the plugin creator on DroneDeploy.com](https://test.dronedeploy.com/app2/settings/install/aHR0cHM6Ly9zMy11cy13ZXN0LTEuYW1hem9uYXdzLmNvbS9kcm9uZS5kZXBsb3kucGx1Z2lucy9hcHAtY3JlYXRvci9hcHAtY3JlYXRvci5wbHVnaW4udHM=) 
+2. [Install the plugin creator on DroneDeploy.com](https://test.dronedeploy.com/app2/settings/install/MTY3ODI3MjA4NTY3LjE1NzM1) 
 3. Go to a map and click the tools menu and follow the plugin creator steps 
