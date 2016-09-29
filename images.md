@@ -2,15 +2,22 @@
 
 ## Images.get
 
-** Parameters **
+** Overview **
 
 ```javascript
+/** 
+* This call will return an array of image objects
+*
+* As shown below image objects contain a link to the full size image,
+* an icon link, exif data, and other useful metadata.
+*/
 var planId = String;
-var iconSize = {
-    width: Number,
+// defaults to {height: 200, width: 200}
+var optionalIconSize = {
+    width: Number, 
     height: Number
 };
-window.dronedeploy.Images.get(planId, iconSize);
+window.dronedeploy.Images.get(planId, optionalIconSize);
 ```
 
 **Example Call**
@@ -19,9 +26,9 @@ window.dronedeploy.Images.get('57e0761f21303e5214b6ae31', {width: 200, height: 2
   .subscribe((arrayOfImageInformation) => console.log(arrayOfImageInformation))
 ```
 
-**Example Image**
+**Example Response**
 ```json
-{
+[{
   "name": "camera",
   "signed_filename": "dji_0039.jpg?AWSAccessKeyId=AKIAISEWUBLV6Q6M3S3A&Expires=1475283600&Signature=tmZimGbGrYCaSSiuYD%2BxPv%2FXt%2FU%3D",
   "drone_session_id": "1474328095_DANIELINSPIRE",
@@ -192,5 +199,5 @@ window.dronedeploy.Images.get('57e0761f21303e5214b6ae31', {width: 200, height: 2
     "$date": "2015:08:20 10:30:27"
   },
   "icon": "https://tiles_dev.dronedeploy.com/images/thumb/195x195/drone_images/1474328095_DANIELINSPIRE/dji_0039.jpg?AWSAccessKeyId=AKIAISEWUBLV6Q6M3S3A&Expires=1475283600&Signature=tmZimGbGrYCaSSiuYD%2BxPv%2FXt%2FU%3D"
-}
+}]
 ```
