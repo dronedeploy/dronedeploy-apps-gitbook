@@ -1,12 +1,25 @@
 # Images
 
+## Images.get
+
+** Parameters **
 
 ```javascript
-dronedeploy.Images.get('somePlanId', {width: 200, height: 200})
+var planId = String;
+var iconSize = {
+    width: Number,
+    height: Number
+};
+window.dronedeploy.Images.get(planId, iconSize);
+```
+
+**Example Call**
+```javascript
+window.dronedeploy.Images.get('57e0761f21303e5214b6ae31', {width: 200, height: 200})
   .subscribe((arrayOfImageInformation) => console.log(arrayOfImageInformation))
 ```
 
-**Example Image Response**
+**Example Image**
 ```json
 {
   "name": "camera",
