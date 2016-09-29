@@ -1,6 +1,6 @@
 # Plans
 
-### getCurrentlyViewed
+### Plans.getCurrentlyViewed
 
 ** Overview ** 
 
