@@ -11,9 +11,9 @@
 * As shown below image objects contain a link to the full size image,
 * an icon link, exif data, and other useful metadata.
 */
-var planId = String;
+const planId = String;
 // defaults to {height: 200, width: 200}
-var optionalIconSize = {
+const optionalIconSize = {
     width: Number, 
     height: Number
 };
