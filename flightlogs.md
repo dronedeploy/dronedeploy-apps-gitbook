@@ -5,14 +5,14 @@
 **Overview**
 ```javascript
 const planId = String;
-window.dronedeploy.FlightLogs.getLogsFromPlan(planId)
+window.dronedeploy.FlightLogs.getLogsFromPlan(planId);
 ```
 
 **Example**
 
 ```javascript
 window.dronedeploy.FlightLogs.getLogsFromPlan('57eaa66d2a2b43fa1249c76c')
-  .subscribe((logs) => console.log(logs))
+  .subscribe((logs) => console.log(logs));
 ```
 
 **Example Response**
