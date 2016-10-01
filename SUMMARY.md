@@ -5,5 +5,5 @@
    * [Exporter](exporter.md)
    * [Images](images.md)
    * [Plans](plans.md)
-   * FlightLogs
+   * [FlightLogs](flightlogs.md)
 
