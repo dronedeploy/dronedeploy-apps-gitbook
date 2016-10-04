@@ -14,7 +14,7 @@ const fieldsToUpdate = {
 window.dronedeploy.Plans.update(planIdToUpdate, fieldsToUpdate);
 ```
 
-*Note: Save the plan's geometry on the planning page to change the drones flight path.*
+*Note: Save the plan's geometry on the planning page to change the drone's flight path.*
 
 ** Example Call ** 
 ```javascript
