@@ -6,9 +6,10 @@ Once a user installs a plugin it will be ran on DroneDeploy.com, DroneDeploy on 
 
 ## Hello World in Two Minutes
 
-1. Login into DroneDeploy
-2. [Install the plugin creator on DroneDeploy.com](https://www.dronedeploy.com/app2/settings/install/AC9PROD99I3MjA4NTY3LjE1NzM1) 
-3. Click the link "*Download hello world example*" and unzip the folder
-4. Click the "Developer Mode" toggle.
-5. Select a Plugin Zone somewhere in the app and choose the "hello-world" folder you downloaded in step 3.
-6. Finally, edit any file in that folder and start building your app!
+1. [Install the plugin creator on DroneDeploy.com](https://www.dronedeploy.com/app2/settings/install/AC9PROD99I3MjA4NTY3LjE1NzM1) 
+2. Click the link "*Download hello world example*" and unzip the folder
+3. Click the "Developer Mode" toggle.
+4. Select a Plugin Zone somewhere in the app and choose the "hello-world" folder you downloaded in step 3.
+5. Finally, edit any file in that folder and start building your app!
+
+*Hint: Open the javascript console to view `window.dronedeploy`.*
