@@ -1,5 +1,5 @@
 # API
-All communication to DroneDeploy are available through `window.dronedeploy` inside your plugin. 
+All communication to DroneDeploy are available through `window.dronedeploy` inside your app. 
 
 When a `window.dronedeploy` method is invoked you can listen to results by using the following pattern.
 
@@ -11,4 +11,4 @@ dronedeploy.Class.method(exampleParameter).subscribe(
 ); 
 ```
 
-*Note: This pattern is inspired by rxjs, but rxjs is not loaded into plugins.*
+*Note: This pattern is inspired by rxjs, but rxjs is not loaded into apps.*
