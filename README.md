@@ -1,6 +1,6 @@
 # DroneDeploy App Documentation
 
-DroneDeploy has mapped over 5 million acres and has over 30,000 users in many different industries. Apps allow outside developers to build new products and services on top of DroneDeploy.
+DroneDeploy has mapped over 6 million acres and has tens of thousands of users in many different industries. Apps allow outside developers to build new products and services on top of DroneDeploy.
 
 Once a user installs an app it will be ran on DroneDeploy.com, DroneDeploy on android and DroneDeploy on iOS. All apps are written in html, css, and javascript. Apps have the capability to access and modify DroneDeploy features. Additionally, any javascript framework or library can be used while developing an app. Build an app in two minutes to learn more. 
 
