@@ -1,6 +1,6 @@
 # Publishing
 
-Once you submit your application, it will be reviewed to ensure it adheares to the DroneDeploy platform policy. 
+Once you submit your application, it will be reviewed to ensure it adheres to the DroneDeploy platform policy. 
 
  
 * If there are __changes required__. You will be notified via email and asked to re-submit your application.
