@@ -8,4 +8,5 @@
    * [FlightLogs](flightlogs.md)
    * [User](user.md)
 * Guidelines
+   * Guidelines
 
