@@ -9,4 +9,5 @@
    * [User](user.md)
 * Platform Policy
    * [Guidelines](guidelines.md)
+   * Styles
 
