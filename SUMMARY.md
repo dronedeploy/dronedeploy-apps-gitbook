@@ -10,4 +10,5 @@
 * Platform Policy
    * [Guidelines](guidelines.md)
    * [Styles](styles.md)
+   * Publishing
 
