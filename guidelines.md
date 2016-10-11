@@ -9,3 +9,5 @@ Use the following guidelines when creating an application.
 * Don’t confuse, deceive, defraud, mislead, spam or surprise anyone.  
 * Obtain consent from people before publishing content on their behalf
 * Protect the information you receive from us against unauthorized access, use, or disclosure.
+* Don’t provide or promote content that infringes upon the rights of any third party.
+
