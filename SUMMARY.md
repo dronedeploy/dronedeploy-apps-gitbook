@@ -7,6 +7,6 @@
    * [Plans](plans.md)
    * [FlightLogs](flightlogs.md)
    * [User](user.md)
-* Guidelines
+* Platform Policy
    * [Developer Guidelines](guidelines.md)
 
