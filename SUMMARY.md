@@ -2,7 +2,6 @@
 
 * [Introduction](README.md)
 * Guidelines
-   * Guideslines
 * [API](api-overview.md)
    * [Exporter](exporter.md)
    * [Images](images.md)
