@@ -8,5 +8,5 @@
    * [FlightLogs](flightlogs.md)
    * [User](user.md)
 * Platform Policy
-   * [Developer Guidelines](guidelines.md)
+   * [Guidelines](guidelines.md)
 
