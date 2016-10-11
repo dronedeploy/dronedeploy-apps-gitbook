@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-   * Guidelines
+   * [Guidelines](guidelines.md)
 * [API](api-overview.md)
    * [Exporter](exporter.md)
    * [Images](images.md)
