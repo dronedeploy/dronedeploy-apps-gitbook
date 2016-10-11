@@ -9,7 +9,6 @@ window.dronedeploy.User.get().subscribe((user) => console.log(user));
 ** Example Response ** 
 ```javascript
 {
-  "admin": false,
   "firstName": "Daniel",
   "lastName": "Rasmuson",
   "maxAltitude": 152.4,
