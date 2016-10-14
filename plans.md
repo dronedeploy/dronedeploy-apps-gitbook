@@ -1,6 +1,9 @@
 # Plans
 
-- [Plan.getCurrentlyViewed](###Plan.getCurrentlyViewed)
+**Contents** 
+- [Plans.getCurrentlyViewed](#plansgetcurrentlyviewed)
+- [Plans.all](#plansall)
+- [Plans.update](#plansupdate)
 
 ### Plans.getCurrentlyViewed
 
@@ -14,8 +17,7 @@ window.dronedeploy.Plans.getCurrentlyViewed()
   .subscribe((plan) => {
     // Will be called each time the plan changes
     console.log(plan)
-   })
-
+  });
 ```
 
 ** Example Response ** 
@@ -78,6 +80,51 @@ window.dronedeploy.Plans.getCurrentlyViewed()
   "name": "Untitled Map",
   "username": "daniel@dronedeploy.com"
 }
+```
+
+### Plans.all
+
+**NOTE: Arrives 10/18/2016**
+
+** Overview **
+
+Get an array of all the users plans.
+
+** Example Call **
+```javascript
+window.dronedeploy.Plans.all()
+  .subscribe((plans) => {
+    // Will be called each time a plan changes
+    console.log(plans)
+  });
+```
+
+** Example Response ** 
+```javascript
+[
+  {
+    "id": "17e0761f21303e5214b6ae31",
+    "camera": {...},
+    "deleted": false,
+    "exports": [...],
+    "geometry": [...],
+    "info": {...},
+    "location": {...},
+    "name": "Plan 1",
+    "username": "daniel@dronedeploy.com"
+  },
+  {
+    "id": "87e0761f21303e5214b6ae31",
+    "camera": {...},
+    "deleted": false,
+    "exports": [...],
+    "geometry": [...],
+    "info": {...},
+    "location": {...},
+    "name": "Plan 2",
+    "username": "daniel@dronedeploy.com"
+  }
+]
 ```
 
 ### Plans.update
