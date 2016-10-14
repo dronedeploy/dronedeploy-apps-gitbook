@@ -39,7 +39,10 @@ Returns the plan that is the currently visible to the user. For example, if the 
 ** Example Call ** 
 ```javascript
 window.dronedeploy.Plans.getCurrentlyViewed()
-  .subscribe((plan) => console.log(plan))
+  .subscribe((plan) => {
+    // Will be called each time the plan changes
+    console.log(plan)
+   })
 
 ```
 
