@@ -1,34 +1,6 @@
 # Plans
 
-### Plans.update
-
-** Overview **
-
-```javascript
-const planIdToUpdate = String;
-const fieldsToUpdate = {
-  // These are the two fields that can be updated on the plan
-  name: String,
-  geometry: {lat: number, lng: number}
-};
-window.dronedeploy.Plans.update(planIdToUpdate, fieldsToUpdate);
-```
-
-*Note: Save the plan's geometry on the planning page to change the drone's flight path.*
-
-** Example Call ** 
-```javascript
-window.dronedeploy.Plans.update('57e0761f21303e5214b6ae31', {
-  name: 'New Name',
-  geometry: [
-    {lat: 56.567259707222206,lng: -78.90349675},
-    {lat: 37.717259707222226,lng: -78.88330925000001},
-    {lat: 37.70100590388889,lng: -78.88330925000001},
-    {lat: 37.70100590388889,lng: -78.90349675}
-  ]
-});
-
-```
+- [Plan.getCurrentlyViewed](###Plan.getCurrentlyViewed)
 
 ### Plans.getCurrentlyViewed
 
@@ -106,4 +78,34 @@ window.dronedeploy.Plans.getCurrentlyViewed()
   "name": "Untitled Map",
   "username": "daniel@dronedeploy.com"
 }
+```
+
+### Plans.update
+
+** Overview **
+
+```javascript
+const planIdToUpdate = String;
+const fieldsToUpdate = {
+  // These are the two fields that can be updated on the plan
+  name: String,
+  geometry: {lat: number, lng: number}
+};
+window.dronedeploy.Plans.update(planIdToUpdate, fieldsToUpdate);
+```
+
+*Note: Save the plan's geometry on the planning page to change the drone's flight path.*
+
+** Example Call ** 
+```javascript
+window.dronedeploy.Plans.update('57e0761f21303e5214b6ae31', {
+  name: 'New Name',
+  geometry: [
+    {lat: 56.567259707222206,lng: -78.90349675},
+    {lat: 37.717259707222226,lng: -78.88330925000001},
+    {lat: 37.70100590388889,lng: -78.88330925000001},
+    {lat: 37.70100590388889,lng: -78.90349675}
+  ]
+});
+
 ```
