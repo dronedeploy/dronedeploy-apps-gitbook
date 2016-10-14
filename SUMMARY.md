@@ -7,6 +7,7 @@
    * [Plans](plans.md)
    * [FlightLogs](flightlogs.md)
    * [User](user.md)
+   * Payments
 * Platform Policy
    * [Guidelines](guidelines.md)
    * [Styles](styles.md)
