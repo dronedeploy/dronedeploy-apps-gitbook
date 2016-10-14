@@ -5,6 +5,7 @@
 ```javascript
 window.dronedeploy.User.get().subscribe((user) => console.log(user));
 ```
+*Note: Every time the user object changes the callback will be invoked.*
 
 ** Example Response ** 
 ```javascript
