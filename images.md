@@ -22,7 +22,7 @@ window.dronedeploy.Images.get(planId, optionalIconSize);
 
 **Example Call**
 ```javascript
-window.dronedeploy.Images.get('57e0761f21303e5214b6ae31', {width: 200, height: 200})
+window.dronedeploy.Images.get('5605c0e5752afc005a000004', {width: 200, height: 200})
   .subscribe((arrayOfImageInformation) => console.log(arrayOfImageInformation))
 ```
 
