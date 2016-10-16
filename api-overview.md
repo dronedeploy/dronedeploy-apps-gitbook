@@ -1,5 +1,5 @@
 # API
-All communication to DroneDeploy are available through `window.dronedeploy` inside your app. 
+All communication to DroneDeploy is available through `window.dronedeploy` inside your app. 
 
 When a `window.dronedeploy` method is invoked you can listen to results by using the following pattern.
 
