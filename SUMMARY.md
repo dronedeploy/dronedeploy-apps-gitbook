@@ -12,5 +12,5 @@
    * [Guidelines](guidelines.md)
    * [Styles](styles.md)
    * [Publishing](publishing.md)
-* [Examples](examples.md)
+* Examples
 
