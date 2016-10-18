@@ -1,6 +1,6 @@
 # Change Flight Geometry
 
-![Change Geometry Image](change_geometry.png)
+![](change_geometry.png)
 
 [Install this app](https://dronedeploy.com/app2/settings/install/fb58028c-c502-3914-351f-795fc93578b7)
 
