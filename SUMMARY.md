@@ -13,5 +13,5 @@
    * [Styles](styles.md)
    * [Publishing](publishing.md)
 * Examples
-   * Change Flight Geometry
+   * [Change Flight Geometry](change_flight_geometry.md)
 
