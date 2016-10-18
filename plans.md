@@ -87,9 +87,6 @@ window.dronedeploy.Plans.getCurrentlyViewed()
 ```
 
 ### Plans.all
-
-**NOTE: Arrives 10/18/2016**
-
 ** Overview **
 
 Get an array of all the users plans.
