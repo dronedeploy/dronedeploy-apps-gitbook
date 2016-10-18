@@ -1,4 +1,4 @@
-# Payments (Arrival 10/18/2016)
+# Payments
 
 ## Payments.charge
 
