@@ -8,10 +8,10 @@
    * [FlightLogs](flightlogs.md)
    * [User](user.md)
    * [Payments](payments.md)
+* Examples
+   * [Change Flight Geometry](change_flight_geometry.md)
 * Platform Policy
    * [Guidelines](guidelines.md)
    * [Styles](styles.md)
    * [Publishing](publishing.md)
-* Examples
-   * [Change Flight Geometry](change_flight_geometry.md)
 
