@@ -56,7 +56,7 @@ function getCurrentPlanId(){
 function getTiles(planId, layerName, zoom){
   return new Promise((resolve) => {
     window.dronedeploy.Tiles.get({planId, layerName, zoom})
-      .subscribe((tiles) => resolve(tiles));
+      .subscribe((tilesRes) => resolve(tilesRes.tiles));
   });
 }
 
