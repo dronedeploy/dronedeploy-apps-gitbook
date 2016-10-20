@@ -10,6 +10,7 @@
    * [Payments](payments.md)
 * Examples
    * [Change Flight Geometry](change_flight_geometry.md)
+   * Get Tiles
 * Platform Policy
    * [Guidelines](guidelines.md)
    * [Styles](styles.md)
