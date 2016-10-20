@@ -8,7 +8,7 @@
    * [FlightLogs](flightlogs.md)
    * [User](user.md)
    * [Payments](payments.md)
-   * Tiles
+   * [Tiles](tiles.md)
 * Examples
    * [Change Flight Geometry](change_flight_geometry.md)
    * [Get Tiles](get_tiles.md)
