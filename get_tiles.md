@@ -1,4 +1,4 @@
-# Get Tiles
+# Get Tiles (Arrival 10/25/2016)
 
 ![](tilequery.png)
 
