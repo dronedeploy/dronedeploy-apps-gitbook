@@ -11,7 +11,7 @@ window.dronedeploy.Tiles.get({planId, layerName, zoom})
   .subscribe((tileInformation) => console.log(tileInformation));
 ```
 
-[See an example!](get_tiles.md)
+[Try the example!](get_tiles.md)
 
 **Example Call**
 ```javascript
