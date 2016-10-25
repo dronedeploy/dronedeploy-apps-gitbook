@@ -4,7 +4,6 @@
 
 **Overview**
 
-
 ```javascript
 const planId = String;
 const optionalOptions = {
