@@ -2,7 +2,7 @@
 
 ![](tilequery.png)
 
-[Click to Install this App](https://dronedeploy.com/app2/settings/install/d6c7d99b-bcb7-9b78-2b04-16d82bb3cb98)
+[Click to Install this App](https://dronedeploy.com/app2/settings/apps/install/d6c7d99b-bcb7-9b78-2b04-16d82bb3cb98)
 
 ```html
 <!DOCTYPE html>
