@@ -13,7 +13,7 @@
 * Examples
    * [Change Flight Geometry](change_flight_geometry.md)
    * [Get Tiles](get_tiles.md)
-   * Get Annotations
+   * [Get Annotations](get_annotations.md)
 * Platform Policy
    * [Guidelines](guidelines.md)
    * [Styles](styles.md)
