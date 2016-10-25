@@ -1,8 +1,17 @@
 # Annotations (Arrival 10/27/2016)
 
-# Annotations.get
+**Overview**
+
+![](annotations.png)
+
+- [Annotations.get](#annotationsget)
+- [Annotations.getVolume](#annotationsgetvolume)
+
+## Annotations.get
 
 **Overview**
+
+This function returns all the annotations for a given plan.
 
 ```javascript
 const planId = String;
@@ -341,4 +350,86 @@ window.dronedeploy.Annotations.get('5730dc11929d2465038183ab', {comments: true})
     "description": ""
   }
 ]
+```
+
+## Annotations.getVolume (Arrival 11/1/2016)
+
+**Overview**
+
+This function returns the volume information for a volume annotation. DroneDeploy uses this data in the volume annotation detail.
+
+![](volume_annotation_detail.png)
+
+```javascript
+const annotationId = String;
+window.dronedeploy.Annotations.getVolume(annotationId)
+  .subscribe((volume) => console.log(volume))
+```
+
+**Example Call**
+
+```javascript
+window.dronedeploy.Annotations.getVolume('581286dccb5fda14db8d2971')
+  .subscribe((volume) => console.log(volume))
+```
+
+**Example Response**
+```javascript
+{
+  "tiles": [
+    [
+      121242,
+      206011
+    ],
+    [
+      121242,
+      206012
+    ]
+  ],
+  "fill_raw": -333.997766494751,
+  "linear": true,
+  "edge_points": [
+    [
+      31038034,
+      52739050,
+      -66.44757270812988
+    ],
+    [
+      31037990,
+      52739050,
+      -66.44757270812988
+    ],
+    [
+      31037988,
+      52739126,
+      -66.44757270812988
+    ],
+    [
+      31038052,
+      52739126,
+      -66.44757270812988
+    ]
+  ],
+  "volume": 529.3595442153552,
+  "cut_raw": 9389.320287704468,
+  "volume_raw": 9055.322521209717,
+  "fill": -19.524970538209864,
+  "baseplanetype": "fit",
+  "cut": 548.8845147535651,
+  "polygon": "POLYGON((-96.74950540065767 35.92691643621745,-96.74962341785431 35.92691643621745,-96.74962878227235 35.92675136694131,-96.74945712089539 35.92675136694131,-96.74950540065767 35.92691643621745))",
+  "meters_per_pixel": 0.24178169191004395,
+  "order": 1
+}
+```
+
+** Errors **
+
+If the map is a legacy map and does not support volume annotations the following error will be returned.
+```javascript
+window.dronedeploy.Annotations.getVolume('581286dccb5fda14db8d2971')
+  .subscribe(
+    () => {},
+    (error) => console.log(error)
+  );
+// Map does not support volume annotations.
 ```
