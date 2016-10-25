@@ -16,7 +16,7 @@ After adding your app to their account, any user can use your app if it is free.
 ### If I make a free app, can all users access and use it?
 Yes. Everyone, regardless of DroneDeploy customer status, can access and use free apps.
 
-### I want to monetize my app. How do payments work?
+### I want to monetize my app. How do customer payments work?
 Payments are processed by DroneDeploy. To make a paid app, you can use the Payments API. When a user tries to use your app, they will be prompted to accept the charge that you specified via the Payments API. Upon accepting the charge, your app will run and the user will expect their result. Currently, apps can be monetized on a transactional basis (user is charged every time their run your app). In the future, it will be possible to create subscription services where users are charged monthly.
 
 ### Do I have to provide a free trial?
