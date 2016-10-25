@@ -1,4 +1,4 @@
-# Tiles (Arrival 10/25/2016)
+# Tiles
 
 ## Tiles.get
 
