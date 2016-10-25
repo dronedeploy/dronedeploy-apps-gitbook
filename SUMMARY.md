@@ -9,6 +9,7 @@
    * [User](user.md)
    * [Payments](payments.md)
    * [Tiles](tiles.md)
+   * Annotations
 * Examples
    * [Change Flight Geometry](change_flight_geometry.md)
    * [Get Tiles](get_tiles.md)
