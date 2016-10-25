@@ -2,7 +2,7 @@
 
 ![](list_annotations.png)
 
-Install the Example
+[Install the Example](https://test.dronedeploy.com/app2/settings/install/01dab416-8692-691d-1646-bd0295ddc961)
 
 ```html
 <!DOCTYPE html>
