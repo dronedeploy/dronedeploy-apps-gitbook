@@ -18,4 +18,5 @@
    * [Guidelines](guidelines.md)
    * [Styles](styles.md)
    * [Publishing](publishing.md)
+* FAQs
 
