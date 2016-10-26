@@ -5,7 +5,7 @@
 The DroneDeploy App Store is a drone data platform that enables developers to build apps and publish them for distribution, directly in the DroneDeploy UI. DroneDeploy users from around the world can then access these apps in the App Store. By building these apps with DroneDeploy's suite of APIs, users can put them to work in pre-flight planning operations, data analysis activities, and more. Developer's apps are available cross-platform, on all supported devices. Developers have the option to monetize apps with simple revenue share — 70% to the developer, 30% to DroneDeploy.
 
 ### What APIs do I get access to?
-[Click here to see which APIs are available.](https://dronedeploy.gitbooks.io/dronedeploy-apps/content/api-overview.html) We are constantly working on building out more API access points. We will release new APIs within these docs, as soon as they're available.
+[Click here to see which APIs are available.](#API) We are constantly working on building out more API access points. We will release new APIs within these docs, as soon as they're available.
 
 ### How do people discover my app?
 Once your app is published to the DroneDeploy App Store, any DroneDeploy user — regardless if they are a free or paid user — can discover your app. Then they can add your app to their account.
