@@ -17,18 +17,18 @@ After adding your app to their account, any user can use your app if it is free.
 Yes. Everyone, regardless of DroneDeploy customer status, can access and use free apps.
 
 ### I want to monetize my app. How do payments work?
-Payments are processed by DroneDeploy. To make a paid app, you can use the Payments API. When a user tries to use your app, they will be prompted to accept the charge that you specified via the Payments API. Upon accepting the charge, your app will run and the user will expect their result.
+Payments are processed by DroneDeploy. To make a paid app, you can use the Payments API. When a user tries to use your app, they will be prompted to accept the charge that you specified via the Payments API. Upon accepting the charge, your app will run and the user will expect their result. Currently, apps can be monetized on a transactional basis (user is charged every time their run your app). In the future, it will be possible to create subscription services where users are charged monthly.
 
-### How much money can I make?
-That's entirely up to you.
+### Do I have to provide a free trial?
+DroneDeploy deeply encourages developers to provide users a free trial, where possible. This can jump start usage of your app and allow you to gain users who normally would not have tried your app. Developers can code in their own free trial mechanisms.
 
 
-### How many users do you have?
-
+### How big is DroneDeploy's distribution?
+DroneDeploy's distribution network is global. Your app is available to tens of thousands of active drone users across 135 countries. From the single, small business, all the way up to large enterprise companies with many users. There is a large appetite for drone data apps.
 
 
 ### What can I charge for my app?
-
+That's entirely up to you. Rates for different types of data products can be charged by the acre (common in agriculture), by the image, or flat fees. What you decide to charge is up to you and the quality of your app.
 
 
 ### What are some examples of other apps?
