@@ -40,13 +40,13 @@ We expect your app to perform as advertised. DroneDeploy subjects all published 
 
 
 ### When and how do I get paid?
-Developer revenue share payments are aggregated and sent at the end of the month. To get paid, you must fill out an App Store Monetization form. There are three different App Store Monetization forms:
+Developer revenue share payments are aggregated and sent at the end of the month. To get paid, you must fill out an App Store Monetization form. There are three different App Store Monetization forms. Only one of them will apply to you:
 
 1. Domestic Developers
 2. International Developers (entities)
 3. International Developers (individuals)
 
-Developers are paid via bank transfer. please contact the DroneDeploy Developer Team at [developer@dronedeploy.com](developer@dronedeploy.com) to receive the proper form and get set up for monetization.
+Developers are paid via bank transfer. Please contact the DroneDeploy Developer Team at [developer@dronedeploy.com](developer@dronedeploy.com) to request the proper form and get set up for monetization.
 
 
 ### How much is the revenue share?
