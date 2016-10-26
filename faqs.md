@@ -28,15 +28,11 @@ DroneDeploy's distribution network is global. Your app is available to tens of t
 
 
 ### What can I charge for my app?
-That's entirely up to you. Rates for different types of data products can be charged by the acre (common in agriculture), by the image, or flat fees. What you decide to charge is up to you and the quality of your app.
+That's entirely up to you. Pricing methods vary for different types of data products but can be charged by the acre (common in agriculture), by the image, or with a flat fee. What you decide to charge is up to you and the quality of your app.
 
 
 ### What are some examples of other apps?
-
-
-
-### Why should I choose to develop for DroneDeploy?
-
+[Sign up for a free DroneDeploy account](https://dronedeploy.com/signup.html) to browse current apps in the App Store (you'll need one anyways to publish an app). You can also [check out the developer forum](http://forum.dronedeploy.com/) to see apps that drone users are requesting from around the world.
 
 
 ### How do refunds work?
