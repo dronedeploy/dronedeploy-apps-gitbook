@@ -32,28 +32,34 @@ That's entirely up to you. Pricing methods vary for different types of data prod
 
 
 ### What are some examples of other apps?
-[Sign up for a free DroneDeploy account](https://dronedeploy.com/signup.html) to browse current apps in the App Store (you'll need one anyways to publish an app). You can also [check out the developer forum](http://forum.dronedeploy.com/) to see apps that drone users are requesting from around the world.
+[Sign up for a free DroneDeploy account](https://dronedeploy.com/signup.html) to browse current apps in the App Store (you'll need one anyways to publish an app). You can also [check out the App Developer Forum](http://forum.dronedeploy.com/) to see apps that drone users are requesting from around the world.
 
 
 ### How do refunds work?
-
-
-
-### What are my options of charging customers?
-
+We expect your app to perform as advertised. DroneDeploy subjects all published apps to a rigorous, internal QA assessment that verifies quality, functionality, and performance. More information can be [found in the Platform Policy section](https://dronedeploy.gitbooks.io/dronedeploy-apps/content/guidelines.html) of these docs.
 
 
 ### When and how do I get paid?
+Developer revenue share payments are aggregated and sent at the end of the month. To get paid, you must fill out an App Store Monetization form. There are three different App Store Monetization forms:
 
+1. Domestic Developers
+2. International Developers (entities)
+3. International Developers (individuals)
+
+Developers are paid via bank transfer.
 
 
 ### How much is the revenue share?
+Revenue share is standard across all apps. 70% of the total revenue of your app goes to you, the developer. 30% of the total revenue goes to DroneDeploy.
 
 
+### How do I know what app to build?
+You can [check out the App Developer Forum](http://forum.dronedeploy.com/) to see apps that drone users are requesting from around the world.
 
-### How do I know what apps to build?
 
+### Where can I talk about apps with other developers?
+Go [visit the App Developer Forum](http://forum.dronedeploy.com/) to see which apps drone users from around the world are requesting.
 
-
-### Where can I talk about apps with other developers or get developer support from DroneDeploy?
+### How can I get general developer support?
+Contact the DroneDeploy Developer Team at [developer@dronedeploy.com](mailto:developer@dronedeploy.com)
 
