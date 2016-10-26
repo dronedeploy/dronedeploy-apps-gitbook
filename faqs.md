@@ -27,7 +27,7 @@ DroneDeploy deeply encourages developers to provide users a free trial, where po
 DroneDeploy's distribution network is global. Your app is available to tens of thousands of active drone users across 135 countries. From the single, small business, all the way up to large enterprise companies with many users. There is a large appetite for drone data apps.
 
 
-### What can I charge for my app?
+### How much can I charge for my app?
 That's entirely up to you. Pricing methods vary for different types of data products but can be charged by the acre (common in agriculture), by the image, or with a flat fee. What you decide to charge is up to you and the quality of your app.
 
 
