@@ -36,7 +36,7 @@ That's entirely up to you. Pricing methods vary for different types of data prod
 
 
 ### How do refunds work?
-We expect your app to perform as advertised. DroneDeploy subjects all published apps to a rigorous, internal QA assessment that verifies quality, functionality, and performance. More information can be [found in the Platform Policy section](https://dronedeploy.gitbooks.io/dronedeploy-apps/content/guidelines.html) of these docs.
+We expect your app to perform as advertised. DroneDeploy subjects all published apps to a rigorous, internal Q.A. assessment that verifies quality, functionality, and performance. More information can be [found in the Platform Policy section](https://dronedeploy.gitbooks.io/dronedeploy-apps/content/guidelines.html) of these docs.
 
 
 ### When and how do I get paid?
@@ -46,11 +46,11 @@ Developer revenue share payments are aggregated and sent at the end of the month
 2. International Developers (entities)
 3. International Developers (individuals)
 
-Developers are paid via bank transfer.
+Developers are paid via bank transfer. please contact the DroneDeploy Developer Team at [developer@dronedeploy.com](developer@dronedeploy.com) to receive the proper form and get set up for monetization.
 
 
 ### How much is the revenue share?
-Revenue share is standard across all apps. 70% of the total revenue of your app goes to you, the developer. 30% of the total revenue goes to DroneDeploy.
+Revenue share is standard. 70% of the total revenue of the app goes to the developer and 30% of the total revenue goes to DroneDeploy.
 
 
 ### How do I know what app to build?
@@ -61,5 +61,5 @@ You can [check out the App Developer Forum](http://forum.dronedeploy.com/) to se
 Go [visit the App Developer Forum](http://forum.dronedeploy.com/) to see which apps drone users from around the world are requesting.
 
 ### How can I get general developer support?
-Contact the DroneDeploy Developer Team at [developer@dronedeploy.com](mailto:developer@dronedeploy.com)
+Contact the DroneDeploy Developer Team at [developer@dronedeploy.com](developer@dronedeploy.com)
 
