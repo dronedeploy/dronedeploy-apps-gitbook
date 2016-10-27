@@ -10,7 +10,7 @@
    * [Payments](payments.md)
    * [Tiles](tiles.md)
    * [Annotations](annotations.md)
-   * Messaging
+   * [Messaging](messaging.md)
 * Examples
    * [Change Flight Geometry](change_flight_geometry.md)
    * [Get Tiles](get_tiles.md)
