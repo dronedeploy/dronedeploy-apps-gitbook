@@ -347,7 +347,7 @@ window.dronedeploy.Annotations.get('5730dc11929d2465038183ab', {comments: true})
 
 **Overview**
 ```javascript
-const annotationId = '581286dccb5fda14db8d2971';
+const annotationId = String;
 window.dronedeploy.Annotations.getVolume(annotationId)
   .subscribe((volume) => console.log(volume))
 ```
