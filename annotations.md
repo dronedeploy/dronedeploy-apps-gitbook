@@ -421,3 +421,15 @@ window.dronedeploy.Annotations.getVolume('581286dccb5fda14db8d2971')
   "order": 1
 }
 ```
+
+** Errors **
+
+If the map is a legacy map and does not support volume annotations the following error will be returned.
+```javascript
+window.dronedeploy.Annotations.getVolume('581286dccb5fda14db8d2971')
+  .subscribe(
+    () => {},
+    (error) => console.log(error)
+  );
+// Map does not support volume annotations.
+```
