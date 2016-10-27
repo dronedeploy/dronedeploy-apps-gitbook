@@ -352,8 +352,8 @@ window.dronedeploy.Annotations.get('5730dc11929d2465038183ab', {comments: true})
 ]
 ```
 
-## Annotations.getVolume (Arrival 11/1/2016)
-
+## Annotations.getVolume
+### Note: Arrival 11/1/2016
 **Overview**
 
 This function returns the volume information for a volume annotation. DroneDeploy uses this data in the volume annotation detail.
