@@ -1,8 +1,17 @@
 # Annotations (Arrival 10/27/2016)
 
+**Overview**
+
+![](annotations.png)
+
+- [Annotations.get](#annotationsget)
+- [Annotations.getVolume](#annotationsgetvolume)
+
 ## Annotations.get
 
 **Overview**
+
+This function returns all the annotations for a given plan.
 
 ```javascript
 const planId = String;
@@ -343,9 +352,14 @@ window.dronedeploy.Annotations.get('5730dc11929d2465038183ab', {comments: true})
 ]
 ```
 
-## Annotations.getVolume
+## Annotations.getVolume (Arrival 11/1/2016)
 
 **Overview**
+
+This function returns the volume information for a volume annotation. DroneDeploy uses this data in the volume annotation detail.
+
+![](volume_annotation_detail.png)
+
 ```javascript
 const annotationId = String;
 window.dronedeploy.Annotations.getVolume(annotationId)
