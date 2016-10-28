@@ -1,4 +1,4 @@
-# Get Annotations (Arrival 10/27/2016)
+# Get Annotations
 
 ![](list_annotations.png)
 
