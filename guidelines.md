@@ -4,7 +4,7 @@ Use the following guidelines when creating an application.
 
 * Build an app that is stable and easily navigable.  
 * Ensure that your apps meet our Community Standards.
-* Follow our embedded CSS styles for your app name, icons, button, fonts, colors, and description.
+* Follow our CSS styles for your app name, icons, button, fonts, colors, and description.
 * Keep your app’s description and categorization up-to-date. 
 * Don’t confuse, deceive, defraud, mislead, spam, or surprise anyone.  
 * Obtain consent from people before publishing content on their behalf
