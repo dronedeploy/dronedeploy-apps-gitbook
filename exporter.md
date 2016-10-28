@@ -7,6 +7,12 @@
 - [3D Export](#3d-export)
 - [Point Cloud Export](#point-cloud-export)
 
+**Exporter.getPointCloudLink (Arrives 11/1/2016)**
+- [Exporter.getPointCloudLink](#exportergetpointcloudlink)
+
+**Exporter.get3DModelLink (Arrives 11/1/2016)**
+- [Exporter.get3DModelLink](#exporterget3dmodellink)
+
 **Exporter.list (Arrives 11/1/2016)**
 - [Exporter.list](#exporterlist)
 
@@ -155,6 +161,48 @@ const exportOptions = {
 };
 window.dronedeploy.Exporter.send(exportOptions)
   .subscribe((exportId) => console.log(exportId));
+```
+
+## Exporter.getPointCloudLink
+**NOTE: ** Arrives 11/1/2016
+
+**Overview**
+
+Get the URL to download the Point Cloud
+
+**Example Call**
+
+```javascript
+const planId = '8905ccf8d4684ff6969eb0378f1d4e34';
+window.dronedeploy.Exporter.getPointCloudLink(planId)
+  .subscribe((downloadLink) => console.log(exportId));
+```
+
+**Example Response**
+
+```javascript
+https://s3.amazonaws.com/drone_assets/1470423260_DANIELINSPIRE/model.zip?AWSAccessKeyId=AKIAISEWUBLV6Q6M3S3A&Expires=1474516459&Signature=2MjUsIEJVRKHGO8ng8LoADH9jJk%3D
+```
+
+## Exporter.get3DModelLink
+**NOTE: ** Arrives 11/1/2016
+
+**Overview**
+
+Get the URL to download the 3D Model
+
+**Example Call**
+
+```javascript
+const planId = '8905ccf8d4684ff6969eb0378f1d4e34';
+window.dronedeploy.Exporter.get3DModelLink(planId)
+  .subscribe((downloadLink) => console.log(exportId));
+```
+
+**Example Response**
+
+```javascript
+https://s3.amazonaws.com/drone_assets/1470423260_DANIELINSPIRE/model.zip?AWSAccessKeyId=AKIAISEWUBLV6Q6M3S3A&Expires=1474516459&Signature=2MjUsIEJVRKHGO8ng8LoADH9jJk%3D
 ```
 
 ## Exporter.list
