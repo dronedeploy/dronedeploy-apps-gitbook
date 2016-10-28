@@ -2,7 +2,7 @@
 
 **What is a Plan?**
 
-The plan contains the flight data, drone data, image information, and the map assets. The same plan is used across planning, flight, uploading, and post-processed viewing.
+A plan contains the flight data, drone data, image information, and the map assets. The same plan is used across planning, flight, uploading, and post-processed viewing.
 
 **Contents** 
 - [Plans.getCurrentlyViewed](#plansgetcurrentlyviewed)
