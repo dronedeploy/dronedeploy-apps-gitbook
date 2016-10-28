@@ -2,6 +2,8 @@
 ## Messaging.showToast
 **Overview**
 
+![](example_toast.png)
+
 ```javascript
 const message = String;
 const optionalOptions = {timeout: Number};
