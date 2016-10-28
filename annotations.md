@@ -1,4 +1,4 @@
-# Annotations (Arrival 10/27/2016)
+# Annotations
 
 **Overview**
 
