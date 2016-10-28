@@ -8,6 +8,7 @@
 - [Point Cloud Export](#point-cloud-export)
 
 **Exporter.list (Arrives 11/1/2016)**
+- [Exporter.list](#exporterlist)
 
 ## Exporter.send
 
@@ -157,6 +158,7 @@ window.dronedeploy.Exporter.send(exportOptions)
 ```
 
 ## Exporter.list
+**NOTE: ** Arrives 11/1/2016
 
 **Overview**
 
