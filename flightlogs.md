@@ -1,4 +1,4 @@
-# FlightLogs
+# Flight Logs
 
 ## FlightLogs.getLogsFromPlan
 
