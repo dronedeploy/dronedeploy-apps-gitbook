@@ -4,7 +4,7 @@
 
 #### Overview
 
-This call allows your app to ask the user for a one time payment. Users must have a paid account to access paid apps. Payments will processed at the end of the month. When you request a payment the user will see a request.
+This call allows your app to ask the user for a one time payment. Users must have a paid account to run paid apps. Payments will processed at the end of the month. When you request a payment, the user will see a request.
 
 ![](payment_request_screenshot.png)
 
