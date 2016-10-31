@@ -25,6 +25,8 @@ window.dronedeploy.Tiles.get({planId: '5605c0e5752afc005a000004', layerName: 'or
 
 **tiles:** An array of links to the tile images at the specified zoom level.
 
+**expires** UTC timestamp for 72 hours in the future for when the signature will expire.
+
 ```javascript
 {
   tiles: [
