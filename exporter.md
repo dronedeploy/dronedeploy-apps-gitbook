@@ -8,10 +8,10 @@
 - [Point Cloud Export](#point-cloud-export)
 
 **Exporter.getPointCloudLink**
-- [Exporter.getPointCloudLink](#)
+- [Exporter.getPointCloudLink](#exportergetpointcloudlink)
 
 **Exporter.get3DModelLink**
-- [Exporter.get3DModelLink](#)
+- [Exporter.get3DModelLink](#exporterget3dmodellink)
 
 **Exporter.list (Arrives 11/1/2016)**
 - [Exporter.list](#exporterlist)
