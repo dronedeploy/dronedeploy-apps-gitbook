@@ -157,6 +157,44 @@ window.dronedeploy.Exporter.send(exportOptions)
   .subscribe((exportId) => console.log(exportId));
 ```
 
+## Exporter.getPointCloudLink
+
+**Overview**
+
+Get the URL to download the Point Cloud
+
+**Example Call**
+
+```javascript
+window.dronedeploy.Exporter.getPointCloudLink(planId)
+  .subscribe((downloadLink) => console.log(exportId));
+```
+
+**Parameters**
+
+```javascript
+planId
+```
+
+## Exporter.get3DModelLink
+
+**Overview**
+
+Get the URL to download the 3D Model
+
+**Example Call**
+
+```javascript
+window.dronedeploy.Exporter.get3DModelLink(planId)
+  .subscribe((downloadLink) => console.log(exportId));
+```
+
+**Parameters**
+
+```javascript
+planId
+```
+
 ## Exporter.list
 **NOTE: ** Arrives 11/1/2016
 
