@@ -181,7 +181,7 @@ window.dronedeploy.Exporter.getPointCloudLink(planId)
 **Example Response**
 
 ```javascript
-https://s3.amazonaws.com/drone_assets/1470423260_DANIELINSPIRE/model.zip?AWSAccessKeyId=AKIAISEWUBLV6Q6M3S3A&Expires=1474516459&Signature=2MjUsIEJVRKHGO8ng8LoADH9jJk%3D
+https://s3.amazonaws.com/drone_assets/1470423260_DANIELINSPIRE/points.zip?AWSAccessKeyId=AKIAISEWUBLV6Q6M3S3A&Expires=1474516459&Signature=2MjUsIEJVRKHGO8ng8LoADH9jJk%3D
 ```
 
 ## Exporter.get3DModelLink
