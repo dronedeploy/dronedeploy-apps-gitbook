@@ -8,10 +8,10 @@ The DroneDeploy App Market is a drone data platform that enables developers to b
 Go to the API section of these docs to see what is available. We are constantly working on building out more API access points. New APIs are released within these docs as soon as they're available.
 
 ### How do people discover my app?
-Once your app is published to the DroneDeploy App Market, any DroneDeploy user — regardless if they are a free or paid user — can discover your app. Then they can add your app to their account.
+Once your app is published to the DroneDeploy App Market, any DroneDeploy user — regardless of whether they are a free or paid user — can discover your app. Then they can add your app to their account.
 
 ### How do people use my app?
-After adding your app to their account, any user can use your app if it is free. If your app costs money to use, only paid DroneDeploy users can use it. If a free user adds your paid app to their account and tries to use it, they will be prompted to become a paid user so that they can use your app.
+If your app is free, any user can use it after they add it to their account. If your app costs money to use, only paid DroneDeploy customers will be able to use it. If a free user adds your paid app to their account and tries to use it, they will be prompted to become a paid customer so that they can use your app.
 
 ### If I make a free app, can all users access and use it?
 Yes. Everyone, regardless of DroneDeploy customer status, can access and use free apps.
@@ -32,7 +32,7 @@ That's entirely up to you. Pricing methods vary for different types of data prod
 
 
 ### What are some examples of other apps?
-[Sign up for a free DroneDeploy account](https://dronedeploy.com/signup.html) to browse current apps in the App Market (you'll need one anyways to publish an app). You can also [check out the App Developer Forum](http://forum.dronedeploy.com/) to see apps that drone users are requesting from around the world.
+[Sign up for a free DroneDeploy account](https://dronedeploy.com/signup.html) to browse current apps in the App Market (you'll need one anyway to publish an app). You can also [check out the App Developer Forum](http://forum.dronedeploy.com/) to see apps that drone users are requesting from around the world.
 
 
 ### How do refunds work?
