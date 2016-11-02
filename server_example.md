@@ -1,4 +1,4 @@
-# How to set up a server
+# How to Set Up a Web Server
 
 **Why set up a server?**
 
