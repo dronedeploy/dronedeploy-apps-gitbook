@@ -5,14 +5,14 @@
 To proxy connections to avoid CORS issues and handle processing while the app's iframe is closed. For background on CORS, see: [this link](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS)
 
 **Contents**
-- [Example Webserver](#examplewebserver)
-- [How to Set up Heroku](#howtosetupheroku)
+- [Example Webserver](#example-webserver)
+- [How to Set up Heroku](#how-to-set-up-heroku)
 
 ### Example Webserver
 
-First clone the example which uses the tornado webserver to query the Google Maps API, available at [here] (https://github.com/dronedeploy/sample-app-server).
+First clone the example which uses the tornado webserver to query the Google Maps API, available [here](https://github.com/dronedeploy/sample-app-server).
 
-The example uses tornado to send a request to Google Map's API to return the geocoded output of a street address, in the format used by the national postal service of the country concerned. Documentation on the specific outputs and queries for this API is available [here] (https://developers.google.com/maps/documentation/geocoding/intro)
+The example uses tornado to send a request to Google Map's API to return the geocoded output of a street address, in the format used by the national postal service of the country concerned. Documentation on the specific outputs and queries for this API is available [here](https://developers.google.com/maps/documentation/geocoding/intro)
 
 **CORS Headers**
 
