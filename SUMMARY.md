@@ -15,6 +15,7 @@
    * [Change Flight Geometry](change_flight_geometry.md)
    * [Get Tiles](get_tiles.md)
    * [Get Annotations](get_annotations.md)
+   * [How to Set up a Web Server](server_example.md)
 * Platform Policy
    * [Guidelines](guidelines.md)
    * [Styles](styles.md)
