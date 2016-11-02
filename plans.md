@@ -42,20 +42,6 @@ window.dronedeploy.Plans.getCurrentlyViewed()
     "min_capture_period": 2
   },
   "deleted": false,
-  "exports": [
-    {
-      "url": "https://s3.amazonaws.com/drone_assets/1474328095_DANIELINSPIRE/preview.zip?AWSAccessKeyId=AKIAISEWUBLV6Q6M3S3A&Expires=1474749929&Signature=kq6%2BIt10q38s2gEzajpE%2F0s0yFM%3D",
-      "name": "Preview"
-    },
-    {
-      "url": "https://s3.amazonaws.com/drone_assets/1474328095_DANIELINSPIRE/model.zip?AWSAccessKeyId=AKIAISEWUBLV6Q6M3S3A&Expires=1474749929&Signature=jybEoaQTukc%2B6Fj8qjr9a7dUGQ0%3D",
-      "name": "3D Model"
-    },
-    {
-      "url": "https://s3.amazonaws.com/drone_assets/1474328095_DANIELINSPIRE/points.zip?AWSAccessKeyId=AKIAISEWUBLV6Q6M3S3A&Expires=1474749929&Signature=YXHx74fwMmn%2BFcK3%2BKQ7YsR08iE%3D",
-      "name": "Points"
-    }
-  ],
   "geometry": [
     {
       "lat": 35.92712713888889,
