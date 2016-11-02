@@ -1,4 +1,4 @@
-# Messaging (Arrival 11/1/2016)
+# Messaging
 ## Messaging.showToast
 **Overview**
 
