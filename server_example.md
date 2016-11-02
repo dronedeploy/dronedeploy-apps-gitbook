@@ -12,11 +12,11 @@ To proxy connections to avoid CORS issues and handle processing while the app's 
 
 First clone the example which uses the tornado webserver to query the Google Maps API, available at [here] (https://github.com/dronedeploy/sample-app-server).
 
-The example uses tornado to send a request to Google Map's API to return the geocoded output of a street address, in the format used by the national postal service of the country concerned. Documentation on the specific outputs anf queries for this API is available [here] (https://developers.google.com/maps/documentation/geocoding/intro)
+The example uses tornado to send a request to Google Map's API to return the geocoded output of a street address, in the format used by the national postal service of the country concerned. Documentation on the specific outputs and queries for this API is available [here] (https://developers.google.com/maps/documentation/geocoding/intro)
 
 **CORS Headers**
 
-The headers found in the example allow for cross origin requests to be made from the Drone Deploy plugin to the webserver in the example repository.
+The headers found in the example allow for cross-origin requests to be made from the DroneDeploy plugin to the webserver in the example repository.
 
 ### How to Set up Heroku
 
@@ -32,7 +32,7 @@ Now use heroku to create your new app server. For the purposes of this tutorial,
 
 ```bash
 heroku create --ssh-git sample-app-server
-git clone git@herku.com:sample-app-server
+git clone git@heroku.com:sample-app-server
 ```
 
 For local testing using the example available on git, run
