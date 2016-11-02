@@ -7,13 +7,13 @@
 - [3D Export](#3d-export)
 - [Point Cloud Export](#point-cloud-export)
 
-**Exporter.getPointCloudLink (Arrives 11/1/2016)**
+**Exporter.getPointCloudLink**
 - [Exporter.getPointCloudLink](#exportergetpointcloudlink)
 
-**Exporter.get3DModelLink (Arrives 11/1/2016)**
+**Exporter.get3DModelLink**
 - [Exporter.get3DModelLink](#exporterget3dmodellink)
 
-**Exporter.list (Arrives 11/1/2016)**
+**Exporter.list**
 - [Exporter.list](#exporterlist)
 
 ## Exporter.send
@@ -164,7 +164,6 @@ window.dronedeploy.Exporter.send(exportOptions)
 ```
 
 ## Exporter.getPointCloudLink
-**NOTE: ** Arrives 11/1/2016
 
 **Overview**
 
@@ -185,7 +184,6 @@ https://s3.amazonaws.com/drone_assets/1470423260_DANIELINSPIRE/points.zip?AWSAcc
 ```
 
 ## Exporter.get3DModelLink
-**NOTE: ** Arrives 11/1/2016
 
 **Overview**
 
@@ -206,7 +204,6 @@ https://s3.amazonaws.com/drone_assets/1470423260_DANIELINSPIRE/model.zip?AWSAcce
 ```
 
 ## Exporter.list
-**NOTE: ** Arrives 11/1/2016
 
 **Overview**
 
