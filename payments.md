@@ -1,5 +1,8 @@
 # Payments
 
+- (Payments.charge)[#paymentscharge]
+- (Payment FAQ)[#payment-faq]
+
 ## Payments.charge
 
 #### Overview
@@ -8,7 +11,7 @@ This call allows your app to ask the user for a one time payment. Users must hav
 
 ![](payment_request_screenshot.png)
 
-Method Parameters
+**Parameters**
 ```javascript
 const amount = Number;
 const paymentFor = String;
@@ -63,3 +66,9 @@ If the request fails (I.E. the user is offline).
 )
 // Error('Error Submitting Payment')
 ```
+
+## Payment FAQ
+### How to validate a payment id?
+
+To validate or get the status of a payment you can send a request to our public endpoint from your server. Details here, 
+http://support.dronedeploy.com/v1.0/docs/data-api-access.
