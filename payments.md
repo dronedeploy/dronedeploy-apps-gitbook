@@ -1,7 +1,7 @@
 # Payments
 
-- (Payments.charge)[#paymentscharge]
-- (Payment FAQ)[#payment-faq]
+- [Payments.charge](#paymentscharge)
+- [Payment FAQ](#payment-faq)
 
 ## Payments.charge
 
