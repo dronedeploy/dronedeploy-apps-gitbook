@@ -11,7 +11,7 @@
    * [Tiles](tiles.md)
    * [Annotations](annotations.md)
    * [Messaging](messaging.md)
-   * Track
+   * [Track](track.md)
 * Examples
    * [Change Flight Geometry](change_flight_geometry.md)
    * [Get Tiles](get_tiles.md)
