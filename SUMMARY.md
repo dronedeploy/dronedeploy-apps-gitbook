@@ -17,7 +17,7 @@
    * [Get Annotations](get_annotations.md)
    * [How to Set up a Web Server](server_example.md)
 * Platform Policy
-   * [Guidelines](guidelines.md)
+   * [Usability Guidelines](guidelines.md)
    * [Styles](styles.md)
    * [Publishing](publishing.md)
 * [FAQs](faqs.md)
