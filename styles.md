@@ -60,29 +60,31 @@ To get you started, we’ve provided 3 main templates:
 
 **[INSERT IMAGE]**
 
-```.col-2``` - Logo
+`.col-2` - Logo
 
-```.col-2``` - Button
+`.col-2` - Button
 
-     <div class="row">
-    <div class="col-2">
-      <img class="logo" src="logo.png">
+```
+ <div class="row">
+  <div class="col-2">
+    <img class="logo" src="logo.png">
+  </div>
+  <div class="col-2" id="status-bar">
+  <button id="authBtn">Sign In</button>
     </div>
-    <div class="col-2" id="status-bar">
-    <button id="authBtn">Sign In</button>
-      </div>
-    </div>
-
+  </div>
+```
 
 **Logo with text:**
 
 **[INSERT IMAGE]**
 
-```.col-1``` - Icon and Label
+`.col-1` - Icon and Label
 
-```.col-3``` - Explanation text
+`.col-3` - Explanation text
 
-```<div class="row">
+```
+<div class="row">
     <a id="report-button">
       <div class="col-1">
       <img class="icon" src="img/icon.png">
@@ -92,7 +94,8 @@ To get you started, we’ve provided 3 main templates:
         Printable and editable map report, with annotations.
       </div>
     </a>
-  </div>```
+  </div>
+  ```
 
 **Information:**
 
@@ -114,7 +117,8 @@ Click ‘Sign In’ to Expand to:
 
 **[INSERT IMAGE]**
 
- ``` <div class="row">
+```
+ <div class="row">
       <div class="col-2">
         <img class="logo" src="img/icon.png">
       </div>
@@ -141,7 +145,8 @@ Click ‘Sign In’ to Expand to:
         <button class="button primary">Sign In</button>
       </div>
     </div>
-  </div>```
+  </div>
+```
 
 **Sign In templates**
 * Includes an action button “sign in”
