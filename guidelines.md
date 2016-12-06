@@ -1,4 +1,4 @@
-# Developer Guidelines
+# General Developer Guidelines
 
 Use the following guidelines when creating an application.
 
