@@ -1,4 +1,4 @@
-# Design Guidelines
+# App Design Guidelines
 
 Please adhere to the embedded CSS style guidelines in the example "Hello World" application.
 
@@ -6,9 +6,7 @@ In order to ensure a good experience for users — buttons, colors, fonts, etc. 
 
 If you stick to the CSS styles that are embedded in the example "Hello World" app, you are on the right track.
 
-====================
-
-DroneDeploy App Design Guidelines
+=================
 
 Building apps on the DroneDeploy platform should be simple and the apps you create should be beautiful, so we’ve built a set of guidelines and templates to help you create apps that are: 
 
