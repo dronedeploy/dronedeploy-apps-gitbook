@@ -1,10 +1,8 @@
 # App Design Guidelines
 
-Please adhere to the embedded CSS style guidelines in the example "Hello World" application.
-
 In order to ensure a good experience for users — buttons, colors, fonts, etc. should all look as if they belong in the DroneDeploy UI.
 
-If you stick to the CSS styles guidelines in the [example "Hello World" application](https://www.dronedeploy.com/app2/settings/apps/install/580e805840bb987f1f632064), you are on the right track.
+If you stick to the CSS styles guidelines below and in the [example "Hello World" application](https://www.dronedeploy.com/app2/settings/apps/install/580e805840bb987f1f632064), you are on the right track.
 
 =================
 
