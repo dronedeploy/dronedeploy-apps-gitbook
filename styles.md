@@ -58,7 +58,7 @@ To get you started, we’ve provided 3 main templates:
 
 **Logo and Button:**
 
-**[INSERT IMAGE]**
+![](acme sign in.png)
 
 `.col-2` - Logo
 
