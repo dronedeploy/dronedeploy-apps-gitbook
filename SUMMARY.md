@@ -18,7 +18,7 @@
    * [How to Set up a Web Server](server_example.md)
 * Platform Policy
    * [General Guidelines](guidelines.md)
-   * [Styles](styles.md)
+   * [Design Guidelines](styles.md)
    * [Publishing](publishing.md)
 * [FAQs](faqs.md)
 
