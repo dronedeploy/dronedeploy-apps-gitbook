@@ -77,7 +77,7 @@ To get you started, we’ve provided 3 main templates:
 
 **Logo with text:**
 
-**[INSERT IMAGE]**
+![](logo with text app.png)
 
 `.col-1` - Icon and Label
 
@@ -99,7 +99,7 @@ To get you started, we’ve provided 3 main templates:
 
 **Information:**
 
-**[INSERT IMAGE]**
+![](Information app.png)
 
 **Expandability**
 Any app can be expandable on a click from a user. This click expands the app to grant more vertical space.
