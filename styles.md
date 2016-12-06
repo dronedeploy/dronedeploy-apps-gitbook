@@ -45,7 +45,7 @@ There are just two major components — rows and columns:
 
 ## Templates
 
-To get you started, we’ve provided some templates:
+To get you started, we’ve provided some templates. You aren't required to use them but they will improve the chance your app gets approved:
 
 ### Full Row App
 
