@@ -38,13 +38,13 @@ Our default styles include a basic 4 column grid system, enabling a layout for y
 
 Content should generally be left-justified.
 
-There are just two major components — rows and columns.
-Rows are horizontal groups of columns that ensure your columns are lined up properly.
-Content should be placed within columns, and only columns may be immediate children of rows.
-Column classes indicate the number of columns you’d like to use out of the possible 4 per row. So if you want 2 equal-width columns, you’d use .col-2., or if you’d like an icon, then 3 columns of text, you’d use .col-1, and then .col-3
-Row height: 60px
-Column width: 67px
-Gutter: 4px 
+There are just two major components — rows and columns:
+* Rows are horizontal groups of columns that ensure your columns are lined up properly.
+* Content should be placed within columns, and only columns may be immediate children of rows.
+* Column classes indicate the number of columns you’d like to use out of the possible 4 per row. So if you want 2 equal-width columns, you’d use .col-2., or if you’d like an icon, then 3 columns of text, you’d use .col-1, and then .col-3
+* Row height: **60px**
+* Column width: **67px**
+* Gutter: **4px**
 
 
 
