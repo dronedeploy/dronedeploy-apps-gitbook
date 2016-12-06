@@ -32,7 +32,7 @@ Any app that fulfills these guidelines will be approved on design without issue.
 
 Our default styles include a basic 4 column grid system, enabling a layout for your app that is similar to the DroneDeploy site:
 
-**[INSERT IMAGE]**
+![](grid system.png)
 
 Content should generally be left-justified.
 
