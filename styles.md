@@ -47,46 +47,42 @@ There are just two major components — rows and columns:
 * Gutter: **4px**
 
 
+## Templates
 
-
-
-Templates
 To get you started, we’ve provided 3 main templates:
-Full Row App
-Maximum row height: 60px
-Can contain button, text, icon or image
-Variations
-Logo and Button:
 
+### Full Row App
 
+1. Maximum row height: **60px**
+2. Can contain button, text, icon, or image
 
+### Variations
 
+**Logo and Button:**
 
-.col-2 - Logo
-.col-2 - Button
+[INSERT IMAGE]
 
+```.col-2``` - Logo
+```.col-2``` - Button
 
-  <div class="row">
+```  <div class="row">
     <div class="col-2">
       <img class="logo" src="logo.png">
     </div>
     <div class="col-2" id="status-bar">
 <button id="authBtn">Sign In</button>
     </div>
-  </div>
+  </div>```
 
 
-Logo with text:
+**Logo with text:**
 
+[INSERT IMAGE]
 
+```.col-1``` - Icon and Label 
+```.col-3``` - Explanation text
 
-
-
-.col-1 - Icon and Label 
-.col-3 - Explanation text
-
-
-  <div class="row">
+```  <div class="row">
     <a id="report-button">
       <div class="col-1">
         <img class="icon" src="img/icon.png">
@@ -96,43 +92,29 @@ Logo with text:
         Printable and editable map report, with annotations.
       </div>
     </a>
-  </div>
+  </div>```
 
+**Information:**
 
+[INSERT IMAGE]
 
+**Expandability**
+Any app can be expandable on a click from a user. This click expands the app to grant more vertical space.
+* Max height of 360px high. 
+* Should contain a specific collapsible “close” button on top right
+  * We recommend this “close” icon: https://material.io/icons/#ic_close
 
-Information:
+[INSERT IMAGE]
 
+* No scrolling is allowed —use next buttons to show new inputs via pagination
 
-
-
-
-Expandability 
-Any app can be expandable on a click from a user. 
-Max height of 360px high. 
-Should contain a specific collapsible “close” button on top right
-We recommend this “close” icon: https://material.io/icons/#ic_close
-
-No scrolling is allowed —use next buttons to show new inputs via pagination
-
-
-
-
-
-
-
-
-
-
-
+[INSERT IMAGE]
 
 Click ‘Sign In’ to Expand to:
 
+[INSERT IMAGE]
 
-
-
-
-  <div class="row">
+ ``` <div class="row">
       <div class="col-2">
         <img class="logo" src="img/icon.png">
       </div>
@@ -159,17 +141,8 @@ Click ‘Sign In’ to Expand to:
         <button class="button primary">Sign In</button>
       </div>
     </div>
-  </div>
+  </div>```
 
-
-
-
-
-
-
-
-
-
-Sign In templates
-Includes an action button “sign in”
-Expands to display Username and Password inputs, sign in and register buttons, and collapsable button icon (to be provided).
+**Sign In templates**
+* Includes an action button “sign in”
+* Expands to display Username and Password inputs, sign in and register buttons, and collapsable button icon (to be provided).
