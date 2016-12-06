@@ -32,7 +32,7 @@ Any app that fulfills these guidelines will be approved on design without issue.
 
 Our default styles include a basic 4 column grid system, enabling a layout for your app that is similar to the DroneDeploy site:
 
-[INSERT IMAGE]
+**[INSERT IMAGE]**
 
 Content should generally be left-justified.
 
@@ -58,32 +58,34 @@ To get you started, we’ve provided 3 main templates:
 
 **Logo and Button:**
 
-[INSERT IMAGE]
+**[INSERT IMAGE]**
 
 ```.col-2``` - Logo
+
 ```.col-2``` - Button
 
-```  <div class="row">
+     <div class="row">
     <div class="col-2">
       <img class="logo" src="logo.png">
     </div>
     <div class="col-2" id="status-bar">
-<button id="authBtn">Sign In</button>
+    <button id="authBtn">Sign In</button>
+      </div>
     </div>
-  </div>```
 
 
 **Logo with text:**
 
-[INSERT IMAGE]
+**[INSERT IMAGE]**
 
-```.col-1``` - Icon and Label 
+```.col-1``` - Icon and Label
+
 ```.col-3``` - Explanation text
 
-```  <div class="row">
+```<div class="row">
     <a id="report-button">
       <div class="col-1">
-        <img class="icon" src="img/icon.png">
+      <img class="icon" src="img/icon.png">
         <div id="button-text">Generate</div>
       </div>
       <div class="col-3">
@@ -94,23 +96,23 @@ To get you started, we’ve provided 3 main templates:
 
 **Information:**
 
-[INSERT IMAGE]
+**[INSERT IMAGE]**
 
 **Expandability**
 Any app can be expandable on a click from a user. This click expands the app to grant more vertical space.
-* Max height of 360px high. 
+* Max height of **360px high**. 
 * Should contain a specific collapsible “close” button on top right
   * We recommend this “close” icon: https://material.io/icons/#ic_close
 
-[INSERT IMAGE]
+**[INSERT IMAGE]**
 
 * No scrolling is allowed —use next buttons to show new inputs via pagination
 
-[INSERT IMAGE]
+**[INSERT IMAGE]**
 
 Click ‘Sign In’ to Expand to:
 
-[INSERT IMAGE]
+**[INSERT IMAGE]**
 
  ``` <div class="row">
       <div class="col-2">
