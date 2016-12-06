@@ -1,4 +1,4 @@
-# Styles
+# Design Guidelines
 
 Please adhere to the embedded CSS style guidelines in the example "Hello World" application.
 
