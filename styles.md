@@ -47,7 +47,7 @@ There are just two major components — rows and columns:
 
 ## Templates
 
-To get you started, we’ve provided 3 main templates:
+To get you started, we’ve provided some templates:
 
 ### Full Row App
 
@@ -107,15 +107,22 @@ Any app can be expandable on a click from a user. This click expands the app to 
 * Should contain a specific collapsible “close” button on top right
   * We recommend this “close” icon: https://material.io/icons/#ic_close
 
-**[INSERT IMAGE]**
+      ![](ic_close_black_24dp_2x.png)
 
 * No scrolling is allowed —use next buttons to show new inputs via pagination
 
-**[INSERT IMAGE]**
+
+**Sign In templates**
+* Includes an action button “sign in”
+* Expands to display Username and Password inputs, sign in and register buttons, and collapsable button icon (to be provided).
+
+![](acme sign in copy.png)
 
 Click ‘Sign In’ to Expand to:
 
-**[INSERT IMAGE]**
+![](acme sign in expanded.png)
+
+
 
 ```
  <div class="row">
@@ -147,7 +154,3 @@ Click ‘Sign In’ to Expand to:
     </div>
   </div>
 ```
-
-**Sign In templates**
-* Includes an action button “sign in”
-* Expands to display Username and Password inputs, sign in and register buttons, and collapsable button icon (to be provided).
