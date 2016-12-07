@@ -17,7 +17,6 @@
 <ul id="annotation-list"></ul>
 
 <script>
-
 function dronedeployApiReady(){
   return new Promise((resolve) => {
     window.dronedeploy.onload(() => {
@@ -26,18 +25,8 @@ function dronedeployApiReady(){
   });
 }
 
-function getCurrentPlanId(){
-  return new Promise((resolve) => {
-    window.dronedeploy.Plans.getCurrentlyViewed()
-      .subscribe((plan) => resolve(plan.id));
-  });
-}
-
-function getAnnotations(planId){
-  return new Promise((resolve) => {
-    window.dronedeploy.Annotations.get(planId)
-      .subscribe((annotations) => resolve(annotations))
-  });
+function getPlanId(plan){
+  return plan.id;
 }
 
 function drawAnnoationsInList(annotations){
@@ -50,11 +39,11 @@ function drawAnnoationsInList(annotations){
 document.querySelector('#refresh-annotation-list')
   .addEventListener('click', () => {
     dronedeployApiReady()
-      .then(getCurrentPlanId)
-      .then(getAnnotations)
+      .then(window.dronedeploy.Plans.getCurrentlyViewed)
+      .then(getPlanId)
+      .then(window.dronedeploy.Annotations.get)
       .then(drawAnnoationsInList);
   })
-  
 </script>
   
 </body>
