@@ -8,7 +8,7 @@
 const message = String;
 const optionalOptions = {timeout: Number};
 window.dronedeploy.Messaging.showToast(message, optionalOptions)
-  .subscribe((toastObj) => console.log(toastObj));
+  .then(function(toastObj){ console.log(toastObj) });
 ```
 
 **Examples**
@@ -24,7 +24,7 @@ window.dronedeploy.Messaging.showToast('Example Toast', {timeout: 5000});
 ```javascript
 const neverTimeout = -1;
 window.dronedeploy.Messaging.showToast('Example Toast', {timeout: neverTimeout})
-  .subscribe((toastObj) => {
+  .then(function(toastObj){
     // Programmatically remove a toast
     setTimeout(() => toastObj.remove(), 1000)
   });

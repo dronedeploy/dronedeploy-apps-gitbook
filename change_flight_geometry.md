@@ -32,42 +32,29 @@
 
   <script>
   function droneDeployApiLoaded(){
-    return new Promise((resolve) => {
+    return new Promise(function(resolve){
       dronedeploy.onload(function() {
         resolve();
       });
     });
   }
 
-  function getCurrentPlan(){
-    return new Promise((resolve) => {
-      window.dronedeploy.Plans.getCurrentlyViewed().subscribe((plan) => {
-        resolve(plan);
-      });
-    });
-  }
-
   function randomlyAdjustGeometry(geometry){
-    let offset = Math.random() / 100 * ([1, -1][Math.floor(Math.random() * 2)]);
+    var offset = Math.random() / 100 * ([1, -1][Math.floor(Math.random() * 2)]);
     geometry[2].lng = geometry[0].lng + offset;
     return geometry;
   }
 
-  function saveGeometry(planId, newGeometry){
-    window.dronedeploy.Plans.update(planId, {
-      geometry: newGeometry
-    })
-  }
-
   document.querySelector('.button').addEventListener('click', function(){
     droneDeployApiLoaded()
-      .then(getCurrentPlan)
-      .then((plan) => {
+      .then(window.dronedeploy.Plans.getCurrentlyViewed)
+      .then(function(plan){
         var newGeometry = randomlyAdjustGeometry(plan.geometry);
-        saveGeometry(plan.id, newGeometry);
+        window.dronedeploy.Plans.update(plan.id, {geometry: newGeometry});
       })
   });
   </script>
+
 
 </body>
 </html>
