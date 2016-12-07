@@ -1,6 +1,14 @@
 # API
 All communication to DroneDeploy is available through `window.dronedeploy` inside your app. 
 
+The API loads asynchronously so look wrap your calls in the `window.dronedeploy.onload` callback.
+
+```javascript
+window.dronedeploy.onload(function(){
+  console.log(window.dronedeploy);
+});
+```
+
 You can listen to the result of any `window.dronedeploy` call via promises.
 
 ```javascript
