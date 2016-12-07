@@ -22,9 +22,9 @@ window.dronedeploy.Payments.charge(amount, paymentFor);
 
 ```javascript
 window.dronedeploy.Payments.charge(4.00, 'Testing Payments')
-  .subscribe(
-    (success) => console.log('paymentId:', success),
-    (error) => console.log(error)
+  .then(
+    function(success){ console.log('paymentId:', success) },
+    function(error){ console.log(error) }
   )
 ```
 
@@ -34,7 +34,7 @@ window.dronedeploy.Payments.charge(4.00, 'Testing Payments')
 
 If the payment is successful you will receive the payment id. 
 ```javascript
-...subscribe((paymentId) => console.log(paymentId))
+...then(function(paymentId){ console.log(paymentId) })
 // 298348de72987ac
 ```
 
@@ -42,27 +42,27 @@ If the payment is successful you will receive the payment id.
 
 If the user clicks cancel on the payment request.
 ```javascript
-...subscribe(
-  () => {},
-  (error) => console.log(error),
+.then(
+  function(){},
+  function(error){ console.log(error) },
 )
 // Error('User declined payment request.')
 ```
 
 If the user does not have a paid account.
 ```javascript
-...subscribe(
-  () => {},
-  (error) => console.log(error),
+.then(
+  function(){},
+  function(error){ console.log(error) },
 )
 // Error('User does not have a paid account.')
 ```
 
 If the request fails (I.E. the user is offline).
 ```javascript
-...subscribe(
-  () => {},
-  (error) => console.log(error),
+.then(
+  function(){},
+  function(error){ console.log(error) },
 )
 // Error('Error Submitting Payment')
 ```
