@@ -21,7 +21,7 @@ window.dronedeploy.Class.method(exampleParameter).then(function(response){
 
 *Note: The promise polyfill is loaded into every app. [Read More about Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)*
 
-If you are subscribing to a stream of data and want to recieve multiple values you should use `.subscribe`. 
+If you are subscribing to a stream of data and want to receive multiple values you should use `.subscribe`. 
 
 ```javascript
 dronedeploy.Class.method(exampleParameter).subscribe(
