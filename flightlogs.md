@@ -12,7 +12,7 @@ window.dronedeploy.FlightLogs.getLogsFromPlan(planId);
 
 ```javascript
 window.dronedeploy.FlightLogs.getLogsFromPlan('57eaa66d2a2b43fa1249c76c')
-  .subscribe((logs) => console.log(logs));
+  .then(function(logs){ console.log(logs) });
 ```
 
 **Example Response**
