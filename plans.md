@@ -17,16 +17,10 @@ Returns the plan that is the currently visible to the user. For example, if the 
 
 ** Example Call ** 
 ```javascript
-// Get the current one time
 window.dronedeploy.Plans.getCurrentlyViewed()
-  .then(function(plan){
-    console.log(plan);
-  });
-
-// Will be called each time the plan changes
-window.dronedeploy.Plans.getCurrentlyViewed()
-  .subscribe(function(plan){
-    console.log(plan);
+  .subscribe((plan) => {
+    // Will be called each time the plan changes
+    console.log(plan)
   });
 ```
 
@@ -85,16 +79,10 @@ Get an array of all the users plans.
 
 ** Example Call **
 ```javascript
-// Get all the users plan one time
 window.dronedeploy.Plans.all()
-  .then(function(plans){
-    console.log(plans);
-  });
-
-// Will be called each time a plan changes
-window.dronedeploy.Plans.all()
-  .subscribe(function(plans){
-    console.log(plans);
+  .subscribe((plans) => {
+    // Will be called each time a plan changes
+    console.log(plans)
   });
 ```
 

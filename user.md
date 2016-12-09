@@ -3,12 +3,9 @@
 
 ** Example Call ** 
 ```javascript
-// Get the user object one time
-window.dronedeploy.User.get().then(function(user){ console.log(user) });
-
-// Every time the user object changes the callback will be invoked.
-window.dronedeploy.User.get().subscribe(function(user){ console.log(user) });
+window.dronedeploy.User.get().subscribe((user) => console.log(user));
 ```
+*Note: Every time the user object changes the callback will be invoked.*
 
 ** Example Response ** 
 ```javascript

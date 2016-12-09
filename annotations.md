@@ -19,14 +19,14 @@ const optionalOptions = {
   comments: boolean, // embed comments into annotations response
 };
 window.dronedeploy.Annotations.get(planId, optionalOptions)
-  .then(function(annotations){ console.log(annotations) })
+  .subscribe((annotations) => console.log(annotations))
 ```
 
 **Example Call**
 
 ```javascript
 window.dronedeploy.Annotations.get('5730dc11929d2465038183ab', {comments: true})
-  .then(function(annotations){ console.log(annotations) })
+  .subscribe((annotations) => console.log(annotations))
 ```
 
 **Example Response**
@@ -363,14 +363,14 @@ This function returns the volume information for a volume annotation. DroneDeplo
 ```javascript
 const annotationId = String;
 window.dronedeploy.Annotations.getVolume(annotationId)
-  .then(function(volume){ console.log(volume) })
+  .subscribe((volume) => console.log(volume))
 ```
 
 **Example Call**
 
 ```javascript
 window.dronedeploy.Annotations.getVolume('581286dccb5fda14db8d2971')
-  .then(function(volume){ console.log(volume) })
+  .subscribe((volume) => console.log(volume))
 ```
 
 **Example Response**
@@ -427,9 +427,9 @@ window.dronedeploy.Annotations.getVolume('581286dccb5fda14db8d2971')
 If the map is a legacy map and does not support volume annotations the following error will be returned.
 ```javascript
 window.dronedeploy.Annotations.getVolume('581286dccb5fda14db8d2971')
-  .then(
-    function(){},
-    function(error){ console.log(error) }
+  .subscribe(
+    () => {},
+    (error) => console.log(error)
   );
 // Map does not support volume annotations.
 ```
