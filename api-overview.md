@@ -7,7 +7,7 @@ new DroneDeploy({version: 1}).then(function(dronedeployApi){
 })
 ```
 
-You can listen to the result of any `window.dronedeploy` call via promises.
+You can listen to the result of any `dronedeployApi` call via promises.
 
 ```javascript
 new DroneDeploy({version: 1}).then(function(dronedeployApi){

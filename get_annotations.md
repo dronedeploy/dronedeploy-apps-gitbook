@@ -2,8 +2,6 @@
 
 ![](list_annotations.png)
 
-[Install the Example](https://www.dronedeploy.com/app2/settings/apps/install/58113e551913e6641d8417ea)
-
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -17,14 +15,6 @@
 <ul id="annotation-list"></ul>
 
 <script>
-function dronedeployApiReady(){
-  return new Promise((resolve) => {
-    window.dronedeploy.onload(() => {
-      resolve();
-    });
-  });
-}
-
 function getPlanId(plan){
   return plan.id;
 }
@@ -38,11 +28,12 @@ function drawAnnoationsInList(annotations){
 
 document.querySelector('#refresh-annotation-list')
   .addEventListener('click', () => {
-    dronedeployApiReady()
-      .then(window.dronedeploy.Plans.getCurrentlyViewed)
-      .then(getPlanId)
-      .then(window.dronedeploy.Annotations.get)
-      .then(drawAnnoationsInList);
+    new DroneDeploy({version: 1}).then(function(dronedeployApi){
+       dronedeployApi.Plans.getCurrentlyViewed()
+        .then(getPlanId)
+        .then(dronedeployApi.Annotations.get)
+        .then(drawAnnoationsInList);
+    })
   })
 </script>
   

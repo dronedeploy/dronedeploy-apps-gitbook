@@ -47,10 +47,10 @@
 
   document.querySelector('.button').addEventListener('click', function(){
     droneDeployApiLoaded()
-      .then(window.dronedeploy.Plans.getCurrentlyViewed)
+      .then(dronedeployApi.Plans.getCurrentlyViewed)
       .then(function(plan){
         var newGeometry = randomlyAdjustGeometry(plan.geometry);
-        window.dronedeploy.Plans.update(plan.id, {geometry: newGeometry});
+        dronedeployApi.Plans.update(plan.id, {geometry: newGeometry});
       })
   });
   </script>

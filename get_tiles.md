@@ -40,7 +40,7 @@ const tileList = document.querySelector('.tile-links');
 
 function dronedeployApiReady(){
   return new Promise((resolve) => {
-    window.dronedeploy.onload(() => {
+    dronedeployApi.onload(() => {
       resolve();
     });
   });
@@ -55,7 +55,7 @@ function drawTileLinksToScreen(links){
 }
 
 function fetchTileDataFromPlan(plan){
-  return window.dronedeploy.Tiles.get({planId, layerName: layer.value, zoom: zoom.value});
+  return dronedeployApi.Tiles.get({planId, layerName: layer.value, zoom: zoom.value});
 }
 
 function getTilesFromResponse(tileResponse){
@@ -64,7 +64,7 @@ function getTilesFromResponse(tileResponse){
 
 function updateTileLinks(){
   dronedeployApiReady()
-    .then(window.dronedeploy.Plans.getCurrentlyViewed)
+    .then(dronedeployApi.Plans.getCurrentlyViewed)
     .then(fetchTileDataFromPlan)
     .then(getTilesFromResponse)
     .then(drawTileLinksToScreen)

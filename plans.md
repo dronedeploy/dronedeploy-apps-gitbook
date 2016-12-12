@@ -18,13 +18,13 @@ Returns the plan that is the currently visible to the user. For example, if the 
 ** Example Call ** 
 ```javascript
 // Get the current one time
-window.dronedeploy.Plans.getCurrentlyViewed()
+dronedeployApi.Plans.getCurrentlyViewed()
   .then(function(plan){
     console.log(plan);
   });
 
 // Will be called each time the plan changes
-window.dronedeploy.Plans.getCurrentlyViewed()
+dronedeployApi.Plans.getCurrentlyViewed()
   .subscribe(function(plan){
     console.log(plan);
   });
@@ -86,13 +86,13 @@ Get an array of all the users plans.
 ** Example Call **
 ```javascript
 // Get all the users plan one time
-window.dronedeploy.Plans.all()
+dronedeployApi.Plans.all()
   .then(function(plans){
     console.log(plans);
   });
 
 // Will be called each time a plan changes
-window.dronedeploy.Plans.all()
+dronedeployApi.Plans.all()
   .subscribe(function(plans){
     console.log(plans);
   });
@@ -135,14 +135,14 @@ const fieldsToUpdate = {
   name: String,
   geometry: {lat: number, lng: number}
 };
-window.dronedeploy.Plans.update(planIdToUpdate, fieldsToUpdate);
+dronedeployApi.Plans.update(planIdToUpdate, fieldsToUpdate);
 ```
 
 *Note: Save the plan's geometry on the planning page to change the drone's flight path.*
 
 ** Example Call ** 
 ```javascript
-window.dronedeploy.Plans.update('57e0761f21303e5214b6ae31', {
+dronedeployApi.Plans.update('57e0761f21303e5214b6ae31', {
   name: 'New Name',
   geometry: [
     {lat: 56.567259707222206,lng: -78.90349675},

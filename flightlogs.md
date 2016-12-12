@@ -5,13 +5,13 @@
 **Overview**
 ```javascript
 const planId = String;
-window.dronedeploy.FlightLogs.getLogsFromPlan(planId);
+dronedeployApi.FlightLogs.getLogsFromPlan(planId);
 ```
 
 **Example**
 
 ```javascript
-window.dronedeploy.FlightLogs.getLogsFromPlan('57eaa66d2a2b43fa1249c76c')
+dronedeployApi.FlightLogs.getLogsFromPlan('57eaa66d2a2b43fa1249c76c')
   .then(function(logs){ console.log(logs) });
 ```
 
