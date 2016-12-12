@@ -45,21 +45,6 @@ function dronedeployApiReady(){
     });
   });
 }
-
-function getCurrentPlanId(){
-  return new Promise((resolve) => {
-    window.dronedeploy.Plans.getCurrentlyViewed()
-      .subscribe((plan) => resolve(plan.id));
-  });
-}
-
-function getTiles(planId, layerName, zoom){
-  return new Promise((resolve) => {
-    window.dronedeploy.Tiles.get({planId, layerName, zoom})
-      .subscribe((tilesRes) => resolve(tilesRes.tiles));
-  });
-}
-
 function getListItemFromLink(linkUrl){
   const last = (array) => array.slice(-1)[0];
   return `<li><a href="${linkUrl}" target="_blank">${last(linkUrl.split('/'))}</a></li>`;
@@ -69,10 +54,19 @@ function drawTileLinksToScreen(links){
   tileList.innerHTML = links.map(getListItemFromLink).join('');
 }
 
+function fetchTileDataFromPlan(plan){
+  return window.dronedeploy.Tiles.get({planId, layerName: layer.value, zoom: zoom.value});
+}
+
+function getTilesFromResponse(tileResponse){
+  return tileResponse.tiles;
+}
+
 function updateTileLinks(){
   dronedeployApiReady()
-    .then(getCurrentPlanId)
-    .then((planId) => getTiles(planId, layer.value, parseInt(zoom.value)))
+    .then(window.dronedeploy.Plans.getCurrentlyViewed)
+    .then(fetchTileDataFromPlan)
+    .then(getTilesFromResponse)
     .then(drawTileLinksToScreen)
 }
 

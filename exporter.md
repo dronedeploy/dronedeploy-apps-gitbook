@@ -26,7 +26,7 @@
 window.dronedeploy.Exporter.send({
   layer: 'Orthomosaic',
   email: ['example@dronedeploy.com']
-}).subscribe((exportId) => console.log(exportId));
+}).then(function(exportId){ console.log(exportId) });
 ```
 
 **Parameters**
@@ -45,7 +45,7 @@ const exportOptions = {
   planId: [String] // defaults to currently visible map
 };
 window.dronedeploy.Exporter.send(exportOptions)
-  .subscribe((exportId) => console.log(exportId));
+  .then(function(exportId){ console.log(exportId) });
 ```
 
 ### NDVI Toolbox Export
@@ -56,7 +56,7 @@ window.dronedeploy.Exporter.send(exportOptions)
 window.dronedeploy.Exporter.send({
   layer: 'NDVI Toolbox',
   email: ['example@dronedeploy.com']
-}).subscribe((exportId) => console.log(exportId));
+}).then(function(exportId){ console.log(exportId) });
 ```
 
 **Parameters**
@@ -75,7 +75,7 @@ const exportOptions = {
   planId: [String] // defaults to currently visible map
 };
 window.dronedeploy.Exporter.send(exportOptions)
-  .subscribe((exportId) => console.log(exportId));
+  .then(function(exportId){ console.log(exportId) });
 ```
 
 ### Elevation Export
@@ -86,7 +86,7 @@ window.dronedeploy.Exporter.send(exportOptions)
 window.dronedeploy.Exporter.send({
   layer: 'Elevation Toolbox',
   email: ['example@dronedeploy.com']
-}).subscribe((exportId) => console.log(exportId));
+}).then(function(exportId){ console.log(exportId) });
 ```
 
 **Parameters**
@@ -106,7 +106,7 @@ const exportOptions = {
   planId: [String] // defaults to currently visible map
 };
 window.dronedeploy.Exporter.send(exportOptions)
-  .subscribe((exportId) => console.log(exportId));
+  .then(function(exportId){ console.log(exportId) });
 ```
 
 ### 3D Export
@@ -117,7 +117,7 @@ window.dronedeploy.Exporter.send(exportOptions)
 window.dronedeploy.Exporter.send({
   layer: '3D Model',
   email: ['example@dronedeploy.com']
-}).subscribe((exportId) => console.log(exportId));
+}).then(function(exportId){ console.log(exportId) });
 ```
 
 **Parameters**
@@ -132,7 +132,7 @@ const exportOptions = {
   planId: [String] // defaults to currently visible map
 };
 window.dronedeploy.Exporter.send(exportOptions)
-  .subscribe((exportId) => console.log(exportId));
+  .then(function(exportId){ console.log(exportId) });
 ```
 
 ### Point Cloud Export
@@ -143,7 +143,7 @@ window.dronedeploy.Exporter.send(exportOptions)
 window.dronedeploy.Exporter.send({
   layer: '3D Model',
   email: ['example@dronedeploy.com']
-}).subscribe((exportId) => console.log(exportId));
+}).then(function(exportId){ console.log(exportId) });
 ```
 
 **Parameters**
@@ -160,7 +160,7 @@ const exportOptions = {
   planId: [String] // defaults to currently visible map
 };
 window.dronedeploy.Exporter.send(exportOptions)
-  .subscribe((exportId) => console.log(exportId));
+  .then(function(exportId){ console.log(exportId) });
 ```
 
 ## Exporter.getPointCloudLink
@@ -174,7 +174,7 @@ Get the URL to download the Point Cloud
 ```javascript
 const planId = '8905ccf8d4684ff6969eb0378f1d4e34';
 window.dronedeploy.Exporter.getPointCloudLink(planId)
-  .subscribe((downloadLink) => console.log(exportId));
+  .then(function(downloadLink){ console.log(exportId) });
 ```
 
 **Example Response**
@@ -194,7 +194,7 @@ Get the URL to download the 3D Model
 ```javascript
 const planId = '8905ccf8d4684ff6969eb0378f1d4e34';
 window.dronedeploy.Exporter.get3DModelLink(planId)
-  .subscribe((downloadLink) => console.log(exportId));
+  .then(function(downloadLink){ console.log(exportId) });
 ```
 
 **Example Response**
@@ -212,10 +212,12 @@ List all the exports on the users account or for a specific plan.
 **Example Call**
 ```javascript
 // get all exports
-window.dronedeploy.Exporter.list();
+window.dronedeploy.Exporter.list()
+  .then(function(exports){ console.log(exports) });
 
 // get exports for planId
-window.dronedeploy.Exporter.list({planId: '5803c075d0ec0a44f0a75a86'});
+window.dronedeploy.Exporter.list({planId: '5803c075d0ec0a44f0a75a86'})
+   .then(function(exports){ console.log(exports) });
 ```
 
 **Example Response**
