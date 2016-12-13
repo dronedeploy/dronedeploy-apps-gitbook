@@ -37,41 +37,46 @@ There are three major components — containers, rows, and columns.
 
 * Rows are horizontal groups of columns that ensure your columns are lined up properly.
 
-* Containers — \`\`.container\`\` for the appropriate fixed width and maintaining app related elements within scope.
+* Containers — ``.container`` for the appropriate fixed width and maintaining app related elements within scope.
 
-* Column classes indicate the number of columns you’d like to use out of the possible 4 per row. So if you want 2 equal-width columns, you’d use \`\`.col-2\`\`, or if you’d like an icon, then 3 columns of text, you’d use \`\`.col-1\`\`, and then \`\`.col-3\`\`
+* Column classes indicate the number of columns you’d like to use out of the possible 4 per row. So if you want 2 equal-width columns, you’d use ``.col-2``, or if you’d like an icon, then 3 columns of text, you’d use ``.col-1``, and then ``.col-3``
 
-* Hierarchy: \`\`.container\`\`  &gt; \`\`.row\`\` &gt; \`\`.col-4\`\`
+* Hierarchy: ``.container``  **&gt;** ``.row`` **&gt;** ``.col-4``
 
 
 ## Templates
 
-To get you started, we’ve provided some templates. You aren't required to use them but they will improve the chance your app gets approved:
+To get you started, we’ve provided 3 main templates:
 
 ### Full Row App
 
-1. Maximum row height: **60px**
-2. Can contain button, text, icon, or image
+1. Can contain button, text, icon, or image
 
 ### Variations
 
-**Logo and Button:**
+**Logo and Arrow Button:**
 
-![](acme sign in.png)
+![](/assets/Autodesk collapsed.png)
 
-`.col-2` - Logo
+All app's detailed content will be within the expandable div.
 
-`.col-2` - Button
+`.col-3` - Logo
+
+`.col-1` - Button
 
 ```
-<div class="row">
-  <div class="col-2">
-    <img class="logo" src="logo.png">
-  </div>
-  <div class="col-2" id="status-bar">
-  <button id="authBtn">Sign In</button>
+<div class="container expand-container">
+    <div class="row expand-row">
+          <div class="col-3">
+               <span class="lead vert-center"><img class="logo" src="autodesk-icn.svg" alt="autodesk"> Export to AutoDesk</span>
+          </div>
+          <div class="col-1 right">
+               <i>
+                   <img src="https://s3.amazonaws.com/drone-deploy-plugins/templates/login-example-imgs/arrow-down.svg" alt="collapse" class="expand-arrow">
+              </i>
+          </div>
+        </div>
     </div>
-  </div>
 ```
 
 **Logo with text:**
@@ -96,14 +101,15 @@ To get you started, we’ve provided some templates. You aren't required to use 
   </div>
 ```
 
-**Information:**
+**Information Layout Example:**
 
 ![](Information app.png)
 
-**Expandability**  
+**Expandability**
+ 
 Any app can be expandable on a click from a user. This click expands the app to grant more vertical space.
 
-* Max height of **360px high**. 
+* Max height of **360px high**
 * Should contain a specific collapsible “close” button on top right
 
   * We recommend this “close” icon: [https://material.io/icons/\#ic\_close](https://material.io/icons/#ic_close)
@@ -114,14 +120,13 @@ Any app can be expandable on a click from a user. This click expands the app to 
 
 * No scrolling is allowed —use next buttons to show new inputs via pagination
 
-**Sign In templates**
+**Login Section**
 
-* Includes an action button “sign in”
-* Expands to display Username and Password inputs, sign in and register buttons, and collapsable button icon \(to be provided\).
+* Expands to display Username and Password inputs, sign in and register buttons, and collapsable button icon.
 
-![](acme sign in copy.png)
+![](/assets/Autodesk collapsed.png)
 
-Click ‘Sign In’ to Expand to:
+Click App to Expand to:
 
 ![](acme sign in expanded.png)
 
