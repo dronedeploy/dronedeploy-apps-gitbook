@@ -39,7 +39,7 @@ There are three major components — containers, rows, and columns.
 
 * Containers — ``.container`` for the appropriate fixed width and maintaining app related elements within scope.
 
-* Column classes indicate the number of columns you’d like to use out of the possible 4 per row. So if you want 2 equal-width columns, you’d use ``.col-2``, or if you’d like an icon, then 3 columns of text, you’d use ``.col-1``, and then ``.col-3``
+* Column classes indicate the number of columns you’d like to use out of the possible 4 per row. So if you want 2 equal-width columns, you’d use ``.col-2``twice or if you’d like an icon, then 3 columns of text, you’d use ``.col-1``, and then ``.col-3``
 
 * Hierarchy: ``.container``  **&gt;** ``.row`` **&gt;** ``.col-4``
 
@@ -54,7 +54,7 @@ To get you started, we’ve provided 3 main templates:
 
 ### Variations
 
-**Logo and Arrow Button:**
+**Logo and Arrow Icon Button:**
 
 ![](/assets/Autodesk collapsed.png)
 
@@ -110,15 +110,9 @@ All app's detailed content will be within the expandable div.
 Any app can be expandable on a click from a user. This click expands the app to grant more vertical space.
 
 * Max height of **360px high**
-* Should contain a specific collapsible “close” button on top right
-
-  * We recommend this “close” icon: [https://material.io/icons/\#ic\_close](https://material.io/icons/#ic_close)
-
-    ![](ic_close_black_24dp_2x.png)
-
-
-
+* You should always use our “collapse” arrow button on top right
 * No scrolling is allowed —use next buttons to show new inputs via pagination
+
 
 **Login Section**
 
@@ -128,37 +122,41 @@ Any app can be expandable on a click from a user. This click expands the app to 
 
 Click App to Expand to:
 
-![](acme sign in expanded.png)
+![](/assets/Autodesk expanded signin.png)
 
 ```
-<div class="row">
-      <div class="col-2">
-        <img class="logo" src="img/icon.png">
-      </div>
-      <div class="col-2">
-        <button class="button" id="expandBtn" onClick="expand()">Sign In</button>
-      </div>
+<div class="container expand-container">
+  <div class="row expand-row">
+    <div class="col-3">
+      <img class="logo" src="autodesk.svg" alt="autodesk">
     </div>
-
-
-  <div class="expandable">
-    <div class="row input-container">
-      <input class="" type="text" placeholder="E-mail">
+    <div class="col-1 right">
+      <i>
+        <img src="arrow-down.svg" alt="collapse" class="expand-arrow">
+      </i>
     </div>
-    <div class="row input-container">
-      <input class="" type="text" placeholder="Password">
-    </div>
-
-
+  </div>
+  <div class="expand-section" style="display: none;">
     <div class="row">
-      <div class="col-2">
-        <button class="button secondary">Register</button>
+      <div class="input-field col-4">
+        <input id="first_name" type="text" class="validate">
+        <label for="first_name">Username</label>
       </div>
-      <div class="col-2">
-        <button class="button primary">Sign In</button>
+    </div>
+    <div class="row">
+      <div class="input-field col-4">
+        <input id="password" type="password" class="validate">
+        <label for="password">Password</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-4">
+        <button class="primary">Login</button>
+        <p class="center">Don't have an Autodesk account? <a href="#">Register</a></p>
       </div>
     </div>
   </div>
+</div>
 ```
 
 
