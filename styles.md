@@ -6,7 +6,7 @@ If you stick to the CSS styles guidelines below and in the [example "Hello World
 
 =================
 
-Building apps on the DroneDeploy platform should be simple and the apps you create should be beautiful, so we’ve built a set of guidelines and templates to help you create apps that are: 
+Building apps on the DroneDeploy platform should be simple and the apps you create should be beautiful, so we’ve built a set of guidelines and templates to help you create apps that are:
 
 * Easy to use
 * Follow established DroneDeploy design practices
@@ -15,15 +15,14 @@ Building apps on the DroneDeploy platform should be simple and the apps you crea
 
 Any app that fulfills these guidelines will be approved on design without issue. Those that don’t will need special exception from our App Market team.
 
-
 ## Basic Guidelines
 
 * Apps should take only the space they need
 * Apps should leverage DroneDeploy CSS styles and should be designed to look native to the platform
 * Use of company logos are welcome but colors should generally coordinate to the DroneDeploy color palette
-* Apps with actions (e.g. sign in) should generally first be engaged with (e.g. clicked), before they expand to show more content
+* Apps with actions \(e.g. sign in\) should generally first be engaged with \(e.g. clicked\), before they expand to show more content
   * Apps, by default, are in a non-expanded state of 60px in height
-  * When expanded (clicked), apps can be up to 360px in height
+  * When expanded \(clicked\), apps can be up to 360px in height
 
 
 ## Grid System
@@ -34,13 +33,18 @@ Our default styles include a basic 4 column grid system, enabling a layout for y
 
 Content should generally be left-justified.
 
-There are just two major components — rows and columns:
+
+
+There are three major components — containers, rows, and columns.
+
 * Rows are horizontal groups of columns that ensure your columns are lined up properly.
-* Content should be placed within columns, and only columns may be immediate children of rows.
-* Column classes indicate the number of columns you’d like to use out of the possible 4 per row. So if you want 2 equal-width columns, you’d use ```.col-2```., or if you’d like an icon, then 3 columns of text, you’d use ```.col-1```, and then ```.col-3```
-* Row height: **60px**
-* Column width: **67px**
-* Gutter: **4px**
+
+* Containers — .container for the appropriate fixed width and maintaining app related elements within scope.
+
+* Column classes indicate the number of columns you’d like to use out of the possible 4 per row. So if you want 2 equal-width columns, you’d use .col-2., or if you’d like an icon, then 3 columns of text, you’d use .col-1, and then .col-3
+
+* Hierarchy: .container  &gt; .row &gt; .col-4
+
 
 
 ## Templates
@@ -63,7 +67,7 @@ To get you started, we’ve provided some templates. You aren't required to use 
 `.col-2` - Button
 
 ```
- <div class="row">
+<div class="row">
   <div class="col-2">
     <img class="logo" src="logo.png">
   </div>
@@ -93,26 +97,30 @@ To get you started, we’ve provided some templates. You aren't required to use 
       </div>
     </a>
   </div>
-  ```
+```
 
 **Information:**
 
 ![](Information app.png)
 
-**Expandability**
+**Expandability**  
 Any app can be expandable on a click from a user. This click expands the app to grant more vertical space.
+
 * Max height of **360px high**. 
 * Should contain a specific collapsible “close” button on top right
-  * We recommend this “close” icon: https://material.io/icons/#ic_close
 
-      ![](ic_close_black_24dp_2x.png)
+  * We recommend this “close” icon: [https://material.io/icons/\#ic\_close](https://material.io/icons/#ic_close)
+
+    ![](ic_close_black_24dp_2x.png)
+
 
 * No scrolling is allowed —use next buttons to show new inputs via pagination
 
 
 **Sign In templates**
+
 * Includes an action button “sign in”
-* Expands to display Username and Password inputs, sign in and register buttons, and collapsable button icon (to be provided).
+* Expands to display Username and Password inputs, sign in and register buttons, and collapsable button icon \(to be provided\).
 
 ![](acme sign in copy.png)
 
@@ -120,10 +128,8 @@ Click ‘Sign In’ to Expand to:
 
 ![](acme sign in expanded.png)
 
-
-
 ```
- <div class="row">
+<div class="row">
       <div class="col-2">
         <img class="logo" src="img/icon.png">
       </div>
@@ -152,3 +158,6 @@ Click ‘Sign In’ to Expand to:
     </div>
   </div>
 ```
+
+
+
