@@ -30,7 +30,7 @@
 </select>
 
 <ul class="tile-links">
-  
+
 </ul>
 
 <script>
@@ -55,7 +55,7 @@ function drawTileLinksToScreen(links){
 }
 
 function fetchTileDataFromPlan(plan){
-  return window.dronedeploy.Tiles.get({planId, layerName: layer.value, zoom: zoom.value});
+  return window.dronedeploy.Tiles.get({plan.id, layerName: layer.value, zoom: zoom.value});
 }
 
 function getTilesFromResponse(tileResponse){
@@ -75,7 +75,10 @@ layer.addEventListener('change', updateTileLinks)
 updateTileLinks();
 
 </script>
-  
+
 </body>
 </html>
 ```
+
+
+
