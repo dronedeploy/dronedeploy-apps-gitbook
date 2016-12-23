@@ -2,7 +2,7 @@
 
 In order to ensure a good experience for users — buttons, colors, fonts, etc. should all look as if they belong in the DroneDeploy UI.
 
-If you stick to the CSS styles guidelines below and in the [example "Hello World" application](https://www.dronedeploy.com/app2/settings/apps/install/580e805840bb987f1f632064), you are on the right track.
+If you stick to the CSS styles guidelines below and in the [example "Hello World" application](https://s3.amazonaws.com/drone-deploy-plugins/templates/dronedeploy-app-hello-world.zip), you are on the right track.
 
 =================
 
@@ -24,7 +24,6 @@ Any app that fulfills these guidelines will be approved on design without issue.
   * Apps, by default, are in a non-expanded state of 60px in height
   * When expanded \(clicked\), apps can be up to 360px in height
 
-
 ## Grid System
 
 Our default styles include a basic 4 column grid system, enabling a layout for your app that is similar to the DroneDeploy site:
@@ -37,12 +36,11 @@ There are three major components — containers, rows, and columns.
 
 * Rows are horizontal groups of columns that ensure your columns are lined up properly.
 
-* Containers — ``.container`` for the appropriate fixed width and maintaining app related elements within scope.
+* Containers — `.container` for the appropriate fixed width and maintaining app related elements within scope.
 
-* Column classes indicate the number of columns you’d like to use out of the possible 4 per row. So if you want 2 equal-width columns, you’d use ``.col-2``twice or if you’d like an icon, then 3 columns of text, you’d use ``.col-1``, and then ``.col-3``
+* Column classes indicate the number of columns you’d like to use out of the possible 4 per row. So if you want 2 equal-width columns, you’d use `.col-2`twice or if you’d like an icon, then 3 columns of text, you’d use `.col-1`, and then `.col-3`
 
-* Hierarchy: ``.container``  **&gt;** ``.row`` **&gt;** ``.col-4``
-
+* Hierarchy: `.container`  **&gt;** `.row` **&gt;** `.col-4`
 
 ## Templates
 
@@ -106,13 +104,12 @@ All app's detailed content will be within the expandable div.
 ![](Information app.png)
 
 **Expandability**
- 
+
 Any app can be expandable on a click from a user. This click expands the app to grant more vertical space.
 
 * Max height of **360px high**
 * You should always use our “collapse” arrow button on top right
 * No scrolling is allowed —use next buttons to show new inputs via pagination
-
 
 **Login Section**
 
