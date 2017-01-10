@@ -2,8 +2,6 @@
 
 ![](geometry_change.png)
 
-[Install this app](https://dronedeploy.com/app2/settings/apps/install/581134ca04ff2576032cfe21)
-
 ```html
 <!DOCTYPE html>
 <html lang="en">
