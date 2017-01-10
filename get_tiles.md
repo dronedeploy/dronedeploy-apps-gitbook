@@ -27,9 +27,7 @@
   <option value="dem">dem</option>
 </select>
 
-<ul class="tile-links">
-
-</ul>
+<ul class="tile-links"></ul>
 
 <script>
 const zoom = document.querySelector('#zoomLevel');
@@ -53,7 +51,7 @@ function drawTileLinksToScreen(links){
 }
 
 function fetchTileDataFromPlan(plan){
-  return window.dronedeploy.Tiles.get({plan.id, layerName: layer.value, zoom: zoom.value});
+  return window.dronedeploy.Tiles.get({planId: plan.id, layerName: layer.value, zoom: parseInt(zoom.value)});
 }
 
 function getTilesFromResponse(tileResponse){
@@ -62,14 +60,14 @@ function getTilesFromResponse(tileResponse){
 
 function updateTileLinks(){
   dronedeployApiReady()
-    .then(window.dronedeploy.Plans.getCurrentlyViewed)
+    .then(() => dronedeploy.Plans.getCurrentlyViewed())
     .then(fetchTileDataFromPlan)
     .then(getTilesFromResponse)
     .then(drawTileLinksToScreen)
 }
 
-zoom.addEventListener('change', updateTileLinks)
-layer.addEventListener('change', updateTileLinks)
+zoom.addEventListener('change', updateTileLinks);
+layer.addEventListener('change', updateTileLinks);
 updateTileLinks();
 
 </script>
