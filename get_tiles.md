@@ -2,8 +2,6 @@
 
 ![](tilequery.png)
 
-[Click to Install this App](https://dronedeploy.com/app2/settings/apps/install/581139795c08ae7af0d83077)
-
 ```html
 <!DOCTYPE html>
 <html lang="en">
