@@ -7,7 +7,8 @@
 const planId = String;
 const layerName = 'ortho' || 'dem';
 const zoom = Number; // Common zoom levels are [16, 17, 18, 19, 20, 21]
-window.dronedeploy.Tiles.get({planId, layerName, zoom})
+
+dronedeployApi.Tiles.get({planId, layerName, zoom})
   .then(function(tileInformation){ console.log(tileInformation) });
 ```
 
@@ -15,7 +16,7 @@ window.dronedeploy.Tiles.get({planId, layerName, zoom})
 
 **Example Call**
 ```javascript
-window.dronedeploy.Tiles.get({planId: '5605c0e5752afc005a000004', layerName: 'ortho', zoom: 16})
+dronedeployApi.Tiles.get({planId: '5605c0e5752afc005a000004', layerName: 'ortho', zoom: 16})
   .then(function(tileInformation){ console.log(tileInformation) });
 ```
 

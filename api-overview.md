@@ -1,18 +1,29 @@
 # API
-All communication to DroneDeploy is available through `window.dronedeploy` inside your app. 
-
-The API loads asynchronously so wrap your calls in the `window.dronedeploy.onload` callback.
+All communication to DroneDeploy is available by instantiating the global api object
 
 ```javascript
-window.dronedeploy.onload(function(){
-  console.log(window.dronedeploy);
+new DroneDeploy({version: 1}).then(function(dronedeployApi){
+  console.log(dronedeployApi);
+})
+```
+
+You can listen to the result of any `dronedeployApi` call via promises.
+
+```javascript
+new DroneDeploy({version: 1}).then(function(dronedeployApi){
+  dronedeployApi.Class.method(exampleParameter)
+    .then(function(response){
+      console.log(response);
+    }, function(error){
+      console.log(error);
+    });
 });
 ```
 
-You can listen to the result of any `window.dronedeploy` call via promises.
+You can listen to the result of any call via promises.
 
 ```javascript
-window.dronedeploy.Class.method(exampleParameter).then(function(response){
+dronedeployApi.Class.method(exampleParameter).then(function(response){
   console.log(response);
 }, function(error){
   console.log(error);
@@ -24,11 +35,13 @@ window.dronedeploy.Class.method(exampleParameter).then(function(response){
 If you are subscribing to a stream of data and want to receive multiple values you should use `.subscribe`. 
 
 ```javascript
-dronedeploy.Class.method(exampleParameter).subscribe(
-  function(result){ console.log(result)},
-  function(error){ console.log(error)},
-  function(){ console.log('complete')}
-); 
+new DroneDeploy({version: 1}).then(function(dronedeployApi){
+  dronedeployApi.Class.method(exampleParameter).subscribe(
+    function(result){ console.log(result)},
+    function(error){ console.log(error)},
+    function(){ console.log('complete')}
+  ); 
+});
 ```
 
 *Note: This pattern is inspired by rxjs, but rxjs is not loaded into apps.*
