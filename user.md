@@ -4,10 +4,10 @@
 ** Example Call ** 
 ```javascript
 // Get the user object one time
-dronedeployApi.User.get().then(function(user){ console.log(user) });
+window.dronedeploy.User.get().then(function(user){ console.log(user) });
 
 // Every time the user object changes the callback will be invoked.
-dronedeployApi.User.get().subscribe(function(user){ console.log(user) });
+window.dronedeploy.User.get().subscribe(function(user){ console.log(user) });
 ```
 
 ** Example Response ** 

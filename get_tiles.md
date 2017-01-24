@@ -34,6 +34,13 @@ const zoom = document.querySelector('#zoomLevel');
 const layer = document.querySelector('#layerName');
 const tileList = document.querySelector('.tile-links');
 
+function dronedeployApiReady(){
+  return new Promise((resolve) => {
+    window.dronedeploy.onload(() => {
+      resolve();
+    });
+  });
+}
 function getListItemFromLink(linkUrl){
   const last = (array) => array.slice(-1)[0];
   return `<li><a href="${linkUrl}" target="_blank">${last(linkUrl.split('/'))}</a></li>`;
@@ -43,8 +50,8 @@ function drawTileLinksToScreen(links){
   tileList.innerHTML = links.map(getListItemFromLink).join('');
 }
 
-function fetchTileDataFromPlan(api, plan){
-  return api.Tiles.get({planId: plan.id, layerName: layer.value, zoom: parseInt(zoom.value)});
+function fetchTileDataFromPlan(plan){
+  return window.dronedeploy.Tiles.get({planId: plan.id, layerName: layer.value, zoom: parseInt(zoom.value)});
 }
 
 function getTilesFromResponse(tileResponse){
@@ -52,14 +59,11 @@ function getTilesFromResponse(tileResponse){
 }
 
 function updateTileLinks(){
-  new DroneDeploy({version: 1}).then(function(api){
-     api.Plans.getCurrentlyViewed()
-      .then(function(plan){
-        return fetchTileDataFromPlan(api, plan);
-      })
-      .then(getTilesFromResponse)
-      .then(drawTileLinksToScreen);
-  })
+  dronedeployApiReady()
+    .then(() => dronedeploy.Plans.getCurrentlyViewed())
+    .then(fetchTileDataFromPlan)
+    .then(getTilesFromResponse)
+    .then(drawTileLinksToScreen)
 }
 
 zoom.addEventListener('change', updateTileLinks);

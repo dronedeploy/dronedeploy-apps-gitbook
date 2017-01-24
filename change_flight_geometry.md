@@ -29,6 +29,14 @@
   <a href="#" class="button">Change Geometry</a>
 
   <script>
+  function droneDeployApiLoaded(){
+    return new Promise(function(resolve){
+      dronedeploy.onload(function() {
+        resolve();
+      });
+    });
+  }
+
   function randomlyAdjustGeometry(geometry){
     var offset = Math.random() / 100 * ([1, -1][Math.floor(Math.random() * 2)]);
     geometry[2].lng = geometry[0].lng + offset;
@@ -36,13 +44,12 @@
   }
 
   document.querySelector('.button').addEventListener('click', function(){
-    new DroneDeploy({version: 1}).then(function(dronedeployApi){
-      dronedeployApi.Plans.getCurrentlyViewed()
-        .then(function(plan){
-          var newGeometry = randomlyAdjustGeometry(plan.geometry);
-          dronedeployApi.Plans.update(plan.id, {geometry: newGeometry});
-        });
-    });
+    droneDeployApiLoaded()
+      .then(window.dronedeploy.Plans.getCurrentlyViewed)
+      .then(function(plan){
+        var newGeometry = randomlyAdjustGeometry(plan.geometry);
+        window.dronedeploy.Plans.update(plan.id, {geometry: newGeometry});
+      })
   });
   </script>
 

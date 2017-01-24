@@ -23,7 +23,7 @@
 **Example Call**
 
 ```javascript
-dronedeployApi.Exporter.send({
+window.dronedeploy.Exporter.send({
   layer: 'Orthomosaic',
   email: ['example@dronedeploy.com']
 }).then(function(exportId){ console.log(exportId) });
@@ -44,7 +44,7 @@ const exportOptions = {
   resolution: ['native', Number], // defaults to 5 (cm/px)
   planId: [String] // defaults to currently visible map
 };
-dronedeployApi.Exporter.send(exportOptions)
+window.dronedeploy.Exporter.send(exportOptions)
   .then(function(exportId){ console.log(exportId) });
 ```
 
@@ -53,7 +53,7 @@ dronedeployApi.Exporter.send(exportOptions)
 **Example Call**
 
 ```javascript
-dronedeployApi.Exporter.send({
+window.dronedeploy.Exporter.send({
   layer: 'NDVI Toolbox',
   email: ['example@dronedeploy.com']
 }).then(function(exportId){ console.log(exportId) });
@@ -74,7 +74,7 @@ const exportOptions = {
   resolution: ['native', Number], // defaults to 5 (cm/px)
   planId: [String] // defaults to currently visible map
 };
-dronedeployApi.Exporter.send(exportOptions)
+window.dronedeploy.Exporter.send(exportOptions)
   .then(function(exportId){ console.log(exportId) });
 ```
 
@@ -83,7 +83,7 @@ dronedeployApi.Exporter.send(exportOptions)
 **Example Call**
 
 ```javascript
-dronedeployApi.Exporter.send({
+window.dronedeploy.Exporter.send({
   layer: 'Elevation Toolbox',
   email: ['example@dronedeploy.com']
 }).then(function(exportId){ console.log(exportId) });
@@ -105,7 +105,7 @@ const exportOptions = {
   contour_interval: [Number], // default to 1 (meter)
   planId: [String] // defaults to currently visible map
 };
-dronedeployApi.Exporter.send(exportOptions)
+window.dronedeploy.Exporter.send(exportOptions)
   .then(function(exportId){ console.log(exportId) });
 ```
 
@@ -114,7 +114,7 @@ dronedeployApi.Exporter.send(exportOptions)
 **Example Call**
 
 ```javascript
-dronedeployApi.Exporter.send({
+window.dronedeploy.Exporter.send({
   layer: '3D Model',
   email: ['example@dronedeploy.com']
 }).then(function(exportId){ console.log(exportId) });
@@ -131,7 +131,7 @@ const exportOptions = {
   // optional
   planId: [String] // defaults to currently visible map
 };
-dronedeployApi.Exporter.send(exportOptions)
+window.dronedeploy.Exporter.send(exportOptions)
   .then(function(exportId){ console.log(exportId) });
 ```
 
@@ -140,7 +140,7 @@ dronedeployApi.Exporter.send(exportOptions)
 **Example Call**
 
 ```javascript
-dronedeployApi.Exporter.send({
+window.dronedeploy.Exporter.send({
   layer: '3D Model',
   email: ['example@dronedeploy.com']
 }).then(function(exportId){ console.log(exportId) });
@@ -159,7 +159,7 @@ const exportOptions = {
   max_points: ['MAX', Number], // defaults to 'MAX'
   planId: [String] // defaults to currently visible map
 };
-dronedeployApi.Exporter.send(exportOptions)
+window.dronedeploy.Exporter.send(exportOptions)
   .then(function(exportId){ console.log(exportId) });
 ```
 
@@ -173,7 +173,7 @@ Get the URL to download the Point Cloud
 
 ```javascript
 const planId = '8905ccf8d4684ff6969eb0378f1d4e34';
-dronedeployApi.Exporter.getPointCloudLink(planId)
+window.dronedeploy.Exporter.getPointCloudLink(planId)
   .then(function(downloadLink){ console.log(exportId) });
 ```
 
@@ -193,7 +193,7 @@ Get the URL to download the 3D Model
 
 ```javascript
 const planId = '8905ccf8d4684ff6969eb0378f1d4e34';
-dronedeployApi.Exporter.get3DModelLink(planId)
+window.dronedeploy.Exporter.get3DModelLink(planId)
   .then(function(downloadLink){ console.log(exportId) });
 ```
 
@@ -212,12 +212,12 @@ List all the exports on the users account or for a specific plan.
 **Example Call**
 ```javascript
 // get all exports
-dronedeployApi.Exporter.list()
+window.dronedeploy.Exporter.list()
   .then(function(exports){ console.log(exports) });
 
 // get exports for planId
-dronedeployApi.Exporter.list({planId: '5803c075d0ec0a44f0a75a86'})
-  .then(function(exports){ console.log(exports) });
+window.dronedeploy.Exporter.list({planId: '5803c075d0ec0a44f0a75a86'})
+   .then(function(exports){ console.log(exports) });
 ```
 
 **Example Response**

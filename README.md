@@ -13,7 +13,7 @@ Build an app in two minutes to learn more.
 3. Select an App Zone somewhere in the app and choose the folder "dronedeploy-app-hello-world" from step 1.
 4. Lastly, edit any file in that folder and start building your app!
 
-*Hint: Open the javascript console to view the dronedeployApi.*
+*Hint: Open the javascript console to view `window.dronedeploy`.*
 
 
 Download your ["Get it on DroneDeploy" badges here](https://www.dropbox.com/sh/a3baugjz3e2r0pj/AAAGaGrclU3aBFye3pBH2sgDa?dl=0) to show users where they can find your app!
