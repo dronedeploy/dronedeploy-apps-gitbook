@@ -18,7 +18,16 @@ new DroneDeploy({version: 1}).then(function(dronedeployApi){
       console.log(error);
     });
 });
+```
 
+You can listen to the result of any call via promises.
+
+```javascript
+dronedeployApi.Class.method(exampleParameter).then(function(response){
+  console.log(response);
+}, function(error){
+  console.log(error);
+});
 ```
 
 *Note: The promise polyfill is loaded into every app. [Read More about Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)*
@@ -33,7 +42,6 @@ new DroneDeploy({version: 1}).then(function(dronedeployApi){
     function(){ console.log('complete')}
   ); 
 });
-
 ```
 
 *Note: This pattern is inspired by rxjs, but rxjs is not loaded into apps.*

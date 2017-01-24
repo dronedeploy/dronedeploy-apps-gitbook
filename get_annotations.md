@@ -15,6 +15,14 @@
 <ul id="annotation-list"></ul>
 
 <script>
+function dronedeployApiReady(){
+  return new Promise((resolve) => {
+    window.dronedeploy.onload(() => {
+      resolve();
+    });
+  });
+}
+
 function getPlanId(plan){
   return plan.id;
 }
@@ -34,7 +42,6 @@ document.querySelector('#refresh-annotation-list')
         .then(dronedeployApi.Annotations.get)
         .then(drawAnnoationsInList);
     })
-  })
 </script>
   
 </body>

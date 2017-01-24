@@ -7,6 +7,7 @@
 const planId = String;
 const layerName = 'ortho' || 'dem';
 const zoom = Number; // Common zoom levels are [16, 17, 18, 19, 20, 21]
+
 dronedeployApi.Tiles.get({planId, layerName, zoom})
   .then(function(tileInformation){ console.log(tileInformation) });
 ```
@@ -25,7 +26,7 @@ dronedeployApi.Tiles.get({planId: '5605c0e5752afc005a000004', layerName: 'ortho'
 
 **tiles:** An array of links to the tile images at the specified zoom level.
 
-**expires** UTC timestamp for 72 hours in the future for when the signature will expire.
+**expires** UTC timestamp for 30 days
 
 ```javascript
 {

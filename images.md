@@ -26,6 +26,9 @@ dronedeployApi.Images.get('5605c0e5752afc005a000004', {width: 200, height: 200})
   .then(function(arrayOfImageInformation){ console.log(arrayOfImageInformation) })
 ```
 
+
+Note: Values under `data.exif` are not normalized and vary depending on the camera.
+
 **Example Response**
 ```json
 [{

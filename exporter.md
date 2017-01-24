@@ -217,7 +217,7 @@ dronedeployApi.Exporter.list()
 
 // get exports for planId
 dronedeployApi.Exporter.list({planId: '5803c075d0ec0a44f0a75a86'})
-   .then(function(exports){ console.log(exports) });
+  .then(function(exports){ console.log(exports) });
 ```
 
 **Example Response**

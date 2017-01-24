@@ -2,8 +2,6 @@
 
 ![](tilequery.png)
 
-[Click to Install this App](https://dronedeploy.com/app2/settings/apps/install/581139795c08ae7af0d83077)
-
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -29,22 +27,13 @@
   <option value="dem">dem</option>
 </select>
 
-<ul class="tile-links">
-  
-</ul>
+<ul class="tile-links"></ul>
 
 <script>
 const zoom = document.querySelector('#zoomLevel');
 const layer = document.querySelector('#layerName');
 const tileList = document.querySelector('.tile-links');
 
-function dronedeployApiReady(){
-  return new Promise((resolve) => {
-    dronedeployApi.onload(() => {
-      resolve();
-    });
-  });
-}
 function getListItemFromLink(linkUrl){
   const last = (array) => array.slice(-1)[0];
   return `<li><a href="${linkUrl}" target="_blank">${last(linkUrl.split('/'))}</a></li>`;
@@ -54,8 +43,8 @@ function drawTileLinksToScreen(links){
   tileList.innerHTML = links.map(getListItemFromLink).join('');
 }
 
-function fetchTileDataFromPlan(plan){
-  return dronedeployApi.Tiles.get({planId, layerName: layer.value, zoom: zoom.value});
+function fetchTileDataFromPlan(api, plan){
+  return api.Tiles.get({planId: plan.id, layerName: layer.value, zoom: parseInt(zoom.value)});
 }
 
 function getTilesFromResponse(tileResponse){
@@ -63,19 +52,25 @@ function getTilesFromResponse(tileResponse){
 }
 
 function updateTileLinks(){
-  dronedeployApiReady()
-    .then(dronedeployApi.Plans.getCurrentlyViewed)
-    .then(fetchTileDataFromPlan)
-    .then(getTilesFromResponse)
-    .then(drawTileLinksToScreen)
+  new DroneDeploy({version: 1}).then(function(api){
+     api.Plans.getCurrentlyViewed()
+      .then(function(plan){
+        return fetchTileDataFromPlan(api, plan);
+      })
+      .then(getTilesFromResponse)
+      .then(drawTileLinksToScreen);
+  })
 }
 
-zoom.addEventListener('change', updateTileLinks)
-layer.addEventListener('change', updateTileLinks)
+zoom.addEventListener('change', updateTileLinks);
+layer.addEventListener('change', updateTileLinks);
 updateTileLinks();
 
 </script>
-  
+
 </body>
 </html>
 ```
+
+
+
