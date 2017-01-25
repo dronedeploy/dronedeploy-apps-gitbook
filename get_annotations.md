@@ -36,12 +36,12 @@ function drawAnnoationsInList(annotations){
 
 document.querySelector('#refresh-annotation-list')
   .addEventListener('click', () => {
-    dronedeployApiReady()
-      .then(window.dronedeploy.Plans.getCurrentlyViewed)
-      .then(getPlanId)
-      .then(window.dronedeploy.Annotations.get)
-      .then(drawAnnoationsInList);
-  })
+    new DroneDeploy({version: 1}).then(function(dronedeployApi){
+       dronedeployApi.Plans.getCurrentlyViewed()
+        .then(getPlanId)
+        .then(dronedeployApi.Annotations.get)
+        .then(drawAnnoationsInList);
+    })
 </script>
   
 </body>

@@ -17,12 +17,12 @@ const optionalIconSize = {
     width: Number, 
     height: Number
 };
-window.dronedeploy.Images.get(planId, optionalIconSize);
+dronedeployApi.Images.get(planId, optionalIconSize);
 ```
 
 **Example Call**
 ```javascript
-window.dronedeploy.Images.get('5605c0e5752afc005a000004', {width: 200, height: 200})
+dronedeployApi.Images.get('5605c0e5752afc005a000004', {width: 200, height: 200})
   .then(function(arrayOfImageInformation){ console.log(arrayOfImageInformation) })
 ```
 

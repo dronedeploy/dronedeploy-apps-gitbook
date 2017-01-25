@@ -16,13 +16,13 @@ This call allows your app to ask the user for a one time payment. Users must hav
 ```javascript
 const amount = Number;
 const paymentFor = String;
-window.dronedeploy.Payments.charge(amount, paymentFor);
+dronedeployApi.Payments.charge(amount, paymentFor);
 ```
 
 #### Example Call
 
 ```javascript
-window.dronedeploy.Payments.charge(4.00, 'Testing Payments')
+dronedeployApi.Payments.charge(4.00, 'Testing Payments')
   .then(
     function(success){ console.log('paymentId:', success) },
     function(error){ console.log(error) }
@@ -82,4 +82,3 @@ If the request fails \(I.E. the user is offline\).
 
 To validate or get the status of a payment you can send a request to our public endpoint from your server. Details here,   
 [http://support.dronedeploy.com/v1.0/docs/data-api-access](http://support.dronedeploy.com/v1.0/docs/data-api-access).
-
