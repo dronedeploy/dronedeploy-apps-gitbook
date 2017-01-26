@@ -4,18 +4,20 @@
 
 A plan contains the flight data, drone data, image information, and the map assets. The same plan is used across planning, flight, uploading, and post-processed viewing.
 
-**Contents** 
-- [Plans.getCurrentlyViewed](#plansgetcurrentlyviewed)
-- [Plans.all](#plansall)
-- [Plans.update](#plansupdate)
+**Contents**
+
+* [Plans.getCurrentlyViewed](#plansgetcurrentlyviewed)
+* [Plans.all](#plansall)
+* [Plans.update](#plansupdate)
 
 ### Plans.getCurrentlyViewed
 
-** Overview ** 
+** Overview **
 
 Returns the plan that is the currently visible to the user. For example, if the user is on the datapage the returned plan will be the plan they are looking at. The same applies for mapengine, planning, and the flight page.
 
-** Example Call ** 
+** Example Call **
+
 ```javascript
 // Get the current one time
 dronedeployApi.Plans.getCurrentlyViewed()
@@ -30,7 +32,8 @@ dronedeployApi.Plans.getCurrentlyViewed()
   });
 ```
 
-** Example Response ** 
+** Example Response **
+
 ```json
 {
   "id": "57e0761f21303e5214b6ae31",
@@ -79,11 +82,13 @@ dronedeployApi.Plans.getCurrentlyViewed()
 ```
 
 ### Plans.all
+
 ** Overview **
 
 Get an array of all the users plans.
 
 ** Example Call **
+
 ```javascript
 // Get all the users plan one time
 dronedeployApi.Plans.all()
@@ -98,7 +103,8 @@ dronedeployApi.Plans.all()
   });
 ```
 
-** Example Response ** 
+** Example Response **
+
 ```javascript
 [
   {
@@ -138,9 +144,10 @@ const fieldsToUpdate = {
 dronedeployApi.Plans.update(planIdToUpdate, fieldsToUpdate);
 ```
 
-*Note: Save the plan's geometry on the planning page to change the drone's flight path.*
+_Note: Save the plan's geometry on the planning page to change the drone's flight path._
 
-** Example Call ** 
+** Example Call **
+
 ```javascript
 dronedeployApi.Plans.update('57e0761f21303e5214b6ae31', {
   name: 'New Name',
@@ -151,5 +158,7 @@ dronedeployApi.Plans.update('57e0761f21303e5214b6ae31', {
     {lat: 37.70100590388889,lng: -78.90349675}
   ]
 });
-
 ```
+
+
+
