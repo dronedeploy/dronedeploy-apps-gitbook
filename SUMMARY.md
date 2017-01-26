@@ -11,7 +11,7 @@
   * [Payments](payments.md)
   * [Plans](plans.md)
   * [Tiles](tiles.md)
-  * Link
+  * [Link](link.md)
   * [Track](track.md)
 * Examples
   * [Change Flight Geometry](change_flight_geometry.md)
