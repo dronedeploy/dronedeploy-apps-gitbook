@@ -77,7 +77,9 @@ dronedeployApi.Plans.getCurrentlyViewed()
     "lng": -96.74852777777778
   },
   "name": "Untitled Map",
-  "username": "daniel@dronedeploy.com"
+  "username": "daniel@dronedeploy.com",
+  "frontlap": 70,
+  "sidelap": 60,
 }
 ```
 
@@ -156,7 +158,9 @@ dronedeployApi.Plans.update('57e0761f21303e5214b6ae31', {
     {lat: 37.717259707222226,lng: -78.88330925000001},
     {lat: 37.70100590388889,lng: -78.88330925000001},
     {lat: 37.70100590388889,lng: -78.90349675}
-  ]
+  ],
+  frontlap: 70, // allowed range: 30 - 95%
+  sidelap: 45, // allowed range: 30 - 95
 });
 ```
 

@@ -8,9 +8,9 @@ You will be able to access the information DroneDeploy tracks about your app. Th
 * App renders
 * `window.dronedeploy` calls with arguments
 
-- \[Track.send\]\(\#tracksend\)
+* \[Track.send\]\(\#tracksend\)
 
-- \[Track.successCondition\]\(\#tracksuccessCondition\)
+* \[Track.successCondition\]\(\#tracksuccessCondition\)
 
 ## Track.send
 
