@@ -3,6 +3,7 @@
 * [Introduction](README.md)
 * [API](api-overview.md)
   * [Annotations](annotations.md)
+    * Example: Annotations.get
   * [Exporter](exporter.md)
   * [FlightLogs](flightlogs.md)
   * [Images](images.md)
