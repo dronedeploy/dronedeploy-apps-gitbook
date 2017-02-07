@@ -2,15 +2,11 @@
 
 **Overview**
 
-You will be able to access the information DroneDeploy tracks about your app. This includes.
-
-* App installs and uninstalls
-* App renders
-* `window.dronedeploy` calls with arguments
-
 * [Track.send](#tracksend)
 
 * [Track.successCondition](#tracksuccesscondition)
+
+* [Accessing Tracked Data](#accessing-tracked-data)
 
 ## Track.send
 
@@ -51,6 +47,22 @@ DroneDeploy will use this call to make your app more successful by....
 ```javascript
 dronedeployApi.Track.successCondition()
 ```
+
+## Accessing Tracked Data
+
+You will be able to access the information DroneDeploy tracks about your app, including...
+
+* App installs and uninstalls
+* App renders
+* All DroneDeploy API calls with arguments
+
+* Custom track events via \`Track.send\`
+
+* App runs via \`Track.successCondition\`
+
+To opt into the recieving tracking information please create a free [segment](https://segment.com/) account and add [your write\_key](https://segment.com/docs/faqs/getting-started/how-to-find-writekey/) to your apps information.
+
+![](/assets/segment_key.png)
 
 
 
