@@ -51,6 +51,7 @@ dronedeployApi.Plans.getCurrentlyViewed()
     "min_capture_period": 2
   },
   "deleted": false,
+  "sketchfabModel": "https://sketchfab.com/models/cc462c22851847c78768d0318221a963",
   "geometry": [
     {
       "lat": 35.92712713888889,
@@ -117,7 +118,8 @@ dronedeployApi.Plans.all()
     "info": {...},
     "location": {...},
     "name": "Plan 1",
-    "username": "daniel@dronedeploy.com"
+    "username": "daniel@dronedeploy.com",
+    "sketchfabModel": "https://sketchfab.com/models/cc462c22851847c78768d0318221a963",
   },
   {
     "id": "87e0761f21303e5214b6ae31",
@@ -127,7 +129,8 @@ dronedeployApi.Plans.all()
     "info": {...},
     "location": {...},
     "name": "Plan 2",
-    "username": "daniel@dronedeploy.com"
+    "username": "daniel@dronedeploy.com",
+    "sketchfabModel": "https://sketchfab.com/models/dd462c22851847c78768d0318221a963",
   }
 ]
 ```
