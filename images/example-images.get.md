@@ -18,13 +18,9 @@
       var imageOutput = document.getElementById('images');
 
       function formatOutput(image) {
-        var html = '<div class="image-output">';
-        html += '<img src="';
-        html += image.path;
-        html += 'alt="Image name '
-        html += image.filename;
-        html += '" />';
-        return html;
+        return `<li class="image-output">
+                  <img src="${image.path} alt="Image name ${image.filename}" />
+                </li>`
       }
 
       var options = {
@@ -45,6 +41,7 @@
     </script>
 </body>
 </html>
+
 ```
 
 
