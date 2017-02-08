@@ -14,16 +14,9 @@
       var exportOutput = document.getElementById('exports');
 
       function formatOutput(exp) {
-        var html = '<li class="export">';
-        html += exp.username;
-        html += ' - ';
-        html += exp.status;
-        html += ' ';
-        html += '<a href="';
-        html += exp.download_path;
-        html += '" target="blank" download>Download</a>';
-        html += '</li>';
-        return html;
+        return `
+          <li class="export">${exp.username} - ${exp.status} <a href="${exp.download_path}" target="blank" download>Download</a></li>
+        `
       }
 
       new DroneDeploy({ version: 1 })
