@@ -1,5 +1,7 @@
 //TODO Get picture
 
+# [Install the example](https://www.dronedeploy.com/app2/applications/589badec95378856ee605893/install)
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
