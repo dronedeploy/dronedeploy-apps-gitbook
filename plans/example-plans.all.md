@@ -16,14 +16,10 @@
       var plans = document.querySelector('#plans');
 
       function formatPlan(plan) {
-        var linkString = '<li><a href="https://www.dronedeploy.com/app2/data/"';
-        linkString += plan.id;
-        linkString += '" target="_blank">'
-        linkString += plan.name;
-        linkString += '</a> by ';
-        linkString += plan.username;
-        linkString += '</li><br />';
-        plans.innerHTML += linkString;
+        return `<li>
+                  <a href="https://www.dronedeploy.com/app2/data/"${plan.id}" target="_blank">${plan.name}</a> by ${plan.username}
+                </li>
+                `
       }
 
       new DroneDeploy({ version: 1})
@@ -37,6 +33,7 @@
     </script>
 </body>
 </html>
+
 ```
 
 
