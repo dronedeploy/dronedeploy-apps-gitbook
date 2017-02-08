@@ -16,26 +16,19 @@
     var annotationDetails = document.getElementById('annotation-details');
 
     function formatOutput(annotation, i) {
-      var html = '<div class="annotation">';
-      html += '<hr>';
-      html += '<h2>Annotation ';
-      html += (i + 1);
-      html += '</h2>';
-      if(annotation.geometry.lat && annotation.geometry.lng) {
-        html += '<div class="coordinates">Coordinates: ';
-        html += annotation.geometry.lat + ',' + annotation.geometry.lng;
-        html += '</div>';
-      }
-      html += '<div class="type">Type: ';
-      html += annotation.type;
-      html += '</div>'
-      if(annotation.description) {
-        html += '<div class="description">Description: '
-        html += annotation.description;
-        html += '</div>'
-      }
-      html += '</div>';
-      return html;
+      return `
+            <div class="annotation">
+              <hr>
+              <h2>Annotation ${i + 1}</h2>
+              ${annotation.geometry.lat && annotation.geometry.lng ?
+                '<div class="coordinates">Coordinates: ' + annotation.geometry.lat + ',' + annotation.geometry.lng + '</div>'
+                    :
+                  ''
+                }
+              <div class="type">Type: ${annotation.type}</div>
+              <div class="description">Description: ${annotation.description}</div>
+            </div>
+      `
     }
 
     new DroneDeploy({ version: 1 })
@@ -52,6 +45,7 @@
   </script>
 </body>
 </html>
+
 ```
 
 
