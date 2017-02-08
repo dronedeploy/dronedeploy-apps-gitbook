@@ -1,4 +1,6 @@
+![](/assets/Screenshot 2017-02-08 16.36.17.png)
 
+# [Install the example](https://www.dronedeploy.com/app2/applications/589ba30ff3c333868a824927/install)
 
 ```html
 <!DOCTYPE html>
@@ -8,17 +10,52 @@
   <title>Document</title>
 </head>
 <body>
-    <span class="title">Exporter.getPointCloudLink example</span>
-    <div id="link">Here is your link: <a href="" id="pointLink" >(link)</a></div>
+    <h2 class="title">Annotation.getVolume example</h2>
+    <ul id="volume-details"></ul>
     <script>
-      var pointLink = document.getElementById('pointLink');
+      var volumeDetails = document.getElementById('volume-details');
 
-      dronedeployApi.Exporter.getPointCloudLink(function(link) {
-        pointLink.href = link
-      });
+      function formatOutput(result) {
+        return `
+          <li class="result-container">
+            <h3>Volume for ${result.description}</h3>
+            <hr>
+            <div class="result">${result.volume.toFixed(2)}m<sup>3</sup></div>
+          </li>
+        `;
+      }
+
+      new DroneDeploy({ version: 1 })
+        .then(function(dronedeployApi) {
+          dronedeployApi.Plans.getCurrentlyViewed()
+            .then(function(plan) {
+              return dronedeployApi.Annotations.get(plan.id)
+            })
+            .then(function(annotations) {
+              return annotations.filter(function(ann) {
+                return ann.annotationType === "VOLUME";
+              })
+            })
+            .then(function(annotations) {
+              return Promise.all(annotations.map(function(annotation) {
+                return dronedeployApi.Annotations.getVolume(annotation.id)
+                  .then(function(result) {
+                    return { volume: result.volume, description: annotation.description }
+                  });
+              }));
+            })
+            .then(function(volumes) {
+              volumeDetails.innerHTML = volumes.map(formatOutput).join('');
+            })
+        })
+        .catch(function(error) {
+          console.error(error);
+        })
     </script>
 </body>
 </html>
+
+
 
 ```
 
