@@ -1,5 +1,3 @@
-
-
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -14,27 +12,22 @@
     var userList = document.getElementById('user-list');
 
     function formatOutput(user) {
-      var html = '<li class="user">';
-      html += '<div class="username">Name: ';
-      html += user.firstName + ' ' + user.lastName;
-      html += '</div>';
-      if(user.organization) {
-        html += '<div class="organization">';
-        html += '<img src="';
-        html += user.organization.logoUrl;
-        html += '" alt="Logo for organization';
-        html += user.organization.name;
-        html += '">';
-      }
-      html += '<div class="role">Role: ';
-      html += user.role;
-      html += '</div>';
-      html += '<div class="email">Email: ';
-      html += user.email;
-      html += '</div>';
-      html += '</div>';
-      html += '</li>';
-      return html;
+      return `
+        <li class="user">
+          <div class="username">Name: ${user.firstName} ${user.lastName}</div>
+          ${user.organization ? formatOrganization(user.organization) : ''}
+          <div class="role">Role: ${user.role}</div>
+          <div class="email">Email: ${user.email}</div>
+        </li>
+      `
+    }
+
+    function formatOrganization(org) {
+      return `
+          <div class="organization">
+            <img src="${org.logoUrl}" alt="Logo for organization ${org.name}">
+          </div>
+      `
     }
 
     new DroneDeploy({ version: 1 })
