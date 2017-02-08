@@ -1,3 +1,5 @@
+# [Install the example](https://www.dronedeploy.com/app2/applications/589baf4495378856ee605897/install)
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
