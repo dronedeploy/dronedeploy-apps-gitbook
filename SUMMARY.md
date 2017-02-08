@@ -30,9 +30,6 @@
   * [User](user.md)
     * [Example: User.get](user/example-user.get.md)
 * [Examples](examples.md)
-  * [Change Flight Geometry](change_flight_geometry.md)
-  * [Get Tiles](get_tiles.md)
-  * [Get Annotations](get_annotations.md)
   * [How to Set up a Web Server](server_example.md)
 * Platform Policy
   * [General Guidelines](guidelines.md)

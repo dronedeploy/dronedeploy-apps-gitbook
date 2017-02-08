@@ -14,13 +14,15 @@
         <input type="text" placeholder="New Project Name" id="newName"/>
         <button type="submit" id="updateBtn">Update name</button>
     </form>
+    <button type="button" id="randomizeGeometry">Randomize geometry</button>
     <script>
       var planOutput = document.getElementById('planDetails');
       var updateForm = document.getElementById('updateForm');
-      var updateBtn = document.getElementById('updateBtn')
+      var updateBtn = document.getElementById('updateBtn');
+      var randomizeBtn = document.getElementById('randomizeGeometry');
 
       function formatOutput(plan) {
-      //es6 template string
+        //es6 template string
         return `<div class="details>
                   <h1 class="planName">
                     ${plan.name}
@@ -28,6 +30,12 @@
                   <br>
                   <span class="author">By ${plan.username}</span>
                 </div>`
+      }
+
+      function randomlyAdjustGeometry(geometry){
+        var offset = Math.random() / 100 * ([1, -1][Math.floor(Math.random() * 2)]);
+        geometry[2].lng = geometry[0].lng + offset;
+        return geometry;
       }
 
       new DroneDeploy({ version: 1})
@@ -38,19 +46,29 @@
           dronedeployApi.Plans.getCurrentlyViewed()
         .then(function(plan) {
             updateForm.addEventListener('submit', function(event) {
+              event.preventDefault();
               var newName = event.target[0].value;
               event.target[0].value = '';
-              event.preventDefault();
               dronedeployApi.Plans.update(plan.id, {
                 name: newName
               });
             });
+
+            randomizeBtn.addEventListener('click', function(event) {
+              event.preventDefault();
+              var newGeometry = randomlyAdjustGeometry(plan.geometry);
+              dronedeployApi.Plans.update(plan.id, {
+                geometry: newGeometry
+              });
+            });
+
           });
         });
 
     </script>
 </body>
 </html>
+
 ```
 
 
