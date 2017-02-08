@@ -36,12 +36,8 @@
 
   function getListItemFromLink(linkUrl){
     var last = function(array) { return array.slice(-1)[0]};
-    var html = '<li><a href="';
-    html += linkUrl;
-    html += ' target="_blank">'
-    html += last(linkUrl.split('/'))
-    html += '</a></li>';
-    return html;
+    //es6 template string
+    return `<li><a href="${linkUrl}" target="_blank">{last(linkUrl.split('/'))}</a></li>`
   }
 
   function drawTileLinksToScreen(links){
