@@ -1,6 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
+* [How to Set up a Web Server](server_example.md)
 * [API](api-overview.md)
   * [Annotations](annotations.md)
     * [Example: Annotations.get](annotations/example-annotations.get.md)
@@ -29,8 +30,6 @@
   * [Track](track.md)
   * [User](user.md)
     * [Example: User.get](user/example-user.get.md)
-* [Examples](examples.md)
-  * [How to Set up a Web Server](server_example.md)
 * Platform Policy
   * [General Guidelines](guidelines.md)
   * [Design Guidelines](styles.md)
