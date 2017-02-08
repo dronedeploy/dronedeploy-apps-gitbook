@@ -1,7 +1,5 @@
 // TODO image
 
-
-
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -22,13 +20,13 @@
       var updateBtn = document.getElementById('updateBtn')
 
       function formatOutput(plan) {
-        var html = '<div class="details><h1 class="planName">';
-        html += plan.name;
-        html += '</h1><br>';
-        html += '<span class="author">By ';
-        html += plan.username;
-        html += '</span></div>';
-        return html;
+        return `<div class="details>
+                  <h1 class="planName">
+                    ${plan.name}
+                  </h1>
+                  <br>
+                  <span class="author">By ${plan.username}</span>
+                </div>`
       }
 
       new DroneDeploy({ version: 1})
