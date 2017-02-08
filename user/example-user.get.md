@@ -12,6 +12,7 @@
     var userList = document.getElementById('user-list');
 
     function formatOutput(user) {
+    //es6 template string
       return `
         <li class="user">
           <div class="username">Name: ${user.firstName} ${user.lastName}</div>
@@ -23,6 +24,7 @@
     }
 
     function formatOrganization(org) {
+    //es6 template string
       return `
           <div class="organization">
             <img src="${org.logoUrl}" alt="Logo for organization ${org.name}">
@@ -40,7 +42,6 @@
   </script>
 </body>
 </html>
-
 ```
 
 

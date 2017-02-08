@@ -55,6 +55,7 @@
     function formatEmailList(emails) {
       emailList.innerHTML = '';
       emailList.innerHTML = emails.map(function(email) {
+      //es6 template string
         return `<li class="email">${email}</li>`;
       }).join('');
     }
@@ -95,7 +96,6 @@
   </script>
 </body>
 </html>
-
 ```
 
 

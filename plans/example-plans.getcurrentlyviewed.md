@@ -14,6 +14,7 @@
       var planOutput = document.getElementById('plan')
 
       function formatOutput(plan) {
+      //es6 template string
         return `<li class="details>
                   <h1 class="planName">
                     ${plan.name}
@@ -33,7 +34,6 @@
     </script>
 </body>
 </html>
-
 ```
 
 

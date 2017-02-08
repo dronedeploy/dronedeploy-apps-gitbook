@@ -17,6 +17,7 @@
           var logOutput = document.getElementById('logOutput')
 
           function formatOutput(log) {
+          //es6 template string
             return `
               <li class="flightlog">
                 <span>Start time: ${log.startTime}</span>
@@ -39,7 +40,6 @@
       </script>
     </body>
     </html>
-
 
 
 

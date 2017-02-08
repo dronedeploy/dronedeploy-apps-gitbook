@@ -20,6 +20,7 @@
       var updateBtn = document.getElementById('updateBtn')
 
       function formatOutput(plan) {
+      //es6 template string
         return `<div class="details>
                   <h1 class="planName">
                     ${plan.name}
@@ -50,7 +51,6 @@
     </script>
 </body>
 </html>
-
 ```
 
 

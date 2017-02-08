@@ -18,6 +18,7 @@
       var imageOutput = document.getElementById('images');
 
       function formatOutput(image) {
+      //es6 template string
         return `<li class="image-output">
                   <img src="${image.path} alt="Image name ${image.filename}" />
                 </li>`
@@ -41,7 +42,6 @@
     </script>
 </body>
 </html>
-
 ```
 
 
