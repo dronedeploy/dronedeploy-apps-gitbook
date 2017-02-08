@@ -1,5 +1,7 @@
 ![](/tilequery.png)
 
+# [Install the example](https://www.dronedeploy.com/app2/applications/589b691d2bd48c85915c281d/install)
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
