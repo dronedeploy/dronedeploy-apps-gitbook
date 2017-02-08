@@ -2,42 +2,44 @@
 
 # [Install the example](https://www.dronedeploy.com/app2/applications/589b5264af82ce11ec230f22/install "Install the example application")
 
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <title>Document</title>
-    </head>
-    <body>
-        <h1 class="title">FlightLogs.getLogsFromPlan example</h1>
-        <ul id="logOutput"></ul>
-        <script>
-          var logOutput = document.getElementById('logOutput')
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+    <h1 class="title">FlightLogs.getLogsFromPlan example</h1>
+    <ul id="logOutput"></ul>
+    <script>
+      var logOutput = document.getElementById('logOutput')
 
-          function formatOutput(log) {
-          //es6 template string
-            return `
-              <li class="flightlog">
-                <span>Start time: ${log.startTime}</span>
-                <span>Duration: ${log.duration}</span>
-                <a href="${log.downloadUrl}" target="_blank">Download log</a>
-              </li>
-            `
-          }
+      function formatOutput(log) {
+      //es6 template string
+        return `
+          <li class="flightlog">
+            <span>Start time: ${log.startTime}</span>
+            <span>Duration: ${log.duration}</span>
+            <a href="${log.downloadUrl}" target="_blank">Download log</a>
+          </li>
+        `
+      }
 
-          new DroneDeploy({ version: 1})
-            .then(function(dronedeployApi) {
-              return dronedeployApi.Plans.getCurrentlyViewed()
-                .then(function(plan) {
-                  return dronedeployApi.FlightLogs.getLogsFromPlan(plan.id)
-                })
-              .then(function(logs){
-                logOutput.innerHTML = logs.map(formatOutput).join('')
-              });
+      new DroneDeploy({ version: 1})
+        .then(function(dronedeployApi) {
+          return dronedeployApi.Plans.getCurrentlyViewed()
+            .then(function(plan) {
+              return dronedeployApi.FlightLogs.getLogsFromPlan(plan.id)
             })
-      </script>
-    </body>
-    </html>
+          .then(function(logs){
+            logOutput.innerHTML = logs.map(formatOutput).join('')
+          });
+        })
+  </script>
+</body>
+</html>
+```
 
 
 
