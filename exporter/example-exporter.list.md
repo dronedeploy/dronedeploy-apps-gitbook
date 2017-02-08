@@ -14,6 +14,7 @@
       var exportOutput = document.getElementById('exports');
 
       function formatOutput(exp) {
+      //es6 template string
         return `
           <li class="export">${exp.username} - ${exp.status} <a href="${exp.download_path}" target="blank" download>Download</a></li>
         `
@@ -31,7 +32,6 @@
   </script>
 </body>
 </html>
-
 ```
 
 

@@ -16,6 +16,7 @@
     var annotationDetails = document.getElementById('annotation-details');
 
     function formatOutput(annotation, i) {
+    //es6 template string
       return `
             <div class="annotation">
               <hr>
@@ -45,7 +46,6 @@
   </script>
 </body>
 </html>
-
 ```
 
 
