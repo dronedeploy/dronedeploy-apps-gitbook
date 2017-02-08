@@ -1,4 +1,4 @@
-// TODO image
+# ![](/assets/Screenshot 2017-02-08 16.50.22.png)[Install the example](https://www.dronedeploy.com/app2/applications/589bae9295378856ee605895/install)
 
 ```html
 <!DOCTYPE html>
@@ -68,7 +68,6 @@
     </script>
 </body>
 </html>
-
 ```
 
 

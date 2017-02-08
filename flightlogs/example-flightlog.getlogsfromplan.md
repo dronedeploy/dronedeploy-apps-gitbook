@@ -1,7 +1,5 @@
 //TODO Get Photo
 
-//Where do I get logs?
-
 # [Install the example](https://www.dronedeploy.com/app2/applications/589b5264af82ce11ec230f22/install "Install the example application")
 
     <!DOCTYPE html>
