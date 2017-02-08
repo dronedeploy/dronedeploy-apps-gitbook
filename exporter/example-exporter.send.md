@@ -1,5 +1,7 @@
 ![](/assets/Screenshot 2017-02-08 09.27.30.png)
 
+# [Install the example](https://www.dronedeploy.com/app2/applications/589ab42336fefad6ec83561a/install "Install the example application")
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -93,7 +95,6 @@
   </script>
 </body>
 </html>
-
 ```
 
 

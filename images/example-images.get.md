@@ -2,6 +2,8 @@
 
 // Permissions issue - use owned project
 
+# [Install the example](https://www.dronedeploy.com/app2/applications/589b5452c256798c1c4cd1c1/install "Install the example application.")
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -43,7 +45,6 @@
     </script>
 </body>
 </html>
-
 ```
 
 
