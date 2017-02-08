@@ -3,7 +3,7 @@
 * [Introduction](README.md)
 * [API](api-overview.md)
   * [Annotations](annotations.md)
-    * Example: Annotations.get
+    * [Example: Annotations.get](annotations/example-annotations.get.md)
   * [Exporter](exporter.md)
   * [FlightLogs](flightlogs.md)
   * [Images](images.md)
@@ -14,7 +14,7 @@
   * [Tiles](tiles.md)
   * [Track](track.md)
   * [User](user.md)
-* Examples
+* [Examples](examples.md)
   * [Change Flight Geometry](change_flight_geometry.md)
   * [Get Tiles](get_tiles.md)
   * [Get Annotations](get_annotations.md)
