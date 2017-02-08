@@ -4,48 +4,42 @@
 
 # [Install the example](https://www.dronedeploy.com/app2/applications/589b5264af82ce11ec230f22/install "Install the example application")
 
-```
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Document</title>
-</head>
-<body>
-    <h1 class="title">FlightLogs.getLogsFromPlan example</h1>
-    <ul id="logOutput"></ul>
-    <script>
-      var logOutput = document.getElementById('logOutput')
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <title>Document</title>
+    </head>
+    <body>
+        <h1 class="title">FlightLogs.getLogsFromPlan example</h1>
+        <ul id="logOutput"></ul>
+        <script>
+          var logOutput = document.getElementById('logOutput')
 
-      function formatOutput(log) {
-        var html = '<li class="flightlog">'
-        html += '<span>Start time: ';
-        html += log.startTime;
-        html += '</span>'
-        html += '<span>Duration: ';
-        html += log.duration;
-        html += '</span>';
-        html += '<a href="';
-        html += log.downloadUrl;
-        html += '" target="_blank">Download log</a>';
-        html += '</li>'
-        return html;
-      }
+          function formatOutput(log) {
+            return `
+              <li class="flightlog">
+                <span>Start time: ${log.startTime}</span>
+                <span>Duration: ${log.duration}</span>
+                <a href="${log.downloadUrl}" target="_blank">Download log</a>
+              </li>
+            `
+          }
 
-      new DroneDeploy({ version: 1})
-        .then(function(dronedeployApi) {
-          return dronedeployApi.Plans.getCurrentlyViewed()
-            .then(function(plan) {
-              return dronedeployApi.FlightLogs.getLogsFromPlan(plan.id)
+          new DroneDeploy({ version: 1})
+            .then(function(dronedeployApi) {
+              return dronedeployApi.Plans.getCurrentlyViewed()
+                .then(function(plan) {
+                  return dronedeployApi.FlightLogs.getLogsFromPlan(plan.id)
+                })
+              .then(function(logs){
+                logOutput.innerHTML = logs.map(formatOutput).join('')
+              });
             })
-          .then(function(logs){
-            logOutput.innerHTML = logs.map(formatOutput).join('')
-          });
-        })
-  </script>
-</body>
-</html>
-```
+      </script>
+    </body>
+    </html>
+
 
 
 
