@@ -33,6 +33,7 @@
 * Platform Policy
   * [General Guidelines](guidelines.md)
   * [Design Guidelines](styles.md)
+    * [DroneDeploy UI Kit](styles/dronedeploy-ui-kit.md)
   * [Publishing](publishing.md)
 * [FAQs](faqs.md)
 
