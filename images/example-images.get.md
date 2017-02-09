@@ -1,6 +1,4 @@
-// TODO Get image
-
-// Permissions issue - use owned project
+![](/assets/Screenshot 2017-02-09 11.53.17.png)
 
 # [Install the example](https://www.dronedeploy.com/app2/applications/589b5452c256798c1c4cd1c1/install "Install the example application.")
 
