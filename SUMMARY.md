@@ -13,6 +13,7 @@
   * [Tiles](tiles.md)
   * [Track](track.md)
   * [User](user.md)
+  * [Map](map.md)
 * Examples
   * [Change Flight Geometry](change_flight_geometry.md)
   * [Get Tiles](get_tiles.md)
