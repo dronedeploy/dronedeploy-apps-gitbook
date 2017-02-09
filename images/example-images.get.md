@@ -2,6 +2,8 @@
 
 # [Install the example](https://www.dronedeploy.com/app2/applications/589b5452c256798c1c4cd1c1/install "Install the example application.")
 
+**note: **You must upload your own project in order to use this API.  Please refer to the article on uploading an example project.
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
