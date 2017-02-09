@@ -2,6 +2,7 @@
 
 * [Introduction](README.md)
 * [How to Set up a Web Server](server_example.md)
+* [How to upload an example project](how-to-upload-an-example-project.md)
 * [API](api-overview.md)
   * [Annotations](annotations.md)
     * [Example: Annotations.get](annotations/example-annotations.get.md)
