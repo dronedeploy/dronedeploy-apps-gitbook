@@ -2,7 +2,11 @@
 
 # [Install the example](https://www.dronedeploy.com/app2/applications/589badec95378856ee605893/install)
 
-**note: **You must upload your own project in order to use this API.  Please refer to the article on uploading an example project.
+**note: **You must upload your own project in order to use this API.  Please refer to the article on uploading an example project.  Once the project has been uploaded, click on it to reach the export button.
+
+![](/assets/Screenshot 2017-02-09 11.20.01.png)
+
+Once you have queued an export, Export.list will have data to display.
 
 ```html
 <!DOCTYPE html>
@@ -12,7 +16,7 @@
   <title>Document</title>
 </head>
 <body>
-    <h1 class="title">Export.List example</h1>
+    <h1 class="title">Exporter.List example</h1>
     <ul id="exports"></ul>
   <script>
       var exportOutput = document.getElementById('exports');
