@@ -1,3 +1,5 @@
+# [![](/assets/Screenshot 2017-02-08 17.23.06.png)](https://www.dronedeploy.com/app2/applications/589baf4495378856ee605897/install)
+
 # [Install the example](https://www.dronedeploy.com/app2/applications/589baf4495378856ee605897/install)
 
 ```html
