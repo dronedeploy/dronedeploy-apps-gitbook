@@ -1,6 +1,6 @@
 ![](/assets/Screenshot 2017-02-09 11.53.17.png)
 
-# [Install the example](https://www.dronedeploy.com/app2/applications/589cbbb554ac176f9315ac6c/install)
+# [Install the example](https://www.dronedeploy.com/app2/applications/589cbbb554ac176f9315ac6b/install)
 
 **note: **You must upload your own project in order to use this API.  Please refer to the article on uploading an example project.
 
