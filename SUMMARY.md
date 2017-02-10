@@ -1,8 +1,6 @@
 # Summary
 
 * [Introduction](README.md)
-* [How to Set up a Web Server](server_example.md)
-* [How to upload an example project](how-to-upload-an-example-project.md)
 * [API](api-overview.md)
   * [Annotations](annotations.md)
     * [Example: Annotations.get](annotations/example-annotations.get.md)
@@ -36,5 +34,8 @@
   * [Design Guidelines](styles.md)
     * [DroneDeploy UI Kit](styles/dronedeploy-ui-kit.md)
   * [Publishing](publishing.md)
+* [App Examples](app-examples.md)
+  * [How to upload an example project](how-to-upload-an-example-project.md)
+  * [How to Set up a Web Server](server_example.md)
 * [FAQs](faqs.md)
 
