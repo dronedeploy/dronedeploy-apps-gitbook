@@ -17,5 +17,5 @@ _Hint: Open the javascript console to view the dronedeployApi._
 
 Download your ["Get it on DroneDeploy" badges here](https://www.dropbox.com/sh/a3baugjz3e2r0pj/AAAGaGrclU3aBFye3pBH2sgDa?dl=0) to show users where they can find your app!
 
-{% youtube %} https://www.youtube.com/watch?v=xieC4o5JEUs {% endyoutube %}
+{% youtube %} https://www.youtube.com/watch?v=xieC4o5JEUs&list=PLqOge_z8yN2EJ4ftDaY1XdbaneCRQTnvq&index=1 {% endyoutube %}
 
