@@ -30,13 +30,4 @@ Download your ["Get it on DroneDeploy" badges here](https://www.dropbox.com/sh/a
 ### Getting App Ideas
 {% youtube %}https://www.youtube.com/watch?v=ilrWHM95DY0&index=3&list=PLqOge_z8yN2EJ4ftDaY1XdbaneCRQTnvq{% endyoutube %}
 
-### App Monetization
-{% youtube %}https://www.youtube.com/watch?v=Vj_20LZozQ0&list=PLqOge_z8yN2EJ4ftDaY1XdbaneCRQTnvq&index=5{% endyoutube %}
-
-### Submitting Apps
-{% youtube %}https://www.youtube.com/watch?v=WFzmUMRkyH8&index=6&list=PLqOge_z8yN2EJ4ftDaY1XdbaneCRQTnvq{% endyoutube %}
-
-
-
-
 
