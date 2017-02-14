@@ -4,7 +4,7 @@ Since 2015, tens of thousands of DroneDeploy users have mapped more than 8 milli
 
 Once a user installs an app it will be run on DroneDeploy.com, DroneDeploy on Android and DroneDeploy on iOS. All apps are written in HTML, CSS, and JavaScript. Apps have the capability to access and modify DroneDeploy features. Additionally, any JavaScript framework or library can be used while developing an app.
 
-Build an app in two minutes to learn more. 
+Build an app in two minutes to learn more.
 
 ## Hello World in Two Minutes
 
@@ -13,7 +13,11 @@ Build an app in two minutes to learn more.
 3. Select an App Zone somewhere in the app and choose the folder "dronedeploy-app-hello-world" from step 1.
 4. Lastly, edit any file in that folder and start building your app!
 
-*Hint: Open the javascript console to view the dronedeployApi.*
-
+_Hint: Open the javascript console to view the dronedeployApi._
 
 Download your ["Get it on DroneDeploy" badges here](https://www.dropbox.com/sh/a3baugjz3e2r0pj/AAAGaGrclU3aBFye3pBH2sgDa?dl=0) to show users where they can find your app!
+
+
+
+https://www.youtube.com/watch?v=xieC4o5JEUs&list=PLqOge\_z8yN2EJ4ftDaY1XdbaneCRQTnvq&index=1
+
