@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-* [API](api-overview.md)
+* [API Overview](api-overview.md)
   * [Annotations](annotations.md)
     * [Example: Annotations.get](annotations/example-annotations.get.md)
     * [Example: Annotations.getVolume](annotations/example-annotations.getvolume.md)
