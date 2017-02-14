@@ -1,7 +1,7 @@
 # Payments
 
 * [Payments.charge](#paymentscharge)
-* [Payment FAQ](#payment-faq)
+* [Payment FAQ](#how-to-validate-or-cancel-a-payment)
 
 ## Payments.charge
 
@@ -78,7 +78,33 @@ If the request fails \(I.E. the user is offline\).
 
 ## Payment FAQ
 
-### How to validate a payment id?
+### How to validate or cancel a payment?
 
-To validate or get the status of a payment you can send a request to our public endpoint from your server. Details here,   
-[http://support.dronedeploy.com/v1.0/docs/data-api-access](http://support.dronedeploy.com/v1.0/docs/data-api-access).
+1. From the account that authored the plugin get your [API key here](https://www.dronedeploy.com/app/settings)
+2. Run \`GET\` against this endpoint with your \`paymentId\`,\`/v1/plugin\_payments/&lt;payment\_id&gt;\`
+
+```
+curl "https://public-api.dronedeploy.com/v1/plugin_payments/5817d4b9361143b45cbb072b?api_key=f78b0a0d66274fd5a8684c49deb9d83d"
+```
+
+Example Response
+
+```
+{
+    "user_id": "57c5fc90dd32274105595f92", 
+    "description": "Paid for something", 
+    "date_creation": 1234567890100, 
+    "date_paid": null, 
+    "amount": 1000, 
+    "plugin_id": "5817d4b6361143b45cbb072a", 
+    "id": "5817d4b9361143b45cbb072b"
+}
+```
+
+3. To cancel a payment run \`PUT\` against \`/v1/plugin\_payments/&lt;payment\_id&gt;\` with \`{"status": "cancelled"}\` as the body.
+
+  
+[Read more about our REST API.](http://support.dronedeploy.com/v1.0/docs/data-api-access)
+
+
+
