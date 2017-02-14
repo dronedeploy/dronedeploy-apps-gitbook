@@ -1,5 +1,8 @@
 # Payments
 
+{% youtube %}https://www.youtube.com/watch?v=Vj_20LZozQ0&list=PLqOge_z8yN2EJ4ftDaY1XdbaneCRQTnvq&index=5{% endyoutube %}
+
+
 * [Payments.charge](#paymentscharge)
 * [Payment FAQ](#how-to-validate-or-cancel-a-payment)
 
