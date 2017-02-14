@@ -6,6 +6,12 @@ Once a user installs an app it will be run on DroneDeploy.com, DroneDeploy on An
 
 Build an app in two minutes to learn more.
 
+## Introduction
+{% youtube %} https://www.youtube.com/watch?v=xieC4o5JEUs&list=PLqOge_z8yN2EJ4ftDaY1XdbaneCRQTnvq&index=1 {% endyoutube %}
+
+## App Zones
+{% youtube %}https://www.youtube.com/watch?v=gsBPcHuA8r8&index=2&list=PLqOge_z8yN2EJ4ftDaY1XdbaneCRQTnvq{% endyoutube %}
+
 ## Hello World in Two Minutes
 
 1. [Download hello world example](https://s3.amazonaws.com/drone-deploy-plugins/templates/dronedeploy-app-hello-world.zip) and unzip the folder
@@ -16,6 +22,4 @@ Build an app in two minutes to learn more.
 _Hint: Open the javascript console to view the dronedeployApi._
 
 Download your ["Get it on DroneDeploy" badges here](https://www.dropbox.com/sh/a3baugjz3e2r0pj/AAAGaGrclU3aBFye3pBH2sgDa?dl=0) to show users where they can find your app!
-
-{% youtube %} https://www.youtube.com/watch?v=xieC4o5JEUs&list=PLqOge_z8yN2EJ4ftDaY1XdbaneCRQTnvq&index=1 {% endyoutube %}
 
