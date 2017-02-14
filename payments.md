@@ -80,8 +80,9 @@ If the request fails \(I.E. the user is offline\).
 
 ### How to validate or cancel a payment?
 
-1. From the account that authored the plugin get your [API key here](https://www.dronedeploy.com/app/settings)
-2. Run \`GET\` against this endpoint with your \`paymentId\`,\`/v1/plugin\_payments/&lt;payment\_id&gt;\`
+1 From the account that authored the plugin get your [API key here](https://www.dronedeploy.com/app/settings)
+
+2. Run _GET_ against this endpoint with your payment\_id, _/v1/plugin\_payments/&lt;payment\_id&gt;_
 
 ```
 curl "https://public-api.dronedeploy.com/v1/plugin_payments/5817d4b9361143b45cbb072b?api_key=f78b0a0d66274fd5a8684c49deb9d83d"
@@ -101,10 +102,7 @@ Example Response
 }
 ```
 
-3. To cancel a payment run \`PUT\` against \`/v1/plugin\_payments/&lt;payment\_id&gt;\` with \`{"status": "cancelled"}\` as the body.
+3. To cancel a payment run _PUT_ against _/v1/plugin\_payments/&lt;payment\_id&gt;_ with _{"status": "cancelled"}_ as the body.
 
-  
 [Read more about our REST API.](http://support.dronedeploy.com/v1.0/docs/data-api-access)
-
-
 
