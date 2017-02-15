@@ -12,6 +12,7 @@
     * [Example: Exporter.get3DModelLink](exporter/example-exporter.get3dmodellink.md)
   * [FlightLogs](flightlogs.md)
     * [Example: Flightlog.getLogsFromPlan](flightlogs/example-flightlog.getlogsfromplan.md)
+    * [Sample Flight Log](flightlogs/sample-flight-log.md)
   * [Images](images.md)
     * [Example: Images.get](images/example-images.get.md)
   * [Link](link.md)

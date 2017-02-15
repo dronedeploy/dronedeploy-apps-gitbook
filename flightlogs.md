@@ -3,6 +3,7 @@
 ## FlightLogs.getLogsFromPlan
 
 **Overview**
+
 ```javascript
 const planId = String;
 dronedeployApi.FlightLogs.getLogsFromPlan(planId);
@@ -16,6 +17,7 @@ dronedeployApi.FlightLogs.getLogsFromPlan('57eaa66d2a2b43fa1249c76c')
 ```
 
 **Example Response**
+
 ```javascript
 [
   downloadUrl: "https://s3.amazonaws.com/drone-deploy-flight-logs/57eaa66d2a2b43fa1249c76c/57eaa66d2a2b43fa1249c76c-09-29-105201-197_2016-09-29-110228-607.log"
@@ -23,3 +25,6 @@ dronedeployApi.FlightLogs.getLogsFromPlan('57eaa66d2a2b43fa1249c76c')
   startTime:"29 Sep 2016 - 10:52"
 ]
 ```
+
+
+
