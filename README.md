@@ -17,7 +17,16 @@ _Hint: Open the javascript console to view the dronedeployApi._
 
 Download your ["Get it on DroneDeploy" badges here](https://www.dropbox.com/sh/a3baugjz3e2r0pj/AAAGaGrclU3aBFye3pBH2sgDa?dl=0) to show users where they can find your app!
 
+# Video Tutorials
+Checkout our [youtube channel](https://www.youtube.com/watch?v=xieC4o5JEUs&index=1&list=PLqOge_z8yN2EJ4ftDaY1XdbaneCRQTnvq) to view video tutorials of App Market.
 
+### Getting Started with DroneDeploy App Market
+{% youtube %} https://www.youtube.com/watch?v=xieC4o5JEUs&list=PLqOge_z8yN2EJ4ftDaY1XdbaneCRQTnvq&index=1 {% endyoutube %}
 
-https://www.youtube.com/watch?v=xieC4o5JEUs&list=PLqOge\_z8yN2EJ4ftDaY1XdbaneCRQTnvq&index=1
+### App Zones
+{% youtube %}https://www.youtube.com/watch?v=gsBPcHuA8r8&index=2&list=PLqOge_z8yN2EJ4ftDaY1XdbaneCRQTnvq{% endyoutube %}
+
+### Getting App Ideas
+{% youtube %}https://www.youtube.com/watch?v=ilrWHM95DY0&index=3&list=PLqOge_z8yN2EJ4ftDaY1XdbaneCRQTnvq{% endyoutube %}
+
 

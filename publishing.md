@@ -1,5 +1,7 @@
 # Publishing
 
+{% youtube %}https://www.youtube.com/watch?v=WFzmUMRkyH8&index=6&list=PLqOge_z8yN2EJ4ftDaY1XdbaneCRQTnvq{% endyoutube %}
+
 Once you submit your application, it will be reviewed to ensure it adheres to the DroneDeploy platform policy and style guidelines.
 
  
