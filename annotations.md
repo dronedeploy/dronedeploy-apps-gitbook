@@ -4,8 +4,84 @@
 
 ![](annotations.png)
 
-- [Annotations.get](#annotationsget)
-- [Annotations.getVolume](#annotationsgetvolume)
+* [Annotations.createMarker](#annotationscreatemarker)
+* [Annotations.createLine](#annotationscreateline)
+* [Annotations.createArea](#annotationscreatearea)
+* [Annotations.delete](#annotationsdelete)
+* [Annotations.get](#annotationsget)
+* [Annotations.getVolume](#annotationsgetvolume)
+
+## Annotations.createMarker
+
+**Overview**
+
+This function creates an annotation at a specific point.
+
+```
+const planId = String;
+const location = {
+  lat: 35,
+  lng: -96
+};
+const displayOptions = { // optional display options
+  description: 'My Marker Annotation'
+  color: '#888888'
+}
+dronedeployApi.Annotations.createMarker(planId, location, displayOptions);
+```
+
+## Annotations.createLine
+
+**Overview**
+
+This function creates a line-based annotation based on a series of points.
+
+```
+const planId = String;
+const geometry = [
+  {lat: 35, lng: 35},
+  {lat: 35, lng: 36},
+  {lat: 36, lng: 36}
+];
+const displayOptions = { // optional display options
+  description: 'My Line Annotation',
+  color: '#888888'
+}
+dronedeployApi.Annotations.createLine(planId, location, displayOptions);
+```
+
+## Annotations.createArea
+
+**Overview**
+
+This function creates a polygon annotation given a series of points.
+
+```
+const planId = String;
+const geometry = [
+  {lat: 35, lng: 35},
+  {lat: 35, lng: 36},
+  {lat: 36, lng: 36},
+  {lat: 36, lng: 35}
+];
+const displayOptions = { //optional display options
+  description: 'My Area Annotation',
+  color: '#888888',
+  fillColor: '#666666' // only relevant for an area annotation
+}
+dronedeployApi.Annotations.createArea(planId, location, displayOptions);
+```
+
+## Annotations.delete
+
+**Overview**
+
+This function deletes a specific annotation.
+
+```
+const annotationId: String;
+dronedeployApi.Annotations.delete(annotationId);
+```
 
 ## Annotations.get
 
@@ -30,6 +106,7 @@ dronedeployApi.Annotations.get('5730dc11929d2465038183ab', {comments: true})
 ```
 
 **Example Response**
+
 ```javascript
 [
   {
@@ -353,7 +430,9 @@ dronedeployApi.Annotations.get('5730dc11929d2465038183ab', {comments: true})
 ```
 
 ## Annotations.getVolume
+
 ### Note: Arrival 11/1/2016
+
 **Overview**
 
 This function returns the volume information for a volume annotation. DroneDeploy uses this data in the volume annotation detail.
@@ -374,6 +453,7 @@ dronedeployApi.Annotations.getVolume('581286dccb5fda14db8d2971')
 ```
 
 **Example Response**
+
 ```javascript
 {
   "tiles": [
@@ -425,6 +505,7 @@ dronedeployApi.Annotations.getVolume('581286dccb5fda14db8d2971')
 ** Errors **
 
 If the map is a legacy map and does not support volume annotations the following error will be returned.
+
 ```javascript
 dronedeployApi.Annotations.getVolume('581286dccb5fda14db8d2971')
   .then(
@@ -433,3 +514,6 @@ dronedeployApi.Annotations.getVolume('581286dccb5fda14db8d2971')
   );
 // Map does not support volume annotations.
 ```
+
+
+

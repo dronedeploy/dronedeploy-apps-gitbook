@@ -5,6 +5,7 @@
   * [Annotations](annotations.md)
     * [Example: Annotations.get](annotations/example-annotations.get.md)
     * [Example: Annotations.getVolume](annotations/example-annotations.getvolume.md)
+    * [Example: Annotation create and delete](annotations/example-annotation-create-and-delete.md)
   * [Exporter](exporter.md)
     * [Example: Exporter.list](exporter/example-exporter.list.md)
     * [Example: Exporter.send](exporter/example-exporter.send.md)
