@@ -1,6 +1,6 @@
 ![](/assets/Screen Shot 2017-02-19 at 5.01.28 PM.jpg)
 
-```
+```html
 <html>
   <head>
     <title></title>
@@ -80,6 +80,3 @@
 </html>
 
 ```
-
-
-

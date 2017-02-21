@@ -17,7 +17,7 @@
 
 This function creates an annotation at a specific point.
 
-```
+```javascript
 const planId = String;
 const location = {
   lat: 35,
@@ -36,7 +36,7 @@ dronedeployApi.Annotations.createMarker(planId, location, displayOptions);
 
 This function creates a line-based annotation based on a series of points.
 
-```
+```javascript
 const planId = String;
 const geometry = [
   {lat: 35, lng: 35},
@@ -56,7 +56,7 @@ dronedeployApi.Annotations.createLine(planId, location, displayOptions);
 
 This function creates a polygon annotation given a series of points.
 
-```
+```javascript
 const planId = String;
 const geometry = [
   {lat: 35, lng: 35},
@@ -78,7 +78,7 @@ dronedeployApi.Annotations.createArea(planId, location, displayOptions);
 
 This function deletes a specific annotation.
 
-```
+```javascript
 const annotationId: String;
 dronedeployApi.Annotations.delete(annotationId);
 ```
