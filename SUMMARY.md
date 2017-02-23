@@ -30,6 +30,7 @@
   * [Track](track.md)
   * [User](user.md)
   * [Map](map.md)
+    * [Map API Example](map/map-api-example.md)
 * Platform Policy
   * [General Guidelines](guidelines.md)
   * [Design Guidelines](styles.md)
