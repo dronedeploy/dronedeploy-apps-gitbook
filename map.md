@@ -9,7 +9,40 @@ The map api exposes methods for developers to interact with the map on the user'
 * [Map.addTileLayer](#mapaddtilelayer)
 * [Map.addPolygon](#mapaddpolygon)
 
+**Note:** You must *.subscribe()* to methods that draw onto the map. When unsubscribe is called the map changes will be removed.
+
+```
+var sub = dronedeployApi.Map.addPolygon(latLng)
+  .subscribe(() => {
+    // This will remove your change from the map.
+    sub.unsubscribe();
+  });
+```
+
+Additionally, when you App is removed from the dom all pending subscriptions are destroyed which will in return remove any map change made.
+
 ### Map.addImageOverlay
+
+**Overview**
+
+```javascript
+var imageUrl = String;
+var bounds = [{ lat: Number, lng: Number }, ....];
+dronedeployApi.Map.addImageOverlay(imageUrl, bounds)
+  .subscribe(function(overlay){ console.log(overlay) });
+```
+
+**Example Response**
+
+```javascript
+.subscribe(function(overlay){
+  overlay.bringToBack();
+  overlay.bringToFront();
+  overlay.remove();
+  overlay.setOpacity(0.4);
+  overlay.setUrl(imageUrl);
+});
+```
 
 ### Map.panTo
 
@@ -17,8 +50,10 @@ The map api exposes methods for developers to interact with the map on the user'
 
 ### Map.addPolygon
 
-```
-var latLng = {lat: Number, lng: Number};
+**Overview**
+
+```javascript
+var latLngs = [{lat: Number, lng: Number}, ...];
 var optionalOptions = {
   color: String,
   fill: Boolean,
@@ -26,9 +61,22 @@ var optionalOptions = {
   opacity: Number,
   weight: Number,
 };
-dronedeployApi.Map.addPolygon(latLng, optionalOptions)
-  .subscribe((annotation) => console.log(annotation));
+dronedeployApi.Map.addPolygon(latLngs, optionalOptions)
+  .subscribe(function(annotation){ console.log(annotation) });
 ```
 
 
+**Example Response**
+
+```javascript
+.subscribe(function(polygon){
+  polygon.bringToBack();
+  polygon.bringToFront();
+  polygon.getCenter().then(function(latLng){ console.log(latLng) });
+  polygon.getLatLngs().then(function(latLngs){ console.log(latLngs) });
+  polygon.remove();
+  polygon.setLatLngs([{lat: 3, lng: 3}, ...]);
+  polygon.setOpacity(0.4);
+});
+```
 
