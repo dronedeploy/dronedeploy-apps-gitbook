@@ -142,9 +142,11 @@ dronedeployApi.Plans.all()
 ```javascript
 const planIdToUpdate = String;
 const fieldsToUpdate = {
-  // These are the two fields that can be updated on the plan
+  // These are the fields that can be updated on the plan
   name: String,
-  geometry: {lat: number, lng: number}
+  geometry: {lat: number, lng: number},
+  frontlap: Number,
+  sidelap: Number,
 };
 dronedeployApi.Plans.update(planIdToUpdate, fieldsToUpdate);
 ```
@@ -162,8 +164,8 @@ dronedeployApi.Plans.update('57e0761f21303e5214b6ae31', {
     {lat: 37.70100590388889,lng: -78.88330925000001},
     {lat: 37.70100590388889,lng: -78.90349675}
   ],
-  frontlap: 70, // allowed range: 30 - 95%
-  sidelap: 45, // allowed range: 30 - 95
+  frontlap: 70, // allowed range: 15 - 95%
+  sidelap: 45, // allowed range: 15 - 95
 });
 ```
 
