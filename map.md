@@ -32,7 +32,7 @@ dronedeployApi.Map.addImageOverlay(imageUrl, bounds)
   .subscribe(function(overlay){ console.log(overlay) });
 ```
 
-**Example Response**
+**Response**
 
 ```javascript
 .subscribe(function(overlay){
@@ -46,7 +46,50 @@ dronedeployApi.Map.addImageOverlay(imageUrl, bounds)
 
 ### Map.panTo
 
+```javascript
+var location = LatLng;
+var optionalOptions = {zoom: 20};
+dronedeployApi.Map.panTo(location, optionalOptions);
+```
+
 ### Map.addTileLayer
+
+**Overview**
+
+```javascript
+var urlTemplate = String;
+var optionalOptions = {
+  errorTileUrl: String,
+  maxZoom: Number,
+  minZoom: Number,
+};
+
+dronedeployApi.Map.addTileLayer(urlTemplate, optionalOptions);
+```
+
+**Response**
+
+```javascript
+.subscribe(function(tileLayer){
+  tileLayer.bringToBack();
+  tileLayer.bringToFront();
+  tileLayer.remove();
+  tileLayer.setOpacity(0.4);
+  tileLayer.setUrl(tileTemplate);
+});
+```
+
+**Example**
+
+```javascript
+var urlTemplate = 'https://api.mapbox.com/styles/v1/mapbox/dark-v9/tiles/256/{z}/{x}/{y}';
+var blankImage = 'data:image/gif;base64,R0lGODlhAQABAAAAACw=';
+dronedeployApi.Map.addtileLayer(urlTemplate, {
+  errorTileUrl: blankImage,
+  maxZoom: 25,
+  minZoom: 18,
+});
+```
 
 ### Map.addPolygon
 
@@ -65,8 +108,7 @@ dronedeployApi.Map.addPolygon(latLngs, optionalOptions)
   .subscribe(function(annotation){ console.log(annotation) });
 ```
 
-
-**Example Response**
+**Response**
 
 ```javascript
 .subscribe(function(polygon){
