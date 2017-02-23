@@ -147,6 +147,19 @@ const fieldsToUpdate = {
   geometry: {lat: number, lng: number},
   frontlap: Number,
   sidelap: Number,
+  camera: {
+    id: Number,
+    capture_delay: Number,
+    focal: Number,
+    h_proj: Number,
+    min_capture_period: Number,
+    name: String,
+    sensor_height: Number,
+    sensor_width: Number,
+    v_proj: Number,
+    xres: Number,
+    yres: Number,
+  }
 };
 dronedeployApi.Plans.update(planIdToUpdate, fieldsToUpdate);
 ```
@@ -166,6 +179,19 @@ dronedeployApi.Plans.update('57e0761f21303e5214b6ae31', {
   ],
   frontlap: 70, // allowed range: 15 - 95%
   sidelap: 45, // allowed range: 15 - 95
+  camera: {
+    id: 11245,
+    capture_delay: 0,
+    focal: 4.7,
+    h_proj: 0.9,
+    min_capture_period: 2,
+    name: 'MP4K',
+    sensor_height: 4.55,
+    sensor_width: 6.17,
+    v_proj: 0.9,
+    xres: 4000,
+    yres: 3000,
+  },
 });
 ```
 
