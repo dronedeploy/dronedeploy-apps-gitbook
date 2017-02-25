@@ -1,5 +1,7 @@
 ![](/tilequery.png)
 
+**NOTE:** You must upload your own project in order to use this API.  Please refer to the article on uploading an example project.  Once the project has been uploaded, click on it to reach the export button.
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -35,7 +37,7 @@
   function getListItemFromLink(linkUrl){
     var last = function(array) { return array.slice(-1)[0]};
     //es6 template string
-    return `<li><a href="${linkUrl}" target="_blank">{last(linkUrl.split('/'))}</a></li>`
+    return `<li><a href="${linkUrl}" target="_blank">${last(linkUrl.split('/'))}</a></li>`
   }
 
   function drawTileLinksToScreen(links){
@@ -52,10 +54,9 @@
 
   function updateTileLinks(){
     new DroneDeploy({version: 1}).then(function(dronedeployApi){
-       return dronedeployApi.Plans.getCurrentlyViewed()
-    })
-    .then(function(plan){
-      return fetchTileDataFromPlan(dronedeployApi, plan);
+       return dronedeployApi.Plans.getCurrentlyViewed().then(function(plan){
+          return fetchTileDataFromPlan(dronedeployApi, plan);
+       });
     })
     .then(getTilesFromResponse)
     .then(drawTileLinksToScreen);
@@ -70,6 +71,3 @@
 </body>
 </html>
 ```
-
-
-

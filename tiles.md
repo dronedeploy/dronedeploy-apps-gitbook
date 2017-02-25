@@ -12,8 +12,6 @@ dronedeployApi.Tiles.get({planId, layerName, zoom})
   .then(function(tileInformation){ console.log(tileInformation) });
 ```
 
-[Try the example!](get_tiles.md)
-
 **Example Call**
 ```javascript
 dronedeployApi.Tiles.get({planId: '5605c0e5752afc005a000004', layerName: 'ortho', zoom: 16})
