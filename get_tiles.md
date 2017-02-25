@@ -20,56 +20,56 @@
 </head>
 <body>
 
-<h2>Tile Query</h2>
-<label for="">Zoom Level: </label>
-<input type="text" value="17" id="zoomLevel">
-<br>
-<label for="">Layer Name: </label>
-<select id="layerName">
-  <option value="ortho">ortho</option>
-  <option value="dem">dem</option>
-</select>
+  <h2>Tile Query</h2>
+  <label for="">Zoom Level: </label>
+  <input type="text" value="17" id="zoomLevel">
+  <br>
+  <label for="">Layer Name: </label>
+  <select id="layerName">
+    <option value="ortho">ortho</option>
+    <option value="dem">dem</option>
+  </select>
 
-<ul class="tile-links"></ul>
+  <ul class="tile-links"></ul>
 
-<script>
-const zoom = document.querySelector('#zoomLevel');
-const layer = document.querySelector('#layerName');
-const tileList = document.querySelector('.tile-links');
+  <script>
+  var zoom = document.querySelector('#zoomLevel');
+  var layer = document.querySelector('#layerName');
+  var tileList = document.querySelector('.tile-links');
 
-function getListItemFromLink(linkUrl){
-  const last = (array) => array.slice(-1)[0];
-  return `<li><a href="${linkUrl}" target="_blank">${last(linkUrl.split('/'))}</a></li>`;
-}
+  function getListItemFromLink(linkUrl){
+    var last = function(array) { return array.slice(-1)[0]};
+    //es6 template string
+    return `<li><a href="${linkUrl}" target="_blank">${last(linkUrl.split('/'))}</a></li>`
+  }
 
-function drawTileLinksToScreen(links){
-  tileList.innerHTML = links.map(getListItemFromLink).join('');
-}
+  function drawTileLinksToScreen(links){
+    tileList.innerHTML = links.map(getListItemFromLink).join('');
+  }
 
-function fetchTileDataFromPlan(api, plan){
-  return api.Tiles.get({planId: plan.id, layerName: layer.value, zoom: parseInt(zoom.value)});
-}
+  function fetchTileDataFromPlan(api, plan){
+    return api.Tiles.get({planId: plan.id, layerName: layer.value, zoom: parseInt(zoom.value)});
+  }
 
-function getTilesFromResponse(tileResponse){
-  return tileResponse.tiles;
-}
+  function getTilesFromResponse(tileResponse){
+    return tileResponse.tiles;
+  }
 
-function updateTileLinks(){
-  new DroneDeploy({version: 1}).then(function(api){
-     api.Plans.getCurrentlyViewed()
-      .then(function(plan){
-        return fetchTileDataFromPlan(api, plan);
-      })
-      .then(getTilesFromResponse)
-      .then(drawTileLinksToScreen);
-  })
-}
+  function updateTileLinks(){
+    new DroneDeploy({version: 1}).then(function(dronedeployApi){
+       return dronedeployApi.Plans.getCurrentlyViewed().then(function(plan){
+          return fetchTileDataFromPlan(dronedeployApi, plan);
+       });
+    })
+    .then(getTilesFromResponse)
+    .then(drawTileLinksToScreen);
+  }
 
-zoom.addEventListener('change', updateTileLinks);
-layer.addEventListener('change', updateTileLinks);
-updateTileLinks();
+  zoom.addEventListener('change', updateTileLinks);
+  layer.addEventListener('change', updateTileLinks);
+  updateTileLinks();
 
-</script>
+  </script>
 
 </body>
 </html>
