@@ -2,6 +2,9 @@
 
 ![](tilequery.png)
 
+**NOTE:** You must upload your own project in order to use this API.  Please refer to the article on uploading an example project.  Once the project has been uploaded, click on it to reach the export button.
+
+
 ```html
 <!DOCTYPE html>
 <html lang="en">

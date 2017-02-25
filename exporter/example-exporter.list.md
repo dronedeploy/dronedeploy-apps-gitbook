@@ -1,7 +1,5 @@
 ![](/assets/Screenshot 2017-02-09 11.32.05.png)
 
-# [Install the example](https://www.dronedeploy.com/app2/applications/589badec95378856ee605892/install)
-
 **note: **You must upload your own project in order to use this API.  Please refer to the article on uploading an example project.  Once the project has been uploaded, click on it to reach the export button.
 
 ![](/assets/Screenshot 2017-02-09 11.20.01.png)
