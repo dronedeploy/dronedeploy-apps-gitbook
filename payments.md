@@ -107,5 +107,9 @@ Example Response
 
 3 - To cancel a payment run _PUT_ against _/v1/plugin\_payments/&lt;payment\_id&gt;_ with _{"status": "cancelled"}_ as the body.
 
+```
+curl -X PUT -H "Content-Type: application/json" -d '{"status":"cancelled"}' "https://public-api.dronedeploy.com/v1/plugin_payments/589e239dc66a510001bd330b?api_key=65452af2874547428a90d008a8ed75dc"
+```
+
 [Read more about our REST API.](http://support.dronedeploy.com/v1.0/docs/data-api-access)
 
