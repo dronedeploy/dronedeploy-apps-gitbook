@@ -79,6 +79,8 @@ If the request fails \(I.E. the user is offline\).
 // Error('Error Submitting Payment')
 ```
 
+**[Full Example](payments/example-payments.charge.md)**
+
 ## Payment FAQ
 
 ### How to validate or cancel a payment?

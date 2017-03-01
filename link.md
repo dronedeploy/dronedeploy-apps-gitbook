@@ -13,5 +13,4 @@ Since apps run on Web, iOS, and Android some things like links can be a little m
 dronedeployApi.Link.open('https://www.google.com/');
 ```
 
-
-
+**[Example: Link.open](link/example-link.open.md)**

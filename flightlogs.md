@@ -9,6 +9,8 @@ const planId = String;
 dronedeployApi.FlightLogs.getLogsFromPlan(planId);
 ```
 
+* [Sample Flight Log](flightlogs/sample-flight-log.md)
+
 **Example**
 
 ```javascript
@@ -26,5 +28,4 @@ dronedeployApi.FlightLogs.getLogsFromPlan('57eaa66d2a2b43fa1249c76c')
 ]
 ```
 
-
-
+**[Full Example](flightlogs/example-flightlog.getlogsfromplan.md)**
