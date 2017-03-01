@@ -8,7 +8,7 @@ Build an app in two minutes to learn more.
 
 ## Hello World in Two Minutes
 
-{% youtube %} https://www.youtube.com/watch?v=xieC4o5JEUs&list=PLqOge_z8yN2EJ4ftDaY1XdbaneCRQTnvq&index=1 {% endyoutube %}
+{% youtube %} https://youtu.be/xieC4o5JEUs?list=PLqOge_z8yN2EJ4ftDaY1XdbaneCRQTnvq {% endyoutube %}
 
 1. Download [simple example](https://s3.amazonaws.com/drone-deploy-plugins/templates/dronedeploy-app-hello-world.zip) or [full example](https://s3.amazonaws.com/drone-deploy-plugins/templates/dronedeploy-expand-example.zip) and unzip the folder
 2. Agree to the Developer Agreement [on the settings page](https://www.dronedeploy.com/app2/settings) and turn on "Developer Mode"
