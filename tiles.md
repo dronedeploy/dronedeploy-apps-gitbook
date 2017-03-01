@@ -30,6 +30,8 @@ dronedeployApi.Tiles.get({planId: '5605c0e5752afc005a000004', layerName: 'ortho'
   .then(function(tileInformation){ console.log(tileInformation) });
 ```
 
+**NOTE: **The two example maps that come with your account don't work work this API because you don't own those maps. Please [visit this page](https://dronedeploy.gitbooks.io/dronedeploy-apps/content/how-to-upload-an-example-project.html) for an example dataset.
+
 **Example Response**
 
 **template:** This is the tile url template dronedeploy uses to fetch tiles on the map as the user scrolls around. Z represents the zoom level, X and Y represent the coordinates in [mercator projection](https://msdn.microsoft.com/en-us/library/bb259689.aspx).
