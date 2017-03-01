@@ -2,7 +2,7 @@
 
 In order to ensure a good experience for users — buttons, colors, fonts, etc. should all look as if they belong in the DroneDeploy UI.
 
-**If you stick to the CSS styles guidelines below and use the [expandable app example here](	 https://s3.amazonaws.com/drone-deploy-plugins/templates/dronedeploy-expand-example.zip), you are on the right track.**
+**If you stick to the CSS styles guidelines below and use the [expandable app example here](https://s3.amazonaws.com/drone-deploy-plugins/templates/dronedeploy-expand-example.zip), you are on the right track.**
 
 =================
 
