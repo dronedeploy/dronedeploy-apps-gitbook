@@ -1,5 +1,8 @@
 # FAQs
 
+### How can I get app ideas?
+
+{% youtube %}https://www.youtube.com/watch?v=ilrWHM95DY0&index=3&list=PLqOge_z8yN2EJ4ftDaY1XdbaneCRQTnvq{% endyoutube %}
 
 ### What is the DroneDeploy App Market?
 The DroneDeploy App Market is a drone data platform that enables developers to build apps and publish them for distribution, directly in the DroneDeploy UI. DroneDeploy users from around the world can then access these apps in the App Market. By building these apps with DroneDeploy's suite of APIs, users can put them to work in pre-flight planning operations, data analysis activities, and more. Developer's apps are available cross-platform, on all supported devices. Developers have the option to monetize apps with simple revenue share — 70% to the developer, 30% to DroneDeploy.
