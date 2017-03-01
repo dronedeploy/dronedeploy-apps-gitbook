@@ -3,6 +3,17 @@
 ## Tiles.get
 
 **Overview**
+
+Tiles are the images that the user sees that comprise the map. As the user zooms it loads a new tile layer.
+
+![](/assets/TilePyramidSmall.jpg)
+
+Most maps start zoom level 16 \(Z\) and get more detailed as the the zoom gets higher. Many maps only have tiles upto zoom level 20 or 21 a few very detailed maps may have zoom level 25.
+
+Many mapping libraries support tile pyramids, I.E. filling in these values `/{z}/{x}/{y} `as the user pans and scrolls. Includes libraries are [leaflet, ](http://leafletjs.com/)[mapbox gl](https://github.com/mapbox/mapbox-gl-js), [google maps](https://developers.google.com/maps/), and many more.
+
+**API Parameters**
+
 ```javascript
 const planId = String;
 const layerName = 'ortho' || 'dem';
@@ -13,6 +24,7 @@ dronedeployApi.Tiles.get({planId, layerName, zoom})
 ```
 
 **Example Call**
+
 ```javascript
 dronedeployApi.Tiles.get({planId: '5605c0e5752afc005a000004', layerName: 'ortho', zoom: 16})
   .then(function(tileInformation){ console.log(tileInformation) });
@@ -20,7 +32,7 @@ dronedeployApi.Tiles.get({planId: '5605c0e5752afc005a000004', layerName: 'ortho'
 
 **Example Response**
 
-**template:** This is the tile url template dronedeploy uses to fetch tiles on the map as the user scrolls around. Z represents the zoom level, X and Y represent the coordinates in [mercator projection](https://msdn.microsoft.com/en-us/library/bb259689.aspx). 
+**template:** This is the tile url template dronedeploy uses to fetch tiles on the map as the user scrolls around. Z represents the zoom level, X and Y represent the coordinates in [mercator projection](https://msdn.microsoft.com/en-us/library/bb259689.aspx).
 
 **tiles:** An array of links to the tile images at the specified zoom level.
 
@@ -47,4 +59,5 @@ dronedeployApi.Tiles.get({planId: '5605c0e5752afc005a000004', layerName: 'ortho'
 }
 ```
 
-**[Full Example](/tiles/example-tiles.get.md)**
+[**Full Example**](/tiles/example-tiles.get.md)
+
