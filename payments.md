@@ -79,7 +79,7 @@ If the request fails \(I.E. the user is offline\).
 // Error('Error Submitting Payment')
 ```
 
-**[Full Example](payments/example-payments.charge.md)**
+**[Full Example](/payments/example-payments.charge.md)**
 
 ## Payment FAQ
 

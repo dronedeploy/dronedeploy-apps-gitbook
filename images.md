@@ -110,4 +110,4 @@ Note: Values under `data.exif` are not normalized and vary depending on the came
 }]
 ```
 
-**[Full Example](images/example-images.get.md)**
+**[Full Example](/images/example-images.get.md)**

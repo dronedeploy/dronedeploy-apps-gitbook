@@ -40,4 +40,4 @@ dronedeployApi.Messaging.showToast('Example Toast', {timeout: neverTimeout})
 ```
 
 
-**[Full Example](messaging/example-messaging.showtoast.md)**
+**[Full Example](/messaging/example-messaging.showtoast.md)**

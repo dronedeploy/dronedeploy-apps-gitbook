@@ -29,7 +29,7 @@ dronedeployApi.Annotations.get('5730dc11929d2465038183ab', {comments: true})
   .then(function(annotations){ console.log(annotations) })
 ```
 
-**[Full Example](annotations/example-annotations.get.md)**
+**[Full Example](/annotations/example-annotations.get.md)**
 
 **Example Response**
 ```javascript
@@ -424,7 +424,7 @@ dronedeployApi.Annotations.getVolume('581286dccb5fda14db8d2971')
 }
 ```
 
-**[Full Example](annotations/example-annotations.getvolume.md)**
+**[Full Example](/annotations/example-annotations.getvolume.md)**
 
 ** Errors **
 

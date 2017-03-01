@@ -44,7 +44,7 @@ dronedeployApi.Map.addImageOverlay(imageUrl, bounds)
 });
 ```
 
-**[Full Example](map/map-api-example.md)**
+**[Full Example](/map/map-api-example.md)**
 
 ### Map.panTo
 
@@ -54,7 +54,7 @@ var optionalOptions = {zoom: 20};
 dronedeployApi.Map.panTo(location, optionalOptions);
 ```
 
-**[Full Example](map/map-api-example.md)**
+**[Full Example](/map/map-api-example.md)**
 
 ### Map.addTileLayer
 
@@ -95,7 +95,7 @@ dronedeployApi.Map.addtileLayer(urlTemplate, {
 });
 ```
 
-**[Full Example](map/map-api-example.md)**
+**[Full Example](/map/map-api-example.md)**
 
 ### Map.addPolygon
 
@@ -128,4 +128,4 @@ dronedeployApi.Map.addPolygon(latLngs, optionalOptions)
 });
 ```
 
-**[Full Example](map/map-api-example.md)**
+**[Full Example](/map/map-api-example.md)**

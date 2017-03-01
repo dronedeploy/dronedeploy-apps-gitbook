@@ -47,4 +47,4 @@ dronedeployApi.Tiles.get({planId: '5605c0e5752afc005a000004', layerName: 'ortho'
 }
 ```
 
-**[Full Example](tiles/example-tiles.get.md)**
+**[Full Example](/tiles/example-tiles.get.md)**
