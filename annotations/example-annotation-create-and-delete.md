@@ -11,11 +11,11 @@
         version: 1
       });
 
-      dd.then((api)=>{
+      dd.then(function(api){
         let select = document.getElementById('planSelect');
         select.innerHTML = '';
 
-        api.Plans.all().then((plans)=>{
+        api.Plans.all().then(function(plans){
           for(let plan of plans) {
             let option = document.createElement('option');
             option.innerText = plan.name;
@@ -32,8 +32,8 @@
       function drawOutline(){
         let planId = document.getElementById('planSelect').value;
 
-        dd.then((api)=>{
-          api.Plans.getCurrentlyViewed().then((plan)=>{
+        dd.then(function(api){
+          api.Plans.getCurrentlyViewed().then(function(plan){
             api.Annotations.createMarker(
               plan.id,
               planGeometry[planId].location
@@ -48,10 +48,10 @@
       };
 
       function clearAnnotations(){
-        dd.then((api)=>{
-          api.Plans.getCurrentlyViewed().then((plan)=>{
-            api.Annotations.get(plan.id).then((annotations)=>{
-              annotations.forEach((ann)=>{
+        dd.then(function(api){
+          api.Plans.getCurrentlyViewed().then(function(plan){
+            api.Annotations.get(plan.id).then(function(annotations){
+              annotations.forEach(function(ann){
                 console.log(ann)
                 api.Annotations.delete(ann.id);
               })
