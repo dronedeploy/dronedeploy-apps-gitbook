@@ -3,9 +3,6 @@
 * [Introduction](README.md)
 * [API Overview](api-overview.md)
   * [Annotations](annotations.md)
-    * [Example: Annotations.get](annotations/example-annotations.get.md)
-    * [Example: Annotations.getVolume](annotations/example-annotations.getvolume.md)
-    * [Example: Annotation create and delete](annotations/example-annotation-create-and-delete.md)
   * [Exporter](exporter.md)
   * [FlightLogs](flightlogs.md)
   * [Images](images.md)
@@ -40,6 +37,11 @@
   * [Plans.update](plans/example-plans.update.md)
   * [Tiles.get](tiles/example-tiles.get.md)
   * [Map API Example](map/map-api-example.md)
+  * [Annotations.get](annotations/example-annotations.get.md)
+  * [Annotations.getVolume](annotations/example-annotations.getvolume.md)
+  * [Annotation create and delete](annotations/example-annotation-create-and-delete.md)
   * [How to upload an example project](how-to-upload-an-example-project.md)
   * [How to Set up a Web Server](server_example.md)
 * [FAQs](faqs.md)
+
+
