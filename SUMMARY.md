@@ -14,8 +14,9 @@
   * [Track](track.md)
   * [User](user.md)
   * [Map](map.md)
-* Platform Policy
+* [Platform Policy](platform-policy.md)
   * [General Guidelines](guidelines.md)
+  * [Success Condition](success-condition.md)
   * [Design Guidelines](styles.md)
     * [DroneDeploy UI Kit](styles/dronedeploy-ui-kit.md)
   * [Publishing](publishing.md)
@@ -43,5 +44,4 @@
   * [How to upload an example project](how-to-upload-an-example-project.md)
   * [How to Set up a Web Server](server_example.md)
 * [FAQs](faqs.md)
-
 
