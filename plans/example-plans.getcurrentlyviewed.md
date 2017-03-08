@@ -1,49 +1,69 @@
-![](/assets/Screenshot 2017-02-08 16.42.24.png)
+![](/assets/Screenshot 2017-03-08 13.37.23.png)
 
 ```html
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Document</title>
-  <style>
-    #plan {
-      list-style: none;
-    }
 
-    .author {
-      font-size:  0.9em;
-    }
-  </style>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .author {
+            font-size: 0.9em;
+        }
+        
+        .title {
+            font-size: 1.1em;
+            font-weight: 500;
+            border-bottom: 1px dotted black;
+        }
+        
+        .sans {
+            font-family: Lato, sans-serif;
+            color: rgba(0, 0, 0, 0.87);
+        }
+        
+        .key {
+            font-weight: 700;
+        }
+        
+        ul {
+            padding: 5px;
+        }
+        
+        li {
+            list-style: none;
+        }
+    </style>
 </head>
+
 <body>
-    <h4 class="title">Plans.getCurrentlyViewed example</h4>
+    <h1 class="title sans">Plans.getCurrentlyViewed example</h1>
     <ul id="plan"></ul>
     <script>
-      var planOutput = document.getElementById('plan')
+        var planOutput = document.getElementById('plan')
 
-      function formatOutput(plan) {
-        //es6 template string
-        return `<li class="details>
-                  <h1 class="planName">
-                    ${plan.name}
-                  </h1>
-                  <br>
-                  <span class="author">By ${plan.username}</span>
-                </li>`
-      }
+        function formatObject(obj) {
+            var keys = Object.keys(obj);
+            var result = keys.map(function(key) {
+                return typeof obj[key] === 'object' ? `<li><span class="key sans">${key}</span>: </li><ul>${formatObject(obj[key])}</ul></li>` : `<li><span class="key sans">${key}</span>: ${obj[key]}</li>`
+            }).join('')
+            return result
+        }
 
-      new DroneDeploy({ version: 1})
-        .then(function(dronedeployApi) {
-          return dronedeployApi.Plans.getCurrentlyViewed()
-        })
-        .then(function(plan) {
-          planOutput.innerHTML += formatOutput(plan);
-        });
+        new DroneDeploy({
+                version: 1
+            })
+            .then(function(dronedeployApi) {
+                return dronedeployApi.Plans.getCurrentlyViewed()
+            })
+            .then(function(plan) {
+                planOutput.innerHTML = formatObject(plan)
+            });
     </script>
 </body>
-</html>
 
+</html>
 ```
 
 
