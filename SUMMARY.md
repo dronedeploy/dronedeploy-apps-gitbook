@@ -16,6 +16,7 @@
   * [Map](map.md)
 * [Platform Policy](platform-policy.md)
   * [General Guidelines](guidelines.md)
+  * [Success Condition](success-condition.md)
   * [Design Guidelines](styles.md)
     * [DroneDeploy UI Kit](styles/dronedeploy-ui-kit.md)
   * [Publishing](publishing.md)
