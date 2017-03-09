@@ -84,7 +84,7 @@ dronedeployApi.Plans.getCurrentlyViewed()
 }
 ```
 
-**[Full Example](/plans/example-plans.all.md)**
+[**Full Example**](/plans/example-plans.all.md)
 
 ### Plans.all
 
@@ -137,11 +137,15 @@ dronedeployApi.Plans.all()
 ]
 ```
 
-**[Full Example](/plans/example-plans.getcurrentlyviewed.md)**
+[**Full Example**](/plans/example-plans.getcurrentlyviewed.md)
 
 ### Plans.update
 
 ** Overview **
+
+Plans.update allows you to update specific fields within the flight plan model.
+
+Please reference the fieldsToUpdate variable in the following code for the fields updatable by this api method.
 
 ```javascript
 const planIdToUpdate = String;
@@ -149,8 +153,8 @@ const fieldsToUpdate = {
   // These are the fields that can be updated on the plan
   name: String,
   geometry: {lat: number, lng: number},
-  frontlap: Number,
-  sidelap: Number,
+  frontlap: Number, // allowed range: 15 - 95%
+  sidelap: Number, // allowed range: 15 - 95%
   camera: {
     id: Number,
     capture_delay: Number,
@@ -163,12 +167,27 @@ const fieldsToUpdate = {
     v_proj: Number,
     xres: Number,
     yres: Number,
-  }
+  },
+  waypoints: [
+    {
+      alt: Number // the altitude of the waypoint - generally an integer like 75
+      flown: Boolean // whether or not the waypoint has already been flown
+      lat: Number // the latitude of the waypoint - floating point
+      lng: Number //the longitude of the waypoint - floating point
+      speed: Number // how fast to fly to waypoint
+    }
+  ]
 };
 dronedeployApi.Plans.update(planIdToUpdate, fieldsToUpdate);
 ```
 
-_Note: Save the plan's geometry on the planning page to change the drone's flight path._
+_**Note: Save the plan's geometry on the planning page to automatically re-calculate the drone's flight path.**_
+
+_**Note: Save the plan's waypoints on the planning page to change the drones flight path manually. If you decide your app needs to alter waypoints, this is considered a privileged action and the user will be asked if they wish to allow it on a per plan basis.**_
+
+_**Warning: Waypoint changes may be overwritten my manual updates by the user to their flight geometry via the interactive map. Any waypoint changes should be in direct response to a plan.get\(\), and either ignore, or handle changes to geometry, based on what your app is trying to achieve.**_
+
+_**Warning: Changing geometry will overwrite any changes to waypoints, by recalculating the optimal flight path as per DD's calculation code.**_
 
 ** Example Call **
 
@@ -199,4 +218,5 @@ dronedeployApi.Plans.update('57e0761f21303e5214b6ae31', {
 });
 ```
 
-**[Full Example](/plans/example-plans.update.md)**
+[**Full Example**](/plans/example-plans.update.md)
+
