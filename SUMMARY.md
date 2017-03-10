@@ -35,6 +35,7 @@
   * [Plans.all](plans/example-plans.all.md)
   * [Plans.getCurrentlyViewed](plans/example-plans.getcurrentlyviewed.md)
   * [Plans.update](plans/example-plans.update.md)
+  * [Plans.update - Waypoints](annotations/plansupdate-waypoints.md)
   * [Tiles.get](tiles/example-tiles.get.md)
   * [Map API Example](map/map-api-example.md)
   * [Annotations.get](annotations/example-annotations.get.md)
