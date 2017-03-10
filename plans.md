@@ -143,6 +143,10 @@ dronedeployApi.Plans.all()
 
 ** Overview **
 
+Plans.update allows you to update specific fields within the flight plan model.
+
+Please reference the fieldsToUpdate variable in the following code for the fields updatable by this api method.
+
 ```javascript
 const planIdToUpdate = String;
 const fieldsToUpdate = {
@@ -151,14 +155,9 @@ const fieldsToUpdate = {
   geometry: [{lat: Number, lng: Number}, ....],
   frontlap: Number,
   sidelap: Number,
-  waypoints: [
-    { 
-      lat: Number,
-      lng: Number,
-      alt: Number, // in meters
-    },
-    ...
-  ],
+  geometry: {lat: number, lng: number},
+  frontlap: Number, // allowed range: 15 - 95%
+  sidelap: Number, // allowed range: 15 - 95%
   camera: {
     id: Number,
     capture_delay: Number,
@@ -171,12 +170,25 @@ const fieldsToUpdate = {
     v_proj: Number,
     xres: Number,
     yres: Number,
-  }
+  },
+  waypoints: [
+    {
+      alt: Number // the altitude of the waypoint - in meters
+      lat: Number // the latitude of the waypoint - floating point
+      lng: Number //the longitude of the waypoint - floating point
+    }
+  ]
 };
 dronedeployApi.Plans.update(planIdToUpdate, fieldsToUpdate);
 ```
 
-_Note: Save the plan's geometry on the planning page to change the drone's flight path._
+**Note: **Save the plan's geometry on the planning page to automatically re-calculate the drone's flight path.
+
+**Note: **Save the plan's waypoints on the planning page to change the drones flight path manually. If you decide your app needs to alter waypoints, this is considered a privileged action and the user will be asked if they wish to allow it on a per plan basis.
+
+**Warning: **Waypoint changes may be overwritten my manual updates by the user to their flight geometry via the interactive map. Any waypoint changes should be in direct response to a [Plans.getCurrentlyViewed](https://www.gitbook.com/book/dronedeploy/dronedeploy-apps/edit#), and either ignore, or handle changes to geometry, based on what your app is trying to achieve.
+
+**Warning: **Changing geometry will overwrite any changes to waypoints, by recalculating the optimal flight path as per DD's calculation code.
 
 ** Example Call **
 
@@ -193,7 +205,7 @@ dronedeployApi.Plans.update('57e0761f21303e5214b6ae31', {
   sidelap: 45, // allowed range: 15 - 95
   waypoints: [
     {lat: 56.567259707222206,lng: -78.90349675, alt: 100},
-    {lat: 37.717259707222226,lng: -78.88330925000001, alt 50},
+    {lat: 37.717259707222226,lng: -78.88330925000001, alt: 50},
     {lat: 37.70100590388889,lng: -78.88330925000001, alt: 50},
     {lat: 37.70100590388889,lng: -78.90349675, alt: 50}
   ],
