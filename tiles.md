@@ -36,8 +36,6 @@ dronedeployApi.Tiles.get({planId: '5605c0e5752afc005a000004', layerName: 'ortho'
 
 **template:** This is the tile url template dronedeploy uses to fetch tiles on the map as the user scrolls around. Z represents the zoom level, X and Y represent the coordinates in [mercator projection](https://msdn.microsoft.com/en-us/library/bb259689.aspx).
 
-**tiles:** An array of links to the tile images at the specified zoom level.
-
 **expires** UTC timestamp for 30 days
 
 ```javascript
