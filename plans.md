@@ -186,9 +186,9 @@ dronedeployApi.Plans.update(planIdToUpdate, fieldsToUpdate);
 
 **Note: **Save the plan's waypoints on the planning page to change the drones flight path manually. If you decide your app needs to alter waypoints, this is considered a privileged action and the user will be asked if they wish to allow it on a per plan basis.
 
-**Warning: **Waypoint changes may be overwritten my manual updates by the user to their flight geometry via the interactive map. Any waypoint changes should be in direct response to a [Plans.getCurrentlyViewed](https://www.gitbook.com/book/dronedeploy/dronedeploy-apps/edit#), and either ignore, or handle changes to geometry, based on what your app is trying to achieve.
+**Warning: **Waypoint changes may be overwritten my manual updates by the user to their flight geometry via the interactive map. Any waypoint changes should be in direct response to a [Plans.getCurrentlyViewed](https://www.gitbook.com/book/dronedeploy/dronedeploy-apps/edit#), and either ignore, or handle changes to geometry, based on what your app is trying to achieve. [Please see this example for an example.](/plans/example-plans.update-waypoints.md)
 
-**Warning: **Changing geometry will overwrite any changes to waypoints, by recalculating the optimal flight path as per DD's calculation code.
+**Warning: **Changing geometry will overwrite any changes to waypoints, by recalculating the optimal flight path as per DD's calculation code. [Please see this example for an example.](/plans/example-plans.update-waypoints.md)
 
 ** Example Call **
 
@@ -226,4 +226,4 @@ dronedeployApi.Plans.update('57e0761f21303e5214b6ae31', {
 ```
 
 [**Full Example**](/plans/example-plans.update.md)
-
+[**Full Example - Change Waypoints**](/plans/example-plans.update-waypoints.md)

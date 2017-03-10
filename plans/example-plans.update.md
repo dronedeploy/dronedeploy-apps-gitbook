@@ -70,53 +70,50 @@
         function formatOutput(plan) {
             //es6 template string
             return `<div class="details>
-                  <h2 class="planName sans">
-                    ${plan.name}
-                  </h2>
-                  <br>
-                  <span class="author sans">By ${plan.username}</span>
-                </div>`
-        }
+            <h2 class="planName sans">
+                ${plan.name}
+            </h2>
+            <br>
+            <span class="author sans">By ${plan.username}</span>
+        </div>`
+    }
 
-        function randomlyAdjustGeometry(geometry) {
-            var offset = Math.random() / 100 * ([1, -1][Math.floor(Math.random() * 2)]);
-            geometry[2].lng = geometry[0].lng + offset;
-            return geometry;
-        }
+    function randomlyAdjustGeometry(geometry) {
+        var offset = Math.random() / 100 * ([1, -1][Math.floor(Math.random() * 2)]);
+        geometry[2].lng = geometry[0].lng + offset;
+        return geometry;
+    }
 
-        new DroneDeploy({
-                version: 1
-            })
-            .then(function(dronedeployApi) {
-                dronedeployApi.Plans.getCurrentlyViewed().subscribe(function(plan) {
-                    planOutput.innerHTML = formatOutput(plan);
+    new DroneDeploy({
+        version: 1
+    })
+    .then(function(dronedeployApi) {
+        dronedeployApi.Plans.getCurrentlyViewed().subscribe(function(plan) {
+            planOutput.innerHTML = formatOutput(plan);
+        });
+        dronedeployApi.Plans.getCurrentlyViewed()
+        .then(function(plan) {
+            updateForm.addEventListener('submit', function(event) {
+                event.preventDefault();
+                var newName = event.target[0].value;
+                event.target[0].value = '';
+                dronedeployApi.Plans.update(plan.id, {
+                    name: newName
                 });
-                dronedeployApi.Plans.getCurrentlyViewed()
-                    .then(function(plan) {
-                        updateForm.addEventListener('submit', function(event) {
-                            event.preventDefault();
-                            var newName = event.target[0].value;
-                            event.target[0].value = '';
-                            dronedeployApi.Plans.update(plan.id, {
-                                name: newName
-                            });
-                        });
-
-                        randomizeBtn.addEventListener('click', function(event) {
-                            event.preventDefault();
-                            var newGeometry = randomlyAdjustGeometry(plan.geometry);
-                            dronedeployApi.Plans.update(plan.id, {
-                                geometry: newGeometry
-                            });
-                        });
-
-                    });
             });
-    </script>
+
+            randomizeBtn.addEventListener('click', function(event) {
+                event.preventDefault();
+                var newGeometry = randomlyAdjustGeometry(plan.geometry);
+                dronedeployApi.Plans.update(plan.id, {
+                    geometry: newGeometry
+                });
+            });
+
+        });
+    });
+</script>
 </body>
 
 </html>
 ```
-
-
-
