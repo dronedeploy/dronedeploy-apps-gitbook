@@ -84,7 +84,7 @@ dronedeployApi.Plans.getCurrentlyViewed()
 }
 ```
 
-**[Full Example](/plans/example-plans.all.md)**
+[**Full Example**](/plans/example-plans.all.md)
 
 ### Plans.all
 
@@ -137,7 +137,7 @@ dronedeployApi.Plans.all()
 ]
 ```
 
-**[Full Example](/plans/example-plans.getcurrentlyviewed.md)**
+[**Full Example**](/plans/example-plans.getcurrentlyviewed.md)
 
 ### Plans.update
 
@@ -148,9 +148,17 @@ const planIdToUpdate = String;
 const fieldsToUpdate = {
   // These are the fields that can be updated on the plan
   name: String,
-  geometry: {lat: number, lng: number},
+  geometry: [{lat: Number, lng: Number}, ....],
   frontlap: Number,
   sidelap: Number,
+  waypoints: [
+    { 
+      lat: Number,
+      lng: Number,
+      alt: Number, // in meters
+    },
+    ...
+  ],
   camera: {
     id: Number,
     capture_delay: Number,
@@ -183,6 +191,12 @@ dronedeployApi.Plans.update('57e0761f21303e5214b6ae31', {
   ],
   frontlap: 70, // allowed range: 15 - 95%
   sidelap: 45, // allowed range: 15 - 95
+  waypoints: [
+    {lat: 56.567259707222206,lng: -78.90349675, alt: 100},
+    {lat: 37.717259707222226,lng: -78.88330925000001, alt 50},
+    {lat: 37.70100590388889,lng: -78.88330925000001, alt: 50},
+    {lat: 37.70100590388889,lng: -78.90349675, alt: 50}
+  ],
   camera: {
     id: 11245,
     capture_delay: 0,
@@ -199,4 +213,5 @@ dronedeployApi.Plans.update('57e0761f21303e5214b6ae31', {
 });
 ```
 
-**[Full Example](/plans/example-plans.update.md)**
+[**Full Example**](/plans/example-plans.update.md)
+
