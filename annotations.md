@@ -7,6 +7,7 @@
 * [Annotations.createMarker](#annotationscreatemarker)
 * [Annotations.createLine](#annotationscreateline)
 * [Annotations.createArea](#annotationscreatearea)
+* [Annotations.createVolume](#annotationscreatevolume)
 * [Annotations.delete](#annotationsdelete)
 * [Annotations.get](#annotationsget)
 * [Annotations.getVolume](#annotationsgetvolume)
@@ -77,6 +78,31 @@ dronedeployApi.Annotations.createArea(planId, location, displayOptions);
 ```
 
 [**Full Example**](annotations/example-annotation-create-and-delete.md)
+
+## Annotations.createVolume
+
+Ceates a polygon annotation given a series of points. Very similiar to area annotation but volume information can be retrieved with [getVolume](#annotationsgetvolume).
+
+```javascript
+const planId = String;
+const geometry = [
+  {lat: 35, lng: 35},
+  {lat: 35, lng: 36},
+  {lat: 36, lng: 36},
+  {lat: 36, lng: 35}
+];
+const displayOptions = { //optional display options
+  description: 'My Area Annotation',
+  color: '#888888',
+  fillColor: '#666666' // only relevant for an area annotation
+}
+dronedeployApi.Annotations.createArea(planId, location, displayOptions)
+  .then(function(annotationId){
+    return dronedeployApi.Annotations.getVolume(annotationId);
+  }).then(function(volumeInformation){
+    console.log(volumeInformation);
+  })
+```
 
 ## Annotations.delete
 
