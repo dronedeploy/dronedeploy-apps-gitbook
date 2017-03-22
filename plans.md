@@ -84,7 +84,9 @@ dronedeployApi.Plans.getCurrentlyViewed()
 }
 ```
 
-[**Full Example**](/plans/example-plans.all.md)
+[**Full Example**](/plans/example-plans.getcurrentlyviewed.md)
+
+[**Full Example - Get Area of Plan**](/plans/example-plans-get-area.md)
 
 ### Plans.all
 
@@ -137,7 +139,7 @@ dronedeployApi.Plans.all()
 ]
 ```
 
-[**Full Example**](/plans/example-plans.getcurrentlyviewed.md)
+[**Full Example**](/plans/example-plans.all.md)
 
 ### Plans.update
 
@@ -226,4 +228,5 @@ dronedeployApi.Plans.update('57e0761f21303e5214b6ae31', {
 ```
 
 [**Full Example**](/plans/example-plans.update.md)
+
 [**Full Example - Change Waypoints**](/plans/example-plans.update-waypoints.md)
