@@ -87,11 +87,11 @@ dronedeployApi.Plans.getCurrentlyViewed()
 
 ** plan.status **
 
-new -  Before the plan has been flown
-queued -  Plan is waiting to be processed
-processing -  Plan is being processed
-failed -  Plan failed during processing
-complete -  Plan has finished processing
+- "new":  Before the plan has been flown
+- "queued":  Plan is waiting to be processed
+- "processing":  Plan is being processed
+- "failed":  Plan failed during processing
+- "complete":  Plan has finished processing
 
 [**Full Example**](/plans/example-plans.getcurrentlyviewed.md)
 
