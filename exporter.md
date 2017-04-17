@@ -43,6 +43,9 @@ const exportOptions = {
   projection: Number, // defaults to 3857
   resolution: ['native', Number], // defaults to 5 (cm/px)
   planId: [String] // defaults to currently visible map
+  webhook: {
+    url: 'http://www.url-to-ping-on-complete.com/any-params-here' // recieve the export document when its complete
+  }
 };
 dronedeployApi.Exporter.send(exportOptions)
   .then(function(exportId){ console.log(exportId) });
@@ -74,7 +77,10 @@ const exportOptions = {
   merge: Boolean, // defaults to true
   projection: Number, // defaults to 3857
   resolution: ['native', Number], // defaults to 5 (cm/px)
-  planId: [String] // defaults to currently visible map
+  planId: [String], // defaults to currently visible map
+  webhook: {
+    url: 'http://www.url-to-ping-on-complete.com/any-params-here' // recieve the export document when its complete
+  }
 };
 dronedeployApi.Exporter.send(exportOptions)
   .then(function(exportId){ console.log(exportId) });
@@ -107,7 +113,10 @@ const exportOptions = {
   projection: Number, // defaults to 3857
   resolution: ['native', Number], // defaults to 5 (cm/px)
   contour_interval: [Number], // default to 1 (meter)
-  planId: [String] // defaults to currently visible map
+  planId: [String], // defaults to currently visible map
+  webhook: {
+    url: 'http://www.url-to-ping-on-complete.com/any-params-here' // recieve the export document when its complete
+  }
 };
 dronedeployApi.Exporter.send(exportOptions)
   .then(function(exportId){ console.log(exportId) });
@@ -135,7 +144,10 @@ const exportOptions = {
   email: [String, String],
   
   // optional
-  planId: [String] // defaults to currently visible map
+  planId: [String], // defaults to currently visible map
+  webhook: {
+    url: 'http://www.url-to-ping-on-complete.com/any-params-here' // recieve the export document when its complete
+  }
 };
 dronedeployApi.Exporter.send(exportOptions)
   .then(function(exportId){ console.log(exportId) });
@@ -166,7 +178,10 @@ const exportOptions = {
   // optional
   file_format: ['las', 'xyz'], // defaults to 'las'
   max_points: ['MAX', Number], // defaults to 'MAX'
-  planId: [String] // defaults to currently visible map
+  planId: [String], // defaults to currently visible map
+  webhook: {
+    url: 'http://www.url-to-ping-on-complete.com/any-params-here' // recieve the export document when its complete
+  }
 };
 dronedeployApi.Exporter.send(exportOptions)
   .then(function(exportId){ console.log(exportId) });
