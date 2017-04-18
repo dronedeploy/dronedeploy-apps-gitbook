@@ -52,6 +52,7 @@ dronedeployApi.Plans.getCurrentlyViewed()
   },
   "deleted": false,
   "sketchfabModel": "https://sketchfab.com/models/cc462c22851847c78768d0318221a963",
+  "status": "complete",
   "geometry": [
     {
       "lat": 35.92712713888889,
@@ -83,6 +84,14 @@ dronedeployApi.Plans.getCurrentlyViewed()
   "sidelap": 60,
 }
 ```
+
+** plan.status **
+
+- "new":  Before the plan has been flown
+- "queued":  Plan is waiting to be processed
+- "processing":  Plan is being processed
+- "failed":  Plan failed during processing
+- "complete":  Plan has finished processing
 
 [**Full Example**](/plans/example-plans.getcurrentlyviewed.md)
 
