@@ -1,7 +1,9 @@
 # User
+
 ## User.get
 
-** Example Call ** 
+** Example Call **
+
 ```javascript
 // Get the user object one time
 dronedeployApi.User.get().then(function(user){ console.log(user) });
@@ -10,9 +12,11 @@ dronedeployApi.User.get().then(function(user){ console.log(user) });
 dronedeployApi.User.get().subscribe(function(user){ console.log(user) });
 ```
 
-** Example Response ** 
+** Example Response **
+
 ```javascript
 {
+  "id": "5626a5fa31ff9a1d9fcb9205",
   "firstName": "Daniel",
   "lastName": "Rasmuson",
   "maxAltitude": 152.4,
@@ -28,4 +32,6 @@ dronedeployApi.User.get().subscribe(function(user){ console.log(user) });
   "email": "daniel@dronedeploy.com"
 }
 ```
+
+
 
