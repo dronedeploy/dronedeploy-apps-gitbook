@@ -88,11 +88,11 @@ dronedeployApi.Plans.getCurrentlyViewed()
 
 ** plan.status **
 
-- "new":  Before the plan has been flown
-- "queued":  Plan is waiting to be processed
-- "processing":  Plan is being processed
-- "failed":  Plan failed during processing
-- "complete":  Plan has finished processing
+* "new":  Before the plan has been flown
+* "queued":  Plan is waiting to be processed
+* "processing":  Plan is being processed
+* "failed":  Plan failed during processing
+* "complete":  Plan has finished processing
 
 [**Full Example**](/plans/example-plans.getcurrentlyviewed.md)
 
@@ -241,7 +241,7 @@ dronedeployApi.Plans.update('57e0761f21303e5214b6ae31', {
 
 [**Full Example - Change Waypoints**](/plans/example-plans.update-waypoints.md)
 
-### Plans.create
+### Plans.create {#planscreate}
 
 ** Overview **
 
@@ -266,5 +266,4 @@ dronedeployApi.Plans.create(geometry, options)
 ```
 
 [**Full Example**](/plans/example-plans.create.md)
-
 
