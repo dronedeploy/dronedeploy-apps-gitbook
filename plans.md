@@ -36,6 +36,12 @@ dronedeployApi.Plans.getCurrentlyViewed()
 
 ```json
 {
+  "accuracy": {
+    "xRMSE": 35.527931,
+    "yRMSE": 4.964015,
+    "zRMSE": 1.343646,
+    "gcpAccuracyDownload": "String of the ZIP file",
+  },
   "id": "57e0761f21303e5214b6ae31",
   "camera": {
     "v_proj": 0.9,
@@ -87,11 +93,11 @@ dronedeployApi.Plans.getCurrentlyViewed()
 
 ** plan.status **
 
-- "new":  Before the plan has been flown
-- "queued":  Plan is waiting to be processed
-- "processing":  Plan is being processed
-- "failed":  Plan failed during processing
-- "complete":  Plan has finished processing
+* "new":  Before the plan has been flown
+* "queued":  Plan is waiting to be processed
+* "processing":  Plan is being processed
+* "failed":  Plan failed during processing
+* "complete":  Plan has finished processing
 
 [**Full Example**](/plans/example-plans.getcurrentlyviewed.md)
 
@@ -239,3 +245,4 @@ dronedeployApi.Plans.update('57e0761f21303e5214b6ae31', {
 [**Full Example**](/plans/example-plans.update.md)
 
 [**Full Example - Change Waypoints**](/plans/example-plans.update-waypoints.md)
+
