@@ -11,7 +11,7 @@ Build an app in two minutes to learn more.
 {% youtube %} https://youtu.be/xieC4o5JEUs?list=PLqOge_z8yN2EJ4ftDaY1XdbaneCRQTnvq {% endyoutube %}
 
 1. Download [simple example](https://s3.amazonaws.com/drone-deploy-plugins/templates/dronedeploy-app-hello-world.zip) or [full example](https://s3.amazonaws.com/drone-deploy-plugins/templates/dronedeploy-expand-example.zip) and unzip the folder
-2. Agree to the Developer Agreement [on the settings page](https://www.dronedeploy.com/app2/settings) and turn on "Developer Mode"
+2. Agree to the Developer Agreement and turn on "Developer Mode"
 3. Select an App Zone somewhere in the app and choose the folder "dronedeploy-app-hello-world" from step 1.
 4. Lastly, edit any file in that folder and start building your app!
 
