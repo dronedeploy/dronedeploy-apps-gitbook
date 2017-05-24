@@ -16,34 +16,46 @@
 4. [ ] My app uses _Lato font_ \(also provided in styles.css in the DD app template\)?
 
 5. [ ] My app use row and column grid classes?
+
    ```
-     <div class="row">
-       <div class="input-field col-4">
-         <input type="text" class="validate">
-         <label for="first_name">Username</label>
-       </div>
-     </div>
+   <div class="row">
+   <div class="input-field col-4">
+     <input type="text" class="validate">
+     <label for="first_name">Username</label>
+   </div>
+   </div>
    ```
+
 6. [ ] I have tested my app on Chrome browser?
 
 7. [ ] I have tested my app on Safari?
 
-## Function
+8. [ ] I have tested my app on IE 10+ and Firefox? \(Yes, some of our users use these browsers\)
+
+9. [ ] I have tested my app on iOS or Android device?
+
+## Marketing
+
+* [ ] My app has a high resolution logo?
+* [ ] My app has a short description?
+* [ ] My app has a long description containing release notes and directions to use my app?
+  Please note that you can use basic HTML to style your long description. 
+
+* [ ] I have included atleast 2 \(4 recommended\) screenshots for my app?
+
+## Reference
+
+Here is a great example of an app meeting all these criterias: [Airdata UAV Sync app](https://www.dronedeploy.com/app-market/import/souctjpqwwcwwwqdcvvq.html)
+
+![](/assets/airdata.png)
 
 
 
+## Got Questions?
+
+Send us an email at developer@dronedeploy.com
 
 
-# Use the following guidelines when creating an application.
-
-* Build an app that is stable and easily navigable.  
-* Ensure that your apps meet our Community Standards.
-* Follow our CSS styles for your app name, icons, button, fonts, colors, and description.
-* Keep your app’s description and categorization up-to-date. 
-* Don’t confuse, deceive, defraud, mislead, spam, or surprise anyone.  
-* Obtain consent from people before publishing content on their behalf
-* Protect the information you receive from us against unauthorized access, use, or disclosure.
-* Don’t provide or promote content that infringes upon the rights of any third party.
 
 
 
