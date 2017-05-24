@@ -40,11 +40,11 @@
   * [How to upload an example project](how-to-upload-an-example-project.md)
   * [How to Set up a Web Server](server_example.md)
 * [Step by Step Guide to Publish an App](platform-policy.md)
-  * [Start with DD App Template](guidelines/start-with-dd-app-template.md)
+  * [Getting Started](guidelines/start-with-dd-app-template.md)
+  * [Design Guidelines](styles.md)
   * [DroneDeploy UI Kit](styles/dronedeploy-ui-kit.md)
   * [Checklist](guidelines.md)
   * [Success Condition](success-condition.md)
   * [Submit App for Review](publishing.md)
-  * [Design Guidelines](styles.md)
 * [FAQs](faqs.md)
 

@@ -1,30 +1,19 @@
-# App Design Guidelines
+# Getting Started
 
-In order to ensure a good experience for users — buttons, colors, fonts, etc. should all look as if they belong in the DroneDeploy UI.
+## Download DD App Template
 
-**If you stick to the CSS styles guidelines below and use the [expandable app example here](https://s3.amazonaws.com/drone-deploy-plugins/templates/dronedeploy-expand-example.zip), you are on the right track.**
-
-=================
-
-Building apps on the DroneDeploy platform should be simple and the apps you create should be beautiful, so we’ve built a set of guidelines and templates to help you create apps that are:
-
-* Easy to use
-* Follow established DroneDeploy design practices
-* Are consistent with the DroneDeploy visual design
-* But still express your brand
-
-Any app that fulfills these guidelines will be approved on design without issue. Those that don’t will need special exception from our App Market team.
+We have designed a basic template which includes our stylesheet and collapsible component. Download it [here](/expandable app example here).
 
 ## Basic Guidelines
 
 * Apps should take only the space they need
-* Apps should leverage DroneDeploy CSS styles and should be designed to look native to the platform
+* Apps should leverage DroneDeploy CSS styles \(styles.css\) and should be designed to look native to the platform
 * Use of company logos are welcome but colors should generally coordinate to the DroneDeploy color palette
 * Apps with actions \(e.g. sign in\) should generally first be engaged with \(e.g. clicked\), before they expand to show more content
-  * Apps, by default, are in a non-expanded state of 60px in height
-  * When expanded \(clicked\), apps can be up to 360px in height
+  * Apps, by default, are in a non-expanded state of **60px** in height
+  * When expanded \(clicked\), apps can be up to **360px** in height
 
-## Grid System
+## Understanding our Grid System
 
 Our default styles include a basic 4 column grid system, enabling a layout for your app that is similar to the DroneDeploy site:
 
@@ -42,19 +31,11 @@ There are three major components — containers, rows, and columns.
 
 * Hierarchy: `.container`  **&gt;** `.row` **&gt;** `.col-4`
 
-## Templates
+### Grid System Examples
 
-To get you started, we’ve provided 3 main templates:
+#### Default Template \(Most Popular\)
 
-### Full Row App
-
-1. Can contain button, text, icon, or image
-
-### Variations
-
-**Logo and Arrow Icon Button:**
-
-![](/assets/Autodesk collapsed.png)
+#### ![](/assets/Autodesk collapsed.png)
 
 All app's detailed content will be within the expandable div.
 
@@ -77,9 +58,9 @@ All app's detailed content will be within the expandable div.
     </div>
 ```
 
-**Logo with text:**
+#### **Single Button App \(contact us before using this design\)**
 
-![](logo with text app.png)
+#### ![](logo with text app.png)
 
 `.col-1` - Icon and Label
 
@@ -99,62 +80,9 @@ All app's detailed content will be within the expandable div.
   </div>
 ```
 
-**Information Layout Example:**
+#### Passive Apps** \(requires no interaction, contact us before using this design\)**
 
-![](Information app.png)
-
-**Expandability**
-
-Any app can be expandable on a click from a user. This click expands the app to grant more vertical space.
-
-* Max height of **360px high**
-* You should always use our “collapse” arrow button on top right
-* No scrolling is allowed —use next buttons to show new inputs via pagination
-
-**Login Section**
-
-* Expands to display Username and Password inputs, sign in and register buttons, and collapsable button icon.
-
-![](/assets/Autodesk collapsed.png)
-
-Click App to Expand to:
-
-![](/assets/Autodesk expanded signin.png)
-
-```
-<div class="container expand-container">
-  <div class="row expand-row">
-    <div class="col-3">
-      <img class="logo" src="autodesk.svg" alt="autodesk">
-    </div>
-    <div class="col-1 right">
-      <i>
-        <img src="arrow-down.svg" alt="collapse" class="expand-arrow">
-      </i>
-    </div>
-  </div>
-  <div class="expand-section" style="display: none;">
-    <div class="row">
-      <div class="input-field col-4">
-        <input id="first_name" type="text" class="validate">
-        <label for="first_name">Username</label>
-      </div>
-    </div>
-    <div class="row">
-      <div class="input-field col-4">
-        <input id="password" type="password" class="validate">
-        <label for="password">Password</label>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-4">
-        <button class="primary">Login</button>
-        <p class="center">Don't have an Autodesk account? <a href="#">Register</a></p>
-      </div>
-    </div>
-  </div>
-</div>
-```
+#### ![](Information app.png)
 
 
 
