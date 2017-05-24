@@ -20,8 +20,8 @@
    ```
    <div class="row">
    <div class="input-field col-4">
-     <input type="text" class="validate">
-     <label for="first_name">Username</label>
+   <input type="text" class="validate">
+   <label for="first_name">Username</label>
    </div>
    </div>
    ```
@@ -38,8 +38,8 @@
 
 * [ ] My app has a high resolution logo?
 * [ ] My app has a short description?
-* [ ] My app has a long description containing release notes and directions to use my app?
-  Please note that you can use basic HTML to style your long description. 
+* [ ] My app has a long description containing release notes and directions to use my app?  
+  Please note that you can use basic HTML to style your long description.
 
 * [ ] I have included atleast 2 \(4 recommended\) screenshots for my app?
 
@@ -49,13 +49,7 @@ Here is a great example of an app meeting all these criterias: [Airdata UAV Sync
 
 ![](/assets/airdata.png)
 
-
-
 ## Got Questions?
 
 Send us an email at developer@dronedeploy.com
-
-
-
-
 
