@@ -33,7 +33,7 @@ There are three major components — containers, rows, and columns.
 
 ### Grid System Examples
 
-#### Default Template \(Most Popular\)
+#### Default \(Most Popular\)
 
 #### ![](/assets/Autodesk collapsed.png)
 
