@@ -34,6 +34,8 @@
 
 9. [ ] I have tested my app on iOS or Android device?
 
+10. [ ] My app includes the [success condition](https://dronedeploy.gitbooks.io/dronedeploy-apps/content/success-condition.html)?
+
 ## Marketing
 
 * [ ] My app has a high resolution logo?

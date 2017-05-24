@@ -1,3 +1,7 @@
+# UI Kit
+
+We highly recommend using these UI components, as they are designed to work inside DroneDeploy app. 
+
 ![](/assets/ui-kit-image.png)
 
 ```html
@@ -78,4 +82,6 @@ document.querySelector('dd-slider').addEventListener('change', function(e){
 </body>
 </html>
 ```
+
+
 
