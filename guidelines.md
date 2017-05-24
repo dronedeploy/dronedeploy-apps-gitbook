@@ -2,30 +2,33 @@
 
 ## Design
 
-1. [ ] My app uses DD app template provided by DroneDeploy?
+1. [ ] My app uses DD app template provided by DroneDeploy?  
    Download it [here](https://s3.amazonaws.com/drone-deploy-plugins/templates/dronedeploy-expand-example.zip).  
    ![](/assets/expandable.gif)
 
 2. [ ] My app uses components \(wherever applicable\) provided in [DroneDeploy UI Kit](https://dronedeploy.gitbooks.io/dronedeploy-apps/content/styles/dronedeploy-ui-kit.html)?
-3. [ ] My app uses button styles provided in the styles.css in the DD app template?
+
+3. [ ] My app uses button styles provided in the styles.css in the DD app template?  
    All action buttons should use our CSS classes and blue color: **\#2196F3**
 
    ![](/assets/button_states.png)
 
-1. [ ] My app uses _Lato font_ \(also provided in styles.css in the DD app template\)? 
-2. [ ] My app use row and column grid classes?
+4. [ ] My app uses _Lato font_ \(also provided in styles.css in the DD app template\)?
+
+5. [ ] My app use row and column grid classes?
    ```
-         <div class="row">
-           <div class="input-field col-4">
-             <input type="text" class="validate">
-             <label for="first_name">Username</label>
-           </div>
-         </div>
+     <div class="row">
+       <div class="input-field col-4">
+         <input type="text" class="validate">
+         <label for="first_name">Username</label>
+       </div>
+     </div>
    ```
+6. [ ] I have tested my app on Chrome browser?
+
+7. [ ] I have tested my app on Safari?
 
 ## Function
-
-
 
 
 
