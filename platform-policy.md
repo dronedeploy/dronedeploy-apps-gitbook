@@ -1,6 +1,6 @@
 # Step by Step Guide to Publish an App
 
-Follow these 5 steps to publish an app.
+Follow these 5 steps to publish an app:
 
 1. [Getting Started](https://dronedeploy.gitbooks.io/dronedeploy-apps/content/getting_started.html): Download DD App template and understand our grid system 
 2. [Use DroneDeploy UI Kit](https://dronedeploy.gitbooks.io/dronedeploy-apps/content/styles/dronedeploy-ui-kit.html): Use our pre made components, if you plan to use components like input text field, toggle, loaders. 
