@@ -8,6 +8,7 @@
   * [Images](images.md)
   * [Link](link.md)
   * [Messaging](messaging.md)
+  * [Overlay](overlay.md)
   * [Payments](payments.md)
   * [Plans](plans.md)
   * [Tiles](tiles.md)
@@ -32,13 +33,14 @@
   * [Images.get](images/example-images.get.md)
   * [Link.open](link/example-link.open.md)
   * [Messaging.showToast](messaging/example-messaging.showtoast.md)
+  * [Overlay Example](overlay/example-overlay.basic.md)
   * [Payments.charge](payments/example-payments.charge.md)
   * [Plans.all](plans/example-plans.all.md)
+  * [Plans.create](plans/example-plans.create.md)
   * [Plans.getCurrentlyViewed](plans/example-plans.getcurrentlyviewed.md)
   * [Plans.update](plans/example-plans.update.md)
   * [Plans.update - Waypoints](plans/example-plans.update-waypoints.md)
   * [Plans - Get Area of Plan](plans/example-plans-get-area.md)
-  * [Plans.create](plans/example-plans.create.md)
   * [Tiles.get - Get Tiles As Array](tiles/example-tiles-as-array.md)
   * [Map API Example](map/map-api-example.md)
   * [Annotations.get](annotations/example-annotations.get.md)
@@ -53,4 +55,6 @@
   * [Add Success Condition](success-condition.md)
   * [Submit App for Review](publishing.md)
 * [FAQs](faqs.md)
+
+
 
