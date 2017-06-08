@@ -9,6 +9,7 @@ A plan contains the flight data, drone data, image information, and the map asse
 * [Plans.getCurrentlyViewed](#plansgetcurrentlyviewed)
 * [Plans.all](#plansall)
 * [Plans.update](#plansupdate)
+* [Plans.create](#planscreate)
 
 ### Plans.getCurrentlyViewed
 
@@ -247,3 +248,28 @@ dronedeployApi.Plans.update('57e0761f21303e5214b6ae31', {
 
 [**Full Example - Change Waypoints**](/plans/example-plans.update-waypoints.md)
 
+### Plans.create {#planscreate}
+
+** Overview **
+
+Plans.create allows you to create a new plan with an array of coordinates and an options object.
+
+** Example Call **
+
+```javascript
+var geometry = [
+  {lat: 35.92778956007768, lng: -96.74685001373292},
+  {lat: 35.92524492896255, lng: -96.74667120678352},
+  {lat: 35.92532220011748, lng: -96.74959659576417},
+  {lat: 35.92778151526379, lng: -96.7496186761855},
+];
+var options = { name: 'Example Plan' };
+
+// Returns the id of the newly created plan
+dronedeployApi.Plans.create(geometry, options)
+  .then(function(planId) {
+    console.log(planId);
+  });
+```
+
+[**Full Example**](/plans/example-plans.create.md)

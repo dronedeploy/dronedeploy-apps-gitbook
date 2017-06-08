@@ -18,25 +18,25 @@ Once you have queued an export, Export.list will have data to display.
             font-size: 1.3em;
             font-weight: 500;
         }
-        
+
         .sans {
             font-weight: 300;
             font-family: Lato, sans-serif;
             color: rgba(0, 0, 0, 0.87);
         }
-        
+
         .subtitle {
             font-size: 1.1em;
         }
-        
+
         #exports {
             padding: 0;
         }
-        
+
         .export {
             list-style: none;
         }
-        
+
         .download-link {
             text-decoration: none;
         }
