@@ -38,7 +38,7 @@
   * [Plans.update](plans/example-plans.update.md)
   * [Plans.update - Waypoints](plans/example-plans.update-waypoints.md)
   * [Plans - Get Area of Plan](plans/example-plans-get-area.md)
-  * [Plans.create](annotations/planscreate.md)
+  * [Plans.create](plans/example-plans.create.md)
   * [Tiles.get - Get Tiles As Array](tiles/example-tiles-as-array.md)
   * [Map API Example](map/map-api-example.md)
   * [Annotations.get](annotations/example-annotations.get.md)
