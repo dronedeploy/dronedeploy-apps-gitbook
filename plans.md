@@ -169,6 +169,7 @@ const planIdToUpdate = String;
 const fieldsToUpdate = {
   // These are the fields that can be updated on the plan
   name: String,
+  altitude: Number, // in meters
   geometry: [{lat: Number, lng: Number}, ....],
   frontlap: Number,
   sidelap: Number,
