@@ -42,9 +42,12 @@ new DroneDeploy({version: 1}).then(function(dronedeploy){
     document.querySelector('#plan-area').innerHTML = geodesicArea(plan.geometry)+' meters<sup>2</sup>';
   });
 });
-  
+
 </script>
-  
+
 </body>
 </html>
 ```
+
+
+
