@@ -55,6 +55,3 @@
   * [Add Success Condition](success-condition.md)
   * [Submit App for Review](publishing.md)
 * [FAQs](faqs.md)
-
-
-
