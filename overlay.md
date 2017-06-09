@@ -24,3 +24,5 @@ There are several steps you want to keep in mind when utilizing the dashboard ov
 3. Make sure to specify that your overlay plugin belongs to the same app as your dashboard plugin when prompted!
 
 [**Full Example**](/overlay/example-overlay.basic.md)
+
+**Note: ** If the dashboard or overlay plugins don't seem to be working after dropping in the source code to either App Zone, try refreshing the page. This is a known issue, and will be fixed shortly!
