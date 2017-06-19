@@ -47,6 +47,7 @@
   * [Annotation create and delete](annotations/example-annotation-create-and-delete.md)
   * [How to upload an example project](how-to-upload-an-example-project.md)
   * [How to Set up a Web Server](server_example.md)
+  * [App Size - Fixing Overflow Problems](annotations/app-size-fixing-overflow-problems.md)
 * [Step by Step Guide to Publish an App](publishing_app.md)
   * [Getting Started](getting_started.md)
   * [Use DroneDeploy UI Kit](styles/dronedeploy-ui-kit.md)
@@ -54,3 +55,4 @@
   * [Add Success Condition](success-condition.md)
   * [Submit App for Review](publishing.md)
 * [FAQs](faqs.md)
+
