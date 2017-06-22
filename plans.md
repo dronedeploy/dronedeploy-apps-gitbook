@@ -263,13 +263,14 @@ var geometry = [
   {lat: 35.92532220011748, lng: -96.74959659576417},
   {lat: 35.92778151526379, lng: -96.7496186761855},
 ];
-var options = { name: 'Example Plan' };
+var options = { name: 'Example Plan', geometry: geometry };
 
 // Returns the id of the newly created plan
-dronedeployApi.Plans.create(geometry, options)
+dronedeploy.Plans.create(options)
   .then(function(planId) {
     console.log(planId);
   });
 ```
 
 [**Full Example**](/plans/example-plans.create.md)
+
