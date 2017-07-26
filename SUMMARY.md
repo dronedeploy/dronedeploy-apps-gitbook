@@ -53,5 +53,6 @@
   * [Follow Checklist](checklist.md)
   * [Add Success Condition](success-condition.md)
   * [Submit App for Review](publishing.md)
+* [Authentication](authentication.md)
 * [FAQs](faqs.md)
 
