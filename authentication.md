@@ -19,13 +19,15 @@ Below are some common examples...
 
 You'll need a server handle the OAuth secret, store the OAuth token, and to handle OAuth callbacks. In the below example we are assuming "your-oauth-server.com" is your authentication server and "your-dronedeploy-app-server.com" is a proxy server in charge of your DroneDeploy app. However, if you prefer you can instead put this dronedeploy functionality as a subroute on your main server, "your-oauth-server.com/dronedeploy-app".
 
-1. Use the [Link.open](/link/example-link.open.md) API to open your authentication request in a new window with the websocket client id \(see below without websockets\)
-   1. E.X: https://www.your-oauth-server.com/authenticate?service=dronedeployapp&callback=https://your-dronedeploy-app-server.com/callback?identifier=WEB\_SOCKET\_CLIENT\_ID
-   2. If your not using websockets you can randomly create an identifier on the frontend
-2. When the authentication flow completes on the server for "https://your-dronedeploy-app-server.com/callback?identifier=WEB\_SOCKET\_CLIENT\_ID&token=SERVICE\_TOKEN"  the token should be saved in the database and corresponding JWT token should be sent to "WEB\_SOCKET\_CLIENT\_ID".
-   1. If you're not using web sockets instead you could either poll for the token on the frontend or have the user click a button "check authorization". You should be passing the identifier you created earlier.
+1. Use the [Link.open](/link/example-link.open.md) API to open your authentication request in a new window with the websocket client id \(\[1\] if you don't want to use websockets\)
+   1. E.X: [https://www.your-oauth-server.com/authenticate?service=dronedeployapp&callback=https://your-dronedeploy-app-server.com/callback?identifier=WEB\_SOCKET\_CLIENT\_ID](https://www.your-oauth-server.com/authenticate?service=dronedeployapp&callback=https://your-dronedeploy-app-server.com/callback?identifier=WEB_SOCKET_CLIENT_ID)
+2. When the authentication flow completes on the server for "[https://your-dronedeploy-app-server.com/callback?identifier=WEB\_SOCKET\_CLIENT\_ID&token=SERVICE\_TOKEN](https://your-dronedeploy-app-server.com/callback?identifier=WEB_SOCKET_CLIENT_ID&token=SERVICE_TOKEN)"  the token should be saved in the database and corresponding JWT token should be sent to "WEB\_SOCKET\_CLIENT\_ID" \(\[2\] if you don't want to use websockets\)  
 3. Once the frontend has the JWT token it should store it localstorage and proxy all of its network requests through "your-dronedeploy-app-server.com".
-   1. E.X. frontend /get-user --&gt; your-dronedeploy-app-server.com/get-user --&gt; https://www.your-api.com/get-user
+   1. E.X. frontend /get-user --&gt; your-dronedeploy-app-server.com/get-user --&gt; [https://www.your-api.com/get-user](https://www.your-api.com/get-user)
+
+\[1\] If your not using websockets you can randomly create an identifier on the frontend
+
+\[2\] Instead you could either poll for the token on the frontend or have the user click a button "check authorization". With every request you should be passing the identifier token you created earlier
 
 ## API Key
 
