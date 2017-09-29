@@ -108,7 +108,7 @@ dronedeployApi.Plans.getCurrentlyViewed()
 
 ** Overview **
 
-Get an array of all the users plans.
+Get an array of all the users plans in memory. We store the 50 most recent and any plan a user loads in memory.
 
 ** Example Call **
 
