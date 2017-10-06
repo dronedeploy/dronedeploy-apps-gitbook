@@ -17,18 +17,18 @@ Below are some common examples...
 
 ## OAuth 2.0
 
-You'll need a server handle the OAuth secret, store the OAuth token, and to handle OAuth callbacks. In the below example we are assuming "your-oauth-server.com" is your authentication server and "your-dronedeploy-app-server.com" is a proxy server in charge of your DroneDeploy app. However, if you prefer you can instead put this dronedeploy functionality as a subroute on your main server, "your-oauth-server.com/dronedeploy-app".
+You'll need a server to handle the OAuth secret, store the OAuth token, and handle OAuth callbacks. In the below example we are assuming "your-oauth-server.com" is your authentication server and "your-dronedeploy-app-server.com" is a proxy server in charge of your DroneDeploy app. However, if you prefer you can instead put this dronedeploy functionality as a subroute on your main server, "your-oauth-server.com/dronedeploy-app".
 
 1. Use the [Link.open](/link/example-link.open.md) API to open your authentication request in a new window
    1. E.X: [https://www.your-oauth-server.com/authenticate?service=dronedeployapp&callback=https://your-dronedeploy-app-server.com/callback](https://www.your-oauth-server.com/authenticate?service=dronedeployapp&callback=https://your-dronedeploy-app-server.com/callback?identifier=WEB_SOCKET_CLIENT_ID)
 2. When the authentication flow completes on the server for "[https://your-dronedeploy-app-server.com/callback?token=SERVICE\_TOKEN](https://your-dronedeploy-app-server.com/callback?identifier=WEB_SOCKET_CLIENT_ID&token=SERVICE_TOKEN)"  the token should be saved in the database and corresponding JWT token should be sent back to the client via postMessage
    1. window.opener.postMessage\('MY\_Service\_Authentication Successful', '\*'\) [Full Example](https://github.com/dronedeploy/post-message-opener-window-example)
-3. Once the frontend has the JWT token it should store it localstorage and proxy all of its network requests through "your-dronedeploy-app-server.com".
+3. Once the frontend has the JWT token it should store it in localstorage and proxy all of its network requests through "your-dronedeploy-app-server.com".
    1. E.X. frontend /get-user --&gt; your-dronedeploy-app-server.com/get-user --&gt; [https://www.your-api.com/get-user](https://www.your-api.com/get-user)
 
 ## API Key
 
-Have the user provide an client-side API key and store it in localstorage
+Have the user provide a client-side API key and store it in localstorage
 
 ## Common Pitfalls
 
