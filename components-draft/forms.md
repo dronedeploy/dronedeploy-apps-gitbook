@@ -94,5 +94,37 @@ A textarea should be used when there is multiple lines of content that need to b
 
 ### Select
 
-Selects allow you to set a number of options.
+Selects allow you to set a number of options with one selection. 
+
+![](/assets/materialized-select-md.jpg)
+
+```
+  <div class="input-field col-4">
+    <select>
+      <option value="" disabled selected>Choose your option</option>
+      <option value="1">Option 1</option>
+      <option value="2">Option 2</option>
+      <option value="3">Option 3</option>
+    </select>
+    <label>Materialize Select</label>
+  </div>
+```
+
+### Disabled Select
+
+![](/assets/disabled-select-md.jpg)
+
+```
+  <div class="input-field">
+    <select disabled>
+      <option value="" disabled selected>Choose your option</option>
+      <option value="1">Option 1</option>
+      <option value="2">Option 2</option>
+      <option value="3">Option 3</option>
+    </select>
+    <label>Materialize Disabled</label>
+  </div>
+```
+
+
 
