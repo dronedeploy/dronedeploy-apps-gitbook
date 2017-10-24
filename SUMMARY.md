@@ -49,6 +49,7 @@
   * [App Size - Fixing Overflow Problems](annotations/app-size-fixing-overflow-problems.md)
 * [Step by Step Guide to Publish an App](publishing_app.md)
   * [Getting Started](getting_started.md)
+  * [Getting Started Draft](getting-started-draft.md)
   * [Use DroneDeploy UI Kit](styles/dronedeploy-ui-kit.md)
   * [Follow Checklist](checklist.md)
   * [Add Success Condition](success-condition.md)
