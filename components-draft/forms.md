@@ -1,6 +1,6 @@
 # Forms
 
-Most components within a form follow material design guidelines. It is important that these custom components are used to comply with DroneDeploy's design guidelines.
+Most components within a form follow material design guidelines. It is important that these custom components are used to comply with DroneDeploy's design guidelines. Please note that most of the input elements will require that you add the jQuery CDN link provided on the Get Started page. 
 
 ### Input Fields
 
@@ -54,7 +54,7 @@ The `.validate` class adds valid or invalid to show an error message within an i
   </div>
 ```
 
-### Validation Messaging 
+### Validation Messaging
 
 By adding `data-error` as an attribute or `data-success` you can add custom messaging to tyour input field label.
 
@@ -72,6 +72,31 @@ By adding `data-error` as an attribute or `data-success` you can add custom mess
     </form>
   </div>
 ```
+
+### Textarea Field
+
+A textarea should be used when there is multiple lines of content that need to be entered to an input field. The textarea input is liquid and will re-size according to content's height.
+
+
+
+![](/assets/textarea-input-md.jpg)
+
+```
+ <div class="row">
+    <form class="col-4">
+      <div class="row">
+        <div class="input-field col-4">
+          <textarea id="textarea1" class="materialize-textarea"></textarea>
+          <label for="textarea1">Textarea</label>
+        </div>
+      </div>
+    </form>
+  </div>
+```
+
+### Textarea Field
+
+Selects allow you to set a number of options. 
 
 
 

@@ -2,7 +2,7 @@
 
 DroneDeploy's UI Kit is mostly based on material design. To start using the UI Kit components and utilities please add the CDN to your code.
 
-### CDN
+### CDN CSS
 
 ```
 <!-- Compiled and minified Materialized CSS -->
@@ -10,6 +10,13 @@ DroneDeploy's UI Kit is mostly based on material design. To start using the UI K
 
 <!-- Compiled and minified DroneDeploy CSS -->
 CDN link to be ADDED
+```
+
+### CDN JS
+
+```
+ <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 ```
 
 # Setup
@@ -38,7 +45,7 @@ Next we have to setup the html file structure to include all the necessary CSS a
 
 ### Templates
 
-We have a starter template so you can quickly start developing your application. 
+We have a starter template so you can quickly start developing your application.
 
 ![](/assets/sample-app-market-HW.jpg)
 
