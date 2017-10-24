@@ -110,7 +110,9 @@ Selects allow you to suggest options with one selection allowed.
   </div>
 ```
 
-### Disabled Select
+### Select Disabled State
+
+Add `disabled` as an attribute to the &lt;select&gt; element to disable the whole select element. 
 
 ![](/assets/disabled-select-md.jpg)
 
