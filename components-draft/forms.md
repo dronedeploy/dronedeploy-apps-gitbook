@@ -4,13 +4,11 @@ Most components within a form follow material design guidelines. It is important
 
 ### Input Fields
 
-The `.input-field` allow users to input data. The bottom border of the input field should light up on focus with our blue brand color. 
+The `.input-field` allow users to input data. The bottom border of the input field should light up on focus with our blue brand color.
 
-The `.validate` class adds valid or invalid to show an error message within an input field. If you don't wish to use material design validation simply remove the `.validate` class from your input HTML element. 
+The `.validate` class adds valid or invalid to show an error message within an input field. If you don't wish to use material design validation simply remove the `.validate` class from your input HTML element.
 
 ![](/assets/md-form.jpg)
-
-This is an example reflecting the from above
 
 ```
 <div class="row">
@@ -54,7 +52,25 @@ This is an example reflecting the from above
       </div>
     </form>
   </div>
-        
+```
+
+### Validation Messaging 
+
+By adding `data-error` as an attribute or `data-success` you can add custom messaging to tyour input field label.
+
+![](/assets/data-error-input-md.jpg)
+
+```
+  <div class="row">
+    <form class="col-4">
+      <div class="row">
+        <div class="input-field col-4">
+          <input id="email" type="email" class="validate">
+          <label for="email" data-error="wrong" data-success="Valid Email">Email</label>
+        </div>
+      </div>
+    </form>
+  </div>
 ```
 
 
