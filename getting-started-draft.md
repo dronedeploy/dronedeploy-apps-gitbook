@@ -38,7 +38,7 @@ Next we have to setup the html file structure to include all the necessary CSS a
 
 ### Templates
 
-We have a starter template so you can quickly start developing your application.
+We have a starter template so you can quickly start developing your application. 
 
 ![](/assets/sample-app-market-HW.jpg)
 
