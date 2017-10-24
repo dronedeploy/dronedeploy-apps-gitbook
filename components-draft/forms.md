@@ -1,6 +1,6 @@
 # Forms
 
-Most components within a form follow material design guidelines. It is important that these custom components are used to comply with DroneDeploy's design guidelines. Please note that most of the input elements will require that you add the jQuery CDN link provided on the Get Started page. 
+Most components within a form follow material design guidelines. It is important that these custom components are used to comply with DroneDeploy's design guidelines. Please note that most of the input elements will require that you add the jQuery CDN link provided on the Get Started page.
 
 ### Input Fields
 
@@ -77,8 +77,6 @@ By adding `data-error` as an attribute or `data-success` you can add custom mess
 
 A textarea should be used when there is multiple lines of content that need to be entered to an input field. The textarea input is liquid and will re-size according to content's height.
 
-
-
 ![](/assets/textarea-input-md.jpg)
 
 ```
@@ -94,9 +92,7 @@ A textarea should be used when there is multiple lines of content that need to b
   </div>
 ```
 
-### Textarea Field
+### Select
 
-Selects allow you to set a number of options. 
-
-
+Selects allow you to set a number of options.
 
