@@ -61,16 +61,12 @@ By adding `data-error` as an attribute or `data-success` you can add custom mess
 ![](/assets/data-error-input-md.jpg)
 
 ```
-  <div class="row">
-    <form class="col-4">
-      <div class="row">
-        <div class="input-field col-4">
-          <input id="email" type="email" class="validate">
-          <label for="email" data-error="wrong" data-success="Valid Email">Email</label>
-        </div>
-      </div>
-    </form>
+<div class="row">
+  <div class="input-field invalid col-4" data-error="Invalid email">
+    <input id="email" type="email" class="invalid">
+    <label for="email">Email</label>
   </div>
+</div>
 ```
 
 ### Textarea Field
@@ -112,7 +108,7 @@ Selects allow you to suggest options with one selection allowed.
 
 ### Select Disabled State
 
-Add `disabled` as an attribute to the &lt;select&gt; element to disable the whole select element. 
+Add `disabled` as an attribute to the &lt;select&gt; element to disable the whole select element.
 
 ![](/assets/disabled-select-md.jpg)
 
