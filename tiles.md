@@ -17,16 +17,15 @@ Many mapping libraries support tile pyramids, I.E. filling in these values `/{z}
 ```javascript
 const planId = String;
 const layerName = 'ortho' || 'dem';
-const zoom = Number; // Common zoom levels are [16, 17, 18, 19, 20, 21]
 
-dronedeployApi.Tiles.get({planId, layerName, zoom})
+dronedeployApi.Tiles.get({planId, layerName})
   .then(function(tileInformation){ console.log(tileInformation) });
 ```
 
 **Example Call**
 
 ```javascript
-dronedeployApi.Tiles.get({planId: '5605c0e5752afc005a000004', layerName: 'ortho', zoom: 16})
+dronedeployApi.Tiles.get({planId: '5605c0e5752afc005a000004', layerName: 'ortho'})
   .then(function(tileInformation){ console.log(tileInformation) });
 ```
 
