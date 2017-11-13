@@ -113,7 +113,9 @@ dronedeployApi.Measurment.getElevationOfLine(plan.id, [{lat: 35.9272, lng: -96.7
 **Example Call**
 
 ```javascript
-dronedeployApi.Measurment.getVolume(plan.id, [{lat: 35.9272, lng: -96.7493}, {lat: 35.9272, lng: -96.7493}, {lat: 35.9272, lng: -96.7493}])
+var geometry = [{lat: 35.9272, lng: -96.7493}, {lat: 35.9272, lng: -96.7493}, {lat: 35.9272, lng: -96.7493}];
+var optionalVolumeSetting = 'lowest'; // will default to fit -- See https://support.dronedeploy.com/v1.0/docs/volume-measurement#section-selecting-the-right-baseplane
+dronedeployApi.Measurment.getVolume(plan.id, geometry, optionalVolumeSetting)
   .then(function(jsonResult){
     console.log(jsonResult);
   });
