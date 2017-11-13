@@ -45,4 +45,5 @@ dronedeployApi.Tiles.get({planId: '5605c0e5752afc005a000004', layerName: 'ortho'
 ```
 
 [**Full Example - Get Tiles As Array**](/tiles/example-tiles-as-array.md)
+[**Full Example - Render Tiles in Map**](/tiles/render-tiles-example.md)
 

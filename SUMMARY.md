@@ -49,6 +49,7 @@
   * [Plans.update](plans/example-plans.update.md)
   * [Sample Flight Log](flightlogs/sample-flight-log.md)
   * [Tiles.get - Get Tiles As Array](tiles/example-tiles-as-array.md)
+  * [Tiles.get - Render tiles in map](tiles/render-tiles-example.md)
 * [Step by Step Guide to Publish an App](publishing_app.md)
   * [Getting Started](getting_started.md)
   * [Use DroneDeploy UI Kit](styles/dronedeploy-ui-kit.md)
