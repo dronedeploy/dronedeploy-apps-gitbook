@@ -12,7 +12,7 @@ This is a wrapper for our REST measurement API, https://support.dronedeploy.com/
 ** Example Call**
 
 ```javascript
-dronedeployApi.Measurment.getElevationOfPoint(plan.id, {lat: 35.9272, lng: -96.7493})
+dronedeployApi.Measurement.getElevationOfPoint(plan.id, {lat: 35.9272, lng: -96.7493})
   .then(function(jsonResult){
     console.log(jsonResult);
   });
@@ -37,7 +37,7 @@ dronedeployApi.Measurment.getElevationOfPoint(plan.id, {lat: 35.9272, lng: -96.7
 **Example Call**
 
 ```javascript
-dronedeployApi.Measurment.getElevationOfPoints(plan.id, [{lat: 35.9272, lng: -96.7493}, {lat: 35.9272, lng: -96.7493}])
+dronedeployApi.Measurement.getElevationOfPoints(plan.id, [{lat: 35.9272, lng: -96.7493}, {lat: 35.9272, lng: -96.7493}])
   .then(function(jsonResult){
     console.log(jsonResult);
   });
@@ -72,7 +72,7 @@ dronedeployApi.Measurment.getElevationOfPoints(plan.id, [{lat: 35.9272, lng: -96
 **Example Call**
 
 ```javascript
-dronedeployApi.Measurment.getElevationOfLine(plan.id, [{lat: 35.9272, lng: -96.7493}])
+dronedeployApi.Measurement.getElevationOfLine(plan.id, [{lat: 35.9272, lng: -96.7493}])
   .then(function(jsonResult){
     console.log(jsonResult);
   });
@@ -115,7 +115,7 @@ dronedeployApi.Measurment.getElevationOfLine(plan.id, [{lat: 35.9272, lng: -96.7
 ```javascript
 var geometry = [{lat: 35.9272, lng: -96.7493}, {lat: 35.9272, lng: -96.7493}, {lat: 35.9272, lng: -96.7493}];
 var optionalVolumeSetting = 'lowest'; // will default to fit -- See https://support.dronedeploy.com/v1.0/docs/volume-measurement#section-selecting-the-right-baseplane
-dronedeployApi.Measurment.getVolume(plan.id, geometry, optionalVolumeSetting)
+dronedeployApi.Measurement.getVolume(plan.id, geometry, optionalVolumeSetting)
   .then(function(jsonResult){
     console.log(jsonResult);
   });

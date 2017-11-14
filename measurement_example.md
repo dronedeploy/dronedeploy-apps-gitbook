@@ -16,17 +16,17 @@
 </head>
 <body>
 
-<div>Measurment.getElevationOfPoint</div>
-<textarea id="measurment-getelevationofpoint"></textarea>
+<div>Measurement.getElevationOfPoint</div>
+<textarea id="Measurement-getelevationofpoint"></textarea>
 
-<div>Measurment.getElevationOfPoints</div>
-<textarea id="measurment-getelevationofpoints"></textarea>
+<div>Measurement.getElevationOfPoints</div>
+<textarea id="Measurement-getelevationofpoints"></textarea>
 
-<div>Measurment.getElevationOfLine</div>
-<textarea id="measurment-getelevationofline"></textarea>
+<div>Measurement.getElevationOfLine</div>
+<textarea id="Measurement-getelevationofline"></textarea>
 
-<div>Measurment.getVolume</div>
-<textarea id="measurment-getvolume"></textarea>
+<div>Measurement.getVolume</div>
+<textarea id="Measurement-getvolume"></textarea>
 
 
 <script>
@@ -35,17 +35,17 @@ new DroneDeploy({version: 1}).then(function(dronedeploy){
     // All measurements need to occur within the bounds of the map
     var shrunkBounds = scaleBounds(plan.geometry, -0.45);
 
-    dronedeploy.Measurment.getElevationOfPoint(plan.id, shrunkBounds[0])
-      .then(drawResultsOnElement('#measurment-getelevationofpoint'));
+    dronedeploy.Measurement.getElevationOfPoint(plan.id, shrunkBounds[0])
+      .then(drawResultsOnElement('#Measurement-getelevationofpoint'));
 
-    dronedeploy.Measurment.getElevationOfPoints(plan.id, shrunkBounds)
-      .then(drawResultsOnElement('#measurment-getelevationofpoints'));
+    dronedeploy.Measurement.getElevationOfPoints(plan.id, shrunkBounds)
+      .then(drawResultsOnElement('#Measurement-getelevationofpoints'));
 
-    dronedeploy.Measurment.getElevationOfLine(plan.id, [shrunkBounds[0], shrunkBounds[1]])
-      .then(drawResultsOnElement('#measurment-getelevationofline'));
+    dronedeploy.Measurement.getElevationOfLine(plan.id, [shrunkBounds[0], shrunkBounds[1]])
+      .then(drawResultsOnElement('#Measurement-getelevationofline'));
 
-    dronedeploy.Measurment.getVolume(plan.id, shrunkBounds)
-      .then(drawResultsOnElement('#measurment-getvolume'));
+    dronedeploy.Measurement.getVolume(plan.id, shrunkBounds)
+      .then(drawResultsOnElement('#Measurement-getvolume'));
   });
 });
 
