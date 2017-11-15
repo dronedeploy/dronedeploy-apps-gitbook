@@ -161,7 +161,7 @@ dronedeployApi.Exporter.send(exportOptions)
 
 ```javascript
 dronedeployApi.Exporter.send({
-  layer: '3D Model',
+  layer: 'Point Cloud',
   email: ['example@dronedeploy.com']
 }).then(function(exportId){ console.log(exportId) });
 ```
@@ -172,7 +172,7 @@ dronedeployApi.Exporter.send({
 ```javascript
 const exportOptions = {
   // required
-  layer: '3D Model',
+  layer: 'Point Cloud',
   email: [String, String],
   
   // optional
