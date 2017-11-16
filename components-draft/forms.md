@@ -110,7 +110,7 @@ Add `disabled` as an attribute to the &lt;select&gt; element to disable the whol
 
 ### Radio Buttons
 
-Radio buttons are used when there is a group of option and only one selection is allowed. 
+Radio buttons are used when there is a group of option and only one selection is allowed.
 
 ![](/assets/options-radio.jpg)
 
@@ -123,9 +123,9 @@ Radio buttons are used when there is a group of option and only one selection is
 
 ### Switches
 
-A switch has two states on and off. 
+A switch has two states on and off.
 
-![](/assets/switches.jpg) 
+![](/assets/switches.jpg)
 
 ```
 <div class="switch">
@@ -140,21 +140,19 @@ A switch has two states on and off.
 
 Checkboxes are used when there is a true or false option. Checkboxes can also be used to select multiple items in a group.
 
-![](/assets/checbox-options.jpg) 
+![](/assets/checbox-options.jpg)
 
 ```
 <p>
-  <input type="checkbox" id="test5" />
-  <label for="test5">Phantom 4</label>
+  <input type="checkbox" id="test1" />
+  <label for="test1">Phantom 4</label>
 </p>
 
  <p>
-   <input type="checkbox" id="test5" />
-   <label for="test5">Inspire 2</label>
+   <input type="checkbox" id="test2" />
+   <label for="test2">Inspire 2</label>
 </p>
 ```
-
-
 
 
 
