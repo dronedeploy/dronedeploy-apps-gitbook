@@ -116,8 +116,13 @@ Radio buttons are used when there is a group of option and only one selection is
 
 ```
 <p>
-  <input name="group1" type="radio" id="test1" />
-  <label for="test1">Option 1</label>
+<input name="group1" type="radio" id="option1" />
+<label for="option1">Option 1</label>
+</p>
+
+<p>
+<input name="group1" type="radio" id="option2" />
+<label for="option2">Option 2</label>
 </p>
 ```
 

@@ -12,13 +12,6 @@ DroneDeploy's UI Kit is mostly based on material design. To start using the UI K
 CDN link to be ADDED
 ```
 
-### CDN JS
-
-```
- <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-```
-
 # Setup
 
 ### HTML Setup
@@ -37,17 +30,13 @@ Next we have to setup the html file structure to include all the necessary CSS a
     </head>
 
     <body>
-      <!--Import JS-->
-      INCLUDE JS FILE CDN HERE!!!!!
+      <!--Import JS - The file is available via download of a template-->
+       <script src="js/script.js"></script>
     </body>
   </html>
 ```
 
-### Templates
+# Documentation
 
-We have a starter template so you can quickly start developing your application.
-
-![](/assets/sample-app-market-HW.jpg)
-
-[DOWNLOAD TEMPLATE](https://s3.amazonaws.com/drone-deploy-plugins/templates/dronedeploy-expand-example.zip)
+To quickly get started download one of our templates or review our documentation. 
 
