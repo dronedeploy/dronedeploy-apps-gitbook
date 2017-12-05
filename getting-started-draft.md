@@ -16,7 +16,7 @@ CDN link to be ADDED
 
 ### HTML Setup
 
-Next we have to setup the html file structure to include all the necessary CSS and JS files. This is for reference of the files that should be included. Please download our template below to
+Next we have to setup the html file structure to include all the necessary CSS and JS files. This is for reference of the files that should be included. 
 
 ```
  <!DOCTYPE html>
@@ -38,5 +38,5 @@ Next we have to setup the html file structure to include all the necessary CSS a
 
 # Documentation
 
-To quickly get started download one of our templates or review our documentation. 
+To quickly get started download one of our templates or review our documentation.
 
