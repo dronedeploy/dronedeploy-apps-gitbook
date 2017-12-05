@@ -20,6 +20,7 @@
   * [Grid Draft](grid.md)
   * [Forms](components-draft/forms.md)
   * [Preloader](preloader.md)
+  * [Template](template.md)
   * [Follow Checklist](checklist.md)
   * [Add Success Condition](success-condition.md)
   * [Submit App for Review](publishing.md)
