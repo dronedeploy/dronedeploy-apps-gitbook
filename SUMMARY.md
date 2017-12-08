@@ -53,10 +53,9 @@
   * [Preloader](preloader.md)
   * [Templates](template.md)
   * [Add Success Condition](success-condition.md)
-* [App Submission](app-submission.md)
+* [Submitting an App](app-submission.md)
   * [Requirements Checklist](app-submission/requirements-checklist.md)
-* [Follow Checklist](checklist.md)
-* [Submit App for Review](publishing.md)
+  * [Submit App for Review](publishing.md)
 * [Authentication](authentication.md)
 * [FAQs](faqs.md)
 
