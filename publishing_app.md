@@ -1,4 +1,4 @@
-# Step by Step Guide to Publish an App
+# Getting Started UI Kit
 
 Follow these steps to publish an app:
 
