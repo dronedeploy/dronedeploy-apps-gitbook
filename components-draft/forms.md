@@ -1,6 +1,6 @@
 # Forms
 
-Most components within a form follow material design guidelines. It is important that these custom components are used to comply with DroneDeploy's design guidelines. Please note that most of the input elements will require that you add the jQuery CDN link provided on the Get Started page.
+Most components within a form follow material design guidelines. It is important that these custom components are used to comply with DroneDeploy's design guidelines.
 
 ### Input Fields
 
@@ -25,7 +25,7 @@ The `.input-field` allow users to input data. The bottom border of the input fie
 
 ### Validation Messaging
 
-By adding `data-error` as an attribute and the .invalid class to your &lt;div&gt; and  &lt;input&gt; you can add custom messaging to to your input field label.
+By adding `data-error` as an attribute and the .invalid class to your &lt;div&gt; and  &lt;input&gt; you can add custom messaging to your input field label.
 
 ![](/assets/data-error-input-md.jpg)
 
