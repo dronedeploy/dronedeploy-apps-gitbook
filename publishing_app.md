@@ -1,12 +1,15 @@
 # Step by Step Guide to Publish an App
 
-Follow these 5 steps to publish an app:
+Follow these steps to publish an app:
 
-1. [Getting Started](https://dronedeploy.gitbooks.io/dronedeploy-apps/content/getting_started.html): Review the basic setup to get started.
-2. [Use DroneDeploy UI Kit](https://dronedeploy.gitbooks.io/dronedeploy-apps/content/styles/dronedeploy-ui-kit.html): Use our pre made components, if you plan to use components like input text field, toggle, loaders. 
-3. [Follow Checklist](https://dronedeploy.gitbooks.io/dronedeploy-apps/content/checklist.html): This includes all the things App Market team looks for to make a decision to approve your app.
-4. [Add Success Condition](https://dronedeploy.gitbooks.io/dronedeploy-apps/content/success-condition.html): This is required before you can submit an app for review.
-5. [Submit App for Review](https://dronedeploy.gitbooks.io/dronedeploy-apps/content/publishing.html): Submit the app to DroneDeploy. Approval process usually takes 2-3 days. 
+1. [Getting Started](/publishing_app.md) - Review the basic setup to get started.
+2. [Grid](/grid.md) - Learn how to use or grid system to create the layout of your app.
+3. [Forms](/components-draft/forms.md) - Form components documentation for input fields, radio, checkboxes, textarea, select and more. 
+4. [Pre-loaders](/preloader.md) - Pre-loaders for various contexts.
+5. [Templates](/template.md) - Downloadable templates for various types of apps. 
+6. [Checklist](/checklist.md) - Check that your app complies with all our guidelines before submitting. 
+7. [Add Success Condition](/success-condition.md) - This is required before you are able to submit an application for review. 
+8. [Submit App for Review](/publishing.md) - After submitting your app to DroneDeploy the approval process usually takes 2-3 business days. 
 
 
 
