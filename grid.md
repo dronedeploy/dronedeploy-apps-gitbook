@@ -1,8 +1,8 @@
-# Grid
+# Side Panel Grid
 
 ### Our Grid System
 
-Our grid includes a flexbox grid with a 4 column layout. The width of the grid is fixed so there is no need for responsive design. 
+Our grid includes a flexbox grid with a 4 column layout. The width of the grid is fixed so there is no need for responsive design.
 
 **This is how the grid works:**
 
