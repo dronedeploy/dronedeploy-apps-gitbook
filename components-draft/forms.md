@@ -1,10 +1,10 @@
 # Forms
 
-Most components within a form follow material design guidelines. It is important that these custom components are used to comply with DroneDeploy's design guidelines.
+Most of DroneDeploy's components follow material design guidelines. 
 
 ### Input Fields
 
-The `.input-field` allow users to input data. The bottom border of the input field should light up on focus with our blue brand color.
+The `.input-field` allow users to input data. The bottom border of the input field should light up on focus with our blue brand color hex: \#2196F3. 
 
 ![](/assets/username-password.jpg)
 
@@ -23,7 +23,7 @@ The `.input-field` allow users to input data. The bottom border of the input fie
 </div>
 ```
 
-### Validation Messaging
+### Error Messaging
 
 By adding `data-error` as an attribute and the .invalid class to your &lt;div&gt; and  &lt;input&gt; you can add custom messaging to your input field label.
 
@@ -38,7 +38,7 @@ By adding `data-error` as an attribute and the .invalid class to your &lt;div&gt
 </div>
 ```
 
-### 
+### Success Messaging
 
 By adding .valid class to your input field you can highlight the border of the input green indicating that the data was validated successfully.
 
