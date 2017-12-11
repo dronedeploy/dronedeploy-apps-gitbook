@@ -1,14 +1,14 @@
 # Side Panel Grid
 
-### Our Grid System
+### Grid Structure
 
-Our grid includes a flexbox grid with a 4 column layout. The width of the grid is fixed so there is no need for responsive design.
+Our grid includes a flexbox grid with a 4 column layout. The width of the grid is a fixed value. 
 
 **This is how the grid works:**
 
 * Containers allow you to center your content within DroneDeploy's app side panel. It also keeps all your code within scope of the container.
 * Rows are placed inside a container. Rows allow you to align content horizontally. 
-* Columns allow you to set the number of columns that will compose your layout within the row. 
+* Columns are placed inside a row. Columns allow you to set the number of columns that will compose your layout within a row. 
 
 The grid is composed of three major components a container &gt; row &gt; 4 columns.
 
@@ -16,7 +16,7 @@ The grid is composed of three major components a container &gt; row &gt; 4 colum
 
 ![](/assets/grid-columns-sample.png)
 
-Here is an example of how you would structure 4 columns within your HTML
+Here is an example of how you would structure 4 columns within within a row on your HTML
 
 ```
 <div class="container">
@@ -29,11 +29,11 @@ Here is an example of how you would structure 4 columns within your HTML
 </div>
 ```
 
-### Layouts with Diverse Column Width
+### Layouts with Diverse Column Widths
 
 ![](/assets/columns-example-4.png)
 
-Structuring your html to create rows with diverse column width
+Example of structuring your HTMLto create rows with diverse column widths
 
 ```
 <div class="container">
