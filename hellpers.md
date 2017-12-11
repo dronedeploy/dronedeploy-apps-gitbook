@@ -2,9 +2,9 @@
 
 This is a set of classes to help you with alignment and layout.
 
-### Padding
+### Padding and Margin
 
-We recommend using our classes for spacing within your app. The following classes will help with consistent spacing within your app. The spacing classes are based on increments of 8px.  The left value represents padding or margin. The middle value is the number representing the amount of space in px. 
+We recommend using our classes for spacing within your app. The following classes will maintain consistent spacing within your app. The spacing classes are based on increments of 8px.  The left value represents padding or margin. The middle value is the number representing the amount of space in px.
 
 The classes are available for top, right, bottom, left, left and right \(X\), top and bottom \(Y\), and all sides\(A\).
 
