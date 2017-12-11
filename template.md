@@ -8,9 +8,9 @@ The login template includes all necessary elements for a user to login, create a
 
 [**DOWNLOAD TEMPLATE**](#)
 
-### Generate Report Template
+### One Click Template
 
-Applications that generate reports or other type of data this is a simplified version with one action.
+Applications that generate reports or other type of apps that only require one action.
 
 ![](/assets/generate-template.jpg)
 
@@ -18,7 +18,7 @@ Applications that generate reports or other type of data this is a simplified ve
 
 ### Analysis Template
 
-For application that require users to interact with form. This template includes form components needed to collect information.
+For application that require users to interact with form elements.
 
 ![](/assets/analysis-template.jpg)
 
