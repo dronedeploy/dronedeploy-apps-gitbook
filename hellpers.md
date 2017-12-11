@@ -1,12 +1,12 @@
 # Helpers
 
-This is a set of classes to help you with alignment and layout.
+This is a set of classes that act as a tool to help you with alignment and layout. 
 
-### Padding and Margin
+### Space Styles Margin and Padding
 
-We recommend using our classes for spacing within your app. The following classes will maintain consistent spacing within your app. The spacing classes are based on increments of 8px.  The left value represents padding or margin. The middle value is the number representing the amount of space in px.
+We recommend using space styles within your app. It will help with consistent spacing between components.
 
-The classes are available for top, right, bottom, left, left and right \(X\), top and bottom \(Y\), and all sides\(A\).
+The classes available can be applied to margin and padding. The class space grows in increments of 8px.
 
 ```
 Class semantics
