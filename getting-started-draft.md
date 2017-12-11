@@ -1,8 +1,8 @@
 # Document Setup
 
-DroneDeploy's UI Kit is mostly based on material design. To start using the UI Kit components and utilities please add the CDN to your code.
+DroneDeploy's UI Kit is vastly composed of material design components. To start using the UI Kit  please add the MaterializeCSS CDN and DroneDeploy's CSS.
 
-### CDN CSS
+### CSS
 
 ```
 <!-- Compiled and minified Materialized CSS -->
@@ -14,7 +14,7 @@ CDN link to be ADDED
 
 # Setup
 
-### HTML Setup
+### HTML Document Setup
 
 Next we have to setup the HTML file structure to include all the necessary CSS and JS files. This is for reference of the files that should be included.
 
