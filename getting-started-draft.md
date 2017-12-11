@@ -1,4 +1,4 @@
-# Development Setup
+# Document Setup
 
 DroneDeploy's UI Kit is mostly based on material design. To start using the UI Kit components and utilities please add the CDN to your code.
 
