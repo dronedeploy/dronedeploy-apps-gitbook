@@ -1,10 +1,10 @@
 # Forms
 
-Most of DroneDeploy's components follow material design guidelines. 
+Most of DroneDeploy's components follow material design guidelines.
 
 ### Input Fields
 
-The `.input-field` allow users to input data. The bottom border of the input field should light up on focus with our blue brand color hex: \#2196F3. 
+The `.input-field` allow users to input data. The bottom border of the input field should light up on focus with our blue brand color hex: \#2196F3.
 
 ![](/assets/username-password.jpg)
 
@@ -40,7 +40,7 @@ By adding `data-error` as an attribute and the .invalid class to your &lt;div&gt
 
 ### Success Messaging
 
-By adding .valid class to your input field you can highlight the border of the input green indicating that the data was validated successfully.
+By adding a .valid class to your input field you can highlight the border of the input with green indicating success.
 
 ### ![](/assets/success-input.jpg)
 
@@ -55,7 +55,7 @@ By adding .valid class to your input field you can highlight the border of the i
 
 ### Textarea Field
 
-A textarea should be used when there is multiple lines of content that need to be entered to an input field. The textarea input is liquid and will re-size according to content's height.
+A textarea should be used when there is multiple lines of content that need to be entered. The textarea input height is liquid and will re-size according to the amount of content.
 
 ![](/assets/textarea-input-md.jpg)
 
@@ -90,7 +90,7 @@ Selects allow you to suggest options with one selection allowed.
 
 ### Select Disabled State
 
-Add `disabled` as an attribute to the &lt;select&gt; element to disable the whole select element.
+Add `disabled` as an attribute to the &lt;select&gt; element to disable the whole select component.
 
 ![](/assets/disabled-select-md.jpg)
 
