@@ -47,7 +47,7 @@
   * [Success Condition](success-condition.md)
   * [Publishing](publishing.md)
 * [Getting Started UI Kit](publishing_app.md)
-  * [Dev Setup](getting-started-draft.md)
+  * [Development Setup](getting-started-draft.md)
   * [Side Panel Grid](grid.md)
   * [Forms](components-draft/forms.md)
   * [Preloader](preloader.md)
