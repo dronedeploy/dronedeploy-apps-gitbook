@@ -16,21 +16,21 @@ CDN link to be ADDED
 
 ### HTML Document Setup
 
-Next we have to setup the HTML file structure to include all the necessary CSS and JS files. This is for reference of the files that should be included.
+Next we have to setup the HTML file structure to include all the necessary CSS and JS files.
 
 ```
  <!DOCTYPE html>
   <html>
     <head>
-      <!--Import Google Icon Font-->
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <!-- Compiled and minified Materialized CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+      <!--DroneDeploy CSS Do Not Modify -->
+      <link rel="stylesheet" href="css/dd-styles.css">
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
 
     <body>
-      <!--Import JS - The file is available via download of a template-->
+      <!--JS file included when a template is downloaded js/app.js-->
        <script src="js/script.js"></script>
     </body>
   </html>
