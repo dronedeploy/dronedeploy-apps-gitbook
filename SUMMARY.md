@@ -49,6 +49,7 @@
 * [Getting Started UI Kit](publishing_app.md)
   * [Document Setup](getting-started-draft.md)
   * [Side Panel Grid](grid.md)
+  * [Typography](typography.md)
   * [Forms](components-draft/forms.md)
   * [Buttons](buttons.md)
   * [Preloader](preloader.md)
