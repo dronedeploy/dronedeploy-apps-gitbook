@@ -50,6 +50,7 @@
   * [Document Setup](getting-started-draft.md)
   * [Side Panel Grid](grid.md)
   * [Forms](components-draft/forms.md)
+  * [Buttons](buttons.md)
   * [Preloader](preloader.md)
   * [Helpers](hellpers.md)
   * [Templates](template.md)
