@@ -9,7 +9,7 @@ Follow these steps to publish an app:
 5. [Templates](/template.md) - Downloadable templates for various types of apps. 
 6. [Checklist](/checklist.md) - Before submitting your app verify that it complies with each requirement from DroneDeploy.
 7. [Add Success Condition](/success-condition.md) - This is required before you are able to submit an application for review.    
-8. [Submit App for Review](/publishing.md) - After submitting your app to DroneDeploy the approval process usually takes 2-3 business days. 
+8. [Submit App for Review](/publishing.md) - After submitting your app to DroneDeploy the approval process usually takes 2-3 business days.
 
-
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/xieC4o5JEUs?rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
 
