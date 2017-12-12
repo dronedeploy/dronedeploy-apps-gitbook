@@ -2,7 +2,7 @@
 
 ### Grid Structure
 
-Our grid includes a flexbox grid with a 4 column layout. The width of the grid is a fixed value. 
+Our grid includes a flexbox grid with a 4-column layout. The width of the grid is a fixed value.
 
 **This is how the grid works:**
 
@@ -16,7 +16,7 @@ The grid is composed of three major components a container &gt; row &gt; 4 colum
 
 ![](/assets/grid-columns-sample.png)
 
-Here is an example of how you would structure 4 columns within within a row on your HTML
+Here is an example of how you would structure 4 columns within within a row on your HTML.
 
 ```
 <div class="container">
@@ -33,7 +33,7 @@ Here is an example of how you would structure 4 columns within within a row on y
 
 ![](/assets/columns-example-4.png)
 
-Example of structuring your HTMLto create rows with diverse column widths
+Example of structuring your HTML to create rows with diverse column widths.
 
 ```
 <div class="container">
