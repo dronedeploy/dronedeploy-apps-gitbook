@@ -16,7 +16,7 @@ There primary button design should maintain a flat design and no fill with brand
 
 ### Disabled Button
 
-You can add a disabled-btn attribute to your button element for a disabled state of the button. 
+You can add a disabled-btn attribute to your button element for a disabled state of the button.
 
 ![](/assets/disabled-btn-dd.jpg)
 
