@@ -1,10 +1,10 @@
 # Forms
 
-Most of DroneDeploy's components follow material design guidelines.
+Most of DroneDeploy's components follow Material Design guidelines.
 
 ### Input Fields
 
-The `.input-field` allow users to input data. The bottom border of the input field should light up on focus with our blue brand color hex: \#2196F3.
+The `.input-field` allow users to input data. The bottom border of the input field should light up on focus with our blue brand color, hex: \#2196F3.
 
 ![](/assets/username-password.jpg)
 
@@ -40,7 +40,7 @@ By adding `data-error` as an attribute and the .invalid class to your &lt;div&gt
 
 ### Success Messaging
 
-By adding a .valid class to your input field you can highlight the border of the input with green indicating success.
+By adding a .valid class to your input field you can highlight the border of the input with green, indicating success.
 
 ### ![](/assets/success-input.jpg)
 
@@ -55,7 +55,7 @@ By adding a .valid class to your input field you can highlight the border of the
 
 ### Textarea Field
 
-A textarea should be used when there is multiple lines of content that need to be entered. The textarea input height is liquid and will re-size according to the amount of content.
+A textarea should be used when there are multiple lines of content that need to be entered. The textarea input height is liquid and will re-size according to the amount of content.
 
 ![](/assets/textarea-input-md.jpg)
 
@@ -110,7 +110,7 @@ Add `disabled` as an attribute to the &lt;select&gt; element to disable the whol
 
 ### Radio Buttons
 
-Radio buttons are used when there is a group of option and only one selection is allowed.
+Radio buttons are used when there is a group of options and only one selection is allowed.
 
 ![](/assets/options-radio.jpg)
 
@@ -128,7 +128,7 @@ Radio buttons are used when there is a group of option and only one selection is
 
 ### Switches
 
-A switch has two states on and off.
+A switch has two states - on and off.
 
 ![](/assets/switches.jpg)
 
