@@ -1,6 +1,6 @@
 # Document Setup
 
-DroneDeploy's UI Kit is vastly composed of material design components. To start using the UI Kit  please add the MaterializeCSS CDN and DroneDeploy's CSS.
+DroneDeploy's UI Kit is vastly composed of Material Design components. To start using the UI Kit, please add the MaterializeCSS CDN and DroneDeploy's CSS.
 
 ### CSS
 
