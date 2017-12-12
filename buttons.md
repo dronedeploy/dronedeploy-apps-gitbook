@@ -16,7 +16,7 @@ There primary button design should maintain a flat design and no fill with brand
 
 ### Disabled Button
 
-There primary button design should maintain a flat design and no fill with brand blue text. The color of the button should only be blue and not other colors.
+You can add a disabled-btn attribute to your button element for a disabled state of the button. 
 
 ![](/assets/disabled-btn-dd.jpg)
 
