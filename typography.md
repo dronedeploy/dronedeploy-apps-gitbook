@@ -2,7 +2,7 @@
 
 ### Font Family - Lato
 
-The required font for all apps is Lato. We included in the dronedeploy css file font weight 200 to 300.
+The required font for all apps is Lato. The font weights available are 200 and 300.
 
 ### Headers
 
@@ -11,6 +11,3 @@ Headers are used for titles within your app. The main title of your app should u
 #### **Heading H1 - 14px**
 
 #### p, span - 14px
-
-
-
