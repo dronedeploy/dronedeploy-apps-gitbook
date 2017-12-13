@@ -55,7 +55,7 @@ By adding a .valid class to your input field you can highlight the border of the
 
 ### Textarea Field
 
-A textarea should be used when there are multiple lines of content that need to be entered. The textarea input height is liquid and will re-size according to the amount of content.
+A textarea should be used when there are multiple lines of content that needs to be added. The textarea input height is liquid and will re-size according to the amount of content.
 
 ![](/assets/textarea-input-md.jpg)
 
@@ -158,6 +158,3 @@ Checkboxes are used when there is a true or false option. Checkboxes can also be
    <label for="test2">Inspire 2</label>
 </p>
 ```
-
-
-
