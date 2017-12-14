@@ -6,7 +6,7 @@ The login template includes all necessary elements for a user to login, create a
 
 ![](/assets/login-template.jpg)
 
-[**DOWNLOAD TEMPLATE**](#)
+[**DOWNLOAD TEMPLATE**](https://github.com/dronedeploy/DroneDeploy-App-Market/releases/download/v1.2/dronedeploy-app-full.zip)
 
 ### One-Click Template
 
@@ -14,7 +14,7 @@ Applications that generate reports or other type of apps that only require one a
 
 ![](/assets/generate-template.jpg)
 
-[**DOWNLOAD TEMPLATE**](#)
+[**DOWNLOAD TEMPLATE**](https://github.com/dronedeploy/DroneDeploy-App-Market/releases/download/v1.2/dronedeploy-app-one-click.zip)
 
 ### Analysis Template
 
@@ -22,5 +22,4 @@ For applications that require users to interact with form elements.
 
 ![](/assets/analysis-template.jpg)
 
-[**DOWNLOAD TEMPLATE**](#)
-
+[**DOWNLOAD TEMPLATE**](https://github.com/dronedeploy/DroneDeploy-App-Market/releases/download/v1.2/dronedeploy-app-input.zip)
