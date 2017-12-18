@@ -1,4 +1,4 @@
-# Getting Started UI Kit
+# Publishing an App
 
 Follow these steps to publish an app:
 
@@ -11,7 +11,6 @@ Follow these steps to publish an app:
 7. [Add Success Condition](/success-condition.md) - This is required before you are able to submit an application for review.    
 8. [Submit App for Review](/publishing.md) - After submitting your app to DroneDeploy, the approval process usually takes 2-3 business days.
 
-
-# Setting Up Your Development Environment
-
-{% youtube %} https://www.youtube.com/watch?v=xieC4o5JEUs&list=PLqOge\_z8yN2EJ4ftDaY1XdbaneCRQTnvq\ {% endyoutube %}
+1.[Verify Checklist](/checklist.md) - Review the list of required items before submitting an app.
+2.[Add Tracking](/success-condition.md) - This will help track your app performance and identify optimization opportunities.
+3.[Submit an App](/publishing.md) - Instruction on how to publish an app with DroneDeploy. 
