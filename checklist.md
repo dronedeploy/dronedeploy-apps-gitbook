@@ -31,9 +31,9 @@
 
 * [ ] I have included at least 2 \(4 recommended\) screenshots for my app?
 
-## Reference
+## Templates
 
-Here is a great example of an app meeting all these criterias: [Airdata UAV Sync app](https://www.dronedeploy.com/app-market/import/souctjpqwwcwwwqdcvvq.html)
+Download one of our [templates](https://dronedeploy.gitbooks.io/dronedeploy-apps/content/template.html) to get the UI Kit and comply with all of our design guidelines from the start. 
 
 ![](/assets/airdata.png)
 
