@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-* [Getting Started UI Kit](publishing_app.md)
+* [Getting Started UI Kit](getting_started.md)
   * [Document Setup](getting-started-draft.md)
   * [Side Panel Grid](grid.md)
   * [Typography](typography.md)
@@ -61,7 +61,6 @@
   * [Tiles.get - Render tiles in map](tiles/render-tiles-example.md)
 * [Platform Policy](platform-policy.md)
   * [Success Condition](success-condition.md)
-  * [Design Guidelines](getting_started.md)
   * [Publishing](publishing.md)
 * [Authentication](authentication.md)
 * [FAQs](faqs.md)
