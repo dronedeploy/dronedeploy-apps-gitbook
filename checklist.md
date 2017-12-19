@@ -31,8 +31,6 @@
 
 * [ ] I have included at least 2 \(4 recommended\) screenshots for my app?
 
-![](/assets/airdata.png)
-
 ## Got Questions?
 
 Send us an email at developer@dronedeploy.com
