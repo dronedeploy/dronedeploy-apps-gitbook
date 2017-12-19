@@ -2,29 +2,18 @@
 
 ## Design
 
-1. [ ] My app uses DD app template provided by DroneDeploy?  
-   Download it [here](https://s3.amazonaws.com/drone-deploy-plugins/templates/dronedeploy-expand-example.zip).  
-   ![](/assets/expandable.gif)
+1. [ ] I have reviewed the UI Kit and implemented elements within DroneDeploy's design guidelines such as typography, layout, colors and components.
 
-2. [ ] My app uses components \(wherever applicable\) provided in [DroneDeploy UI Kit](https://dronedeploy.gitbooks.io/dronedeploy-apps/content/styles/dronedeploy-ui-kit.html)?
+2. [ ] My app uses components \(wherever applicable\) provided in [DroneDeploy UI Kit](https://dronedeploy.gitbooks.io/dronedeploy-apps/content/getting_started.html)?
 
 3. [ ] My app uses button styles provided in the styles.css in the DD app template?  
    All action buttons should use our CSS classes and blue color: **\#2196F3**
+3. [ ] My app uses color: color: **\#2196F3** for all components as specified within the UI KIt provided by DroneDeploy.
 
-   ![](/assets/button_states.png)
 
-4. [ ] My app uses _Lato font_ \(also provided in styles.css in the DD app template\)?
+4. [ ] I reviewed the typography section and my app uses _Lato font_ \ [Found in the [UI Kit download](https://dronedeploy.gitbooks.io/dronedeploy-apps/content/template.html) section)?
 
-5. [ ] My app use row and column grid classes?
-
-   ```
-   <div class="row">
-   <div class="input-field col-4">
-   <input type="text" class="validate">
-   <label for="first_name">Username</label>
-   </div>
-   </div>
-   ```
+5. [ ] My app layout complies with the layout as specified within the side panel grid section.
 
 6. [ ] I have tested my app on Chrome browser?
 
@@ -34,16 +23,16 @@
 
 9. [ ] I have tested my app on iOS or Android device?
 
-10. [ ] My app includes the [success condition](https://dronedeploy.gitbooks.io/dronedeploy-apps/content/success-condition.html)?
+10. [ ] My app includes the [success condition tracking](https://dronedeploy.gitbooks.io/dronedeploy-apps/content/success-condition.html)?
 
 ## Marketing
 
 * [ ] My app has a high resolution logo?
 * [ ] My app has a short description?
-* [ ] My app has a long description containing release notes and directions to use my app?  
-  Please note that you can use basic HTML to style your long description.
+* [ ] My app has a description containing release notes and directions to use my app?  
+  Please note that you can use basic HTML to style your description.
 
-* [ ] I have included atleast 2 \(4 recommended\) screenshots for my app?
+* [ ] I have included at least 2 \(4 recommended\) screenshots for my app?
 
 ## Reference
 
@@ -54,4 +43,3 @@ Here is a great example of an app meeting all these criterias: [Airdata UAV Sync
 ## Got Questions?
 
 Send us an email at developer@dronedeploy.com
-
