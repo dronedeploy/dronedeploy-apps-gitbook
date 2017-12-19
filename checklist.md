@@ -6,10 +6,7 @@
 
 2. [ ] My app uses components \(wherever applicable\) provided in [DroneDeploy UI Kit](https://dronedeploy.gitbooks.io/dronedeploy-apps/content/getting_started.html)?
 
-3. [ ] My app uses button styles provided in the styles.css in the DD app template?  
-   All action buttons should use our CSS classes and blue color: **\#2196F3**
 3. [ ] My app uses color: color: **\#2196F3** for all components as specified within the UI KIt provided by DroneDeploy.
-
 
 4. [ ] I reviewed the typography section and my app uses _Lato font_ \ [Found in the [UI Kit download](https://dronedeploy.gitbooks.io/dronedeploy-apps/content/template.html) section)?
 
