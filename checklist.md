@@ -31,10 +31,6 @@
 
 * [ ] I have included at least 2 \(4 recommended\) screenshots for my app?
 
-## Templates
-
-Download one of our [templates](https://dronedeploy.gitbooks.io/dronedeploy-apps/content/template.html) to get the UI Kit and comply with all of our design guidelines from the start. 
-
 ![](/assets/airdata.png)
 
 ## Got Questions?
