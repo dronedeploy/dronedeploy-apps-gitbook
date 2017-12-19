@@ -1,4 +1,4 @@
-# Use this checklist before submitting an app
+# Verify the Checklist Before Submitting an App
 
 ## Design
 
