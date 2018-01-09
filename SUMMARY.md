@@ -36,8 +36,6 @@
   * [Annotations.getVolume](annotations/example-annotations.getvolume.md)
   * [Annotations.getVolume](annotations/example-annotations.getvolume.md)
   * [App Size - Fixing Overflow Problems](annotations/app-size-fixing-overflow-problems.md)
-  * [Exporter.get3DModelLink](exporter/example-exporter.get3dmodellink.md)
-  * [Exporter.getPointCloudLInk](exporter/example-exporter.getpointcloudlink.md)
   * [Exporter.list](exporter/example-exporter.list.md)
   * [Exporter.send](exporter/example-exporter.send.md)
   * [Flightlog.getLogsFromPlan](flightlogs/example-flightlog.getlogsfromplan.md)
@@ -64,3 +62,4 @@
   * [Publishing](publishing.md)
 * [Authentication](authentication.md)
 * [FAQs](faqs.md)
+
