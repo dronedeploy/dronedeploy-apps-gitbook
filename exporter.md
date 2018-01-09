@@ -7,12 +7,6 @@
 - [3D Export](#3d-export)
 - [Point Cloud Export](#point-cloud-export)
 
-**Exporter.getPointCloudLink**
-- [Exporter.getPointCloudLink](#exportergetpointcloudlink)
-
-**Exporter.get3DModelLink**
-- [Exporter.get3DModelLink](#exporterget3dmodellink)
-
 **Exporter.list**
 - [Exporter.list](#exporterlist)
 
@@ -188,50 +182,6 @@ dronedeployApi.Exporter.send(exportOptions)
 ```
 
 **[Full Example](/exporter/example-exporter.send.md)**
-
-## Exporter.getPointCloudLink
-
-**Overview**
-
-Get the URL to download the Point Cloud
-
-**Example Call**
-
-```javascript
-const planId = '8905ccf8d4684ff6969eb0378f1d4e34';
-dronedeployApi.Exporter.getPointCloudLink(planId)
-  .then(function(downloadLink){ console.log(exportId) });
-```
-
-**Example Response**
-
-```javascript
-https://s3.amazonaws.com/drone_assets/1470423260_DANIELINSPIRE/points.zip?AWSAccessKeyId=AKIAISEWUBLV6Q6M3S3A&Expires=1474516459&Signature=2MjUsIEJVRKHGO8ng8LoADH9jJk%3D
-```
-
-**[Full Example](/exporter/example-exporter.getpointcloudlink.md)**
-
-## Exporter.get3DModelLink
-
-**Overview**
-
-Get the URL to download the 3D Model
-
-**Example Call**
-
-```javascript
-const planId = '8905ccf8d4684ff6969eb0378f1d4e34';
-dronedeployApi.Exporter.get3DModelLink(planId)
-  .then(function(downloadLink){ console.log(exportId) });
-```
-
-**Example Response**
-
-```javascript
-https://s3.amazonaws.com/drone_assets/1470423260_DANIELINSPIRE/model.zip?AWSAccessKeyId=AKIAISEWUBLV6Q6M3S3A&Expires=1474516459&Signature=2MjUsIEJVRKHGO8ng8LoADH9jJk%3D
-```
-
-**[Full Example](/exporter/example-exporter.get3dmodellink.md)**
 
 ## Exporter.list
 
