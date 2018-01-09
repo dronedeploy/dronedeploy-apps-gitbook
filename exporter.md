@@ -1,14 +1,16 @@
 # Exporter
 
 **Exporter.send**
-- [Orthomosaic Export](#orthomosaic-export)
-- [NDVI Toolbox Export](#ndvi-toolbox-export)
-- [Elevation Export](#elevation-export)
-- [3D Export](#3d-export)
-- [Point Cloud Export](#point-cloud-export)
+
+* [Orthomosaic Export](#orthomosaic-export)
+* [NDVI Toolbox Export](#ndvi-toolbox-export)
+* [Elevation Export](#elevation-export)
+* [3D Export](#3d-export)
+* [Point Cloud Export](#point-cloud-export)
 
 **Exporter.list**
-- [Exporter.list](#exporterlist)
+
+* [Exporter.list](#exporterlist)
 
 ## Exporter.send
 
@@ -30,7 +32,7 @@ const exportOptions = {
   // required
   layer: 'Orthomosaic',
   email: [String, String],
-  
+
   //optional
   file_format: ['geotiff', 'jpg'], // default to geotiff
   merge: Boolean, // defaults to true
@@ -45,7 +47,7 @@ dronedeployApi.Exporter.send(exportOptions)
   .then(function(exportId){ console.log(exportId) });
 ```
 
-**[Full Example](/exporter/example-exporter.send.md)**
+[**Full Example**](/exporter/example-exporter.send.md)
 
 ### NDVI Toolbox Export
 
@@ -65,7 +67,7 @@ const exportOptions = {
   // required
   layer: 'NDVI Toolbox',
   email: [String, String],
-  
+
   //optional
   file_format: ['geotiff', 'jpg', 'shapefile'], // default to geotiff
   merge: Boolean, // defaults to true
@@ -80,7 +82,7 @@ dronedeployApi.Exporter.send(exportOptions)
   .then(function(exportId){ console.log(exportId) });
 ```
 
-**[Full Example](/exporter/example-exporter.send.md)**
+[**Full Example**](/exporter/example-exporter.send.md)
 
 ### Elevation Export
 
@@ -100,7 +102,7 @@ const exportOptions = {
   // required
   layer: 'Elevation Toolbox',
   email: [String, String],
-  
+
   //optional
   file_format: ['geotiff', 'jpg', 'demtiff', 'contourshp', 'contourdxf'], // default to geotiff
   merge: Boolean, // defaults to true
@@ -116,7 +118,7 @@ dronedeployApi.Exporter.send(exportOptions)
   .then(function(exportId){ console.log(exportId) });
 ```
 
-**[Full Example](/exporter/example-exporter.send.md)**
+[**Full Example**](/exporter/example-exporter.send.md)
 
 ### 3D Export
 
@@ -136,7 +138,7 @@ const exportOptions = {
   // required
   layer: '3D Model',
   email: [String, String],
-  
+
   // optional
   planId: [String], // defaults to currently visible map
   webhook: {
@@ -147,7 +149,7 @@ dronedeployApi.Exporter.send(exportOptions)
   .then(function(exportId){ console.log(exportId) });
 ```
 
-**[Full Example](/exporter/example-exporter.send.md)**
+[**Full Example**](/exporter/example-exporter.send.md)
 
 ### Point Cloud Export
 
@@ -160,7 +162,6 @@ dronedeployApi.Exporter.send({
 }).then(function(exportId){ console.log(exportId) });
 ```
 
-
 **Parameters**
 
 ```javascript
@@ -168,7 +169,7 @@ const exportOptions = {
   // required
   layer: 'Point Cloud',
   email: [String, String],
-  
+
   // optional
   file_format: ['las', 'xyz'], // defaults to 'las'
   max_points: ['MAX', Number], // defaults to 'MAX'
@@ -181,7 +182,7 @@ dronedeployApi.Exporter.send(exportOptions)
   .then(function(exportId){ console.log(exportId) });
 ```
 
-**[Full Example](/exporter/example-exporter.send.md)**
+[**Full Example**](/exporter/example-exporter.send.md)
 
 ## Exporter.list
 
@@ -190,6 +191,7 @@ dronedeployApi.Exporter.send(exportOptions)
 List all the exports on the users account or for a specific plan.
 
 **Example Call**
+
 ```javascript
 // get all exports
 dronedeployApi.Exporter.list()
@@ -200,9 +202,8 @@ dronedeployApi.Exporter.list({planId: '5803c075d0ec0a44f0a75a86'})
   .then(function(exports){ console.log(exports) });
 ```
 
-
-
 **Example Response**
+
 ```javascript
 [
   {
@@ -235,4 +236,7 @@ dronedeployApi.Exporter.list({planId: '5803c075d0ec0a44f0a75a86'})
 ]
 ```
 
-**[Full Example](/exporter/example-exporter.get3dmodellink.md)**
+[**Full Example**](/exporter/example-exporter.get3dmodellink.md)
+
+
+
