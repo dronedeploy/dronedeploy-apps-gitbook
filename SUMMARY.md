@@ -29,6 +29,8 @@
   * [Follow Checklist](checklist.md)
   * [Add Success Condition](success-condition.md)
   * [Submit App for Review](publishing.md)
+* [CLI](cli-setup.md)
+  * [CLI Setup](cli-setup.md)
 * [App Examples](app-examples.md)
   * [Annotation create and delete](annotations/example-annotation-create-and-delete.md)
   * [Annotations.get](annotations/example-annotations.get.md)
