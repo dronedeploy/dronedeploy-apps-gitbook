@@ -23,6 +23,7 @@ You'll need a server to handle the OAuth secret, store the OAuth token, and hand
    1. E.X: [https://www.your-oauth-server.com/authenticate?service=dronedeployapp&callback=https://your-dronedeploy-app-server.com/callback](https://www.your-oauth-server.com/authenticate?service=dronedeployapp&callback=https://your-dronedeploy-app-server.com/callback?identifier=WEB_SOCKET_CLIENT_ID)
 2. When the authentication flow completes on the server for "[https://your-dronedeploy-app-server.com/callback?token=SERVICE\_TOKEN](https://your-dronedeploy-app-server.com/callback?identifier=WEB_SOCKET_CLIENT_ID&token=SERVICE_TOKEN)"  the token should be saved in the database and corresponding JWT token should be sent back to the client via postMessage
    1. window.opener.postMessage\('MY\_Service\_Authentication Successful', '\*'\) [Full Example](https://github.com/dronedeploy/post-message-opener-window-example)
+   2. NOTE: On the DroneDeploy native apps \(iOS and Android\) post messaging back the token won't be possible. Since window.open won't work on Cordova. In this scenario you should instead start the OAuth flow with a random uuid and poll the server until the authentication flow is successful.
 3. Once the frontend has the JWT token it should store it in localstorage and proxy all of its network requests through "your-dronedeploy-app-server.com".
    1. E.X. frontend /get-user --&gt; your-dronedeploy-app-server.com/get-user --&gt; [https://www.your-api.com/get-user](https://www.your-api.com/get-user)
 
