@@ -8,7 +8,7 @@
 
 3. [ ] My app uses color: color: **\#2196F3** for all components as specified within the UI KIt provided by DroneDeploy.
 
-4. [ ] I reviewed the typography section and my app uses _Lato font_ \ [Found in the [UI Kit download](https://dronedeploy.gitbooks.io/dronedeploy-apps/content/template.html) section)?
+4. [ ] I reviewed the typography section and my app uses _Lato font_  \[Found in the [UI Kit download](https://dronedeploy.gitbooks.io/dronedeploy-apps/content/template.html) section\)?
 
 5. [ ] My app layout complies with the layout as specified within the side panel grid section.
 
@@ -16,7 +16,7 @@
 
 7. [ ] I have tested my app on Safari?
 
-8. [ ] I have tested my app on IE 10+ and Firefox? \(Yes, some of our users use these browsers\)
+8. [ ] I have tested my app on IE and Firefox?
 
 9. [ ] I have tested my app on iOS or Android device?
 
@@ -34,3 +34,4 @@
 ## Got Questions?
 
 Send us an email at developer@dronedeploy.com
+
