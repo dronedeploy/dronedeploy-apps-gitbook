@@ -5,10 +5,15 @@
     overflow: hidden;
     display: flex;
     align-items: center;
+    padding: 15px 0px;
+    box-shadow: 0 4px 8px 0 rgba(51,50,51,.5);
+    margin-bottom: 8px;
 }
 
 .topnav img{
-    width: 110px
+    width: 130px;
+    margin-left: 40px;
+    margin-right: 20px;
 }
 /* Style the links inside the navigation bar */
 .topnav .link {
@@ -17,7 +22,7 @@
     float: center;
     color: #f2f2f2;
     text-align: center;
-    padding: 9px;
+    padding: 5px 10px;
     text-decoration: none;
     font-size: 16px;
     font-weight: 800;
@@ -27,9 +32,8 @@
 
 /* Change the color of links on hover */
 .topnav .link:hover {
-    background-color: #2196f3;
+    background-color: rgba(255,255,255,.2);
     color: rgba(255,255,255,.75);
-    padding: 9px;
 }
 
 /* Add a color to the active/current link */
@@ -40,5 +44,4 @@
 
 .topnav-brand {
     display:inline-block;
-    width:128px
 }

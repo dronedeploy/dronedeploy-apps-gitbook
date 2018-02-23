@@ -1,11 +1,12 @@
 {
+  "root": "./docs",
   "plugins": [
     "youtube",
     "components"
   ],
   "pluginsConfig": {
     "components": {
-      "templatePath": "components",
+      "templatePath": "docs/components",
       "templates": [
         {
           "name": "header",
