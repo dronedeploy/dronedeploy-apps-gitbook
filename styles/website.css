@@ -1,0 +1,44 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic);
+
+.topnav {
+    background-color: #1976D2;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.topnav img{
+    width: 110px
+}
+/* Style the links inside the navigation bar */
+.topnav .link {
+    font-family: Lato,sans-serif;
+    line-height: 1.5;
+    float: center;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 9px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 800;
+    color: #fff;
+    border-radius: 4px;
+}
+
+/* Change the color of links on hover */
+.topnav .link:hover {
+    background-color: #2196f3;
+    color: rgba(255,255,255,.75);
+    padding: 9px;
+}
+
+/* Add a color to the active/current link */
+.topnav .link.active {
+    background-color: #2196f3;
+    color: white;
+}
+
+.topnav-brand {
+    display:inline-block;
+    width:128px
+}

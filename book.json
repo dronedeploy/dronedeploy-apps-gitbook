@@ -1,3 +1,18 @@
 {
-    "plugins": ["youtube"]
+  "plugins": [
+    "youtube",
+    "components"
+  ],
+  "pluginsConfig": {
+    "components": {
+      "templatePath": "components",
+      "templates": [
+        {
+          "name": "header",
+          "target": "body",
+          "prepend": "true"
+        }
+      ]
+    }
+  }
 }
