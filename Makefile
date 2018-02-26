@@ -5,7 +5,7 @@ GIT_BRANCH := $(shell git rev-parse --abbrev-ref HEAD)
 DRONE_WEB_BRANCH := "prod"
 
 package: clean build-graphql-reference
-	docker run -it \
+	docker run \
 			-w /gitbook/ \
 			-v $(PWD)/book.json:/gitbook/book.json \
 			-v $(PWD)/docs:/gitbook/docs \
@@ -27,7 +27,7 @@ clean:
 
 build-graphql-reference:
 	cp docs/components/topnav.html graphdoc_templates/topnav.mustache  # Copy topnav into graphdoc template
-	docker run -it \
+	docker run \
 			-v $(PWD)/graphdoc_templates:/graphdoc_templates \
 			-v $(PWD)/build:/build/ \
 			dronedeploy/nodejs:v8.9.0 \
