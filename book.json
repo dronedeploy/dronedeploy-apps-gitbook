@@ -9,7 +9,7 @@
       "templatePath": "docs/components",
       "templates": [
         {
-          "name": "header",
+          "name": "topnav",
           "prepend": "true",
           "target": "body"
         }

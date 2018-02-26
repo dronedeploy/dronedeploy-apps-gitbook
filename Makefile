@@ -10,8 +10,11 @@ package: clean build-graphql-reference
 			-v $(PWD)/book.json:/gitbook/book.json \
 			-v $(PWD)/docs:/gitbook/docs \
 			-v $(PWD)/build:/gitbook/build/ \
+			-v $(PWD)/_book:/gitbook/_book/ \
 			dronedeploy/nodejs:v8.9.0 \
-			/bin/bash -c "npm install -g gitbook-cli; gitbook install; gitbook build; cp -R _book/* build/docs/"
+			/bin/bash -c "npm install -g gitbook-cli; gitbook install; gitbook build"
+	cp -R ./_book build/
+	mv build/_book/ build/docs
 	cp -R landing_page/* build/
 	cp -R landing_page/static/ build/
 
@@ -23,10 +26,9 @@ clean:
 	mkdir -p build
 
 build-graphql-reference:
+	cp docs/components/topnav.html graphdoc_templates/topnav.mustache  # Copy topnav into graphdoc template
 	docker run -it \
+			-v $(PWD)/graphdoc_templates:/graphdoc_templates \
 			-v $(PWD)/build:/build/ \
-			-v $(PWD)/docs/components/header.html:/build/docs/components/header.html \
-			-v $(PWD)/docs/styles/website.css:/build/docs/styles/website.css \
 			dronedeploy/nodejs:v8.9.0 \
-			/bin/bash -c "npm install -g @2fd/graphdoc; graphdoc -e https://www.dronedeploy.com/graphql -f -o ./build/reference"
-	python insert_header_html.py
+			/bin/bash -c "npm install -g @2fd/graphdoc; graphdoc -f -t /graphdoc_templates/ -e https://www.dronedeploy.com/graphql -o ./build/reference"
