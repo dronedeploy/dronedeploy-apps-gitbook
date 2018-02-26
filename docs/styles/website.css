@@ -48,8 +48,8 @@ main .title{
 
 /* Add a color to the active/current link */
 .topnav .link.active {
-    background-color: #2196f3;
-    color: white;
+    background: #fafafa;
+    color: black;
 }
 
 .topnav-brand {
