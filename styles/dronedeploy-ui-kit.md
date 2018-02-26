@@ -1,3 +1,0 @@
-# UI Kit
-
-Coming soon...
