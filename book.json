@@ -10,8 +10,8 @@
       "templates": [
         {
           "name": "header",
-          "target": "body",
-          "prepend": "true"
+          "prepend": "true",
+          "target": "body"
         }
       ]
     }
