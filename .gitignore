@@ -2,7 +2,7 @@
 ## Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
 .grunt
 build/*
-documentation/*
+/graphdoc_templates/topnav.mustache
 
 ## Dependency directory
 ## Commenting this out is preferred by some people, see
