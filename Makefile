@@ -22,7 +22,7 @@ run:
 	http-server build/
 
 clean:
-	rm -rf build/
+	-docker run --rm -v $(shell pwd)/build:/build busybox rm -rf /build/*
 	mkdir -p build
 
 build-graphql-reference:
