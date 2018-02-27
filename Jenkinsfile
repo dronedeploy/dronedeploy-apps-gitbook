@@ -28,7 +28,7 @@ node ('linux'){
                               useServerSideEncryption: false
                           ],
                           [
-                              bucket: 'drone-deploy-artifacts/developer-site/' + git_hash,
+                              bucket: 'drone-deploy-artifacts/developer-site/' + env.GIT_COMMIT,
                               excludedFile: '',
                               flatten: false,
                               gzipFiles: false,
