@@ -26,21 +26,6 @@ node ('linux'){
                               storageClass: 'STANDARD',
                               uploadFromSlave: true,
                               useServerSideEncryption: false
-                          ],
-                          [
-                              bucket: 'drone-deploy-artifacts/developer-site/' + env.GIT_COMMIT,
-                              excludedFile: '',
-                              flatten: false,
-                              gzipFiles: false,
-                              keepForever: true,
-                              managedArtifacts: false,
-                              noUploadOnFailure: true,
-                              selectedRegion: 'us-east-1',
-                              showDirectlyInBrowser: true,
-                              sourceFile: 'build/**/*',
-                              storageClass: 'STANDARD',
-                              uploadFromSlave: true,
-                              useServerSideEncryption: false
                           ]],
                 profileName: 'jenkins', userMetadata: []
           ])
