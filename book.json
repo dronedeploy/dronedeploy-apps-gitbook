@@ -1,3 +1,19 @@
 {
-    "plugins": ["youtube"]
+  "root": "./docs",
+  "plugins": [
+    "youtube",
+    "components"
+  ],
+  "pluginsConfig": {
+    "components": {
+      "templatePath": "docs/components",
+      "templates": [
+        {
+          "name": "topnav",
+          "prepend": "true",
+          "target": "body"
+        }
+      ]
+    }
+  }
 }
