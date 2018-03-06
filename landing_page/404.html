@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="/static/css/bootstrap.css" media="screen" title="no title" charset="utf-8"> -->
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+    <link rel="shortcut icon" href="../static/../static/img/dd-favicon.ico" type="image/x-icon">
+    <!-- Fortawesome icons -->
+    <script src="https://use.fonticons.com/1ce412c5.js"></script>
+    <!--Old Mobile Nav Temp TODO remove it once new nav is implemented  -->
+    <script src="/static/js/modernizr.js"></script>
+    <title>DroneDeploy: DroneDeploy for Developers</title>
+	  <meta name="description" content=" Build your app on DroneDeploy’s App Market, the largest drone data platform in the world. Easily monetize, distribute globally, and develop powerful partner integrations. Build your first drone data app now.">
+
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','//connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '163274790692622');
+fbq('track', "PageView");</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=163274790692622&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '151207998623800');
+fbq('track', "PageView");</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=151207998623800&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+<script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName("script")[0];
+a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0045/7762.js?"+Math.floor(new Date().getTime()/3600000);
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+
+<!--// Google Analytics Tracking -->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-50843700-1', 'auto');
+    ga('send', 'pageview');
+</script>
+
+<noscript>
+  <div display:inline;>
+  <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/963800639/?value=1.00&amp;currency_code=USD&amp;label=whOgCJL6tlsQv9zJywM&amp;guid=ON&amp;script=0"/>
+  </div>
+</noscript>
+
+<!--//Start Hotjar tracking code-->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:101280,hjsv:5};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+<!--//End Hotjar Tracking-->
+
+<!--End of all tracking code -->
+
+  </head>
+  <body ng-app="app">
+   <div id="outer-wrap"><!-- outer-wrap old mobile nav TODO remove -->
+   <div id="inner-wrap"><!-- inner-wrap old mobile nav TODO remove -->
+    <!-- Desktop Nav -->
+    <nav class="slide navbar navbar-fixed-top navbar-transparent navbar-scroll-color hidden-sm-down">
+      <div class="container">
+        <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
+            <a class="navbar-brand" href="http://www.dronedeploy.com">
+              <img src="/static/../static/img/dd-logo.svg" alt="dronedeploy">
+            </a>
+        </div>
+          <ul class="nav navbar-nav navbar-md-fix nav-pills">
+            <li class="nav-item">
+              <a class="nav-link" href="/docs/">Docs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/reference/">Reference</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/docs/faqs.html">FAQ</a>
+            </li>
+          </ul>
+      </div><!--/container -->
+    </nav>
+    <!-- Start old mobile nav -->
+    <header id="top" role="banner" class="hidden-lg-up">
+      <div class="hidden-md-up">
+        <a href="/">
+          <img class="site-logo hidden-md-up" src="/static/../static/img/dd-logo.svg" alt="">
+          <b class="sr-only">DroneDeploy></b>
+        </a>
+        <a class="nav-btn-white" id="nav-open-btn" href="#nav"></a>
+      </div>
+    </header>
+   <!--Start Navigation Section-->
+    <nav id="nav" role=navigation>
+    <!--Start DroneDeploy Logo-->
+      <a class="hidden-md-up" href="/">
+          <img class="site-logo" src="/static/../static/img/dd-logo.png" alt="">
+          <b class="sr-only">DroneDeploy></b>
+      </a>
+          <!--End DroneDeploy Logo -->
+          <!--Start Mobile Hamburger Toggle-->
+      <span id="icn-toggle" class="hidden-md-up">
+        <b class="sr-only">Toggle Mobile Menu</b>
+      </span>
+      <!--End Mobile Hamburger-->
+      <ul id="toggle-switch" class = "nav__list--main hidden-lg-up">
+         <li class="nav__item">
+            <a href="https://dronedeploy.gitbooks.io/dronedeploy-apps/content/" target="_blank">Docs</a>
+        </li>
+      </ul>
+      <a class="close-btn hidden-lg-up" id="nav-close-btn" href="#top">Return to Content</a>
+    </nav>
+    <!-- End old mobile nav -->
+
+  <!-- Hero section -->
+
+<!-- Hero section -->
+<div class="jumbotron-sm jumbotron-fluid jumbotron-about p-b-0 m-b-1">
+  <div class="container">
+    <div class="row p-t-2 p-t-3-lg">
+      <div class="col-xs-12 text-xs-center p-y-3">
+        <h1 class="display-1 text-shadow-hide-lg">Whoops, no fly zone.</h1>
+        <h2 class="display-3">
+          You've reached this page by mistake.<br class="hide-mobile" />
+          Let us know how at <a href="mailto:webfix@dronedeploy.com">webfix@dronedeploy.com</a>
+        </h2>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <!-- footer -->
+    <footer>
+      <div class="container-fluid bg-light-grey">
+        <div class="container">
+            <div class="row p-t-3">
+              <div class=" col-xs-12">
+              <!-- <div class="col-md-8 col-md-offset-2 text-xs-center col-xs-12"> -->
+                <ul class="social-icons m-b-3 text-xs-center">
+                  <li>
+                    <a href="https://www.facebook.com/Dronedeploy">
+                      <p>
+                        <img class="fb" src="../static/../static/img/facebook-icn.svg" alt="">
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://twitter.com/DroneDeploy">
+                      <p>
+                        <img class="twitter" src="../static/../static/img/twitter-icn.svg" alt="">
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.linkedin.com/company/dronedeploy">
+                      <p>
+                        <img class="linkedin" src="../static/../static/img/linkedin-icn.svg" alt="">
+                      </p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com/dronedeploy/">
+                      <p>
+                        <img class="instagram" src="../static/../static/img/instagram-icn.svg" alt="">
+                      </p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+              <!-- footer links  -->
+            <div class="row footer-nav-links">
+
+              <div class="col-md-offset-2 col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                <input type="checkbox" id="features">
+                <label class="toggle-title" for="features"><h5>Features</h5></label>
+                <!-- <h5 class="toggle-title">Test Nav</h5> -->
+                <ul class="mobile-ft">
+                  <li><a href="http://www.dronedeploy.com/features.html">Main Features</a></li>
+                  <li><a href="http://www.dronedeploy.com/app.html">Mobile App</a></li>
+                  <li><a href="http://www.dronedeploy.com/app-market.html">App Market</a></li>
+                  <li><a href="http://www.dronedeploy.com/pricing.html">Pricing</a></li>
+                </ul>
+              </div>
+
+
+              <div class="col-lg-2 col-sm-12 col-md-2 col-xs-12">
+                <input type="checkbox" id="about">
+                <label class="toggle-title" for="about"><h5>About Us</h5></label>
+                <ul class="mobile-ft">
+                  <li><a href="http://www.dronedeploy.com/contact.html">Contact Us</a></li>
+                  <li><a href="http://www.dronedeploy.com/careers.html">Careers</a></li>
+                  <li><a href="http://www.dronedeploy.com/team.html">The Team</a></li>
+                  <li><a href="http://support.dronedeploy.com/docs/terms-of-service">Terms</a></li>
+                  <li><a href="http://support.dronedeploy.com/docs/privacy-policy">Privacy</a></li>
+                </ul>
+              </div>
+
+
+              <div class="col-lg-2 col-sm-12 col-md-2 col-xs-12">
+                <input type="checkbox" id="resources">
+                <label class="toggle-title" for="resources"><h5>Resources</h5></label>
+                <ul class="mobile-ft">
+                  <li><a href="https://blog.dronedeploy.com/">Blog</a></li>
+                  <li><a href="http://www.dronedeploy.com/gallery.html">Gallery</a></li>
+                  <li><a href="http://support.dronedeploy.com/docs">Documentation</a></li>
+                  <li><a href="http://forum.dronedeploy.com/">Forum</a></li>
+                  <li><a href="http://www.dronedeploy.com/reseller.html">Resellers</a></li>
+                </ul>
+              </div>
+
+              <div class="col-lg-2 col-sm-12 col-md-2 col-xs-12">
+                <input type="checkbox" id="industries">
+                <label class="toggle-title" for="industries"><h5>Industries</h5></label>
+                <ul class="mobile-ft">
+                  <li><a href="http://www.dronedeploy.com/agriculture.html">Agriculture</a></li>
+                  <li><a href="http://www.dronedeploy.com/construction.html">Construction</a></li>
+                  <li><a href="http://directory.dronedeploy.com">Directory</a></li>
+                  <li><a href="http://www.dronedeploy.com/drone-services.html">Drone Services</a></li>
+                  <li><a href="http://www.dronedeploy.com/inspection.html">Inspection</a></li>
+                  <li><a href="http://www.dronedeploy.com/mining.html">Mining</a></li>
+                </ul>
+              </div>
+            </div> <!-- /row -->
+
+            <div class="row">
+              <div class="col-xs-12">
+                <p class="copyright text-xs-center m-t-1">DroneDeploy.com. All Rights Reserved.</p>
+              </div>
+            </div>
+        </div>
+      </div>
+      </footer>
+    </div><!-- /inner-wrap old mobile nav TODO remove -->
+  </div><!-- /outer-wrap old mobile nav TODO remove -->
+
+    <!-- jQuery first, then Bootstrap JS. -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+    <!-- TODO remove old mobile js -->
+    <script src="/static/js/main-mobile-nav.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.15.0/lodash.min.js"></script>
+        <script src="/static/js/main-mobile-nav.js"></script>
+        <script src="/static/js/app.js"></script>
+        <script src="/static/js/breaky-min.js"></script>
+     <script>
+     <!-- http://qrious.com/breaky/ -->
+      var navList = $('ul.mobile-ft');
+      var menuTitle = $('.toggle-title');
+      breaky.at("mobile", function() {
+       menuTitle.click(function() {
+         $(this).next().toggle();
+       });
+      });//breaky
+
+      breaky.between("desktop","tablet", function() {
+       menuTitle.unbind('click');
+       // navList.css('display','block');
+      });//breaky
+    </script>
+
+
+<!--Hubspot, Hotjar, Marketo, and Google Analytics Tracking Scripts-->
+
+<!--//Start Hotjar tracking code-->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:101280,hjsv:5};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+<!--//End Hotjar Tracking-->
+
+
+ <script type="text/javascript">
+ /* <![CDATA[ */
+     var google_conversion_id = 963800639;
+     var google_conversion_label = "whOgCJL6tlsQv9zJywM";
+     var google_custom_params = window.google_tag_params;
+     var google_remarketing_only = true;
+ /* ]]> */
+ </script>
+
+ <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"></script>
+
+<!-- Google Click Event Tracking Code  -->
+<script type="text/javascript">
+  goog_report_conversion = function() {
+    var w = window;
+    w.google_conversion_id = 963800639;
+    w.google_conversion_label = "He1NCOXarlsQv9zJywM";
+    w.google_remarketing_only = false;
+    w.google_conversion_format = "3";
+    w.google_is_call = true;
+    var conv_handler = w['google_trackConversion'];
+    if (typeof(conv_handler) == 'function') {
+        conv_handler();
+    }
+  }
+</script>
+
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion_async.js"></script>
+
+<!--// Start of Async HubSpot Analytics Code -->
+<script type="text/javascript">
+    (function(d,s,i,r) {
+    if (d.getElementById(i)){return;}
+    var n=d.createElement(s),e=d.getElementsByTagName(s)[0];
+    n.id=i;n.src='//js.hs-analytics.net/analytics/'+(Math.ceil(new Date()/r)*r)+'/530284.js';
+    e.parentNode.insertBefore(n, e);
+    })(document,"script","hs-analytics",300000);
+</script>
+<!--// End of Async HubSpot Analytics Code-->
+
+
+<!--// Start Marketo Tracking Code -->
+
+<script type="text/javascript"> (function() { var didInit = false; function initMunchkin() { if(didInit === false) { didInit = true; Munchkin.init('357-IDY-386'); } } var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//munchkin.marketo.net/munchkin.js'; s.onreadystatechange = function() { if (this.readyState == 'complete' || this.readyState == 'loaded') { initMunchkin(); } }; s.onload = initMunchkin; document.getElementsByTagName('head')[0].appendChild(s); })(); </script>
+
+<!--// End Marketo Tracking Code -->
+
+<!--// AdRoll Script -->
+<script type="text/javascript">
+  adroll_adv_id = "PZ3J2DB42BCOPNJYNZPCZK";
+  adroll_pix_id = "GPKY6TDDQNDEXLIHZLCKUU";
+  /* OPTIONAL: provide email to improve user identification */
+  /* adroll_email = "username@example.com"; */
+  (function () {
+      var _onload = function(){
+          if (document.readyState && !/loaded|complete/.test(document.readyState)){setTimeout(_onload, 10);return}
+          if (!window.__adroll_loaded){__adroll_loaded=true;setTimeout(_onload, 50);return}
+          var scr = document.createElement("script");
+          var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
+          scr.setAttribute('async', 'true');
+          scr.type = "text/javascript";
+          scr.src = host + "/j/roundtrip.js";
+          ((document.getElementsByTagName('head') || [null])[0] ||
+              document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
+      };
+      if (window.addEventListener) {window.addEventListener('load', _onload, false);}
+      else {window.attachEvent('onload', _onload)}
+  }());
+</script>
+<!--// End AdRoll Script -->
+
+  </body>
+</html>
