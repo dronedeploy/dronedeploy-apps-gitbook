@@ -4,6 +4,11 @@
 
 * [Overview](introduction/overview.md)
 
+## APIs
+
+* [Introduction](apis/introduction.md)
+* [Authentication](apis/authentication.md)
+
 ## Apps
 
 * [Introduction](README.md)
@@ -68,4 +73,5 @@
   * [Publishing](publishing.md)
 * [Authentication](authentication.md)
 * [FAQs](faqs.md)
+* Authentication
 
