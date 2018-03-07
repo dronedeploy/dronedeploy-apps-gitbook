@@ -1,7 +1,13 @@
 # Summary
 
+## Introduction
+
+* [Overview](introduction/overview.md)
+
+## Apps
+
 * [Introduction](README.md)
-* [Getting Started UI Kit](getting_started.md)
+* [UI Kit](getting_started.md)
   * [Document Setup](getting-started-draft.md)
   * [Side Panel Grid](grid.md)
   * [Typography](typography.md)
@@ -10,7 +16,7 @@
   * [Preloader](preloader.md)
   * [Helpers](hellpers.md)
   * [Templates](template.md)
-* [API Overview](api-overview.md)
+* [Apps Javascript API](api-overview.md)
   * [Annotations](annotations.md)
   * [Exporter](exporter.md)
   * [FlightLogs](flightlogs.md)
