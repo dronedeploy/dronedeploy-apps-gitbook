@@ -1,4 +1,4 @@
-# Applications API
+# API
 
 ### App Zones
 

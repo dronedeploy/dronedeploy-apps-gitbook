@@ -1,4 +1,0 @@
-# DroneDeploy Platform 
-
-DroneDeploy 
-
