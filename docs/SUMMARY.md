@@ -1,5 +1,11 @@
 # Summary
 
+## Getting Started
+
+* [Introduction ](getting-started/introduction.md)
+
+## Apps
+
 * [Introduction](README.md)
 * [Getting Started UI Kit](getting_started.md)
   * [Document Setup](getting-started-draft.md)
@@ -10,7 +16,7 @@
   * [Preloader](preloader.md)
   * [Helpers](hellpers.md)
   * [Templates](template.md)
-* [API Overview](api-overview.md)
+* [Applications API Overview](api-overview.md)
   * [Annotations](annotations.md)
   * [Exporter](exporter.md)
   * [FlightLogs](flightlogs.md)
@@ -62,4 +68,6 @@
   * [Publishing](publishing.md)
 * [Authentication](authentication.md)
 * [FAQs](faqs.md)
+
+## API
 
