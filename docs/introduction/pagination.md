@@ -1,0 +1,30 @@
+# Pagination
+
+When a one-to-many relationship exists between two objects, for example organization -&gt; plans, we paginate the responses from the query. Cursor based pagination is used, for more details [see here.](http://graphql.org/learn/pagination/)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

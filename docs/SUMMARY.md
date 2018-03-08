@@ -8,6 +8,7 @@
 
 * [Introduction](apis/introduction.md)
 * [Authentication](apis/authentication.md)
+* [Pagination](introduction/pagination.md)
 
 ## Apps
 
