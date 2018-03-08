@@ -74,5 +74,5 @@
   * [Publishing](publishing.md)
 * [Authentication](authentication.md)
 * [FAQs](faqs.md)
-* Authentication
+* [Authentication](authentication.md)
 
