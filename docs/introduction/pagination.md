@@ -12,8 +12,7 @@ The arguments for forward pagination are:
 The connection which is returned includes the following fields:
 
 * `pageInfo`: which contains the fields `hasNextPage` and `endCursor`
-* 
-An example of pagination is paging through the plans for a given organization:
+* * * * An example of pagination is paging through the plans for a given organization:
 
 ```
 {
@@ -32,7 +31,7 @@ An example of pagination is paging through the plans for a given organization:
           }
         }
       }
-      
+
     }
   }
 }
