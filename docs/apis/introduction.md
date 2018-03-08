@@ -14,7 +14,11 @@ GraphQL Is a query language for clients to fetch the data they need from the API
 
 #### Why use GraphQL?
 
-We are using GraphQL primarily because it allows developers to make API calls which gets them exactly what data they need in the simplest way possible. Since it is a well structured schema you can fetch data and know that you will get the data back in a guaranteed format and because of that, tooling can make development significantly easier. 
+We are using GraphQL primarily because it allows developers to make API calls which gets them exactly what data they need in the simplest way possible. Since it is a well structured schema you can fetch data and know that you will get the data back in a guaranteed format and because of that, tooling can make development significantly easier.
+
+#### Making GraphQL Calls
+
+If you are logged into DroneDeploy you can use our API explorer to graphically make API calls: https://www.dronedeploy.com/graphql
 
 
 
