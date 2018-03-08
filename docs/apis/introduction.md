@@ -18,13 +18,45 @@ We are using GraphQL primarily because it allows developers to make API calls wh
 
 #### Making GraphQL Calls
 
-If you are logged into DroneDeploy you can use our API explorer to graphically make API calls: [https://www.dronedeploy.com/graphql](https://www.dronedeploy.com/graphql)
+If you are logged into DroneDeploy you can use our API explorer to graphically make API calls: https://api.dronedeploy.com/graphql 
 
+The requests are made making a POST to the \`/graphql\` endpoint, you can make these with CURL or any HTTP compatible client.
 
-
-```graphql
+You can explore this query[ here.](https://www.dronedeploy.com/graphql?query=%7B%0A%20%20viewer%7B%0A%20%20%20%20username%20%20%20%20%0A%20%20%7D%0A%7D)
 
 ```
+{
+  viewer{
+    username    
+  }
+}
+```
+
+Returns:
+
+```js
+{
+  "data": {
+    "viewer": {
+      "username": "docs@dronedeploy.com"
+    }
+  }
+}
+```
+
+You could also make the call using `curl`
+
+```
+curl -H "Authorization: bearer <api key>" -X POST -d " \
+ { \
+   \"query\": \"query { viewer { username }}\" \
+ } \
+" https://api.dronedeploy.com/graphql
+```
+
+
+
+
 
 
 
