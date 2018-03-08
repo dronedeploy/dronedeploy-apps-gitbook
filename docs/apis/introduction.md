@@ -60,3 +60,7 @@ curl -H "Authorization: bearer <api key>" -X POST -d " \
 
 
 
+As you can see in the above example and in the schema reference one of the top level fields is `viewer`. This returns a `User` node which is the currently logged in user. 
+
+
+
