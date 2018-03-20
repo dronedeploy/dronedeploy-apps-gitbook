@@ -6,7 +6,7 @@ Below is the query to fetch all the plans, with their name, geometry, location a
 query GetPlans{
   viewer{
     organization{
-      plans(first:5){
+      plans(first:50){
         pageInfo{
           hasNextPage
           endCursor
@@ -32,9 +32,90 @@ query GetPlans{
 }
 ```
 
-You can try this query out yourself using [the API explorer here.](https://www.dronedeploy.com/graphql?query=query%20GetPlans%7B%0A%20%20viewer%7B%0A%20%20%20%20organization%7B%0A%20%20%20%20%20%20plans%28first%3A50%29%7B%0A%20%20%20%20%20%20%20%20pageInfo%7B%0A%20%20%20%20%20%20%20%20%20%20hasNextPage%0A%20%20%20%20%20%20%20%20%20%20endCursor%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20edges%7B%0A%20%20%20%20%20%20%20%20%20%20cursor%0A%20%20%20%20%20%20%20%20%20%20node%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20name%0A%20%20%20%20%20%20%20%20%20%20%20%20geometry%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20lat%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20lng%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20location%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20lat%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20lng%0A%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20dateCreation%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D&operationName=GetPlans)
+You can try this query out yourself using [the API explorer here.](https://www.dronedeploy.com/graphql?query=query GetPlans{
+  viewer{
+    organization{
+      plans%28first%3A50%29{
+        pageInfo{
+          hasNextPage
+          endCursor
+        }
+        edges{
+          cursor
+          node{
+            name
+            geometry{
+              lat
+              lng
+            }
+            location {
+              lat
+              lng
+            }
+            dateCreation
+          }
+        }
+      }
+    }
+  }
+}&operationName=GetPlans)
 
 #### Explaination
 
-The top level query `viewer` is the context for the currently logged in user. From this you fetch the `organization` object and the first 50 of the plans associated with that. If you have less than 50 plans you are done. If you have more example you will get 
+The top level query `viewer` is the context for the currently logged in user. From this you fetch the `organization` object and the first 50 of the plans associated with that. If you have less than 50 plans you are done. If you have more example you will get a response like this.
+
+```js
+{
+  "data": {
+    "viewer": {
+      "organization": {
+        "plans": {
+          "pageInfo": {
+            "hasNextPage": true,
+            "endCursor": "YXJyYXljb25uZWN0aW9uOjI="
+          },
+          "edges": [
+            ...  // Data removed for the sake of brevity
+          ]
+        }
+      }
+    }
+  }
+}
+
+```
+
+As you can see in the `pageInfo` section `hasNextPage` is True so you know you need to fetch the next page of data. To do this simply modify your query to set the `after` paging parameter to the `endCursor` from the `pageInfo`:
+
+```
+query GetPlans{
+  viewer{
+    organization{
+      plans(first:50, after:"YXJyYXljb25uZWN0aW9uOjI="){
+        pageInfo{
+          hasNextPage
+          endCursor
+        }
+        edges{
+          cursor
+          node{
+            name
+            geometry{
+              lat
+              lng
+            }
+            location {
+              lat
+              lng
+            }
+            dateCreation
+          }
+        }
+      }
+    }
+  }
+}
+```
+
+
 
