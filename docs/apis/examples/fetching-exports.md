@@ -2,32 +2,34 @@
 
 To fetch the exports you first need to fetch the MapPlan. You can do  this by using the `node` query. For details see the [Fetching a Single Object](/apis/examples/fetching-a-single-object.md) section.
 
-For [this example](https://www.dronedeploy.com/graphql?query=query GetExports{
-  node%28id%3A"MapPlan%3A5a0de0835f1e08eaabc732bd"%29{
-    ... on MapPlan{
-      exports%28first%3A5%29{
-        edges {
-          node {
-            id
-            user{
-              username
-            }
-            parameters {
-              projection
-              merge
-              contourInterval
-              fileFormat
-              resolution
-            }
-            status
-            dateCreation
-            downloadPath
-          }
-        }
-      }
-    }
-  }
-}&operationName=GetExports) you will need to substitute your own MapPlan ID:
+For \[this example\]\([https://www.dronedeploy.com/graphql?query=query](https://www.dronedeploy.com/graphql?query=query)\)
+
+\`\`\` GetExports{  
+  node%28id%3A"MapPlan%3A5a0de0835f1e08eaabc732bd"%29{  
+    ... on MapPlan{  
+      exports%28first%3A5%29{  
+        edges {  
+          node {  
+            id  
+            user{  
+              username  
+            }  
+            parameters {  
+              projection  
+              merge  
+              contourInterval  
+              fileFormat  
+              resolution  
+            }  
+            status  
+            dateCreation  
+            downloadPath  
+          }  
+        }  
+      }  
+    }  
+  }  
+}&operationName=GetExports\) you will need to substitute your own MapPlan ID:
 
 ```
 query GetExports{
