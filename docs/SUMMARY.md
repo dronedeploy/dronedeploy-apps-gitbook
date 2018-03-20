@@ -10,7 +10,9 @@
 * [Authentication](apis/authentication.md)
 * [Pagination](introduction/pagination.md)
 * [Examples](apis/examples.md)
+  * [Fetching a Single Object](apis/examples/fetching-a-single-object.md)
   * [Fetching all Plans for your Organization ](apis/examples/fetching-all-plans-for-your-organization.md)
+  * [Fetching Exports](apis/examples/fetching-exports.md)
 
 ## Apps
 
