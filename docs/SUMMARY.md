@@ -1,7 +1,19 @@
 # Summary
 
+## Introduction
+
+* [Overview](introduction/overview.md)
+
+## APIs
+
+* [Introduction](apis/introduction.md)
+* [Authentication](apis/authentication.md)
+* [Pagination](introduction/pagination.md)
+
+## Apps
+
 * [Introduction](README.md)
-* [Getting Started UI Kit](getting_started.md)
+* [UI Kit](getting_started.md)
   * [Document Setup](getting-started-draft.md)
   * [Side Panel Grid](grid.md)
   * [Typography](typography.md)
@@ -10,7 +22,7 @@
   * [Preloader](preloader.md)
   * [Helpers](hellpers.md)
   * [Templates](template.md)
-* [API Overview](api-overview.md)
+* [Apps Javascript API](api-overview.md)
   * [Annotations](annotations.md)
   * [Exporter](exporter.md)
   * [FlightLogs](flightlogs.md)
@@ -62,4 +74,5 @@
   * [Publishing](publishing.md)
 * [Authentication](authentication.md)
 * [FAQs](faqs.md)
+* [Authentication](authentication.md)
 
