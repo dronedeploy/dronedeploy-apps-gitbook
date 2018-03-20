@@ -60,8 +60,6 @@ You can try this query out yourself using [the API explorer here.](https://www.d
   }
 }&operationName=GetPlans)
 
-#### Explaination
-
 The top level query `viewer` is the context for the currently logged in user. From this you fetch the `organization` object and the first 50 of the plans associated with that. If you have less than 50 plans you are done. If you have more example you will get a response like this.
 
 ```js
@@ -82,7 +80,6 @@ The top level query `viewer` is the context for the currently logged in user. Fr
     }
   }
 }
-
 ```
 
 As you can see in the `pageInfo` section `hasNextPage` is True so you know you need to fetch the next page of data. To do this simply modify your query to set the `after` paging parameter to the `endCursor` from the `pageInfo`:
@@ -116,6 +113,57 @@ query GetPlans{
   }
 }
 ```
+
+### More Detail
+
+If you look through the schema the `plans` query returns type `Plan`. This is an interface for the common fields across all types of plans. There are more specific types of Plans, specifically `MapPlan` which includes more data such as exports. To fetch these extra fields you need to use an [Inline Fragment](http://facebook.github.io/graphql/October2016/#sec-Inline-Fragments).
+
+[This query:](https://www.dronedeploy.com/graphql?query=query GetPlans{
+  viewer{
+    organization{
+      plans%28first%3A50%29{
+        edges{
+          node{
+            name
+            ... on MapPlan{
+							status              
+            }
+          }
+        }
+        pageInfo{
+          hasNextPage
+          endCursor
+        }
+      }
+    }
+  }
+}&operationName=GetPlans)
+
+```
+query GetPlans{
+  viewer{
+    organization{
+      plans(first:50){
+        edges{
+          node{
+            id
+            name
+            ... on MapPlan{
+              status              
+            }
+          }
+        }
+        pageInfo{
+          hasNextPage
+          endCursor
+        }
+      }
+    }
+  }
+}
+```
+
+This specifies that you are looking for the `id` and `name` of all plans, but for objects of type `MapPlan` you want the `status` of the processing as well.
 
 
 
