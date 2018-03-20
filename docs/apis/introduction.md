@@ -18,9 +18,11 @@ We are using GraphQL primarily because it allows developers to make API calls wh
 
 #### Making GraphQL Queries
 
-If you are logged into DroneDeploy you can use our API explorer to graphically make API calls: [https://api.dronedeploy.com/graphql](https://api.dronedeploy.com/graphql)
+You can use our API explorer to graphically make API calls: [https://api.dronedeploy.com/graphql](https://api.dronedeploy.com/graphql)
 
 The requests are made making a POST to the \`/graphql\` endpoint, you can make these with CURL or any HTTP compatible client.
+
+
 
 You can explore this query[ here.](https://www.dronedeploy.com/graphql?query={
   viewer{
@@ -48,19 +50,18 @@ Returns:
 }
 ```
 
+
+
 You could also make the call using `curl`
 
 ```
-curl -H "Authorization: bearer <api key>" -X POST -d " \
- { \
-   \"query\": \"query { viewer { username }}\" \
- } \
-" https://api.dronedeploy.com/graphql
+curl -H 'Content-Type: application/json' \
+     -H 'Authorization: Bearer <api key>' \
+     -d '{"query": "{ viewer { username }}"}' \
+     https://test.dronedeploy.com/graphql
 ```
 
-
-
-As you can see in the above example and in the schema reference one of the top level fields is `viewer`. This returns a `User` node which is the currently logged in user. 
+As you can see in the above example and in the schema reference one of the top level fields is `viewer`. This returns a `User` node which is the currently logged in user.
 
 
 

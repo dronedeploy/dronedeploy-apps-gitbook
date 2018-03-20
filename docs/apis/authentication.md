@@ -14,3 +14,7 @@ Your API key is associated with your own account and so the `viewer` query will 
 
 
 
+When using GraphiQL
+
+
+

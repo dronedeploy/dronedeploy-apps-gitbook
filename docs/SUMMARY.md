@@ -9,6 +9,7 @@
 * [Introduction](apis/introduction.md)
 * [Authentication](apis/authentication.md)
 * [Pagination](introduction/pagination.md)
+* [Examples](apis/examples.md)
 
 ## Apps
 
