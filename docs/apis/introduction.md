@@ -22,7 +22,7 @@ You can use our API explorer to graphically make API calls: [https://api.dronede
 
 The requests are made making a POST to the \`/graphql\` endpoint, you can make these with CURL or any HTTP compatible client.
 
-
+One of the top level objects in the query schema is the `viewer` object. This is the User object of the currently logged in user. To query for the currently logged in users username you use the following example:
 
 You can explore this query[ here.](https://www.dronedeploy.com/graphql?query={
   viewer{
@@ -50,7 +50,15 @@ Returns:
 }
 ```
 
+The API Explorer is making this request:
 
+```
+Content-Type: 
+POST /graphql
+{
+    "query": "{ viewer { username }}"
+}
+```
 
 You could also make the call using `curl`
 
@@ -61,7 +69,10 @@ curl -H 'Content-Type: application/json' \
      https://test.dronedeploy.com/graphql
 ```
 
-As you can see in the above example and in the schema reference one of the top level fields is `viewer`. This returns a `User` node which is the currently logged in user.
+### Useful Links:
+
+* The official query documentation is here: http://graphql.org/learn/queries/ 
+* The official tutorials for learning the basics of GraphQL is here: http://graphql.org/learn/
 
 
 
