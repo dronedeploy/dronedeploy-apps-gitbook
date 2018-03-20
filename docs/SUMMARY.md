@@ -10,6 +10,7 @@
 * [Authentication](apis/authentication.md)
 * [Pagination](introduction/pagination.md)
 * [Examples](apis/examples.md)
+  * [Fetching all Plans for your Organization ](apis/examples/fetching-all-plans-for-your-organization.md)
 
 ## Apps
 
