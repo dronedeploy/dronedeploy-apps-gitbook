@@ -1,6 +1,6 @@
 {
   "root": "./docs",
-  "structure"{
+  "structure":{
     "readme": "docs/introduction/overview.md"
   },
   "plugins": [
