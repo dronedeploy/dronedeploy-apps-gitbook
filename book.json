@@ -1,7 +1,7 @@
 {
   "root": "./docs",
   "structure":{
-    "readme": "docs/introduction/overview.md"
+    "readme": "introduction/overview.md"
   },
   "plugins": [
     "youtube",
