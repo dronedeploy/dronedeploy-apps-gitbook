@@ -1,8 +1,5 @@
 {
   "root": "./docs",
-  "structure":{
-    "readme": "introduction/overview.md"
-  },
   "plugins": [
     "youtube",
     "components"
