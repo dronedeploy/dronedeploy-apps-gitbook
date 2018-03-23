@@ -16,24 +16,32 @@ GraphQL Is a query language for clients to fetch the data they need from the API
 
 We are using GraphQL primarily because it allows developers to make API calls which gets them exactly what data they need in the simplest way possible. Since it is a well structured schema you can fetch data and know that you will get the data back in a guaranteed format and because of that, tooling can make development significantly easier.
 
+#### API Endpoint
+
+The API endpoint is:
+
+**https://api.dronedeploy.com/graphql**
+
+The API Explorer (GraphiQL) is hosted at
+
+https://www.dronedeploy.com/graphql
+
+
 #### Making GraphQL Queries
 
-You can use our API explorer to graphically make API calls: [https://api.dronedeploy.com/graphql](https://api.dronedeploy.com/graphql)
+You can use our API explorer to graphically make API calls: [https://www.dronedeploy.com/graphql](https://www.dronedeploy.com/graphql)
+
 
 The requests are made making a POST to the \`/graphql\` endpoint, you can make these with CURL or any HTTP compatible client.
 
 One of the top level objects in the query schema is the `viewer` object. This is the User object of the currently logged in user. To query for the currently logged in users username you use the following example:
 
-You can explore this query[ here.](https://www.dronedeploy.com/graphql?query={
-  viewer{
-    username    
-  }
-})
+You can explore this query[ here.](https://www.dronedeploy.com/graphql?query=%7B%0A%20%20viewer%20%7B%0A%20%20%20%20username%0A%20%20%7D%0A%7D%0A&operationName=null)
 
 ```
 {
   viewer{
-    username    
+    username
   }
 }
 ```
@@ -53,8 +61,8 @@ Returns:
 The API Explorer is making this request:
 
 ```
-Content-Type: 
-POST /graphql
+Content-Type:
+POST https://api.dronedeploy.com/graphql
 {
     "query": "{ viewer { username }}"
 }
@@ -66,13 +74,17 @@ You could also make the call using `curl`
 curl -H 'Content-Type: application/json' \
      -H 'Authorization: Bearer <api key>' \
      -d '{"query": "{ viewer { username }}"}' \
-     https://test.dronedeploy.com/graphql
+     https://api.dronedeploy.com/graphql
 ```
 
 ### Useful Links:
 
-* The official query documentation is here: http://graphql.org/learn/queries/ 
-* The official tutorials for learning the basics of GraphQL is here: http://graphql.org/learn/
+* The official query documentation is here:
+
+  http://graphql.org/learn/queries/
+* The official tutorials for learning the basics of GraphQL is here:
+
+  http://graphql.org/learn/
 
 
 

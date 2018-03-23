@@ -14,7 +14,7 @@ mutation CreateExport{
 }
 ```
 
-Here the createExport mutation takes an input of `planId` and `parameters`. In parameters only the `layer` is required. 
+Here the createExport mutation takes an input of `planId` and `parameters`. In parameters only the `layer` is required.
 
 This will create the export and then query for the exports id in the response:
 
@@ -27,7 +27,7 @@ This will create the export and then query for the exports id in the response:
       }
     }
   }
-} 
+}
 ```
 
 You can then use the steps in [Fetching Exports](/apis/examples/fetching-exports.md) to check on the status of that export.
@@ -39,14 +39,9 @@ As the input gets more complex you will want to use GraphQL variables. For some 
 To take the query above and use variables you need to do 3 things:
 
 1. Define the variable in the mutation signature:
-2. > mutation CreateExport\($input:CreateExportInput!\){
-
- 
-
+> mutation CreateExport\($input:CreateExportInput!\){
 2. Use the defined variable in the mutation:
-
 > createExport\(input:$input\){
-
 3. Define the value of the variable in the `variables` section of the JSON payload
 
 The result of this is the query:
@@ -77,8 +72,8 @@ With the variables:
 The raw request looks like:
 
 ```
-Authorization: Bearer <api_key> 
-POST /graphql         
+Authorization: Bearer <api_key>
+POST https://api.dronedeploy.com/graphql
 {
   "query": "mutation CreateExport($input:CreateExportInput!){createExport(input:$input){export{id}}}",
   "variables": {
@@ -90,7 +85,7 @@ POST /graphql
     }
   }
 }
-  
+
 ```
 
 

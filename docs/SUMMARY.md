@@ -4,7 +4,7 @@
 
 * [Overview](introduction/overview.md)
 
-## APIs
+## API
 
 * [Introduction](apis/introduction.md)
 * [Authentication](apis/authentication.md)
@@ -79,5 +79,4 @@
   * [Publishing](publishing.md)
 * [Authentication](authentication.md)
 * [FAQs](faqs.md)
-* [Authentication](authentication.md)
 

@@ -11,14 +11,14 @@ The arguments for forward pagination are:
 
 The connection which is returned includes the following fields:
 
-* `pageInfo`: which contains the fields `hasNextPage` and `endCursor`  
+* `pageInfo`: which contains the fields `hasNextPage` and `endCursor`
 * `edges`: which includes a list of edges. Each edge contains the cursor for that node and the node itself
 
 #### Example:
 
-For this example we will go through the organization link to plans. 
+For [this example](https://www.dronedeploy.com/graphql?query=%7B%0A%20%20viewer%20%7B%0A%20%20%20%20username%0A%20%20%20%20organization%20%7B%0A%20%20%20%20%20%20plans(first%3A%202)%20%7B%0A%20%20%20%20%20%20%20%20pageInfo%20%7B%0A%20%20%20%20%20%20%20%20%20%20hasNextPage%0A%20%20%20%20%20%20%20%20%20%20endCursor%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20edges%20%7B%0A%20%20%20%20%20%20%20%20%20%20cursor%0A%20%20%20%20%20%20%20%20%20%20node%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20name%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A&operationName=null) we will go through the organization link to plans.
 
-Firstly we'll get the plans connection with the first two edges: 
+Firstly we'll get the plans connection with the first two edges:
 
 ```
 {
@@ -33,11 +33,10 @@ Firstly we'll get the plans connection with the first two edges:
         edges {
           cursor
           node {
-            name            
+            name
           }
         }
       }
-
     }
   }
 }
@@ -92,11 +91,11 @@ You can see that `hasNextPage` is `true` so we know there are more items and the
         edges {
           cursor
           node {
-            name            
+            name
           }
         }
       }
-      
+
     }
   }
 }
