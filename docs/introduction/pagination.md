@@ -16,7 +16,7 @@ The connection which is returned includes the following fields:
 
 #### Example:
 
-For [this example](https://www.dronedeploy.com/graphql?query=%7B%0A%20%20viewer%20%7B%0A%20%20%20%20username%0A%20%20%20%20organization%20%7B%0A%20%20%20%20%20%20plans(first%3A%202)%20%7B%0A%20%20%20%20%20%20%20%20pageInfo%20%7B%0A%20%20%20%20%20%20%20%20%20%20hasNextPage%0A%20%20%20%20%20%20%20%20%20%20endCursor%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20edges%20%7B%0A%20%20%20%20%20%20%20%20%20%20cursor%0A%20%20%20%20%20%20%20%20%20%20node%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20name%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A&operationName=null) we will go through the organization link to plans.
+For [this example](https://www.dronedeploy.com/graphql?query=%7B%0A%20%20viewer%20%7B%0A%20%20%20%20username%0A%20%20%20%20organization%20%7B%0A%20%20%20%20%20%20plans%28first%3A%202%29%20%7B%0A%20%20%20%20%20%20%20%20pageInfo%20%7B%0A%20%20%20%20%20%20%20%20%20%20hasNextPage%0A%20%20%20%20%20%20%20%20%20%20endCursor%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20edges%20%7B%0A%20%20%20%20%20%20%20%20%20%20cursor%0A%20%20%20%20%20%20%20%20%20%20node%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20name%0A%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A&operationName=null) we will go through the organization link to plans.
 
 Firstly we'll get the plans connection with the first two edges:
 
@@ -44,7 +44,7 @@ Firstly we'll get the plans connection with the first two edges:
 
 This returns:
 
-```
+```json
 {
   "data": {
     "viewer": {
@@ -103,7 +103,7 @@ You can see that `hasNextPage` is `true` so we know there are more items and the
 
 This returns the data:
 
-```
+```json
 {
   "data": {
     "viewer": {

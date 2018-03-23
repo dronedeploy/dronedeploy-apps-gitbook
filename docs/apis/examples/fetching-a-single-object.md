@@ -34,7 +34,7 @@ Since the `node` query returns a `Node` object, the only field available is `id`
 
 Which returns the data:
 
-```
+```json
 {
   "data": {
     "node": {

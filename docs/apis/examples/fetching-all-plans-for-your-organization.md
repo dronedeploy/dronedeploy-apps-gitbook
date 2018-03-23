@@ -36,7 +36,7 @@ You can try this query out yourself using [the API explorer here.](https://www.d
 
 The top level query `viewer` is the context for the currently logged in user. From this you fetch the `organization` object and the first 50 of the plans associated with that. If you have less than 50 plans you are done. If you have more example you will get a response like this.
 
-```js
+```json
 {
   "data": {
     "viewer": {
@@ -47,7 +47,7 @@ The top level query `viewer` is the context for the currently logged in user. Fr
             "endCursor": "YXJyYXljb25uZWN0aW9uOjI="
           },
           "edges": [
-            ...  // Data removed for the sake of brevity
+             // Data removed for the sake of brevity
           ]
         }
       }

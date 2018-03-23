@@ -35,7 +35,7 @@ query GetExports{
 
 This returns the data:
 
-```
+```json
 {
   "data": {
     "node": {

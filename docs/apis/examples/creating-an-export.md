@@ -18,7 +18,7 @@ Here the createExport mutation takes an input of `planId` and `parameters`. In p
 
 This will create the export and then query for the exports id in the response:
 
-```
+```json
 {
   "data": {
     "createExport": {
@@ -58,7 +58,7 @@ mutation CreateExport($input:CreateExportInput!){
 
 With the variables:
 
-```
+```json
 {
   "input":{
     "planId": "MapPlan:5a0ddee5a6b7d90aecdc2f1d",
@@ -70,10 +70,11 @@ With the variables:
 ```
 
 The raw request looks like:
-
 ```
 Authorization: Bearer <api_key>
 POST https://api.dronedeploy.com/graphql
+```
+```json
 {
   "query": "mutation CreateExport($input:CreateExportInput!){createExport(input:$input){export{id}}}",
   "variables": {

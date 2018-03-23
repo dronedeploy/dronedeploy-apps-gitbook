@@ -48,7 +48,7 @@ You can explore this query[ here.](https://www.dronedeploy.com/graphql?query=%7B
 
 Returns:
 
-```js
+```json
 {
   "data": {
     "viewer": {
