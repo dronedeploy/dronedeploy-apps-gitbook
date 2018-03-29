@@ -31,4 +31,4 @@ build-graphql-reference:
 			-v $(PWD)/graphdoc_templates:/graphdoc_templates \
 			-v $(PWD)/build:/build/ \
 			dronedeploy/nodejs:v8.9.0 \
-			/bin/bash -c "npm install -g @2fd/graphdoc; graphdoc -f -t /graphdoc_templates/ -e https://www.dronedeploy.com/graphql -o ./build/reference"
+			/bin/bash -c "npm install -g @2fd/graphdoc; graphdoc -f -t /graphdoc_templates/ -e https://api.dronedeploy.com/graphql -o ./build/reference"
