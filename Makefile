@@ -25,10 +25,23 @@ clean:
 	-docker run --rm -v $(shell pwd)/:/workdir/ busybox sh -c "rm -rf /workdir/build/; rm -rf /workdir/_book"
 	mkdir -p build
 
+clone-gi
+
 build-graphql-reference:
-	cp docs/components/topnav.html graphdoc_templates/topnav.mustache  # Copy topnav into graphdoc template
+	cp docs/components/topnav.html graphdoc/templates/topnav.mustache  # Copy topnav into graphdoc template
 	docker run \
-			-v $(PWD)/graphdoc_templates:/graphdoc_templates \
+			-v $(PWD)../graphdoc/:../graphdoc/ \
 			-v $(PWD)/build:/build/ \
 			dronedeploy/nodejs:v8.9.0 \
-			/bin/bash -c "npm install -g @2fd/graphdoc; graphdoc -f -t /graphdoc_templates/ -e https://api.dronedeploy.com/graphql -o ./build/reference"
+			/bin/bash -c "npm install -g @2fd/graphdoc; graphdoc -f -t /graphdoc/templates/ -e https://api.dronedeploy.com/graphql -o ./build/reference"
+
+bash-local:
+	cp docs/components/topnav.html graphdoc/templates/topnav.mustache  # Copy topnav into graphdoc template
+	docker run \
+			-w /docs/ \
+			-v $(PWD)/../graphdoc/:/docs/graphdoc/ \
+			-v $(PWD)/graphdoc/templates/:/docs/templates \
+			-v $(PWD)/graphdoc/package.json/:/docs/package.json \
+			-v $(PWD)/build:/docs/build/ \
+			-it dronedeploy/nodejs:v8.9.0 \
+			bash

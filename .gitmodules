@@ -1,0 +1,3 @@
+[submodule "graphdoc"]
+	path = graphdoc
+	url = git@github.com:dronedeploy/graphdoc.git
