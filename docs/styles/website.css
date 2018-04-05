@@ -4,11 +4,6 @@ main .title{
     background: #888
 }
 
-.slds-col--rule-right {
-    margin-top: 70px;
-    background-color: #fafafa;
-}
-
 .topnav {
     background-color: #1976D2;
     overflow: hidden;

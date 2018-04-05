@@ -1,5 +1,15 @@
-html {
-    height: 100%;
+p {
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+}
+
+.highlight{
+    line-height: 2;
+}
+
+.slds-col--rule-right {
+    margin-top: 70px;
+    background-color: #fafafa;
 }
 
 body {
@@ -7,6 +17,10 @@ body {
     display: block;
     padding: 0;
     margin: 0;
+}
+
+html {
+    height: 100%;
 }
 
 nav {
