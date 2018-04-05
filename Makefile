@@ -26,7 +26,7 @@ clean:
 	mkdir -p build
 
 build-graphql-reference:
-	cp docs/components/topnav.html graphdoc/templates/topnav.mustache  # Copy topnav into graphdoc template
+	cp docs/components/topnav.html graphdoc_templates/topnav.mustache  # Copy topnav into graphdoc template
 	docker run \
 			-w / \
 			-v $(PWD)/graphdoc_templates/:/graphdoc_templates/ \
