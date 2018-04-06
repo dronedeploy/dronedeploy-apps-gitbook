@@ -28,7 +28,8 @@ clean:
 build-graphql-reference:
 	cp docs/components/topnav.html graphdoc_templates/topnav.mustache  # Copy topnav into graphdoc template
 	docker run \
-			-v $(PWD)/graphdoc_templates:/graphdoc_templates \
+			-w / \
+			-v $(PWD)/graphdoc_templates/:/graphdoc_templates/ \
 			-v $(PWD)/build:/build/ \
-			dronedeploy/nodejs:v8.9.0 \
-			/bin/bash -c "npm install -g @2fd/graphdoc; graphdoc -f -t /graphdoc_templates/ -e https://api.dronedeploy.com/graphql -o ./build/reference"
+			dronedeploy/graphdoc:master \
+			/bin/bash -c "graphdoc -f -t /graphdoc_templates/ -e https://api.dronedeploy.com/graphql -o ./build/reference"
