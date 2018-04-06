@@ -1,7 +1,24 @@
 # Summary
 
+## Introduction
+
+* [Overview](introduction/overview.md)
+
+## APIs
+
+* [Introduction](apis/introduction.md)
+* [Authentication](apis/authentication.md)
+* [Pagination](introduction/pagination.md)
+* [Examples](apis/examples.md)
+  * [Fetching a Single Object](apis/examples/fetching-a-single-object.md)
+  * [Fetching all Plans for your Organization ](apis/examples/fetching-all-plans-for-your-organization.md)
+  * [Fetching Exports](apis/examples/fetching-exports.md)
+  * [Creating an Export](apis/examples/creating-an-export.md)
+
+## Apps
+
 * [Introduction](README.md)
-* [Getting Started UI Kit](getting_started.md)
+* [UI Kit](getting_started.md)
   * [Document Setup](getting-started-draft.md)
   * [Side Panel Grid](grid.md)
   * [Typography](typography.md)
@@ -10,7 +27,7 @@
   * [Preloader](preloader.md)
   * [Helpers](hellpers.md)
   * [Templates](template.md)
-* [API Overview](api-overview.md)
+* [Apps Javascript API](api-overview.md)
   * [Annotations](annotations.md)
   * [Exporter](exporter.md)
   * [FlightLogs](flightlogs.md)
@@ -62,4 +79,5 @@
   * [Publishing](publishing.md)
 * [Authentication](authentication.md)
 * [FAQs](faqs.md)
+* [Authentication](authentication.md)
 
