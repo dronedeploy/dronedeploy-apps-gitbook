@@ -1,5 +1,26 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic);
 
+table th {
+    line-height: 2em;
+    text-transform: uppercase;
+    font-size: 0.85em;
+    letter-spacing: .05em;
+    color: #5e6f7b; /*remove to be consistent with other headers*/
+}
+
+table td {
+    vertical-align: initial;
+    line-height: 2em;
+}
+
+table th:nth-child(1), table th:nth-child(2) {
+    width: 25%;
+}
+
+table tr td:nth-child(3) {
+    line-height: 1.6em;
+}
+
 main .title{
     background: none;
 }
