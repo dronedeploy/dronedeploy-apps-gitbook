@@ -26,10 +26,11 @@ clean:
 	mkdir -p build
 
 build-graphql-reference:
-	cp docs/components/topnav.html graphdoc_templates/topnav.mustache  # Copy topnav into graphdoc template
+	cp docs/components/topnav.html graphdoc_templates/slds/topnav.mustache  # Copy topnav into graphdoc template
 	docker run \
-			-w / \
-			-v $(PWD)/graphdoc_templates/:/graphdoc_templates/ \
-			-v $(PWD)/build:/build/ \
+			-w /graphdoc/ \
+			-v $(PWD)/graphdoc_templates/:/graphdoc/template/ \
+			-v $(PWD)/build:/graphdoc/build/ \
 			dronedeploy/graphdoc:master \
-			/bin/bash -c "graphdoc -f -t /graphdoc_templates/ -e https://api.dronedeploy.com/graphql -o ./build/reference"
+			/bin/bash -c "npm run sass && graphdoc -f -t /graphdoc/template/slds/ -e https://api.dronedeploy.com/graphql -o ./build/reference"
+
