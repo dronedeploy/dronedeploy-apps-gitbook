@@ -21,16 +21,16 @@ table tr td:nth-child(3) {
     line-height: 1.6em;
 }
 
-main .title{
-    background: none;
-}
-
 .slds-col--rule-right {
     margin-top: 70px;
     background-color: none;
 }
 
 .topnav {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    top: 0;
     background-color: #1976D2;
     overflow: hidden;
     display: flex;

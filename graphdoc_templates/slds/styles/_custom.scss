@@ -7,6 +7,7 @@ p {
     line-height: 2;
 }
 
+
 .slds-col--rule-right {
     margin-top: 70px;
     background-color: #fafafa;
@@ -71,11 +72,12 @@ main footer {
 
 main .title,
 main footer {
-    padding-bottom: $spacing-xx-large;
+    padding-bottom: 0;
 }
 
 main .title {
-    background: $color-brand-darker;
+    margin-top: 16px;
+    background: none;
 }
 
 main .title .slds-text-title--caps,
