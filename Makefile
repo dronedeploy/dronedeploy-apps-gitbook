@@ -16,7 +16,6 @@ package: clean build-graphql-reference
 	cp -R ./_book build/
 	mv build/_book/ build/docs
 	cp -R landing_page/* build/
-	cp -R landing_page/static/ build/
 
 run:
 	http-server build/
