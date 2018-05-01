@@ -70,7 +70,8 @@
 
   <div id="outer-wrap"><div id="inner-wrap">
 
-       <nav class="slide navbar navbar-fixed-top navbar-transparent navbar-default-color hidden-sm-down">
+    <!-- Desktop Nav -->
+    <nav class="slide navbar navbar-fixed-top navbar-transparent navbar-default-color hidden-sm-down">
       <div class="container">
         <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
             <a class="navbar-brand" href="http://www.dronedeploy.com">
@@ -90,6 +91,48 @@
           </ul>
       </div><!--/container -->
     </nav>
+    <!-- Start old mobile nav -->
+    <header id="top" role="banner" class="hidden-lg-up">
+      <div class="hidden-md-up">
+        <a href="/">
+          <img class="site-logo hidden-md-up" src="https://staticfiles-cdn1.dronedeploy.com/img/dd-logo.svg" alt="">
+          <b class="sr-only">DroneDeploy></b>
+        </a>
+        <a class="nav-btn-white" id="nav-open-btn" href="#nav"></a>
+      </div>
+    </header>
+   <!--Start Navigation Section-->
+    <nav id="nav" role=navigation>
+    <!--Start DroneDeploy Logo-->
+      <a class="hidden-md-up" href="/">
+          <img class="site-logo" src="https://staticfiles-cdn1.dronedeploy.com/img/dd-logo.svg" alt="">
+          <b class="sr-only">DroneDeploy></b>
+      </a>
+          <!--End DroneDeploy Logo -->
+          <!--Start Mobile Hamburger Toggle-->
+      <span id="icn-toggle" class="hidden-md-up">
+        <b class="sr-only">Toggle Mobile Menu</b>
+      </span>
+      <!--End Mobile Hamburger-->
+      <ul id="toggle-switch" class = "nav__list--main hidden-lg-up">
+<!--          <li class="nav__item">
+            <a href="https://dronedeploy.gitbooks.io/dronedeploy-apps/content/" target="_blank">Docs</a>
+        </li>
+ -->          <li class="nav__item">
+            <a class="nav-link" href="/docs/introduction/overview.html">Docs</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav-link" href="/reference/">Reference</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav-link" href="/docs/faqs.html">FAQ</a>
+          </li>
+
+      </ul>
+      <a class="close-btn hidden-lg-up" id="nav-close-btn" href="#top">Return to Content</a>
+    </nav>
+    <!-- End old mobile nav -->
+
 
 <div class="jumbotron-lg jumbotron-fluid m-b-0 p-b-2 bg-primary">
   <div class="container">
@@ -97,8 +140,8 @@
       <div class="col-lg-6 col-md-12 text-info m-t-4 m-t-2-md p-b-3-lg text-xs-center text-lg-left">
         <h1 class="display-1 m-b-1">The Drone Data Platform for Developers</h1>
         <p class="lead m-b-2 m-b-1-xs m-r-1-lg m-l-1-xs text-xs-left text-sm-center text-lg-left">Build, grow, and monetize your apps with the full power of DroneDeploy—the world’s largest drone data platform.</p>
-        <a class="btn btn-secondary btn-lg" href="/developers/docs/">Build an App</a>
-        <a class="btn btn-secondary-outline btn-lg m-l-1-sm" href="/app-market.html">Browse Apps</a>
+        <a class="btn btn-secondary btn-lg" href="/docs/">Build an App</a>
+        <a class="btn btn-secondary-outline btn-lg m-l-1-sm" href="https://www.dronedeploy.com/app-market.html">Browse Apps</a>
       </div>
       <div class="col-lg-6 col-md-12 center-xs">
         <img class="img-fluid jumbotron-layers-iphone-lg slide-right" src="/img/hero-dev-layers.png" alt="iPhone with drone software for flying and data analysis">
@@ -415,7 +458,7 @@
     <div class="row text-xs-center text-info">
       <div class="col-xs-12">
         <h2 class="display-2 m-b-2">Ready to Start Building?</h2>
-        <a href="/developers/docs/" class="btn btn-secondary btn-lg" role="button">View Docs</a>
+        <a href="/docs/" class="btn btn-secondary btn-lg" role="button">View Docs</a>
         <p class="small text-uppercase m-t-1">
           <a class="text-info" href="https://dronedeploy.gitbooks.io/dronedeploy-apps/content/" target="_blank">Direct Link</a>
         </p>
@@ -466,12 +509,12 @@
              <label class="toggle-title" for="features"><h5>Product</h5></label>
              <!-- <h5 class="toggle-title">Test Nav</h5> -->
              <ul class="mobile-ft">
-               <li><a href="/app.html">Mobile App</a></li>
-               <li><a href="/enterprise.html">Enterprise</a></li>
-               <li><a href="/live-map.html">Live Map</a></li>
-               <li><a href="/app-market.html">App Market</a></li>
-               <li><a href="/product/gallery/">Map Gallery</a></li>
-               <li><a href="/pricing.html">Pricing</a></li>
+               <li><a target="_blank" href="https://www.dronedeploy.com/app.html">Mobile App</a></li>
+               <li><a target="_blank" href="https://www.dronedeploy.com/enterprise.html">Enterprise</a></li>
+               <li><a target="_blank" href="https://www.dronedeploy.com/live-map.html">Live Map</a></li>
+               <li><a target="_blank" href="https://www.dronedeploy.com/app-market.html">App Market</a></li>
+               <li><a target="_blank" href="https://www.dronedeploy.com/product/gallery/">Map Gallery</a></li>
+               <li><a target="_blank" href="https://www.dronedeploy.com/pricing.html">Pricing</a></li>
              </ul>
            </div>
 
@@ -479,12 +522,12 @@
              <input type="checkbox" id="about">
              <label class="toggle-title" for="about"><h5>About Us</h5></label>
              <ul class="mobile-ft">
-               <li><a href="/about.html">Mission</a></li>
-               <li><a href="/news.html">Newsroom</a></li>
-               <li><a href="/contact.html">Contact Us</a></li>
-               <li><a href="/careers.html">Careers</a></li>
-               <li><a href="/partners/">Partners</a></li>
-               <li><a href="https://support.dronedeploy.com/docs/terms-of-service" target="_blank">Terms</a> & <a href="https://support.dronedeploy.com/docs/privacy-policy" target="_blank">Privacy</a></li>
+               <li><a target="_blank" href="https://www.dronedeploy.com/about.html">Mission</a></li>
+               <li><a target="_blank" href="https://www.dronedeploy.com/news.html">Newsroom</a></li>
+               <li><a target="_blank" href="https://www.dronedeploy.com/contact.html">Contact Us</a></li>
+               <li><a target="_blank" href="https://www.dronedeploy.com/careers.html">Careers</a></li>
+               <li><a target="_blank" href="https://www.dronedeploy.com/partners/">Partners</a></li>
+               <li><a target="_blank" href="https://support.dronedeploy.com/docs/terms-of-service" target="_blank">Terms</a> & <a href="https://support.dronedeploy.com/docs/privacy-policy" target="_blank">Privacy</a></li>
              </ul>
            </div>
 
@@ -492,13 +535,13 @@
              <input type="checkbox" id="resources">
              <label class="toggle-title" for="resources"><h5>Learn</h5></label>
              <ul class="mobile-ft">
-               <li><a href="https://blog.dronedeploy.com" target="_blank">Blog</a></li>
-               <li><a href="/resources">All Resources</a></li>
-               <li><a href="/resources/#webinars">Webinars</a></li>
-               <li><a href="/resources/#ebooks">eBooks</a></li>
-               <li><a href="/resources/events">Events</a></li>
-               <li><a href="https://support.dronedeploy.com/docs" target="_blank">Support Docs</a></li>
-               <li><a href="https://forum.dronedeploy.com/" target="_blank">Forum</a></li>
+               <li><a target="_blank" href="https://blog.dronedeploy.com" target="_blank">Blog</a></li>
+               <li><a target="_blank" href="https://www.dronedeploy.com/resources">All Resources</a></li>
+               <li><a target="_blank" href="https://www.dronedeploy.com/resources/#webinars">Webinars</a></li>
+               <li><a target="_blank" href="https://www.dronedeploy.com/resources/#ebooks">eBooks</a></li>
+               <li><a target="_blank" href="https://www.dronedeploy.com/resources/events">Events</a></li>
+               <li><a target="_blank" href="https://support.dronedeploy.com/docs" target="_blank">Support Docs</a></li>
+               <li><a target="_blank" href="https://forum.dronedeploy.com/" target="_blank">Forum</a></li>
              </ul>
            </div>
 
@@ -506,12 +549,12 @@
              <input type="checkbox" id="industries">
              <label class="toggle-title" for="industries"><h5>Industries</h5></label>
              <ul class="mobile-ft">
-               <li><a href="/construction.html">Construction &amp; Surveying</a></li>
-               <li><a href="/agriculture.html">Agriculture</a></li>
-               <li><a href="/roofing.html">Roofing &amp; Insurance</a></li>
-               <li><a href="/inspection.html">Inspection</a></li>
-               <li><a href="/mining.html">Mining</a></li>
-               <li><a href="/drone-services.html">Drone Services</a></li>
+               <li><a target="_blank" href="https://www.dronedeploy.com/construction.html">Construction &amp; Surveying</a></li>
+               <li><a target="_blank" href="https://www.dronedeploy.com/agriculture.html">Agriculture</a></li>
+               <li><a target="_blank" href="https://www.dronedeploy.com/roofing.html">Roofing &amp; Insurance</a></li>
+               <li><a target="_blank" href="https://www.dronedeploy.com/inspection.html">Inspection</a></li>
+               <li><a target="_blank" href="https://www.dronedeploy.com/mining.html">Mining</a></li>
+               <li><a target="_blank" href="https://www.dronedeploy.com/drone-services.html">Drone Services</a></li>
              </ul>
            </div>
          </div>
