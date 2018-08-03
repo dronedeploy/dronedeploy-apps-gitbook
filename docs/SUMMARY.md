@@ -4,7 +4,7 @@
 
 * [Overview](introduction/overview.md)
 
-## APIs
+## API
 
 * [Introduction](apis/introduction.md)
 * [Authentication](apis/authentication.md)
@@ -15,9 +15,17 @@
   * [Fetching Exports](apis/examples/fetching-exports.md)
   * [Creating an Export](apis/examples/creating-an-export.md)
 
-## Apps
+## App Platform
 
 * [Introduction](README.md)
+* [App SDK (BETA)](sdk-beta/beta-signup.md)
+  * [BETA signup](sdk-beta/beta-signup.md)
+  * [Introduction](sdk-beta/introduction.md)
+  * [Datastore](sdk-beta/datastore.md)
+  * [Functions](sdk-beta/functions.md)
+  * [Triggers](sdk-beta/triggers.md)
+  * [DroneDeploy CLI](sdk-beta/dronedeploy-cli.md)
+  * [Sample App](sdk-beta/sample-app.md)
 * [UI Kit](getting_started.md)
   * [Document Setup](getting-started-draft.md)
   * [Side Panel Grid](grid.md)
@@ -27,7 +35,7 @@
   * [Preloader](preloader.md)
   * [Helpers](hellpers.md)
   * [Templates](template.md)
-* [Apps Javascript API](api-overview.md)
+* [Javascript API](api-overview.md)
   * [Annotations](annotations.md)
   * [Exporter](exporter.md)
   * [FlightLogs](flightlogs.md)
@@ -42,7 +50,7 @@
   * [User](user.md)
   * [Map](map.md)
   * [Measurement](measurement.md)
-* [Step by Step Guide to Publish an App](publishing_app.md)
+* [How to publish an App](publishing_app.md)
   * [Follow Checklist](checklist.md)
   * [Add Success Condition](success-condition.md)
   * [Submit App for Review](publishing.md)
@@ -79,5 +87,4 @@
   * [Publishing](publishing.md)
 * [Authentication](authentication.md)
 * [FAQs](faqs.md)
-* [Authentication](authentication.md)
 
