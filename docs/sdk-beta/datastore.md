@@ -1,4 +1,4 @@
-# Datastore - COMING SOON
+# Datastore
 
 The Datastore is a custom table
 

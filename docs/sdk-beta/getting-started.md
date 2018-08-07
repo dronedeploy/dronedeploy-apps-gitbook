@@ -1,6 +1,6 @@
 # Getting Started
 
-## Pre-requisites
+## Prerequisites
 
 1. [Create an account](https://www.dronedeploy.com/signup.html) on DroneDeploy if you do not have one already.
 1. Become a [DroneDeploy Developer](../developer-mode/developer.md)
@@ -86,4 +86,4 @@ The app you will be deploying will enable the following flow:
 
     ![](ifttt-sample-save.gif)
 
-1. Now if you go and do a DroneDeploy map export, you should get an event in IFTTT!
+1. Now if you perform a DroneDeploy map export, you should get an event in IFTTT!

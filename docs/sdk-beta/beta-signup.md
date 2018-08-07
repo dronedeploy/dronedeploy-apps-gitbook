@@ -5,7 +5,7 @@ Dear DroneDeploy Developer,
 With over **70 apps** on the App Market ranging from requesting flights on demand to counting plants, it is clear that our developers are incredibly creative and continue to push the boundaries of what apps can do on the DroneDeploy platform.
 
 
-At DroneDeploy we are committed to our developers and want to give you the tools necessary to build what you want to. That is why we are excited to announce the next generation of DroneDeploy’s App Platform, with 3 innovative platform features: 
+At DroneDeploy we are committed to our developers and want to give you the tools necessary to build what you want. That is why we are excited to announce the next generation of DroneDeploy’s App Platform, with 3 innovative platform features: 
 
 * [**Datastore**](datastore.md): create custom tables to store data however you want
 
