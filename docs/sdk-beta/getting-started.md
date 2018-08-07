@@ -68,7 +68,7 @@ The app you will be deploying will enable the following flow:
 
     ![](ifttt-sample-deploy.gif)
 
-1. If everything went according to plan, you should now have a Datastore table, a DroneDeploy Function, and a Trigger definition! Take a look at the Advanced Topics section at the end of this tutorial to find out about how all of these pieces fit together in the code.
+1. If everything went according to plan, you should now have a Datastore table, a DroneDeploy Function, and a Trigger definition!
 
 ### IFTTT Setup
 
@@ -84,6 +84,6 @@ The app you will be deploying will enable the following flow:
 
 1. Copy and paste your URL into your App UI and press save. This will save this URL by passing the URL string to the `ifttt-webhook` function, which will then save the URL to the defined `webhook-table` Datastore table. Try refreshing the page and opening the app - you will notice that your URL is still there and now persisted in your Datastore!
 
-### Advanced Topics
+    ![](ifttt-sample-save.gif)
 
-1. 
+1. Now if you go and do a DroneDeploy map export, you should get an event in IFTTT!
