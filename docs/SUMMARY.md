@@ -18,9 +18,11 @@
 ## App Platform
 
 * [Introduction](README.md)
-* [App SDK (BETA)](sdk-beta/beta-signup.md)
-  * [BETA signup](sdk-beta/beta-signup.md)
+  * [Developer Mode](developer-mode/developer.md)
+* [App SDK (beta)](sdk-beta/beta-signup.md)
+  * [Beta signup](sdk-beta/beta-signup.md)
   * [Introduction](sdk-beta/introduction.md)
+  * [Getting Started](sdk-beta/getting-started.md)
   * [Datastore](sdk-beta/datastore.md)
   * [Functions](sdk-beta/functions.md)
   * [Triggers](sdk-beta/triggers.md)

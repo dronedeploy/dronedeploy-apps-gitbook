@@ -1,24 +1,26 @@
-# DroneDeploy App SDK (BETA)
+# DroneDeploy App SDK (beta)
 
-### Note that this is a BETA and things are subject to change.
-
+### Note that this is a beta and things are subject to change.
 
 ## Overview
 
-Welcome to the DroneDeploy App SDK Beta.
+Welcome to the DroneDeploy App SDK Beta. We are very excited to share with you what we have been working on to help you make the most out of the DroneDeploy Platform. By participating in this beta, you will have access to the latest features of the DroneDeploy Platform and also have an impact and influence over the product roadmap.
 
-We are very excited to share what we have been working on and have you try out the latest app development tools from DroneDeploy.
-
-The new App SDK introduces three main features:
-
-* [**Datastore**](datastore.md): create custom tables to store data however you want
-
-* [**Functions**](functions.md): run your server code securely on DroneDeploy. Don’t worry about hosting ever again
-
-* [**Triggers**](triggers.md): take action on DroneDeploy events like “processing complete” and “export complete” and bring automation to your apps
-
-Combined with the existing UI Kit, you will have full control and resources to build out the most powerful apps and integrations on DroneDeploy.
+The new App SDK introduces three main features in addition to the existing UI platform:
 
 ![](overview.png)
+
+
+* [**UI**](../getting_started.md): Build a custom user interface
+
+* [**Functions**](functions.md): Serverless architecture running on the DroneDeploy Platform. Write Node.js code to enable backend functionality.
+
+* [**Datastore**](datastore.md): Create custom data tables with columns and schema. Store customer data securely.
+
+* [**Triggers**](triggers.md): Build DroneDeploy event driven use cases.
+
+## Usecases
+
+With these new features, we are unlocking new use cases that were not possible before. We list some ideas below, but we cannot wait to see what amazing new ideas you come up with.
 
 ![](usecases.png)
