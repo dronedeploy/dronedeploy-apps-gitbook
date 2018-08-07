@@ -4,7 +4,7 @@
 
 * [Overview](introduction/overview.md)
 
-## APIs
+## API
 
 * [Introduction](apis/introduction.md)
 * [Authentication](apis/authentication.md)
@@ -15,9 +15,20 @@
   * [Fetching Exports](apis/examples/fetching-exports.md)
   * [Creating an Export](apis/examples/creating-an-export.md)
 
-## Apps
+## App Platform
 
 * [Introduction](README.md)
+  * [Developer Mode](developer-mode/developer.md)
+* [App SDK (beta)](sdk-beta/beta-signup.md)
+  * [Beta signup](sdk-beta/beta-signup.md)
+  * [Introduction](sdk-beta/introduction.md)
+  * [Getting Started](sdk-beta/getting-started.md)
+  * [Datastore](sdk-beta/datastore.md)
+  * [Functions](sdk-beta/functions.md)
+  * [Triggers](sdk-beta/triggers.md)
+  * [UI Kit](sdk-beta/ui-kit.md)
+  * [DroneDeploy CLI](sdk-beta/dronedeploy-cli.md)
+  * [Known Issues](sdk-beta/known-issues.md)
 * [UI Kit](getting_started.md)
   * [Document Setup](getting-started-draft.md)
   * [Side Panel Grid](grid.md)
@@ -27,7 +38,7 @@
   * [Preloader](preloader.md)
   * [Helpers](hellpers.md)
   * [Templates](template.md)
-* [Apps Javascript API](api-overview.md)
+* [Javascript API](api-overview.md)
   * [Annotations](annotations.md)
   * [Exporter](exporter.md)
   * [FlightLogs](flightlogs.md)
@@ -42,7 +53,7 @@
   * [User](user.md)
   * [Map](map.md)
   * [Measurement](measurement.md)
-* [Step by Step Guide to Publish an App](publishing_app.md)
+* [How to publish an App](publishing_app.md)
   * [Follow Checklist](checklist.md)
   * [Add Success Condition](success-condition.md)
   * [Submit App for Review](publishing.md)
@@ -79,5 +90,4 @@
   * [Publishing](publishing.md)
 * [Authentication](authentication.md)
 * [FAQs](faqs.md)
-* [Authentication](authentication.md)
 
