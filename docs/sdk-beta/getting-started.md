@@ -34,9 +34,13 @@ The app you will be deploying will enable the following flow:
 
         $ cd app-examples/IFTTT
 
-1. Install the dependencies
+1. Install the dependencies. This will install the [dronedeploy-cli](dronedeploy-cli.md), which is a development tool to make App Development much easier.
 
         $ npm install
+
+1. Add your API key to [dronedeploy-cli](dronedeploy-cli.md)
+
+        $  serverless config credentials --provider=dronedeploy --key=<YOUR API KEY>
 
 ### App Deployment
 1. Navigate to the settings page and add the `IFTTT/app` directory to the App Zone
@@ -51,6 +55,35 @@ The app you will be deploying will enable the following flow:
 
     ![](ifttt-sample-app-id-serverless.gif)
 
-1. 
+1. Now you are ready to deploy the app with the following command
+
+        $ serverless deploy
+
+    Note that this will do the following:
+    1. Deploy the defined `ifttt-webhook` Function
+    1. Deploy the Export Complete Function Trigger
+    1. Deploy the `webhook-table` Datastore table
+
+    The deployment should look something like this:
+
+    ![](ifttt-sample-deploy.gif)
+
+1. If everything went according to plan, you should now have a Datastore table, a DroneDeploy Function, and a Trigger definition! Take a look at the Advanced Topics section at the end of this tutorial to find out about how all of these pieces fit together in the code.
 
 ### IFTTT Setup
+
+1. [Sign up](https://ifttt.com/join) for an IFTTT account if you do not have one already.
+
+1. Go to the IFTTT [webhooks service page](https://ifttt.com/maker_webhooks) and activate it by pressing `Connect`, then generate a new webhook endpoint by going into the `documentation` page. Enter in `dronedeploy` as the event name and copy the webhook endpoint.
+
+    ![](ifttt-sample-webhook.gif)
+
+1. The URL should look something like this
+
+        https://maker.ifttt.com/trigger/dronedeploy/with/key/calBarcsa1DcqmSN9_D1acb
+
+1. Copy and paste your URL into your App UI and press save. This will save this URL by passing the URL string to the `ifttt-webhook` function, which will then save the URL to the defined `webhook-table` Datastore table. Try refreshing the page and opening the app - you will notice that your URL is still there and now persisted in your Datastore!
+
+### Advanced Topics
+
+1. 
