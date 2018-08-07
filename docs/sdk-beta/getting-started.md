@@ -15,7 +15,7 @@ To get you started, we have created a sample app. By deploying this sample app, 
 The app you will be deploying will enable the following flow:
 1. A user creates an export
 1. When the export completes, an export complete Trigger will go off
-1. The trigger will call out to your DroneDeploy Function
+1. The Trigger will call out to your DroneDeploy Function
 1. The DroneDeploy Function will call to your IFTTT webhook endpoint
 
 ![](ifttt-flow.png)
