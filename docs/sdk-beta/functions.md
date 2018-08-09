@@ -103,7 +103,7 @@ exports.helloWorld = function (req, res, ctx) {
   },
   "devDependencies": {
     "jasmine": "3.1.0",
-    "@dronedeploy/dronedeploy-cli": "1.0.0"
+    "@dronedeploy/dronedeploy-cli": "1.1.1"
   }
 }
 ```
@@ -114,7 +114,7 @@ In order to secure your DroneDeploy Function, you will need to use the DroneDepl
 
 You can install the wrapper with the following command:
 
-        $ npm i @dronedeploy/function-wrapper
+        $ npm i --save @dronedeploy/function-wrapper
 
 ## Deploying a Function
 

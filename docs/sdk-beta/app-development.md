@@ -2,9 +2,9 @@
 
 **This functionality is in beta - please learn more** **[here](beta-signup.md).**
 
-With the App SDK Platform, we wanted to make deploying an app simple. This is why we have made creating Datastore tables, Functions, and Triggers configuration driven off of a file named `serverless.yml`.
+With the App SDK Platform, we want to make deploying an app simple. This is why we have made creating Datastore tables, Functions, and Triggers configuration-driven using `serverless.yml`.
 
-To follow along this documentation, please checkout our **[sample apps](https://github.com/dronedeploy/app-examples)**.
+To follow along with this documentation, please checkout our **[sample apps](https://github.com/dronedeploy/app-examples)**.
 
 DroneDeploy App SDK consists of 4 components:
 
@@ -18,7 +18,7 @@ DroneDeploy App SDK consists of 4 components:
 
 Deploying these components separately can be a pain, thus we've created a [CLI](dronedeploy-cli.md) for managing Apps and their deployments.
 
-You will find instructions on how all of these pieces come together below.
+You will find instructions on how all of these pieces fit together below.
 
 ## Prerequisites
 
