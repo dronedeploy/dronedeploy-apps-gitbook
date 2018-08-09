@@ -6,7 +6,7 @@ With the App SDK Platform, we want to make deploying an app simple. This is why 
 
 To follow along with this documentation, please checkout our **[sample apps](https://github.com/dronedeploy/app-examples)**.
 
-DroneDeploy App SDK consists of 4 components:
+DroneDeploy App SDK consists of four components:
 
 * [**UI**](ui-kit.md): Build a custom user interface
 
@@ -95,7 +95,7 @@ functions:
     handler: webhook
     memory: 128
     events:
-      -trigger:
+      -trigger
         object-type: Export
         type: complete
     resources:

@@ -149,7 +149,7 @@ The inputs to this query are as follows:
 1. **tableId**: This is the Id of the table you created above.
 1. **data**: This is the data you want to store in stringified JSON format. Note that each Datastore table column is a JSON key. In this example, that would be the `name` column.
 
-**[Try it out with the GraphQL Explorer](https://www.dronedeploy.com/graphql?query=query%20%28%24tableId%3A%20ID!%2C%20%24externalId%3A%20String!%29%20%7B%0A%20%20node%28id%3A%20%24tableId%29%20%7B%0A%20%20%20%20...%20on%20Table%20%7B%0A%20%20%20%20%20%20tableDatum%28externalKey%3A%20%24externalKey%29%20%7B%0A%20%20%20%20%20%20%20%20data%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A&variables=%7B%0A%20%20%22input%22%3A%20%7B%0A%20%20%20%20%22externalId%22%3A%20%22mhernandez%40dronedeploy.com%22%2C%0A%20%20%20%20%22tableId%22%3A%20%22Table%3A5b6be66f23d50900018b7731%22%2C%0A%20%20%20%20%22data%22%3A%20%22%7B%20%5C%22name%5C%22%3A%20%5C%22DroneDeploy%20Developer%5C%22%20%7D%22%0A%20%20%7D%0A%7D&operationName=null)**
+**[Try it out with the GraphQL Explorer](https://www.dronedeploy.com/graphql?query=query%20%28%24tableId%3A%20ID!%2C%20%24externalId%3A%20String!%29%20%7B%0A%20%20node%28id%3A%20%24tableId%29%20%7B%0A%20%20%20%20...%20on%20Table%20%7B%0A%20%20%20%20%20%20tableDatum%28externalKey%3A%20%24externalKey%29%20%7B%0A%20%20%20%20%20%20%20%20data%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A&variables=%7B%0A%20%20%22input%22%3A%20%7B%0A%20%20%20%20%22tableId%22%3A%20%22Table%3A5b6be66f23d50900018b7731%22%2C%20%0A%20%20%20%20%22externalId%22%3A%20%22developer%40dronedeploy.com%22%2C%20%0A%20%20%20%20%22data%22%3A%20%22%7B%20%5C%22name%5C%22%3A%20%5C%22DroneDeploy%20Developer%5C%22%20%7D%22%0A%20%20%7D%0A%7D&operationName=null)**
 
 #### Query
 
@@ -213,10 +213,10 @@ The results should look something like this.
 Now let's retrieve the data that we created.
 
 This query takes two inputs:
-1. **externalKey**: This is the externalId that you passed into the Datastore data creation query. In this example, this was `mhernandez@dronedeploy.com`.
+1. **externalKey**: This is the externalId that you passed into the Datastore data creation query. In this example, this was `developer@dronedeploy.com`.
 1. **tableId**: This is the Id of the table you created above.
 
-**[Try it out with the GraphQL Explorer](https://www.dronedeploy.com/graphql?query=query%20%28%24tableId%3A%20ID!%2C%20%24externalId%3A%20String!%29%20%7B%0A%20%20node%28id%3A%20%24tableId%29%20%7B%0A%20%20%20%20...%20on%20Table%20%7B%0A%20%20%20%20%20%20tableDatum%28externalKey%3A%20%24externalKey%29%20%7B%0A%20%20%20%20%20%20%20%20data%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A&variables=%7B%0A%20%20%22input%22%3A%20%7B%0A%20%20%20%20%22externalId%22%3A%20%22mhernandez%40dronedeploy.com%22%2C%0A%20%20%20%20%22tableId%22%3A%20%22Table%3A5b6be66f23d50900018b7731%22%2C%0A%20%20%20%20%22data%22%3A%20%22%7B%20%5C%22name%5C%22%3A%20%5C%22DroneDeploy%20Developer%5C%22%20%7D%22%0A%20%20%7D%0A%7D&operationName=null)**
+**[Try it out with the GraphQL Explorer](https://www.dronedeploy.com/graphql?query=query%20%28%24tableId%3A%20ID!%2C%20%24externalId%3A%20String!%29%20%7B%0A%20%20node%28id%3A%20%24tableId%29%20%7B%0A%20%20%20%20...%20on%20Table%20%7B%0A%20%20%20%20%20%20tableDatum%28externalKey%3A%20%24externalKey%29%20%7B%0A%20%20%20%20%20%20%20%20data%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A&variables=%7B%0A%20%20%22input%22%3A%20%7B%0A%20%20%20%20%22externalId%22%3A%20%22developer%40dronedeploy.com%22%2C%0A%20%20%20%20%22tableId%22%3A%20%22Table%3A5b6be66f23d50900018b7731%22%2C%0A%20%20%20%20%22data%22%3A%20%22%7B%20%5C%22name%5C%22%3A%20%5C%22DroneDeploy%20Developer%5C%22%20%7D%22%0A%20%20%7D%0A%7D&operationName=null)**
 
 #### Query
 
