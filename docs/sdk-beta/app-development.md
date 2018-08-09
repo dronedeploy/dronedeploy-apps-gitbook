@@ -6,7 +6,7 @@ With the App SDK Platform, we want to make deploying an app simple. This is why 
 
 To follow along with this documentation, please checkout our **[sample apps](https://github.com/dronedeploy/app-examples)**.
 
-DroneDeploy App SDK consists of 4 components:
+DroneDeploy App SDK consists of four components:
 
 * [**UI**](ui-kit.md): Build a custom user interface
 
@@ -57,6 +57,10 @@ Read more about Functions [here](functions.md).
 
 #### package.json
 
+The `package.json` file is where you define your NPM dependencies.
+
+It is important to have the `"main"` field be `dronedeploy.js` as that is how the platform knows which file to run.
+
 ```json
 {
   "name": "ifttt",
@@ -69,13 +73,17 @@ Read more about Functions [here](functions.md).
 }
 ```
 
+You will also need to make sure that your have the [dronedeploy-cli](https://www.npmjs.com/package/@dronedeploy/dronedeploy-cli) installed as a development dependency to be able to deploy correctly using the CLI. If you do not already have the CLI defined as a dependency in `package.json`, you can install it by running the following command.
+
+        $ npm install --save-dev @dronedeploy/dronedeploy-cli
+
 #### serverless.yml
 
 The serverless.yml file is the blueprint to your App. This file is where you will define Datastore tables, Triggers, and your Functions. This is the entrypoint for the DroneDeploy CLI to understand what you want to do with your App. The next section will talk in depth about the serverless.yml file.
 
 ## serverless.yml
 
-[Serverless Platform](https://serverless.com/framework/docs/)
+The `dronedeploy-cli` is built using the [Serverless framework](https://serverless.com/framework/docs/). The serverless framework uses the `serverless.yml` file for configuration.
 
 ```yml
 service: IFTTT
@@ -90,12 +98,11 @@ plugins:
 
 functions:
   ifttt-webhook:
-    name: "ifttt-webhook"
     handlerPath: functions/webhook
-    handler: webhook
+    handler: dronedeploy
     memory: 128
     events:
-      -trigger:
+      -trigger
         object-type: Export
         type: complete
     resources:
@@ -110,18 +117,47 @@ functions:
               description: "webhook endpoint for IFTTT"
 ```
 
-## DroneDeploy CLI
+**service** should be set to a reasonable name for your app.
+
+**provider** should always be `dronedeploy` since you are deploying your serverless functions on the DroneDeploy Platform.
+
+**app** is where you put the App Id of your DroneDeploy App. You can find your App Id by navigating to the App description page on the DroneDeploy App Market.
+
+**plugins** should always be set to `@dronedeploy/dronedeploy-cli`. This lets the serverless framework know to use the `dronedeploy-cli` as the plugin.
+
+**functions** is where you define your functions.
+
+* The key is used as the name of the function. In the example above, the name is `ifttt-webhook`.
+
+* The `handlerPath` lets the CLI know where to find your function files.
+
+* The `handler` defines the module to run in your `dronedeploy.js` function file. Typically this field should stay as `dronedeploy`.
+
+* Under events you can define your DroneDeploy Triggers. You can learn more about Triggers [here](triggers.md). Note that you can have more than one Trigger defined.
+
+* Finally you can define Datastore Tables under `resources`. Each table can have multiple columns. You can learn more about Datastore tables [here](datastore.md).
 
 ## Deployment
 
+With the [DroneDeploy CLI](dronedeploy-cli.md), you can deploy your Functions, Datastore tables, and Triggers with one command:
+
         $ serverless deploy
 
-## Logs
-
-        $ sls logs --functionName ifttt-webhook --tail
+Once you run `serverless deploy`, your app is now ready for use.
 
 ## Function Status
 
+Once your Function has been deployed, you can check its status by running:
+
         $ sls status
 
-## DroneDeploy CLI
+## Logs
+
+Once your Function is up and running, you can check its logs with the following command:
+
+        $ sls logs --functionName ifttt-webhook --tail
+
+
+You can find all CLI commands by running the following:
+
+        $ sls help
