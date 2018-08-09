@@ -11,7 +11,7 @@ The new App SDK introduces three main features in addition to the existing UI pl
 ![](overview.png)
 
 
-* [**UI**](../getting_started.md): Build a custom user interface
+* [**UI**](ui-kit.md): Build a custom user interface
 
 * [**Functions**](functions.md): Serverless architecture running on the DroneDeploy Platform. Write Node.js code to enable backend functionality.
 
@@ -24,3 +24,7 @@ The new App SDK introduces three main features in addition to the existing UI pl
 With these new features, we are unlocking new use cases that were not possible before. We list some ideas below, but we cannot wait to see what amazing new ideas you come up with.
 
 ![](usecases.png)
+
+## Getting Started
+
+[Get started](getting-started.md) with our sample app and deploy your first DroneDeploy app!

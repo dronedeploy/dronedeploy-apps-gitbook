@@ -1,10 +1,12 @@
 # Getting Started
 
+**This functionality is in beta - please learn more [here](beta-signup.md).**
+
 ## Prerequisites
 
 1. [Create an account](https://www.dronedeploy.com/signup.html) on DroneDeploy if you do not have one already.
 1. Become a [DroneDeploy Developer](../developer-mode/developer.md)
-1. Request an API key by contacting [developer@dronedeploy.com](developer@dronedeploy.com) if you do not already have one.
+1. Request an API key by contacting [developer@dronedeploy.com](mailto:developer@dronedeploy.com) if you do not already have one.
 
 ## Sample App
 
@@ -51,9 +53,11 @@ The app you will be deploying will enable the following flow:
 
     ![](ifttt-sample-app-id.gif)
 
+1. Press the "Deploy For Mobile Testing" button to checkpoint your app and to make the app available on mobile.
+
 1. Copy the App ID into your `serverless.yml` file in the `app` field
 
-    ![](ifttt-sample-app-id-serverless.gif)
+    ![](ifttt-sample-app-id-serverless2.gif)
 
 1. Now you are ready to deploy the app with the following command
 
@@ -86,4 +90,12 @@ The app you will be deploying will enable the following flow:
 
     ![](ifttt-sample-save.gif)
 
-1. Now if you perform a DroneDeploy map export, you should get an event in IFTTT!
+1. [Create an Applet](https://ifttt.com/create) on IFTTT using your new IFTTT webhook service as the trigger. Don't forget to select the Webhook at the service and set the event to **dronedeploy**. In this GIF, we are showing an Applet that emails you when a trigger fires. You can find more documentation about how to build an IFTTT Applet [here](https://ifttt.com/blog/2017/05/how-to-build-an-applet).
+
+    ![](ifttt-applet.gif)
+
+1. Now if you perform a DroneDeploy map export, you should get an event in IFTTT! When an event triggers, you will see that your IFTTT Applet ran under the [activity](https://ifttt.com/activity) tab.
+
+## Next Steps
+
+Learn more about how to extend the sample app or build your own from scratch [here](app-development.md).
