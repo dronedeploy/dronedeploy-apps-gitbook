@@ -19,3 +19,9 @@ Then install the DroneDeploy CLI in the directory where you want to build out yo
         $ npm install @dronedeploy/dronedeploy-cli
 
 You can find the latest version of the DroneDeploy CLI and documentation [here](https://www.npmjs.com/package/@dronedeploy/dronedeploy-cli).
+
+## Commands
+
+Once you have installed the DroneDeploy CLI and are in your app's directory, you can call the following command to get a list of all possible CLI commands:
+
+        $ sls help

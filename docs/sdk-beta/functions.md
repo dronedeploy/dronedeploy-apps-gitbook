@@ -29,6 +29,8 @@ A DroneDeploy Function has the following files:
 
 #### config.json
 
+The `config.json` file allows you to determine whether or not this function should be protected behind DroneDeploy JWTs. Typically your functions will be 
+
 ```json
 {
   "authRequired": true,

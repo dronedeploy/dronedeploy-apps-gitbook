@@ -21,3 +21,7 @@ We couldn’t do it without our developer community and cannot wait to get these
 ## BETA Signup
 
 Please fill out this [quick 2-minute form](https://goo.gl/forms/p8PiAzxO15pdbyQB2).
+
+## Next Steps
+
+Go to the beta introduction.
