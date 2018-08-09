@@ -7,7 +7,7 @@ The Datastore allows you to create custom tables on DroneDeploy. There are two p
 1. Creating the table
 1. Creating columns
 
-Note that tables can be created by API via our [GraphQL APIs](../apis/introduction.md), or they can be defined by the [DroneDeploy CLI](dronedeploy-cli.md). 
+Note that tables are defined by the [DroneDeploy CLI](dronedeploy-cli.md). 
 
 **We highly recommend that you use the CLI for App development instead of building out tables via the API.**
 
@@ -149,7 +149,7 @@ The inputs to this query are as follows:
 1. **tableId**: This is the Id of the table you created above.
 1. **data**: This is the data you want to store in stringified JSON format. Note that each Datastore table column is a JSON key. In this example, that would be the `name` column.
 
-**[Try it out with the GraphQL Explorer](https://www.dronedeploy.com/graphql?query=query%20%28%24tableId%3A%20ID!%2C%20%24externalId%3A%20String!%29%20%7B%0A%20%20node%28id%3A%20%24tableId%29%20%7B%0A%20%20%20%20...%20on%20Table%20%7B%0A%20%20%20%20%20%20tableDatum%28externalKey%3A%20%24externalKey%29%20%7B%0A%20%20%20%20%20%20%20%20data%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A&variables=%7B%0A%20%20%22input%22%3A%20%7B%0A%20%20%20%20%22externalId%22%3A%20%22mhernandez%40dronedeploy.com%22%2C%0A%20%20%20%20%22tableId%22%3A%20%22Table%3A5b6be66f23d50900018b7731%22%2C%0A%20%20%20%20%22data%22%3A%20%22%7B%20%5C%22name%5C%22%3A%20%5C%22Michael%20Hernandez%5C%22%20%7D%22%0A%20%20%7D%0A%7D&operationName=null)**
+**[Try it out with the GraphQL Explorer](https://www.dronedeploy.com/graphql?query=query%20%28%24tableId%3A%20ID!%2C%20%24externalId%3A%20String!%29%20%7B%0A%20%20node%28id%3A%20%24tableId%29%20%7B%0A%20%20%20%20...%20on%20Table%20%7B%0A%20%20%20%20%20%20tableDatum%28externalKey%3A%20%24externalKey%29%20%7B%0A%20%20%20%20%20%20%20%20data%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A&variables=%7B%0A%20%20%22input%22%3A%20%7B%0A%20%20%20%20%22externalId%22%3A%20%22mhernandez%40dronedeploy.com%22%2C%0A%20%20%20%20%22tableId%22%3A%20%22Table%3A5b6be66f23d50900018b7731%22%2C%0A%20%20%20%20%22data%22%3A%20%22%7B%20%5C%22name%5C%22%3A%20%5C%22DroneDeploy%20Developer%5C%22%20%7D%22%0A%20%20%7D%0A%7D&operationName=null)**
 
 #### Query
 
@@ -176,9 +176,9 @@ mutation CreateTableData($input: CreateTableDataInput!) {
 ```graphql
 {
   "input": {
-    "externalId": "mhernandez@dronedeploy.com",
+    "externalId": "developer@dronedeploy.com",
     "tableId": "Table:5b6bd03d0461f4000108c777",
-    "data": "{ \"name\": \"Michael Hernandez\" }"
+    "data": "{ \"name\": \"DroneDeploy Developer\" }"
   }
 }
 ```
@@ -197,8 +197,8 @@ The results should look something like this.
         "application": {
           "id": "Application:lonvecnbfyvovfqsvbxz"
         },
-        "data": "{\"name\": \"Michael Hernandez\"}",
-        "externalKey": "mhernandez@dronedeploy.com",
+        "data": "{\"name\": \"DroneDeploy Developer\"}",
+        "externalKey": "developer@dronedeploy.com",
         "table": {
           "id": "Table:5b6bd03d0461f4000108c777"
         }
@@ -216,7 +216,7 @@ This query takes two inputs:
 1. **externalKey**: This is the externalId that you passed into the Datastore data creation query. In this example, this was `mhernandez@dronedeploy.com`.
 1. **tableId**: This is the Id of the table you created above.
 
-**[Try it out with the GraphQL Explorer](https://www.dronedeploy.com/graphql?query=query%20%28%24tableId%3A%20ID!%2C%20%24externalId%3A%20String!%29%20%7B%0A%20%20node%28id%3A%20%24tableId%29%20%7B%0A%20%20%20%20...%20on%20Table%20%7B%0A%20%20%20%20%20%20tableDatum%28externalKey%3A%20%24externalKey%29%20%7B%0A%20%20%20%20%20%20%20%20data%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A&variables=%7B%0A%20%20%22input%22%3A%20%7B%0A%20%20%20%20%22externalId%22%3A%20%22mhernandez%40dronedeploy.com%22%2C%0A%20%20%20%20%22tableId%22%3A%20%22Table%3A5b6be66f23d50900018b7731%22%2C%0A%20%20%20%20%22data%22%3A%20%22%7B%20%5C%22name%5C%22%3A%20%5C%22Michael%20Hernandez%5C%22%20%7D%22%0A%20%20%7D%0A%7D&operationName=null)**
+**[Try it out with the GraphQL Explorer](https://www.dronedeploy.com/graphql?query=query%20%28%24tableId%3A%20ID!%2C%20%24externalId%3A%20String!%29%20%7B%0A%20%20node%28id%3A%20%24tableId%29%20%7B%0A%20%20%20%20...%20on%20Table%20%7B%0A%20%20%20%20%20%20tableDatum%28externalKey%3A%20%24externalKey%29%20%7B%0A%20%20%20%20%20%20%20%20data%0A%20%20%20%20%20%20%7D%0A%20%20%20%20%7D%0A%20%20%7D%0A%7D%0A&variables=%7B%0A%20%20%22input%22%3A%20%7B%0A%20%20%20%20%22externalId%22%3A%20%22mhernandez%40dronedeploy.com%22%2C%0A%20%20%20%20%22tableId%22%3A%20%22Table%3A5b6be66f23d50900018b7731%22%2C%0A%20%20%20%20%22data%22%3A%20%22%7B%20%5C%22name%5C%22%3A%20%5C%22DroneDeploy%20Developer%5C%22%20%7D%22%0A%20%20%7D%0A%7D&operationName=null)**
 
 #### Query
 
@@ -238,7 +238,7 @@ query ($tableId: ID!, $externalKey: String!) {
 ```graphql
 {
   "tableId": "Table:5b6bd03d0461f4000108c777",
-  "externalKey": "mhernandez@dronedeploy.com"
+  "externalKey": "developer@dronedeploy.com"
 }
 ```
 
@@ -251,7 +251,7 @@ The results should look something like this.
   "data": {
     "node": {
       "tableDatum": {
-        "data": "{\"name\": \"Michael Hernandez\"}"
+        "data": "{\"name\": \"DroneDeploy Developer\"}"
       }
     }
   }

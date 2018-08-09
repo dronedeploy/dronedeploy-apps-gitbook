@@ -24,4 +24,4 @@ Please fill out this [quick 2-minute form](https://goo.gl/forms/p8PiAzxO15pdbyQB
 
 ## Next Steps
 
-Go to the beta introduction.
+Go to the [beta introduction](introduction.md).

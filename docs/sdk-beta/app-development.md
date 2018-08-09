@@ -64,14 +64,14 @@ Read more about Functions [here](functions.md).
   "main": "dronedeploy.js",
   "author": "dronedeploy",
   "devDependencies": {
-    "@dronedeploy/dronedeploy-cli": "1.1.0"
+    "@dronedeploy/dronedeploy-cli": "1.1.1"
   }
 }
 ```
 
 #### serverless.yml
 
-The serverless.yml file is the blueprints to your App. This file is where you will define Datastore tables, Triggers, and your Functions. This is the entrypoint for the DroneDeploy CLI to understand what you want to do with your App. The next section will talk in depth about the serverless.yml file.
+The serverless.yml file is the blueprint to your App. This file is where you will define Datastore tables, Triggers, and your Functions. This is the entrypoint for the DroneDeploy CLI to understand what you want to do with your App. The next section will talk in depth about the serverless.yml file.
 
 ## serverless.yml
 
@@ -94,9 +94,10 @@ functions:
     handlerPath: functions/webhook
     handler: webhook
     memory: 128
-    function-triggers:
-      - event-object-type: Export
-        event-type: complete
+    events:
+      -trigger:
+        object-type: Export
+        type: complete
     resources:
       tables:
         webhook-table:
