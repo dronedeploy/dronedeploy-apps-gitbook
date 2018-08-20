@@ -5,7 +5,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Overlay: Dashboard Plugin</title>
+    <title>Popup: Dashboard Plugin</title>
     <style>
         body {
             display: flex;
@@ -17,14 +17,14 @@
     </style>
 </head>
 <body>
-    <button id="open">Open the Overlay</button>
+    <button id="open">Open the Popup</button>
     <script>
         var openButton = document.getElementById('open');
 
         openButton.addEventListener('click', function() {
             new DroneDeploy({ version: 1 })
                 .then(function(dronedeployApi) {
-                    dronedeployApi.Overlay.open('My First Overlay App!');
+                    dronedeployApi.Popup.open('My First Popup App!');
                 });
         });
     </script>
@@ -32,14 +32,14 @@
 </html>
 ```
 
-**Overlay Plugin**
+**Popup Plugin**
 
 ```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Overlay: Overlay Plugin</title>
+    <title>Popup: Popup Plugin</title>
     <style>
         body {
             display: flex;
@@ -51,14 +51,14 @@
     </style>
 </head>
 <body>
-    <button id="close">Close the Overlay</button>
+    <button id="close">Close the Popup</button>
     <script>
         var closeButton = document.getElementById('close');
 
         closeButton.addEventListener('click', function() {
             new DroneDeploy({ version: 1 })
                 .then(function(dronedeployApi) {
-                    dronedeployApi.Overlay.close();
+                    dronedeployApi.Popup.close();
                 });
         });
     </script>
