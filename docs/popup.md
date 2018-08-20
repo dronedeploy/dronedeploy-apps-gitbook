@@ -22,7 +22,7 @@ There are several steps you want to keep in mind when utilizing the dashboard po
 2. Once you open the popup using your dashboard plugin, you can add another plugin to the App Zone on the popup window itself.
 3. Make sure to specify that your popup plugin belongs to the same app as your dashboard plugin when prompted!
 
-[**Full Example**](/popup/example-popup.basic.md)
+[**Full Example**](popup/example-popup.basic.md)
 
 **Note: ** If the dashboard or popup plugins don't seem to be working after dropping in the source code to either App Zone, try refreshing the page. This is a known issue, and will be fixed shortly!
 
