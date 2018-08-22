@@ -22,7 +22,7 @@ dronedeployAPI.CadOverlay.import(url, headers);
 **How to Use**
 
 This API will be most effective when used with the App Zone in the Overlay Selection
-dialog (coming soon), but can also be used from the App Zone on the Data Page as well.
+dialog, but can also be used from the App Zone on the Data Page as well.
 
 1. Drag your plugin code into the desired App Zone
 2. Interact with your plugin UI to trigger your `import` call
