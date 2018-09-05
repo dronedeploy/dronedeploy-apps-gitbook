@@ -14,9 +14,11 @@ const headers = {
   "Authorization": "Bearer mysecretbearertoken",
   "X-Custom": "custom-header-value-for-mysite",
 };
+const name = 'My Overlay Image Name'
 
 // Call the import function
-dronedeployAPI.CadOverlay.import(url, headers);
+// NOTE: headers and name are optional parameters
+dronedeployAPI.CadOverlay.import(url, headers, name);
 ```
 
 **How to Use**
