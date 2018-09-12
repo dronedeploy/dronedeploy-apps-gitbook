@@ -79,7 +79,7 @@ The `.env` file allows you to determine whether or not this function should be p
 ```
 AUTH_REQUIRED=true
 MOCK_TOKEN=false
-CORS_HEADERS={"some-cors-header":"value"}
+CORS_HEADERS=some-cors-header,some-other-allowed-header
 ```
 
 However, you may want to add custom CORS headers or disable auth to have an open endpoint for certain usecases like implementing OAuth.
