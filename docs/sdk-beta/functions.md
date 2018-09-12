@@ -74,56 +74,24 @@ You can learn more about the `ctx` object from the @dronedeploy/function-wrapper
 
 #### config.json
 
-The `config.json` file allows you to determine whether or not this function should be protected behind DroneDeploy JWTs. Typically your file should look like this:
+The `.env` file allows you to determine whether or not this function should be protected behind DroneDeploy JWTs. The file is not mandatory. Typically when used your file should look like this (presented with default values):
 
-```json
-{
-  "authRequired": true,
-  "mockToken": false,
-  "config": {
-    "cors": {
-      "headers": []
-    }
-  }
-}
+```
+AUTH_REQUIRED=true
+MOCK_TOKEN=false
 ```
 
-However, you may want to add custom CORS headers or disable auth to have an open endpoint for certain usecases like implementing OAuth.
+However, you may want to disable auth to have an open endpoint for certain usecases like implementing OAuth.
 
 #### dronedeploy.js
 
 The `dronedeploy.js` file is the wrapper code for allowing DroneDeploy to handle things like auth and building function context. Your `dronedeploy.js` file should look almost identical to the one below. The only modification might be the `handler.helloWorld(req, res, ctx)` line to change which Node.js  module export you would like to use.
 
 ```javascript
-'use strict';
-/**
- * DroneDeploy Wrapper
- * In general, there should be very little to touch here
- */
-require('dotenv').config()
-
-global.APP_ID = process.env.APP_ID || undefined;
-
 const bootstrap = require('@dronedeploy/function-wrapper');
 const handler = require('./handler');
 
-let config = require('./config.json');
-
-exports.dronedeploy = function (req, res) {
-  if (!global.APP_ID) {
-    const msg = 'App slug not available, did you deploy using DroneDeploy-Cli?';
-    console.error(msg);
-    res.status(500).send(msg)
-  }
-  bootstrap(config, req, res, (err, ctx) => {
-    if (err) {
-      console.error(err, err.stack);
-      console.warn('An error occurred during the bootstrapping process. A default response has been sent and code paths have been stopped.');
-      return;
-    }
-    handler.helloWorld(req, res, ctx);
-  });
-};
+exports.dronedeploy = bootstrap((ctx) => (req, res) => handler.helloWorld(req, res, ctx));
 ```
 
 #### package.json
