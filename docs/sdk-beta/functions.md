@@ -88,6 +88,7 @@ However, you may want to disable auth to have an open endpoint for certain useca
 The `dronedeploy.js` file is the wrapper code for allowing DroneDeploy to handle things like auth and building function context. Your `dronedeploy.js` file should look almost identical to the one below. The only modification might be the `handler.helloWorld(req, res, ctx)` line to change which Node.js  module export you would like to use.
 
 ```javascript
+'use strict';
 const bootstrap = require('@dronedeploy/function-wrapper');
 const handler = require('./handler');
 
