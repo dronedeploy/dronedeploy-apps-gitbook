@@ -111,7 +111,7 @@ It is important to have the `"main"` field be `dronedeploy.js` as that is how th
   "author": "dronedeploy",
   "license": "MIT",
   "dependencies": {
-    "@dronedeploy/function-wrapper": "1.1.2",
+    "@dronedeploy/function-wrapper": "1.1.7",
     "dotenv": "5.0.1",
     "md5": "^2.2.1",
     "request": "2.87.0"
