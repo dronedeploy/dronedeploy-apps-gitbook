@@ -1,4 +1,4 @@
-# DroneDeploy App SDK BETA signup
+# DroneDeploy App SDK beta signup
 
 Dear DroneDeploy Developer,
 
@@ -18,7 +18,7 @@ With these new features we want your ideas to only be bounded by your imaginatio
 
 We couldn’t do it without our developer community and cannot wait to get these new tools in your hands.
 
-## BETA Signup
+## beta Signup
 
 Please fill out this [quick 2-minute form](https://goo.gl/forms/p8PiAzxO15pdbyQB2).
 
