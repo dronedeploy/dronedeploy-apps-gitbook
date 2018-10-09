@@ -1,5 +1,8 @@
 # FAQs
 
+### How can I become a partner?
+Fill out this [form](https://airtable.com/shr7Uk76GPThLlp7E) and we will get back to you right away!
+
 ### How can I get app ideas?
 
 {% youtube %}https://www.youtube.com/watch?v=ilrWHM95DY0&index=3&list=PLqOge_z8yN2EJ4ftDaY1XdbaneCRQTnvq{% endyoutube %}
