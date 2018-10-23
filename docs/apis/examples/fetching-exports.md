@@ -45,7 +45,7 @@ This returns the data:
             "node": {
               "id": "Export:5ab165f348273300019b14a3",
               "user": {
-                "username": "joe@dronedeploy.com"
+                "username": "example@dronedeploy.com"
               },
               "parameters": {
                 "projection": 3857,
