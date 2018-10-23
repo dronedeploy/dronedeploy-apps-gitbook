@@ -49,7 +49,7 @@ This returns:
 {
   "data": {
     "viewer": {
-      "username": "joe@dronedeploy.com",
+      "username": "example@dronedeploy.com",
       "organization": {
         "plans": {
           "pageInfo": {
@@ -108,7 +108,7 @@ This returns the data:
 {
   "data": {
     "viewer": {
-      "username": "joe@dronedeploy.com",
+      "username": "example@dronedeploy.com",
       "organization": {
         "plans": {
           "pageInfo": {
