@@ -151,6 +151,21 @@ Once your Function has been deployed, you can check its status by running:
 
         $ sls status
 
+## Local testing
+
+You can test your function locally by doing the following:
+
+        $ npm install -g @google-cloud/functions-emulator
+
+cd into your actual function folder
+
+        $ npm install
+        $ functions config set projectId dronedeploy
+        $ functions start
+        $ functions deploy dronedeploy --trigger-http
+
+then it gives you the URL to start hitting it
+
 ## Logs
 
 Once your Function is up and running, you can check its logs with the following command:
