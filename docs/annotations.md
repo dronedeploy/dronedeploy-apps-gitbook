@@ -11,6 +11,7 @@
 * [Annotations.delete](#annotationsdelete)
 * [Annotations.get](#annotationsget)
 * [Annotations.getVolume](#annotationsgetvolume)
+* [Annotations.update](#annotationsupdate)
 
 ## Annotations.createMarker
 
@@ -309,3 +310,33 @@ dronedeployApi.Annotations.getVolume('581286dccb5fda14db8d2971')
 
 [**Full Example**](annotations/example-annotations.getvolume.md)
 
+## Annotations.update
+
+**Overview**
+
+This function enables updates to existing annotation properties. Valid properties include:
+- `color`
+- `description`
+- `geometry`
+
+```javascript
+const existingAnnotationId = String;
+// NOTE: None of the properties are required, can include one or more
+const propertiesToUpdate = {
+  color: '#888888' // must be a hex value, annotation fill color automatically derived from color value
+  description: 'My new annotation description',
+  geometry: [
+    { lat: 35, lng: 36 },
+    { lat: 33, lng: 34 },
+    { lat: 30, lng: 31 },
+  ],
+};
+dronedeployApi.Annotations.update(existingAnnotationId, propertiesToUpdate)
+  .then(function() {
+    // do stuff after update
+  })
+  .catch(function(err) {
+    // something went wrong with the update
+    console.log(err);
+  });
+```
