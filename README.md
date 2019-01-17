@@ -23,3 +23,37 @@ You can develop this by running [gitbook's CLI](https://www.npmjs.com/package/gi
 
 #### GraphDoc
 This is automatically generated from the graphql schema so to add to this you need to open up a PR against drone_web and modify [the schema file](https://github.com/dronedeploy/drone_web/blob/master/server/graphql_apis/schema.py)
+
+## Publishing to GitBook
+
+The GitBook integration for syncing content from GitHub cannot see the [DroneDeploy org-owned repo](https://github.com/dronedeploy/dronedeploy-apps-gitbook) so there is a [forked version](https://github.com/ddbotgitbooksync/dronedeploy-apps-gitbook) belonging to the `ddbotgitbooksync` GitHub user.
+
+Because the forked version is needed for syncing with GitBook, we need to ensure that the fork is updated so we can publish our documentation
+content.
+
+#### Updating the fork
+
+1. Log into GitHub as `ddbotgitbooksync` (credentials found in the usual place)
+1. Navigate to the [fork](https://github.com/ddbotgitbooksync/dronedeploy-apps-gitbook)
+1. Click the button to create a new pull request
+1. On the comparison screen we need to compare across forks
+  1. Ensure the base fork is the forked repo
+  1. Select the DroneDeploy repo as the head fork
+  1. Ensure comparison is `master` <-> `master`
+1. Double check the diff and create the PR
+1. Merge the PR into the master branch of the fork
+
+#### Updating GitBook content
+
+GitBook allows us to have multiple "releases" of our content, meaning we can publish different versions of the documentation at
+the same time if desired.  With this in mind, all branches from the fork beginning with "v" are auto-synced to GitBook.
+
+1. In GitHub, click the Branch dropdown and create a new branch beginning with "v" (ex: v1.0, v1.1, ... v2.0)
+1. Log into GitBook using the `ddbotgitbooksync` user
+1. Click on the DroneDeploy organization and the Default GitBook space
+1. Click the Edit button in the bottom right corner
+1. In the upper right is the release drop-down (does not show if there is only one release), open this to view the release list
+  1. Click on the three-dot icon for the release matching the new git branch name from above
+  1. Select it as the Main release
+1. If you choose to delete the previous release, this can be done from the three-dot menu also
+1. Click Save in the bottom right, and Merge the draft using the button on the left side bar
