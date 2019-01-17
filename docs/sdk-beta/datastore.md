@@ -37,7 +37,7 @@ mutation CreateTable($input: CreateTableInput!) {
 }
 ```
 #### Input
-```graphql
+```json
 {
   "input": {
     "applicationId": "Application:lonvecnbfyvovfqsvbxz",
@@ -51,7 +51,7 @@ mutation CreateTable($input: CreateTableInput!) {
 
 The results should look something like this:
 
-```graphql
+```json
 {
   "data": {
     "createTable": {
@@ -106,7 +106,7 @@ mutation CreateTableColumn($input: CreateTableColumnInput!) {
 
 #### Input
 
-```graphql
+```json
 
 {
   "input": {
@@ -124,7 +124,7 @@ mutation CreateTableColumn($input: CreateTableColumnInput!) {
 
 The results should look something like this:
 
-```graphql
+```json
 {
   "data": {
     "createTableColumn": {
@@ -173,7 +173,7 @@ mutation CreateTableData($input: CreateTableDataInput!) {
 
 #### Input
 
-```graphql
+```json
 {
   "input": {
     "externalId": "developer@dronedeploy.com",
@@ -187,8 +187,7 @@ mutation CreateTableData($input: CreateTableDataInput!) {
 
 The results should look something like this.
 
-```graphql
-
+```json
 {
   "data": {
     "createTableData": {
@@ -210,7 +209,9 @@ The results should look something like this.
 
 ## Retrieving Table Data
 
-Now let's retrieve the data that we created.
+Now let's retrieve the data that we created. There are 3 different approaches to retrieving data from the table:
+
+### Retreiving data by external key
 
 This query takes two inputs:
 1. **externalKey**: This is the externalId that you passed into the Datastore data creation query. In this example, this was `developer@dronedeploy.com`.
@@ -230,12 +231,11 @@ query ($tableId: ID!, $externalKey: String!) {
     }
   }
 }
-
 ```
 
 #### Input
 
-```graphql
+```json
 {
   "tableId": "Table:5b6bd03d0461f4000108c777",
   "externalKey": "developer@dronedeploy.com"
@@ -246,7 +246,7 @@ query ($tableId: ID!, $externalKey: String!) {
 
 The results should look something like this.
 
-```graphql
+```json
 {
   "data": {
     "node": {
@@ -257,3 +257,199 @@ The results should look something like this.
   }
 }
 ```
+
+### Retreiving all table data
+
+You can retreve all of the data from the table by using the `TableDataConnection` object. Like any standard Relay Connection, you can supply different paging parameters to retrieve a slice of the data (i.e. for displaying rows in a grid).
+
+This query takes three inputs:
+1. **tableId**: The ID of the table
+1. **first**: The first N records
+1. **after**: The ID of the record to start returning
+
+#### Query
+
+```graphql
+query($table_id:ID!,$first:Int!,$after:String!) {
+  node(id:$table_id) {
+    ... on Table {
+      rows(first: $first, after: $cursor) {
+        edges {
+          cursor
+          node {
+            externalKey
+            data
+            dateCreation
+            dateModified
+          }
+        }
+        pageInfo {
+          hasNextPage
+        }
+      }
+    }
+  }
+}
+```
+
+#### Input
+
+```json
+{
+  "tableId": "Table:5b6bd03d0461f4000108c777",
+  "first": 2,
+  "after": "YXJyYXljb25uZWN0aW9uOjA="
+}
+```
+
+#### Results
+
+The results should look something like this.
+
+```json
+{
+  "data": {
+    "node": {
+      "rows": {
+        "edges": [
+          {
+            "cursor": "YXJyYXljb25uZWN0aW9uOjA=",
+            "node": {
+              "data": "{\"name\": \"Jane Doe\", \"age\": 32}",
+              "dateCreation": "2018-01-01T20:01:23",
+              "dateModified": "2018-01-01T20:11:23",
+              "externalKey": "janedoe@dronedeploy.com"
+            }
+          },
+          {
+            "cursor": "YXJyYXljbSUEj3N0aW9uOjA=",
+            "node": {
+              "data": "{\"name\": \"John Doe\", \"age\": 29}",
+              "dateCreation": "2018-01-01T20:01:23",
+              "dateModified": "2018-01-01T20:11:23",
+              "externalKey": "johndoe@dronedeploy.com"
+            }
+          },
+        ],
+        "pageInfo": {
+          "hasNextPage": false
+        }
+      }
+    }
+  }
+}
+```
+
+### Selecting data using SQL
+
+Sometimes you need to select data from your tables by querying columns other than external keys. Datastore provides the ability to use a subset of standard ANSI-92 SQL to query your tables. Let's assume that we've created two columns on our table - name (a string field) and age (a number field that is an integer). To query that field, you would populate the `query` parameter of the `TableDataConnection` object:
+
+#### Query
+
+```graphql
+query($table_id:ID!,$query:String!) {
+  node(id:$table_id) {
+    ... on Table {
+      rows(query: $query) {
+        edges {
+          cursor
+          node {
+            externalKey
+            data
+            dateCreation
+            dateModified
+          }
+        }
+        pageInfo {
+          hasNextPage
+        }
+      }
+    }
+  }
+}
+```
+
+#### Input
+
+```json
+{
+  "tableId": "Table:5b6bd03d0461f4000108c777",
+  "query": "select name, age where name = 'Jane Doe' and age > 22"
+}
+```
+
+#### Results
+
+The results should look something like this:
+
+```json
+{
+  "data": {
+    "node": {
+      "rows": {
+        "edges": [
+          {
+            "cursor": "YXJyYXljb25uZWN0aW9uOjA=",
+            "node": {
+            "data": "{\"name\": \"Jane Doe\", \"age\": 32}",
+            "dateCreation": "2018-01-01T20:01:23",
+            "dateModified": "2018-01-01T20:11:23",
+            "externalKey": "janedoe@dronedeploy.com"
+          }
+        }],
+        "pageInfo": {
+          "hasNextPage": false
+        }
+      }
+    }
+  }
+}
+```
+
+You'll notice that in our SQL query, we did not define a `from` clause. That is because the query is limited ot the scope of the table that belongs to the connection. 
+
+As mentioned above, a subset of standard SQL is allowed. The following describes the supported operators:
+
+*Comparison Operators*
+
+| Operator | Supported |
+| -- | -- |
+| =  | Yes |
+| != | Yes |
+| <> | Yes |
+| >  | Yes |
+| <  | Yes |
+| =<  | Yes |
+| >=  | Yes |
+| \!<  | No |
+| >\!  | No |
+
+*Logical Operators*
+
+| Operator | Supported |
+| -- | -- |
+| ALL  | No |
+| AND | Yes |
+| ANY | No |
+| BETWEEN  | Yes |
+| EXISTS | No |
+| IN | Yes |
+| LIKE  | Yes |
+| NOT | Yes |
+| OR | Yes |
+| IS NULL | Yes |
+| UNIQUE | No |
+
+*Arithmetic Operators*
+
+| Operator | Supported |
+| -- | -- |
+| + | No |
+| - | No |
+| * | No |
+| / | No |
+
+#### Limitations
+
+* Subselects, joins, and aggregate functions are not currently supported.
+* You cannot run a query against an encrypted column
