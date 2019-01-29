@@ -51,6 +51,7 @@
   * [Payments](payments.md)
   * [Plans](plans.md)
   * [Popup](popup.md)
+  * [Projects](projects.md)
   * [Tiles](tiles.md)
   * [Track](track.md)
   * [User](user.md)
