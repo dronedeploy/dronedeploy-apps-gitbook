@@ -87,6 +87,7 @@
   * [Plans.update - Waypoints](plans/example-plans.update-waypoints.md)
   * [Plans.update](plans/example-plans.update.md)
   * [Popup Example](popup/example-popup.basic.md)
+  * [Projects.getCurrentlyViewed](projects/example-projects.getcurrentlyviewed.md)
   * [Sample Flight Log](flightlogs/sample-flight-log.md)
   * [Tiles.get - Get Tiles As Array](tiles/example-tiles-as-array.md)
   * [Tiles.get - Render tiles in map](tiles/render-tiles-example.md)

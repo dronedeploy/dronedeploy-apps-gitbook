@@ -6,9 +6,9 @@ A project is a collection of multiple flight plans and maps of the same site. A 
 
 **Contents**
 
-* [Projects.getCurrentlyViewed](#plansgetcurrentlyviewed)
+* [Projects.getCurrentlyViewed](#projectsgetcurrentlyviewed)
 
-### Plans.getCurrentlyViewed
+### Projects.getCurrentlyViewed
 
 ** Overview **
 
@@ -37,3 +37,5 @@ dronedeployApi.Projects.getCurrentlyViewed()
   "id": "57e0761f21303e5214b6ae31"
 }
 ```
+
+[**Full Example**](/projects/example-projects.getcurrentlyviewed.md)
