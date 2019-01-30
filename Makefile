@@ -6,7 +6,7 @@ DRONE_WEB_BRANCH := "prod"
 
 #used to initialize jenkins build ONLY, angular2 assets here come from Jenkins artifacts
 init:
-    git submodule update --init
+		git submodule update --init
 
 package: clean build-graphql-reference
 	docker run \
