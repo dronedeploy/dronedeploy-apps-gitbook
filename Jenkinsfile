@@ -5,6 +5,7 @@ node ('linux'){
       withEnv(["GIT_BRANCH=${env.BRANCH_NAME}"]) {
         stage ('Prepare'){
             checkout scm
+            sh 'make -e init'
         }
         stage ('Build'){
             sh "make -e package"
