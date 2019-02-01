@@ -1,5 +1,6 @@
 GIT_HASH := $(shell git rev-parse --short HEAD)
 GIT_BRANCH := $(shell git rev-parse --abbrev-ref HEAD)
+GRAPH_DOC_GCR_IMAGE := "gcr.io/dronedeploy-code-delivery-0/graphdoc:master"
 
 # Always fetch the latest prod
 DRONE_WEB_BRANCH := "prod"
@@ -15,7 +16,7 @@ package: clean build-graphql-reference
 			-v $(PWD)/docs:/gitbook/docs \
 			-v $(PWD)/build:/gitbook/build/ \
 			-v $(PWD)/_book:/gitbook/_book/ \
-			dronedeploy/nodejs:v8.9.0 \
+			gcr.io/dronedeploy-code-delivery-0/nodejs:v8.9.0 \
 			/bin/bash -c "npm install -g gitbook-cli; gitbook install; gitbook build"
 	cp -R landing_page/* build/
 
@@ -32,6 +33,6 @@ build-graphql-reference:
 			-w /graphdoc/ \
 			-v $(PWD)/graphdoc_templates/:/graphdoc/template/ \
 			-v $(PWD)/build:/graphdoc/build/ \
-			dronedeploy/graphdoc:master \
+			$(GRAPH_DOC_GCR_IMAGE) \
 			/bin/bash -c "npm run sass && graphdoc -f -t /graphdoc/template/slds/ -e https://api.dronedeploy.com/graphql -o ./build/reference"
 
