@@ -4,6 +4,10 @@ GIT_BRANCH := $(shell git rev-parse --abbrev-ref HEAD)
 # Always fetch the latest prod
 DRONE_WEB_BRANCH := "prod"
 
+#used to initialize jenkins build ONLY, angular2 assets here come from Jenkins artifacts
+init:
+		git submodule update --init
+
 package: clean build-graphql-reference
 	docker run \
 			-w /gitbook/ \
@@ -13,8 +17,6 @@ package: clean build-graphql-reference
 			-v $(PWD)/_book:/gitbook/_book/ \
 			dronedeploy/nodejs:v8.9.0 \
 			/bin/bash -c "npm install -g gitbook-cli; gitbook install; gitbook build"
-	cp -R ./_book build/
-	mv build/_book/ build/docs
 	cp -R landing_page/* build/
 
 run:

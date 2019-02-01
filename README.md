@@ -23,3 +23,16 @@ You can develop this by running [gitbook's CLI](https://www.npmjs.com/package/gi
 
 #### GraphDoc
 This is automatically generated from the graphql schema so to add to this you need to open up a PR against drone_web and modify [the schema file](https://github.com/dronedeploy/drone_web/blob/master/server/graphql_apis/schema.py)
+
+## Publishing to GitBook
+
+Our GitBook account uses the built-in integration with GitHub to automatically sync our content
+from GitHub directly to GitBook.
+
+#### Updating GitBook content
+
+We are automatically syncing the `prod` branch from this GitHub repo to GitBook so the process for updating
+GitBook is simple:
+
+When you are ready to update the GitBook content, merge the latest `master` branch into `prod` and let GitBook
+take care of the rest.
