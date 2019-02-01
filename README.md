@@ -24,6 +24,9 @@ You can develop this by running [gitbook's CLI](https://www.npmjs.com/package/gi
 #### GraphDoc
 This is automatically generated from the graphql schema so to add to this you need to open up a PR against drone_web and modify [the schema file](https://github.com/dronedeploy/drone_web/blob/master/server/graphql_apis/schema.py)
 
+## Deploying main site
+The CI for this repo is not automatically connected to anything. To deploy, build the [Jenkins job](https://jenkins.ddops.cool/job/gitbook/)
+
 ## Publishing to GitBook
 
 Our GitBook account uses the built-in integration with GitHub to automatically sync our content
