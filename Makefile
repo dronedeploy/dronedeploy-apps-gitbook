@@ -16,7 +16,7 @@ package: clean build-graphql-reference
 			-v $(PWD)/docs:/gitbook/docs \
 			-v $(PWD)/build:/gitbook/build/ \
 			-v $(PWD)/_book:/gitbook/_book/ \
-			dronedeploy/nodejs:v8.9.0 \
+			gcr.io/dronedeploy-code-delivery-0/nodejs:v8.9.0 \
 			/bin/bash -c "npm install -g gitbook-cli; gitbook install; gitbook build"
 	cp -R landing_page/* build/
 
