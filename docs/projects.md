@@ -10,11 +10,11 @@ A project is a collection of multiple flight plans and maps of the same site. A 
 
 ### Projects.getCurrentlyViewed
 
-** Overview **
+**Overview**
 
 Returns the project that is the currently visible to the user. This method returns only project id for now.
 
-** Example Call **
+**Example Call**
 
 ```javascript
 // Get the current one time
@@ -30,11 +30,11 @@ dronedeployApi.Projects.getCurrentlyViewed()
   });
 ```
 
-** Example Response **
+**Example Response**
 
 ```json
 {
-  "id": "57e0761f21303e5214b6ae31"
+  "id": "12ab34cd56ef78gh90ij12kl"
 }
 ```
 
