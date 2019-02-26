@@ -1,4 +1,4 @@
-![](/assets/cadoverlay-prepare.png)
+![](assets/cadoverlay-prepare.png)
 
 ```html
 <!DOCTYPE html>
