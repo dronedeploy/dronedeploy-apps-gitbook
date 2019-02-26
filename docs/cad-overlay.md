@@ -6,8 +6,8 @@ A Cad Overlay is a mechanism that allows to put an image on a map or plan.
 
 **Contents**
 
-* [CadOverlay.prepare](#cadoverlayprepare)
-* [CadOverlay.import](#cadoverlayimport)
+* [CadOverlay.prepare](#cadoverlay-prepare)
+* [CadOverlay.import](#cadoverlay-import)
 
 ### CadOverlay.prepare
 
@@ -29,7 +29,7 @@ dronedeployApi.CadOverlay.prepare();
 }
 ```
 
-[**Full Example**](/cadoverlay/example-cadoverlay.prepare.md)
+[**Full Example**](cadoverlay/example-cadoverlay-prepare.md)
 
 ### CadOverlay.import
 
@@ -72,4 +72,4 @@ dialog, but can also be used from the App Zone on the Data Page as well.
 
 For more general information about Overlays, click [here](https://support.dronedeploy.com/docs/overlay-cad-files-with-dronedeploy)
 
-[**Full Example**](/cadoverlay/example-cadoverlay.import.md)
+[**Full Example**](cadoverlay/example-cadoverlay-import.md)
