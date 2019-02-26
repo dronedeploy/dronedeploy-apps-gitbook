@@ -1,6 +1,6 @@
 #### Without given ID
 
-![](/assets/cadoverlay-import_without-id.png)
+![](assets/cadoverlay-import_without-id.png)
 
 ```html
 <!DOCTYPE html>
@@ -32,7 +32,7 @@
 
 #### With previously prepared ID
 
-![](/assets/cadoverlay-import_with-id.png)
+![](assets/cadoverlay-import_with-id.png)
 
 ```html
 <!DOCTYPE html>
