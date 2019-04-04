@@ -1,7 +1,5 @@
 # Getting Started
 
-**This functionality is in beta - please learn more [here](beta-signup.md).**
-
 ## Prerequisites
 
 1. [Create an account](https://www.dronedeploy.com/signup.html) on DroneDeploy if you do not have one already.

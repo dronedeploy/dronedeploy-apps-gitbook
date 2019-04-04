@@ -1,7 +1,5 @@
 # UI Kit
 
-**This functionality is in beta - please learn more** **[here](beta-signup.md).**
-
 ## Calling Functions
 
 Once you have a [DroneDeploy Function](functions.md) defined and deployed, you might want to call the Function from your App's UI. We have built App APIs to make this very easy.

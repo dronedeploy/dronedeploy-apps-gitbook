@@ -1,7 +1,5 @@
 # Functions
 
-**This functionality is in beta - please learn more** **[here](beta-signup.md).**
-
 DroneDeploy Functions is your tool for writing, running, and deploying backend code functionality.
 
 DroneDeploy Functions uses serverless architecture running on the DroneDeploy Platform. You can write Node.js code to build out custom backend functionality and hook into things like Datastore and Triggers seamlessly. No need to worry about hosting since this is all handled by DroneDeploy.
