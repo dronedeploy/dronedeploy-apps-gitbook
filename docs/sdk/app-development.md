@@ -1,7 +1,5 @@
 # App Development
 
-**This functionality is in beta - please learn more** **[here](beta-signup.md).**
-
 With the App SDK Platform, we want to make deploying an app simple. This is why we have made creating Datastore tables, Functions, and Triggers configuration-driven using `serverless.yml`.
 
 To follow along with this documentation, please checkout our **[sample apps](https://github.com/dronedeploy/app-examples)**.

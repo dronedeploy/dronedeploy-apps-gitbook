@@ -1,7 +1,5 @@
 # DroneDeploy CLI
 
-**This functionality is in beta - please learn more** **[here](beta-signup.md).**
-
 Our developers deserve the best tools. That is why we have built out a CLI for app development and packed in tons of functionality. We hope that you will find app development a breeze with the DroneDeploy CLI.
 
 ## Serverless Platform

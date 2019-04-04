@@ -1,10 +1,8 @@
-# DroneDeploy App SDK (beta)
-
-### Note that this is a beta and things are subject to change.
+# DroneDeploy App SDK
 
 ## Overview
 
-Welcome to the DroneDeploy App SDK Beta. We are very excited to share with you what we have been working on to help you make the most out of the DroneDeploy Platform. By participating in this beta, you will have access to the latest features of the DroneDeploy Platform and also have an impact and influence over the product roadmap.
+Welcome to the DroneDeploy App SDK. We are very excited to share with you what we have been working on to help you make the most out of the DroneDeploy Platform. By participating, you will have access to the latest features of the DroneDeploy Platform and also have an impact and influence over the product roadmap.
 
 The new App SDK introduces three main features in addition to the existing UI platform:
 

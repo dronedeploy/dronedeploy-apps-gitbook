@@ -1,7 +1,5 @@
 # Datastore
 
-**This functionality is in beta - please learn more** **[here](beta-signup.md).**
-
 The Datastore allows you to create custom tables on DroneDeploy. There are two parts to creating a Datastore table:
 
 1. Creating the table
