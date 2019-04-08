@@ -1,7 +1,5 @@
 # Triggers
 
-**This functionality is in beta - please learn more** **[here](beta-signup.md).**
-
 Triggers allow your DroneDeploy App to respond to events happening on the DroneDeploy Platform. For example, you may want to kick off a pre-defined export once your map completes processing.
 
 Triggers are associated with an App's Function. In order for a Trigger event to fire, the user who triggered the event needs to have the App installed, and the Function should have a Trigger defined. You can define Triggers using the `DroneDeploy CLI` and the `serverless.yml` file. For example:
