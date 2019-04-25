@@ -11,26 +11,26 @@ node ('linux'){
             //sh "make -e package"
         }
         stage ('Publish'){
-          echo "${env.BRANCH_NAME}"
-          //step([$class: 'S3BucketPublisher',
-          //      dontWaitForConcurrentBuildCompletion: true,
-          //      entries: [[
-          //                    bucket: 'drone-deploy-artifacts/developer-site/' + env.BRANCH_NAME,
-          //                    excludedFile: '',
-          //                    flatten: false,
-          //                    gzipFiles: true,
-          //                    keepForever: false,
-          //                    managedArtifacts: false,
-          //                    noUploadOnFailure: true,
-          //                    selectedRegion: 'us-east-1',
-          //                    showDirectlyInBrowser: true,
-          //                    sourceFile: 'build/**/*',
-          //                    storageClass: 'STANDARD',
-          //                    uploadFromSlave: true,
-          //                    useServerSideEncryption: false
-          //                ]],
-          //      profileName: 'jenkins', userMetadata: []
-          //])
+          echo "Deploying ${env.BRANCH_NAME}"
+          step([$class: 'S3BucketPublisher',
+                dontWaitForConcurrentBuildCompletion: true,
+                entries: [[
+                              bucket: "drone-deploy-artifacts/developer-site/${env.BRANCH_NAME}",
+                              excludedFile: '',
+                              flatten: false,
+                              gzipFiles: true,
+                              keepForever: false,
+                              managedArtifacts: false,
+                              noUploadOnFailure: true,
+                              selectedRegion: 'us-east-1',
+                              showDirectlyInBrowser: true,
+                              sourceFile: 'build/**/*',
+                              storageClass: 'STANDARD',
+                              uploadFromSlave: true,
+                              useServerSideEncryption: false
+                          ]],
+                profileName: 'jenkins', userMetadata: []
+          ])
         }
       }
     } catch (e) {
