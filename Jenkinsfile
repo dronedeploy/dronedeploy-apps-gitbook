@@ -8,7 +8,7 @@ node ('linux'){
             sh 'make -e init'
         }
         stage ('Build'){
-            //sh "make -e package"
+            sh "make -e package"
         }
         stage ('Publish'){
           echo "Deploying ${env.BRANCH_NAME}"
