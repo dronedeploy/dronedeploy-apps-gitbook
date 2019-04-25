@@ -11,10 +11,11 @@ node ('linux'){
             sh "make -e package"
         }
         stage ('Publish'){
+          echo "Deploying ${env.BRANCH_NAME}"
           step([$class: 'S3BucketPublisher',
                 dontWaitForConcurrentBuildCompletion: true,
                 entries: [[
-                              bucket: 'drone-deploy-artifacts/developer-site/' + env.BRANCH_NAME,
+                              bucket: "drone-deploy-artifacts/developer-site/${env.BRANCH_NAME}",
                               excludedFile: '',
                               flatten: false,
                               gzipFiles: true,
