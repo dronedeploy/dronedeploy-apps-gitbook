@@ -8,9 +8,11 @@ node ('linux'){
             sh 'make -e init'
         }
         stage ('Build'){
-            sh "make -e package"
+            //sh "make -e package"
         }
         stage ('Publish'){
+          echo "${env.BRANCH_NAME}"
+/*
           step([$class: 'S3BucketPublisher',
                 dontWaitForConcurrentBuildCompletion: true,
                 entries: [[
@@ -30,6 +32,7 @@ node ('linux'){
                           ]],
                 profileName: 'jenkins', userMetadata: []
           ])
+*/
         }
       }
     } catch (e) {
