@@ -25,7 +25,10 @@ You can develop this by running [gitbook's CLI](https://www.npmjs.com/package/gi
 This is automatically generated from the graphql schema so to add to this you need to open up a PR against drone_web and modify [the schema file](https://github.com/dronedeploy/drone_web/blob/master/server/graphql_apis/schema.py)
 
 ## Deploying main site
-The CI for this repo is not automatically connected to anything. To deploy, build the [Jenkins job](https://jenkins.ddops.cool/job/gitbook/)
+The CI for this repo is not automatically connected to anything. To deploy, build the [Jenkins job](https://jenkins.ddops.cool/job/gitbook/) and use the appropriate target.
+Entering `master` will deploy to https://developer-test.dronedeploy.com while `prod` will deploy to https://developer.dronedeploy.com.
+
+**NOTE:**: The Jenkins job always fetches the latest `master` branch, so the build parameter only controls the deployment target.
 
 ## Publishing to GitBook
 
