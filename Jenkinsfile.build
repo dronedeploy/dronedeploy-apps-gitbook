@@ -4,7 +4,7 @@ node ('linux'){
     try {
       withEnv(["GIT_BRANCH=${env.BRANCH_NAME}"]) {
         parameters {
-          string(name: 'branch', defaultValue: 'master', description: 'Branch to deploy: master (test) or prod')
+          string(name: 'branch', defaultValue: 'master', description: 'Branch name for environment deploy: master (test) or prod')
         }
         stage ('Prepare'){
             checkout scm
