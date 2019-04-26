@@ -3,9 +3,11 @@ node ('linux'){
   timestamps {
     try {
       withEnv(["GIT_BRANCH=${env.BRANCH_NAME}"]) {
-        parameters {
-          string(name: 'branch', defaultValue: 'master', description: 'Branch name for environment deploy: master (test) or prod')
-        }
+        properties([
+          parameters {
+            string(name: 'branch', defaultValue: 'master', description: 'Branch name for environment deploy: master (test) or prod')
+          }
+        ])
         stage ('Prepare'){
             checkout scm
             sh 'make -e init'
