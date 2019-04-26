@@ -1,13 +1,15 @@
 @Library('dronedeploy@0.0.11') _
+
+properties([
+  parameters {
+    string(name: 'branch', defaultValue: 'master', description: 'Branch name for environment deploy: master (test) or prod')
+  }
+])
+
 node ('linux'){
   timestamps {
     try {
       withEnv(["GIT_BRANCH=${env.BRANCH_NAME}"]) {
-        properties([
-          parameters {
-            string(name: 'branch', defaultValue: 'master', description: 'Branch name for environment deploy: master (test) or prod')
-          }
-        ])
         stage ('Prepare'){
             checkout scm
             sh 'make -e init'
