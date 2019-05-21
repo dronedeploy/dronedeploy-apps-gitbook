@@ -6,7 +6,7 @@ Most of DroneDeploy's components follow Material Design guidelines.
 
 The `.input-field` allow users to input data. The bottom border of the input field should light up on focus with our blue brand color, hex: \#2196F3.
 
-![](/assets/username-password.jpg)
+![](/docs/assets/username-password.jpg)
 
 ```
 <div class="row">
@@ -27,7 +27,7 @@ The `.input-field` allow users to input data. The bottom border of the input fie
 
 By adding `data-error` as an attribute and the .invalid class to your &lt;div&gt; and  &lt;input&gt; you can add custom messaging to your input field label.
 
-![](/assets/data-error-input-md.jpg)
+![](/docs/assets/data-error-input-md.jpg)
 
 ```
 <div class="row">
@@ -42,7 +42,7 @@ By adding `data-error` as an attribute and the .invalid class to your &lt;div&gt
 
 By adding a .valid class to your input field you can highlight the border of the input with green, indicating success.
 
-### ![](/assets/success-input.jpg)
+### ![](/docs/assets/success-input.jpg)
 
 ```
 <div class="row">
@@ -57,7 +57,7 @@ By adding a .valid class to your input field you can highlight the border of the
 
 A textarea should be used when there are multiple lines of content that needs to be added. The textarea input height is liquid and will re-size according to the amount of content.
 
-![](/assets/textarea-input-md.jpg)
+![](/docs/assets/textarea-input-md.jpg)
 
 ```
   <div class="row">
@@ -72,7 +72,7 @@ A textarea should be used when there are multiple lines of content that needs to
 
 Selects allow you to suggest options with one selection allowed.
 
-![](/assets/materialized-select-md.jpg)
+![](/docs/assets/materialized-select-md.jpg)
 
 ```
 <div class="select">
@@ -92,7 +92,7 @@ Selects allow you to suggest options with one selection allowed.
 
 Add `disabled` as an attribute to the &lt;select&gt; element to disable the whole select component.
 
-![](/assets/disabled-select-md.jpg)
+![](/docs/assets/disabled-select-md.jpg)
 
 ```
 <div class="select">
@@ -112,7 +112,7 @@ Add `disabled` as an attribute to the &lt;select&gt; element to disable the whol
 
 Radio buttons are used when there is a group of options and only one selection is allowed.
 
-![](/assets/options-radio.jpg)
+![](/docs/assets/options-radio.jpg)
 
 ```
 <p>
@@ -130,7 +130,7 @@ Radio buttons are used when there is a group of options and only one selection i
 
 A switch has two states - on and off.
 
-![](/assets/switches.jpg)
+![](/docs/assets/switches.jpg)
 
 ```
 <div class="switch">
@@ -145,7 +145,7 @@ A switch has two states - on and off.
 
 Checkboxes are used when there is a true or false option. Checkboxes can also be used to select multiple items in a group.
 
-![](/assets/checbox-options.jpg)
+![](/docs/assets/checbox-options.jpg)
 
 ```
 <p>

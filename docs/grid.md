@@ -14,7 +14,7 @@ The grid is composed of three major components a container &gt; row &gt; 4 colum
 
 ### 4 Column Grid
 
-![](/assets/grid-columns-sample.png)
+![](/docs/assets/grid-columns-sample.png)
 
 Here is an example of how you would structure 4 columns within within a row on your HTML.
 
@@ -31,7 +31,7 @@ Here is an example of how you would structure 4 columns within within a row on y
 
 ### Layouts with Diverse Column Widths
 
-![](/assets/columns-example-4.png)
+![](/docs/assets/columns-example-4.png)
 
 Example of structuring your HTML to create rows with diverse column widths.
 

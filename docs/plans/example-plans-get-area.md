@@ -1,4 +1,4 @@
-![](/assets/area-example.png)
+![](/docs/assets/area-example.png)
 
 ```html
 <!DOCTYPE html>

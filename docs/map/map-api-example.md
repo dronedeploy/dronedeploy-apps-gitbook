@@ -1,4 +1,4 @@
-![](/assets/mapapi.jpg)
+![](/docs/assets/mapapi.jpg)
 
 ```html
 <!DOCTYPE html>
