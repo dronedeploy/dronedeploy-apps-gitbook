@@ -34,7 +34,7 @@ dronedeployApi.Payments.charge(4.00, 'Testing Payments')
 
 **Note:** If your app is not published the returned paymentId is fake and is not saved to our database. Additionally, having a paid account is not enforced while in development.
 
-Here is a screenshot of what you would see if your app is not published.  ![](/assets/fakepayment.png)
+Here is a screenshot of what you would see if your app is not published.  ![](/docs/assets/fakepayment.png)
 
 #### Example Response
 

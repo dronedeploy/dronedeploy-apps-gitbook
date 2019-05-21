@@ -1,6 +1,6 @@
 # Measurement API Full Example
 
-![](/assets/measurement_api.png)
+![](/docs/assets/measurement_api.png)
 
 ```html
 <!DOCTYPE html>

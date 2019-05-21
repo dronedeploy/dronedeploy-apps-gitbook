@@ -1,10 +1,10 @@
 Some elements when positioned absolute or fixed will not overflow the page. Therefore, when DroneDeploy calculates the size of your application it won't include these overflown elements.
 
-![](/assets/Screen Shot 2017-06-19 at 9.41.21 AM.png)
+![](/docs/assets/Screen%20Shot$202017-06-19%20at%209.41.21%20AM.png)
 
 See below for an example of how to fix this problem.
 
-![](/assets/Screen Shot 2017-06-19 at 9.44.31 AM.png)
+![](/docs/assets/Screen%20Shot%202017-06-19%20at%209.44.31%20AM.png)
 
 ```html
 <!DOCTYPE html>

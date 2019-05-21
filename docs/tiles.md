@@ -6,7 +6,7 @@
 
 Tiles are the images that the user sees that comprise the map. As the user zooms it loads a new tile layer of the tile pyramid.
 
-![](/assets/TilePyramidSmall.jpg)
+![](/docs/assets/TilePyramidSmall.jpg)
 
 Most maps start zoom level 16 \(Z\) and get more detailed as the the zoom gets higher. Many maps only have tiles upto zoom level 20 or 21 a few very detailed maps may have zoom level 25.
 

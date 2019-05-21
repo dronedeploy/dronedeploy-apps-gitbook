@@ -4,14 +4,14 @@
 
 1. [ ] My app uses DD app template provided by DroneDeploy?  
    Download it [here](https://s3.amazonaws.com/drone-deploy-plugins/templates/dronedeploy-expand-example.zip).  
-   ![](/assets/expandable.gif)
+   ![](/docs/assets/expandable.gif)
 
 2. [ ] My app uses components \(wherever applicable\) provided in [DroneDeploy UI Kit](https://dronedeploy.gitbooks.io/dronedeploy-apps/content/styles/dronedeploy-ui-kit.html)?
 
 3. [ ] My app uses button styles provided in the styles.css in the DD app template?  
    All action buttons should use our CSS classes and blue color: **\#2196F3**
 
-   ![](/assets/button_states.png)
+   ![](/docs/assets/button_states.png)
 
 4. [ ] My app uses _Lato font_ \(also provided in styles.css in the DD app template\)?
 
@@ -49,7 +49,7 @@
 
 Here is a great example of an app meeting all these criterias: [Airdata UAV Sync app](https://www.dronedeploy.com/app-market/import/souctjpqwwcwwwqdcvvq.html)
 
-![](/assets/airdata.png)
+![](/docs/assets/airdata.png)
 
 ## Got Questions?
 

@@ -4,7 +4,7 @@
 
 Infinite preloader
 
-![](/assets/horizontal-preloader.jpg)
+![](/docs/assets/horizontal-preloader.jpg)
 
 ```
 <div class="progress">

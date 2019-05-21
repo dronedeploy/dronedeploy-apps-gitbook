@@ -1,4 +1,4 @@
-![](/assets/plans-create.png)
+![](/docs/assets/plans-create.png)
 
 ```html
 <!DOCTYPE html>
