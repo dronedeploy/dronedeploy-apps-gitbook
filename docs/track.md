@@ -62,7 +62,7 @@ You will be able to access the information DroneDeploy tracks about your app, in
 
 To opt into the recieving tracking information please create a free [segment](https://segment.com/) account and add [your write\_key](https://segment.com/docs/faqs/getting-started/how-to-find-writekey/) to your apps information.
 
-![](/assets/segment_key.png)
+![](/docs/assets/segment_key.png)
 
 
 

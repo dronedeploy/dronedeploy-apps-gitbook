@@ -10,9 +10,9 @@ Apps related to flights can be tested using the simulator. If you need help on h
 
 **Before Success Condition Has Been Met**
 
-![](/assets/Screen Shot 2017-03-07 at 7.40.51 PM.png)
+![](/docs/assets/Screen Shot%202017-03-07%20at%207.40.51%20PM.png)
 
 **After Success Condition Has Been Met**
 
-![](/assets/Screen Shot 2017-03-07 at 8.19.49 PM.png)
+![](/docs/assets/Screen Shot%202017-03-07%20at%208.19.49%20PM.png)
 

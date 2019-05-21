@@ -1,4 +1,4 @@
-![](/assets/projects-getCurrentlyViewed.png)
+![](/docs/assets/projects-getCurrentlyViewed.png)
 
 ```html
 <!DOCTYPE html>

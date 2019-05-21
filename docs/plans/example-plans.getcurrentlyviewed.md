@@ -1,4 +1,4 @@
-![](/assets/Screenshot 2017-03-08 13.37.23.png)
+![](/docs/assets/Screenshot%202017-03-08%2013.37.23.png)
 
 ```html
 <!DOCTYPE html>

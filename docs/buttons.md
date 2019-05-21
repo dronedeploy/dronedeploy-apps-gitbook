@@ -4,7 +4,7 @@
 
 There primary button design should maintain a flat design and no fill with brand blue text. The color of the button should only be blue and not other colors.
 
-![](/assets/login-button-dd.jpg)
+![](/docs/assets/login-button-dd.jpg)
 
 ```
   <div class="row">
@@ -18,7 +18,7 @@ There primary button design should maintain a flat design and no fill with brand
 
 You can add a disabled-btn attribute to your button element for a disabled state of the button.
 
-![](/assets/disabled-btn-dd.jpg)
+![](/docs/assets/disabled-btn-dd.jpg)
 
 ```
       <div class="row">

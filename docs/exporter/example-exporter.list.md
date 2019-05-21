@@ -1,8 +1,8 @@
-![](/assets/Screenshot 2017-03-03 14.29.09.png)
+![](/docs/assets/Screenshot%202017-03-03%2014.29.09.png)
 
 **note: **You must upload your own project in order to use this API.  Please refer to the article on uploading an example project.  Once the project has been uploaded, click on it to reach the export button.
 
-![](/assets/Screenshot 2017-02-09 11.20.01.png)
+![](/docs/assets/Screenshot%202017-02-09%2011.20.01.png)
 
 Once you have queued an export, Export.list will have data to display.
 
