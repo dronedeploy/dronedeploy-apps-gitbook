@@ -41,8 +41,8 @@
 </head>
 
 <body>
-    <h1 class="title sans">Export.send example</h1>
-    <button type="button" id="export" class="btn">Export</button>
+    <h1 class="title sans">Export.getSelectedAutoExportParams example</h1>
+    <button type="button" id="export" class="btn">Get Auto Export Params</button>
     <div id="autoExportParams" class="params">
     <span class=exportSpan>Auto Export Params: fileFormat=${autoExportParams.fileFormat}</span>
 </div>
