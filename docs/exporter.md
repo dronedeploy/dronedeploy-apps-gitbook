@@ -12,6 +12,9 @@
 
 * [Exporter.list](#exporterlist)
 
+**Exporter.getSelectedAutoExportParams**
+* [Exporter.getSelectedAutoExportParams](#exportergetselectedautoexportparams)
+
 ## Exporter.send
 
 ### Orthomosaic Export
@@ -238,5 +241,23 @@ dronedeployApi.Exporter.list({planId: '5803c075d0ec0a44f0a75a86'})
 
 [**Full Example**](/exporter/example-exporter.get3dmodellink.md)
 
+##Exporter.getSelectedAutoExportParams
 
+**Overview**
 
+Gets selected parameters from Auto Exports form. Right now it returns only fileFormat.
+
+**Example Call**
+
+```javascript
+dronedeployApi.Exporter.getSelectedAutoExportParams()
+  .then((autoExportParams) => console.log(autoExportParams));
+```
+
+**Example Response**
+
+```javascript
+{
+  fileFormat: "geotiff"
+}
+```
