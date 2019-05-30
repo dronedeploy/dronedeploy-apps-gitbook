@@ -261,3 +261,5 @@ dronedeployApi.Exporter.getSelectedAutoExportParams()
   fileFormat: "geotiff"
 }
 ```
+
+[**Full Example**](/exporter/example-exporter.getselectedautoexportparams.md)
