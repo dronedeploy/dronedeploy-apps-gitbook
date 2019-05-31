@@ -7,20 +7,21 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <style>
+	body { display: grid; }
         .title {
-            font-size: 1.3em;
+            font-size: 1.1em;
             font-weight: 500;
         }
 
         .sans {
             font-family: Lato, sans-serif;
             color: rgba(0, 0, 0, 0.87);
+            text-align: center;
         }
 
         .btn {
             border: none;
             background-color: #039be5;
-            /*border-radius: 5px;*/
             font-size: 14px;
             font-family: Lato;
             font-weight: 500;
@@ -44,7 +45,7 @@
     <h1 class="title sans">Export.getSelectedAutoExportParams example</h1>
     <button type="button" id="export" class="btn">Get Auto Export Params</button>
     <div id="autoExportParams" class="params">
-    <span class=exportSpan>Auto Export Params: fileFormat=${autoExportParams.fileFormat}</span>
+
 </div>
     <script>
         var paramsBtn = document.getElementById('export');
