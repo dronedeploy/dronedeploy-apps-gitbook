@@ -13,7 +13,12 @@
 * [Exporter.list](#exporterlist)
 
 **Exporter.getSelectedAutoExportParams**
+
 * [Exporter.getSelectedAutoExportParams](#exportergetselectedautoexportparams)
+
+**Exporter.createAutoExport**
+
+* [Exporter.createAutoExport](#exportercreateautoexport)
 
 ## Exporter.send
 
@@ -241,7 +246,7 @@ dronedeployApi.Exporter.list({planId: '5803c075d0ec0a44f0a75a86'})
 
 [**Full Example**](/exporter/example-exporter.get3dmodellink.md)
 
-##Exporter.getSelectedAutoExportParams
+## Exporter.getSelectedAutoExportParams
 
 **Overview**
 
@@ -263,3 +268,48 @@ dronedeployApi.Exporter.getSelectedAutoExportParams()
 ```
 
 [**Full Example**](/exporter/example-exporter.getselectedautoexportparams.md)
+
+
+## Exporter.createAutoExport
+
+**Overview**
+
+Creates new AutoExportSetting.
+
+**Example Call**
+
+```javascript
+dronedeployApi.Exporter.createAutoExport(folderEndpoint = 'https://fake-folder-endpoint', folderConfig = JSON.stringify({ folderId: 'folderId' }))
+  .then((autoExportSetting) => console.log(autoExportSetting));
+```
+
+**Example Response**
+
+```javascript
+{
+  data: {
+    createAutoExportSetting: {
+      autoExportSetting: {
+        application: {
+          id: "Application:sdjncksnckd"
+        }
+        dateCreation: "Mon Dec 24 2018 10:33:30 GMT+0100"
+        exportParameters: {
+          emails: [ ]
+          fileFormat: "GEO_TIFF"
+          layer: "ORTHOMOSAIC"
+          merge: true
+          projection: 3857
+          resolution: 0  
+        }
+        folderConfig: "{ \"folder_id\": \"1234adc\"}"
+        folderEndpoint: "https://fake-folder-endpoint"
+        id: "123ABC"
+        project: {
+          id: "Project:123ABC456XYZ"
+        }
+      }
+    }
+  }
+}
+```
