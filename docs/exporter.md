@@ -291,25 +291,31 @@ dronedeployApi.Exporter.createAutoExport(folderEndpoint = 'https://fake-folder-e
     createAutoExportSetting: {
       autoExportSetting: {
         application: {
-          id: "Application:sdjncksnckd"
+          id: "Application:sdjncksnckd" 
+          __typename: "Application"
         }
-        dateCreation: "Mon Dec 24 2018 10:33:30 GMT+0100"
+        dateCreation: "2019-06-03T06:35:10.974000+00:00"
         exportParameters: {
-          emails: [ ]
+          emails: []
           fileFormat: "GEO_TIFF"
           layer: "ORTHOMOSAIC"
           merge: true
           projection: 3857
-          resolution: 0  
+          resolution: 0
+          __typename: "ExportParameters"
         }
-        folderConfig: "{ \"folder_id\": \"1234adc\"}"
-        folderEndpoint: "https://fake-folder-endpoint"
-        id: "123ABC"
+        folderConfig: "{\"folder_id\": \"o9xcfDvir_dRpEwidj8LbPk\"}"
+        folderEndpoint: "https://dronedeployfunctions.com/fn-5cb9adc213a75800015a/folder-to-upload"
+        id: "AutoExportSetting:5cf4bf9e5c9f8500017b86d0"
         project: {
           id: "Project:123ABC456XYZ"
+          __typename: "Project"
         }
+        __typename: "AutoExportSetting"
       }
     }
   }
 }
 ```
+
+[**Full Example**](/exporter/example-exporter.createautoexport.md)
