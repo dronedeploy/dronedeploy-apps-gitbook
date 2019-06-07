@@ -1,4 +1,6 @@
-**note: **Use this example in zone with export form so parameters used there will be send used in PluginMethod****
+**note: **Use this example in the AutoExportsExplorer app-zone****
+
+**note: **We ask for folderID in this example, but there can be other parameters****
 
 ```html
 <!DOCTYPE html>
@@ -56,30 +58,30 @@
 <body>
     <h1 class="title sans">Export.createAutoExport example</h1>
     <div class="form-group">
-        <input class="sans" type="text" id="folderId" placeholder="Choose folder to send auto export (use ID of folder)" />
+        <input class="sans" type="text" id="folder-id" placeholder="Folder ID" />
     </div>
     <br>
     <div class="form-group">
-        <input class="sans" type="url" id="folderEndpoint" placeholder="Endpoint for function that checks availability of folder" />
+        <input class="sans" type="url" id="folder-endpoint" placeholder="Endpoint for getting metadata about destination folder" />
     </div>
     <br>
-    <button type="button" id="export" class="btn">Export</button>
+    <button type="button" id="auto-export-button" class="btn">Create Auto Export</button>
     <span id="exportMessage"></span>
     <script>
-        var exportBtn = document.getElementById('export');
-        var folderEndpointValue = document.getElementById('folderEndpoint');
-        var folderConfigValue = document.getElementById('folderId');
+        var createAutoExportBtn = document.getElementById('auto-export-button');
+        var folderEndpointValue = document.getElementById('folder-endpoint');
+        var folderConfigValue = document.getElementById('folder-id');
         
         new DroneDeploy({
                 version: 1
             })
             .then(function(dronedeployApi) {
-                exportBtn.addEventListener('click', function(event) {
+                createAutoExportBtn.addEventListener('click', function(event) {
                     event.preventDefault();
 
                     dronedeployApi.Exporter.createAutoExport(
-                     folderEndpointValue.value,
-                     { folderId: folderConfigValue.value },
+                    folderEndpointValue.value,
+                    { folderId: folderConfigValue.value },
                     ).then((autoExportSetting) => console.log('Auto Export: ', autoExportSetting));
                 });
             });
@@ -87,6 +89,9 @@
 </body>
 
 </html>
+
+
+
 ```
 
 
