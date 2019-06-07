@@ -274,12 +274,13 @@ dronedeployApi.Exporter.getSelectedAutoExportParams()
 
 **Overview**
 
-Creates new AutoExportSetting.
+Creates new auto export setting.
 
 **Example Call**
 
 ```javascript
-dronedeployApi.Exporter.createAutoExport(folderEndpoint = 'https://fake-folder-endpoint', folderConfig = JSON.stringify({ folderId: 'folderId' }))
+const folderConfig = { folderId: 'folderId' }; // folderConfig may contain other properties
+dronedeployApi.Exporter.createAutoExport(folderEndpoint = 'https://fake-folder-endpoint', folderConfig)
   .then((autoExportSetting) => console.log(autoExportSetting));
 ```
 
@@ -287,34 +288,28 @@ dronedeployApi.Exporter.createAutoExport(folderEndpoint = 'https://fake-folder-e
 
 ```javascript
 {
-  data: {
-    createAutoExportSetting: {
-      autoExportSetting: {
-        application: {
-          id: "Application:sdjncksnckd" 
-          __typename: "Application"
-        }
-        dateCreation: "2019-06-03T06:35:10.974000+00:00"
-        exportParameters: {
-          emails: []
-          fileFormat: "GEO_TIFF"
-          layer: "ORTHOMOSAIC"
-          merge: true
-          projection: 3857
-          resolution: 0
-          __typename: "ExportParameters"
-        }
-        folderConfig: "{\"folder_id\": \"o9xcfDvir_dRpEwidj8LbPk\"}"
-        folderEndpoint: "https://dronedeployfunctions.com/fn-5cb9adc213a75800015a/folder-to-upload"
-        id: "AutoExportSetting:5cf4bf9e5c9f8500017b86d0"
-        project: {
-          id: "Project:123ABC456XYZ"
-          __typename: "Project"
-        }
-        __typename: "AutoExportSetting"
-      }
-    }
+  application: {
+    id: "Application:sdjncksnckd" 
+    __typename: "Application"
   }
+  dateCreation: "2019-06-03T06:35:10.974000+00:00"
+  exportParameters: {
+    emails: []
+    fileFormat: "GEO_TIFF"
+    layer: "ORTHOMOSAIC"
+    merge: true
+    projection: 3857
+    resolution: 0
+    __typename: "ExportParameters"
+  }
+  folderConfig: "{\"folder_id\": \"o9xcfDvir_dRpEwidj8LbPk\"}"
+  folderEndpoint: "https://dronedeployfunctions.com/fn-5cb9adc213a75800015a/folder-to-upload"
+  id: "AutoExportSetting:5cf4bf9e5c9f8500017b86d0"
+  project: {
+    id: "Project:123ABC456XYZ"
+    __typename: "Project"
+  }
+  __typename: "AutoExportSetting"
 }
 ```
 
