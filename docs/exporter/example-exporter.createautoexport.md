@@ -79,18 +79,8 @@
 
                     dronedeployApi.Exporter.createAutoExport(
                      folderEndpointValue.value,
-                     JSON.stringify({ folderId: folderConfigValue.value }),
-                    ).then(function(autoExportSetting) {
-                                dronedeployApi.Messaging.showToast('Export successful! Id: ' + autoExportSetting.data.createAutoExportSetting.autoExportSetting.application.id, {
-                                    timeout: -1
-                                });
-                            },
-                            function(error) {
-                                dronedeployApi.Messaging.showToast(error, {
-                                    timeout: -1
-                                });
-                            }
-                        );
+                     { folderId: folderConfigValue.value },
+                    ).then((autoExportSetting) => console.log('Auto Export: ', autoExportSetting));
                 });
             });
     </script>
