@@ -70,9 +70,10 @@
   * [CadOverlay.prepare](cadoverlay/example-cadoverlay-prepare.md)
   * [CadOverlay.import](cadoverlay/example-cadoverlay-import.md)
   * [Exporter.list](exporter/example-exporter.list.md)
-  * [Exporter.send](exporter/example-exporter.send.md)  
+  * [Exporter.send](exporter/example-exporter.send.md)
   * [Exporter.getSelectedAutoExportParams](exporter/example-exporter.getselectedautoexportparams.md)
   * [Exporter.createAutoExport](exporter/example-exporter.createautoexport.md)
+  * [Exporter.closePopup](exporter/example-exporter.closepopup.md)
   * [Flightlog.getLogsFromPlan](flightlogs/example-flightlog.getlogsfromplan.md)
   * [How to Set up a Web Server](server_example.md)
   * [How to upload an example project](how-to-upload-an-example-project.md)
@@ -98,4 +99,3 @@
   * [Publishing](publishing.md)
 * [Authentication](authentication.md)
 * [FAQs](faqs.md)
-
