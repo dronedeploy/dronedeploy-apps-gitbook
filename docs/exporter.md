@@ -20,6 +20,11 @@
 
 * [Exporter.createAutoExport](#exportercreateautoexport)
 
+**Exporter.closePopup**
+
+* [Exporter.closePopup](#exporterclosepopup)
+
+
 ## Exporter.send
 
 ### Orthomosaic Export
@@ -289,7 +294,7 @@ dronedeployApi.Exporter.createAutoExport(folderEndpoint = 'https://fake-folder-e
 ```javascript
 {
   application: {
-    id: "Application:sdjncksnckd" 
+    id: "Application:sdjncksnckd"
     __typename: "Application"
   }
   dateCreation: "2019-06-03T06:35:10.974000+00:00"
@@ -314,3 +319,18 @@ dronedeployApi.Exporter.createAutoExport(folderEndpoint = 'https://fake-folder-e
 ```
 
 [**Full Example**](/exporter/example-exporter.createautoexport.md)
+
+
+## Exporter.closePopup
+
+**Overview**
+
+Closes popup window with Auto Exports explorer and effectivelly stops the app that invoke this method.
+
+**Example Call**
+
+```javascript
+dronedeployApi.Exporter.closePopup();
+```
+
+[**Full Example**](/exporter/example-exporter.closepopup.md)

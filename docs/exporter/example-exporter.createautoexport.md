@@ -1,6 +1,6 @@
-**note: **Use this example in the AutoExportsExplorer app-zone****
+**note:** Use this example in the AutoExportsExplorer app-zone
 
-**note: **We ask for folderID in this example, but there can be other parameters****
+**note:** We ask for folderID in this example, but there can be other parameters
 
 ```html
 <!DOCTYPE html>
@@ -71,7 +71,7 @@
         var createAutoExportBtn = document.getElementById('auto-export-button');
         var folderEndpointValue = document.getElementById('folder-endpoint');
         var folderConfigValue = document.getElementById('folder-id');
-        
+
         new DroneDeploy({
                 version: 1
             })
@@ -93,6 +93,3 @@
 
 
 ```
-
-
-
