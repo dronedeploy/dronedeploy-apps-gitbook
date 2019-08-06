@@ -1,4 +1,4 @@
-@Library('dronedeploy@0.0.11') _
+@Library('dronedeploy@0.0.18') _
 
 properties([
   parameters(
