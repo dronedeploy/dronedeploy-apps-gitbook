@@ -1,6 +1,6 @@
 # API Introduction
 
-At DroneDeploy we use GraphQL for our main API technology, you can get started with the [API explorer here](https://api.dronedeploy.com/graphql).
+At DroneDeploy we use GraphQL for our main API technology, you can get started with the [API explorer here](https://www.dronedeploy.com/graphiql/).
 
 ### What is GraphQL?
 
@@ -18,7 +18,7 @@ We are using GraphQL primarily because it allows developers to make API calls wh
 
 #### Making GraphQL Queries
 
-You can use our API explorer to graphically make API calls: [https://api.dronedeploy.com/graphql](https://api.dronedeploy.com/graphql)
+You can use our API explorer to graphically make API calls: [https://www.dronedeploy.com/graphiql/](https://www.dronedeploy.com/graphiql/)
 
 The requests are made making a POST to the \`/graphql\` endpoint, you can make these with CURL or any HTTP compatible client.
 
@@ -66,7 +66,7 @@ You could also make the call using `curl`
 curl -H 'Content-Type: application/json' \
      -H 'Authorization: Bearer <api key>' \
      -d '{"query": "{ viewer { username }}"}' \
-     https://test.dronedeploy.com/graphql
+     https://www.dronedeploy.com/graphql
 ```
 
 ### Useful Links:
