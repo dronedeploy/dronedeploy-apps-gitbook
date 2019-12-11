@@ -8,10 +8,6 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <style>
-        .author {
-            font-size: 0.9em;
-        }
-        
         .title {
             font-size: 1.1em;
             font-weight: 500;
