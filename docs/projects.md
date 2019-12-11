@@ -13,7 +13,7 @@ A project is a collection of multiple flight plans and maps of the same site. A 
 
 **Overview**
 
-Returns the project that is the currently visible to the user. This method returns only project id for now.
+Returns the project that is the currently visible to the user. This method returns project id and name.
 
 **Example Call**
 
@@ -45,12 +45,12 @@ dronedeployApi.Projects.getCurrentlyViewed()
 
 **Overview**
 
-Returns members who have access to this project.
+Returns members who have access to current project. This method can be used only inside project's pages, otherwise it throws error.
 
 **Example Call**
 
 ```javascript
-// Get the current one time
+// Get members for current project one time
 dronedeployApi.Projects.team()
   .then(function(members){
     console.log(members);
