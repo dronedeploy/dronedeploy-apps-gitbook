@@ -149,20 +149,53 @@ Once your Function has been deployed, you can check its status by running:
 
         $ sls status
 
-## Local testing
+## Running Locally
 
-You can test your function locally by doing the following:
+Running functions locally is extremely simple using Google's [functions-framework](https://cloud.google.com/functions/docs/functions-framework).
 
-        $ npm install -g @google-cloud/functions-emulator
+        $ npm install @google-cloud/functions-framework
 
 cd into your actual function folder
 
+        $ npm install @google-cloud/functions-framework
         $ npm install
-        $ functions config set projectId dronedeploy
-        $ functions start
-        $ functions deploy dronedeploy --trigger-http
 
-then it gives you the URL to start hitting it
+Add a start script to `package.json`, with configuration passed via command-line arguments:
+
+        "scripts": {
+          "start": "functions-framework --target=dronedeploy"
+        }
+
+Note that your `package.json` will look something like below. Note the `main` and `scripts` fields, they indicate the entry file and point for your function.
+
+        {
+          "name": "ifttt-webhook",
+          "version": "0.1.0",
+          "description": "",
+          "main": "dronedeploy.js",
+          "author": "dronedeploy",
+          "license": "MIT",
+          "dependencies": {
+            "@dronedeploy/function-wrapper": "1.2.3",
+            "@google-cloud/functions-framework": "^1.6.0",
+            "dotenv": "5.0.1"
+          },
+          "scripts": {
+            "start": "functions-framework --target=dronedeploy"
+          }
+        }
+
+Next, run the following:
+
+        $ npm start
+        ...
+        Serving function...
+        Function: dronedeploy
+        URL: http://localhost:8080/
+
+You should be able to send requests to this function using curl from another terminal window. Note that you can generate an authentication token from the CLI which you can pass in as a bearer token to authenticate your function request.
+
+        $ sls getAuth
 
 ## Logs
 

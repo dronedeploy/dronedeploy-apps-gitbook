@@ -6,7 +6,7 @@ DroneDeploy Functions uses serverless architecture running on the DroneDeploy Pl
 
 ## Runtime
 
-DroneDeploy Functions currently run on the Node.js 6 runtime.
+DroneDeploy Functions currently run on the Node.js 10 runtime.
 
 ## Writing a Function
 
