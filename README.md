@@ -1,3 +1,8 @@
+# Deprecation Note
+This repository has been forked to enable correct sync to gitbooks: https://github.com/ddbotgitbooksync/dronedeploy-apps-gitbook
+
+Please make updates to the documentation there.
+
 # DroneDeploy Developer Documentation
 
 This site is hosted at developer.dronedeploy.com, it is intended for developer partners - both app developers and enterprise clients - to understand how to integrate with our platform.
